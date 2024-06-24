@@ -3,9 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+      <!-- =============== FAVICON ============= -->
+      <link rel="shortcut icon" href="./assets/images/common/webp/favicon.webp" type="image/x-icon">
+      <!-- =============== CSS LINK ============= -->
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <link rel="stylesheet" href="./assets/css/root.css">
+      <!-- =============== TAILWIND LINK ============= -->
+      <script src="https://cdn.tailwindcss.com"></script>
+  
+      <!-- ======================== SWIPER CDN ========================== -->
+      <link href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css " rel="stylesheet">
+      <!-- =============== META TAG ============== -->
+      <title>Rebel Beer</title>
+      <meta name="title" content="Welcome to Cans" />
+      <meta name="description"
+          content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://metatags.io/" />
+      <meta property="og:title" content="Welcome to 
+      Rebel Beer
+      Cans" />
+      <meta property="og:description"
+          content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+      <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://metatags.io/" />
+      <meta property="twitter:title" content="Welcome to  Rebel Beer Cans" />
+      <meta property="twitter:description"
+          content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+      <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+      <!-- Meta Tags Generated with https://metatags.io -->
+      <meta property="twitter:image" content="./meta-img.webp" />
+      <script>
+          tailwind.config = {
+              theme: {
+                  extend: {
+                      colors: {
+                          yellow: '#FFCC02',
+                          'light-green': ' #A7E45F',
+                          'dark-gray': '#EBEBEB',
+                          gray: '#CCCCCC',
+                          'light-blue': '#BEDCFE',
+                          green: ' #76BD3D',
+                          'white-gray': '#F0F0EA',
+                      },
+                      fontSize: {
+                          'custom_2xl': '28px',
+                          'custom_3xl': '32px',
+                          'custom_9xl': '94px',
+                      },
+                      lineHeight: {
+                          '100': '100%',
+                          '110': '110%',
+                          '120': '120%',
+                          '130': '130%',
+                          '140': '140%',
+                          '150': '150%',
+                      }
+                  },
+                  fontFamily: {
+                      'poppins': ['Poppins', 'sans-serif'],
+                      'roboto': ['Roboto', 'sans-serif'],
+                      'inter': ['Inter', 'sans-serif'],
+                  }
+              }
+          }
+      </script>
+    <style>
+        .swiper-container, .swiper-slide {
+            min-height: 100vh;
+        }
+        .swiper-pagination-bullet {
+            transition: background-color 0.3s;
+        }
+        .fixed-btn {
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            padding: 1rem;
+            color: white;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s;
+        }
+        .fixed-icon {
+            position: fixed;
+            top: 5px;
+            left: 5px;
+            width: 1.5rem;
+            height: 1.5rem;
+            transition: color 0.3s;
+        }
+        .background-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .static-content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
-<body>
-    <h1>homepage</h1>
+<body class=" relative">
+
+<div class="background-slider swiper-container swiper-container-vertical">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide bg-[url(./assets/images/homepage/webp/Property.webp)] bg-cover bg-yellow">
+            <div class=" container max-w-[1164px] mx-auto px-3"><img src="./assets/images/yellow-cans.webp" alt="Can Image"></div>
+        </div>
+        <div class="swiper-slide bg-blue-500">
+            <img src="your-image-path.png" alt="Can Image">
+        </div>
+        <div class="swiper-slide bg-red-500">
+            <img src="your-image-path.png" alt="Can Image">
+        </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-vertical"></div>
+</div>
+
+<div class="static-content">
+    <header class="p-5">
+        <div class="container max-w-[1164px] mx-auto px-3">
+            <h1 class="text-4xl font-bold">Welcome to Rebel Beer Cans</h1>
+            <p class="mt-2">Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa.</p>
+            <button id="contact-button" class="fixed-btn bg-yellow-500 mt-5">
+                Contact Us
+            </button>
+            <div class="fixed-icon text-yellow-500" id="bus-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6 6H3V6h18v12z" />
+                </svg>
+            </div>
+        </div>
+    </header>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        loop: true,  // Enable looping
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        on: {
+            slideChange: function () {
+                const currentSlide = this.slides[this.activeIndex];
+                const bgColor = currentSlide.classList.contains('bg-yellow') ? '!bg-[#FFCC02]' : currentSlide.classList.contains('bg-blue-500') ? '!bg-[#FFCC02]' : '!bg-[#FFCC02]';
+                const btnColor = currentSlide.classList.contains('bg-yellow-500') ? 'bg-yellow-500' : currentSlide.classList.contains('bg-blue-500') ? 'bg-blue-500' : 'bg-red-500';
+                const iconColor = currentSlide.classList.contains('bg-yellow-500') ? 'text-yellow-500' : currentSlide.classList.contains('bg-blue-500') ? 'text-blue-500' : 'text-red-500';
+                const paginationColor = currentSlide.classList.contains('bg-yellow-500') ? 'bg-yellow-500' : currentSlide.classList.contains('bg-blue-500') ? 'bg-blue-500' : 'bg-red-500';
+                
+                // Change button color
+                const button = document.getElementById('contact-button');
+                button.className = `fixed-btn ${btnColor}`;
+                
+                // Change bus icon color
+                const busIcon = document.getElementById('bus-icon');
+                busIcon.className = `fixed-icon ${iconColor}`;
+                
+                // Change pagination dots color
+                const paginationDots = document.querySelectorAll('.swiper-pagination-bullet');
+                paginationDots.forEach(dot => {
+                    dot.className = `swiper-pagination-bullet ${paginationColor}`;
+                });
+            },
+        },
+    });
+
+    // Initialize the button and icon colors on page load
+    const initialSlide = document.querySelector('.swiper-slide');
+    const initialButton = document.getElementById('contact-button');
+    initialButton.className = `fixed-btn ${initialSlide.classList.contains('bg-yellow-500') ? 'bg-yellow-500' : initialSlide.classList.contains('bg-blue-500') ? 'bg-blue-500' : 'bg-red-500'}`;
+    const initialIcon = document.getElementById('bus-icon');
+    initialIcon.className = `fixed-icon ${initialSlide.classList.contains('bg-yellow-500') ? 'text-yellow-500' : initialSlide.classList.contains('bg-blue-500') ? 'text-blue-500' : 'text-red-500'}`;
+    const initialPaginationColor = initialSlide.classList.contains('bg-yellow-500') ? 'bg-yellow-500' : initialSlide.classList.contains('bg-blue-500') ? 'bg-blue-500' : 'bg-red-500';
+    const initialPaginationDots = document.querySelectorAll('.swiper-pagination-bullet');
+    initialPaginationDots.forEach(dot => {
+        dot.className = `swiper-pagination-bullet ${initialPaginationColor}`;
+    });
+});
+</script>
+
 </body>
 </html>
