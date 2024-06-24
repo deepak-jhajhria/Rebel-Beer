@@ -1,25 +1,368 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/glasses.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =============== FAVICON ============= -->
+    <link rel="shortcut icon" href="./assets/images/common/webp/favicon.webp" type="image/x-icon">
+    <!-- =============== CSS LINK ============= -->
+    <link rel="stylesheet" href="./assets/css/glasses.css">
+    <!-- =============== TAILWIND LINK ============= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ======================== SWIPER CDN ========================== -->
+    <link href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css " rel="stylesheet">
+    <!-- =============== META TAG ============== -->
+    <title>Rebel Beer</title>
+    <meta name="title" content="Welcome to Cans" />
+    <meta name="description"
+        content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Welcome to 
+    Rebel Beer
+    Cans" />
+    <meta property="og:description"
+        content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Welcome to  Rebel Beer Cans" />
+    <meta property="twitter:description"
+        content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <meta property="twitter:image" content="./meta-img.webp" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: '#FFCC02',
+                        'light-green': ' #A7E45F',
+                        'dark-gray': '#EBEBEB',
+                        gray: '#CCCCCC',
+                        'light-blue': '#BEDCFE',
+                        green: ' #76BD3D',
+                        'white-gray': '#F0F0EA',
+                        'white-creem': '#E5E1CF', // glasses extand
+                        'white-light-creem': '#FFFAE6', // glasses extand
+                        'light-green': '#E5C130', // glasses extand
+                        'light-yellow': '#FFD635', // glasses extand
+                        'light-gray': '#C8CFD5', // glasses extand
+                        'light-brown': '#E7E4D7', // glasses extand
+
+                        
+                    },
+                    fontSize: {
+                        'custom_2xl': '28px',
+                        'custom_3xl': '32px',
+                        'custom_4xl': '32px',
+                        'custom_9xl': '94px',
+                    },
+                    lineHeight: {
+                        '100': '100%',
+                        '110': '110%',
+                        '120': '120%',
+                        '130': '130%',
+                        '140': '140%',
+                        '150': '150%',
+                    }
+                },
+                fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'roboto': ['Roboto', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif'],
+                    'play': ['Play', 'sans-serif'],
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline **text-clifford**">
-    Hello world!
-  </h1>
+
+<body>    
+        <section class="pt-[88px] relative px-3 z-10">
+                <div class=" w-full max-w-[1140px] mx-auto max-md:flex max-md:justify-center relative">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-[30px]  gap-x-5 mb-[109px]">
+                                <div class="shadow-[0px_-6px_0px_0px_#000000] max-sm:max-w-[350px]  group bg-white rounded-[5px] w-full ">
+                                        <div class=" h-[411px] w-full border border-black rounded-[5px] px-3.5 py-3 group-hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-700 ">
+                                                <div class="w-full h-[257px] bg-dark-gray flex justify-center items-center relative">
+                                                        <img class="w-[94px] h-[212px] mix-blend-multiply " src="./assets/images/glasses/webp/galwayGlass.webp" alt="galwayGlass">
+                                                        <div class="absolute top-0 left-0">
+                                                            <div class="w-[74px] h-[31px] flex justify-center items-center group-hover:bg-black duration-700 bg-yellow rounded-[0_4px_4px_0] ">
+                                                                <p class="text-black font-poppins font-medium text-sm group-hover:text-white duration-700">Glass</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="absolute top-2 right-2">
+                                                                <div class="w-6 h-6 bg-white bg-opacity-[66%] rounded-[40px] flex items-center justify-center ">
+                                                                        <a href=""><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M6.89878 9.66928L6.83767 9.73039L6.77045 9.66928C3.86767 7.03539 1.94878 5.29373 1.94878 3.52762C1.94878 2.30539 2.86545 1.38873 4.08767 1.38873C5.02878 1.38873 5.94545 1.99984 6.26934 2.83095H7.40601C7.7299 1.99984 8.64656 1.38873 9.58767 1.38873C10.8099 1.38873 11.7266 2.30539 11.7266 3.52762C11.7266 5.29373 9.80767 7.03539 6.89878 9.66928ZM9.58767 0.166504C8.52434 0.166504 7.50378 0.661504 6.83767 1.43761C6.17156 0.661504 5.15101 0.166504 4.08767 0.166504C2.20545 0.166504 0.726562 1.63928 0.726562 3.52762C0.726562 5.8315 2.80434 7.71984 5.95156 10.5737L6.83767 11.3804L7.72378 10.5737C10.871 7.71984 12.9488 5.8315 12.9488 3.52762C12.9488 1.63928 11.4699 0.166504 9.58767 0.166504Z" fill="black"/>
+                                                                                </svg>
+                                                                                </a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h2 class="font-play font-bold text-base mt-[11px] mb-4 leading-[18px]">Galway Bay - Graft Beer Glass</h2>
+                                                <div class=" border border-white-creem w-[133px] py-2 px-[10px] bg-white-light-creem group-hover:border-light-green group-hover:bg-light-yellow duration-700 rounded-[5px] mb-1">
+                                                        <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl</p>
+                                                </div>
+                                                <div class=" flex justify-between items-center">
+                                                        <p class=" font-poppins font-semibold text-xl text-yellow group-hover:text-black duration-700 leading-[30px]"><span class="text-3xl leading-[45px]">€</span>7.59</p>
+                                                        <div class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center cursor-pointer">
+                                                             <a href=""><img src="./assets/images/glasses/svg/plusSvg.svg" alt=""></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="shadow-[0px_-6px_0px_0px_#000000] max-sm:max-w-[350px]  group bg-white rounded-[5px] w-full">
+                                        <div class="  h-[411px] w-full border border-black rounded-[5px] px-3.5 py-3 group-hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-700 ">
+                                                <div class="w-full h-[257px] bg-dark-gray flex justify-center items-center relative">
+                                                        <img class="w-[94px] h-[212px] mix-blend-multiply " src="./assets/images/glasses/webp/topplingGlass.webp" alt="galwayGlass">
+                                                        <div class="absolute top-0 left-0">
+                                                            <div class="w-[74px] h-[31px] flex justify-center items-center group-hover:bg-black duration-700 bg-yellow rounded-[0_4px_4px_0] ">
+                                                                <p class="text-black font-poppins font-medium text-sm group-hover:text-white duration-700">Glass</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="absolute top-2 right-2">
+                                                                <div class="w-6 h-6 bg-white bg-opacity-[66%] rounded-[40px] flex items-center justify-center ">
+                                                                        <a href=""><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M6.89878 9.66928L6.83767 9.73039L6.77045 9.66928C3.86767 7.03539 1.94878 5.29373 1.94878 3.52762C1.94878 2.30539 2.86545 1.38873 4.08767 1.38873C5.02878 1.38873 5.94545 1.99984 6.26934 2.83095H7.40601C7.7299 1.99984 8.64656 1.38873 9.58767 1.38873C10.8099 1.38873 11.7266 2.30539 11.7266 3.52762C11.7266 5.29373 9.80767 7.03539 6.89878 9.66928ZM9.58767 0.166504C8.52434 0.166504 7.50378 0.661504 6.83767 1.43761C6.17156 0.661504 5.15101 0.166504 4.08767 0.166504C2.20545 0.166504 0.726562 1.63928 0.726562 3.52762C0.726562 5.8315 2.80434 7.71984 5.95156 10.5737L6.83767 11.3804L7.72378 10.5737C10.871 7.71984 12.9488 5.8315 12.9488 3.52762C12.9488 1.63928 11.4699 0.166504 9.58767 0.166504Z" fill="black"/>
+                                                                                </svg>
+                                                                                </a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h2 class="font-play font-bold text-base mt-[11px] mb-4 leading-[18px]">Toppling Goliath - Pint Glass</h2>
+                                                <div class=" border border-white-creem w-[133px] py-2 px-[10px] bg-white-light-creem group-hover:border-light-green group-hover:bg-light-yellow duration-700 rounded-[5px] mb-1">
+                                                        <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl</p>
+                                                </div>
+                                                <div class=" flex justify-between items-center">
+                                                        <p class=" font-poppins font-semibold text-xl text-yellow group-hover:text-black duration-700 leading-[30px]"><span class="text-3xl leading-[45px]">€</span>7.59</p>
+                                                        <div class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center cursor-pointer">
+                                                             <a href=""><img src="./assets/images/glasses/svg/plusSvg.svg" alt=""></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="shadow-[0px_-6px_0px_0px_#000000] max-sm:max-w-[350px]  group bg-white rounded-[5px] w-full">
+                                        <div class="  h-[411px] w-full border border-black rounded-[5px] px-3.5 py-3 group-hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-700 ">
+                                                <div class="w-full h-[257px] bg-dark-gray flex justify-center items-center relative">
+                                                        <img class="w-[94px] h-[212px] mix-blend-multiply " src="./assets/images/glasses/webp/graftGlass.webp" alt="galwayGlass">
+                                                        <div class="absolute top-0 left-0">
+                                                            <div class="w-[74px] h-[31px] flex justify-center items-center group-hover:bg-black duration-700 bg-yellow rounded-[0_4px_4px_0] ">
+                                                                <p class="text-black font-poppins font-medium text-sm group-hover:text-white duration-700">Glass</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="absolute top-2 right-2">
+                                                                <div class="w-6 h-6 bg-white bg-opacity-[66%] rounded-[40px] flex items-center justify-center ">
+                                                                        <a href=""><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M6.89878 9.66928L6.83767 9.73039L6.77045 9.66928C3.86767 7.03539 1.94878 5.29373 1.94878 3.52762C1.94878 2.30539 2.86545 1.38873 4.08767 1.38873C5.02878 1.38873 5.94545 1.99984 6.26934 2.83095H7.40601C7.7299 1.99984 8.64656 1.38873 9.58767 1.38873C10.8099 1.38873 11.7266 2.30539 11.7266 3.52762C11.7266 5.29373 9.80767 7.03539 6.89878 9.66928ZM9.58767 0.166504C8.52434 0.166504 7.50378 0.661504 6.83767 1.43761C6.17156 0.661504 5.15101 0.166504 4.08767 0.166504C2.20545 0.166504 0.726562 1.63928 0.726562 3.52762C0.726562 5.8315 2.80434 7.71984 5.95156 10.5737L6.83767 11.3804L7.72378 10.5737C10.871 7.71984 12.9488 5.8315 12.9488 3.52762C12.9488 1.63928 11.4699 0.166504 9.58767 0.166504Z" fill="black"/>
+                                                                                </svg>
+                                                                                </a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h2 class="font-play font-bold text-base mt-[11px] mb-4 leading-[18px]">Galway Bay - Graft Beer Glass</h2>
+                                                <div class=" border border-white-creem w-[133px] py-2 px-[10px] bg-white-light-creem group-hover:border-light-green group-hover:bg-light-yellow duration-700 rounded-[5px] mb-1">
+                                                        <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl</p>
+                                                </div>
+                                                <div class=" flex justify-between items-center">
+                                                        <p class=" font-poppins font-semibold text-xl text-yellow group-hover:text-black duration-700 leading-[30px]"><span class="text-3xl leading-[45px]">€</span>7.59</p>
+                                                        <div class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center cursor-pointer">
+                                                             <a href=""><img src="./assets/images/glasses/svg/plusSvg.svg" alt=""></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="shadow-[0px_-6px_0px_0px_#000000] max-sm:max-w-[350px]  group bg-white rounded-[5px] w-full">
+                                        <div class="  h-[411px] w-full border border-black rounded-[5px] px-3.5 py-3 group-hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-700 ">
+                                                <div class="w-full h-[257px] bg-dark-gray flex justify-center items-center relative">
+                                                        <img class="w-[94px] h-[212px] mix-blend-multiply " src="./assets/images/glasses/webp/maxxGlass.webp" alt="galwayGlass">
+                                                        <div class="absolute top-0 left-0">
+                                                            <div class="w-[74px] h-[31px] flex justify-center items-center group-hover:bg-black duration-700 bg-yellow rounded-[0_4px_4px_0] ">
+                                                                <p class="text-black font-poppins font-medium text-sm group-hover:text-white duration-700">Glass</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="absolute top-2 right-2">
+                                                                <div class="w-6 h-6 bg-white bg-opacity-[66%] rounded-[40px] flex items-center justify-center ">
+                                                                        <a href=""><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M6.89878 9.66928L6.83767 9.73039L6.77045 9.66928C3.86767 7.03539 1.94878 5.29373 1.94878 3.52762C1.94878 2.30539 2.86545 1.38873 4.08767 1.38873C5.02878 1.38873 5.94545 1.99984 6.26934 2.83095H7.40601C7.7299 1.99984 8.64656 1.38873 9.58767 1.38873C10.8099 1.38873 11.7266 2.30539 11.7266 3.52762C11.7266 5.29373 9.80767 7.03539 6.89878 9.66928ZM9.58767 0.166504C8.52434 0.166504 7.50378 0.661504 6.83767 1.43761C6.17156 0.661504 5.15101 0.166504 4.08767 0.166504C2.20545 0.166504 0.726562 1.63928 0.726562 3.52762C0.726562 5.8315 2.80434 7.71984 5.95156 10.5737L6.83767 11.3804L7.72378 10.5737C10.871 7.71984 12.9488 5.8315 12.9488 3.52762C12.9488 1.63928 11.4699 0.166504 9.58767 0.166504Z" fill="black"/>
+                                                                                </svg>
+                                                                                </a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h2 class="font-play font-bold text-base mt-[11px] mb-4 leading-[18px]">Rebelbeercans -x - Mass Glass</h2>
+                                                <div class=" border border-white-creem w-[133px] py-2 px-[10px] bg-white-light-creem group-hover:border-light-green group-hover:bg-light-yellow duration-700 rounded-[5px] mb-1">
+                                                        <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl</p>
+                                                </div>
+                                                <div class=" flex justify-between items-center">
+                                                        <p class=" font-poppins font-semibold text-xl text-yellow group-hover:text-black duration-700 leading-[30px]"><span class="text-3xl leading-[45px]">€</span>7.59</p>
+                                                        <div class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center cursor-pointer">
+                                                             <a href=""><img src="./assets/images/glasses/svg/plusSvg.svg" alt=""></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="shadow-[0px_-6px_0px_0px_#000000] max-sm:max-w-[350px]  group bg-white rounded-[5px] w-full">
+                                        <div class="  h-[411px] w-full border border-black rounded-[5px] px-3.5 py-3 group-hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-700 ">
+                                                <div class="w-full h-[257px] bg-dark-gray flex justify-center items-center relative">
+                                                        <img class="w-[94px] h-[212px] mix-blend-multiply " src="./assets/images/glasses/webp/galwayGlass.webp" alt="galwayGlass">
+                                                        <div class="absolute top-0 left-0">
+                                                            <div class="w-[74px] h-[31px] flex justify-center items-center group-hover:bg-black duration-700 bg-yellow rounded-[0_4px_4px_0] ">
+                                                                <p class="text-black font-poppins font-medium text-sm group-hover:text-white duration-700">Glass</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="absolute top-2 right-2">
+                                                                <div class="w-6 h-6 bg-white bg-opacity-[66%] rounded-[40px] flex items-center justify-center ">
+                                                                        <a href=""><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M6.89878 9.66928L6.83767 9.73039L6.77045 9.66928C3.86767 7.03539 1.94878 5.29373 1.94878 3.52762C1.94878 2.30539 2.86545 1.38873 4.08767 1.38873C5.02878 1.38873 5.94545 1.99984 6.26934 2.83095H7.40601C7.7299 1.99984 8.64656 1.38873 9.58767 1.38873C10.8099 1.38873 11.7266 2.30539 11.7266 3.52762C11.7266 5.29373 9.80767 7.03539 6.89878 9.66928ZM9.58767 0.166504C8.52434 0.166504 7.50378 0.661504 6.83767 1.43761C6.17156 0.661504 5.15101 0.166504 4.08767 0.166504C2.20545 0.166504 0.726562 1.63928 0.726562 3.52762C0.726562 5.8315 2.80434 7.71984 5.95156 10.5737L6.83767 11.3804L7.72378 10.5737C10.871 7.71984 12.9488 5.8315 12.9488 3.52762C12.9488 1.63928 11.4699 0.166504 9.58767 0.166504Z" fill="black"/>
+                                                                                </svg>
+                                                                                </a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h2 class="font-play font-bold text-base mt-[11px] mb-4 leading-[18px]">Galway Bay - Graft Beer Glass</h2>
+                                                <div class=" border border-white-creem w-[133px] py-2 px-[10px] bg-white-light-creem group-hover:border-light-green group-hover:bg-light-yellow duration-700 rounded-[5px] mb-1">
+                                                        <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl</p>
+                                                </div>
+                                                <div class=" flex justify-between items-center">
+                                                        <p class=" font-poppins font-semibold text-xl text-yellow group-hover:text-black duration-700 leading-[30px]"><span class="text-3xl leading-[45px]">€</span>7.59</p>
+                                                        <div class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center cursor-pointer">
+                                                             <a href=""><img src="./assets/images/glasses/svg/plusSvg.svg" alt=""></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="shadow-[0px_-6px_0px_0px_#000000] max-sm:max-w-[350px]  group bg-white rounded-[5px] w-full">
+                                        <div class="  h-[411px] w-full border border-black rounded-[5px] px-3.5 py-3 group-hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-700 ">
+                                                <div class="w-full h-[257px] bg-dark-gray flex justify-center items-center relative">
+                                                        <img class="w-[94px] h-[212px] mix-blend-multiply " src="./assets/images/glasses/webp/topplingGlass.webp" alt="galwayGlass">
+                                                        <div class="absolute top-0 left-0">
+                                                            <div class="w-[74px] h-[31px] flex justify-center items-center group-hover:bg-black duration-700 bg-yellow rounded-[0_4px_4px_0] ">
+                                                                <p class="text-black font-poppins font-medium text-sm group-hover:text-white duration-700">Glass</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="absolute top-2 right-2">
+                                                                <div class="w-6 h-6 bg-white bg-opacity-[66%] rounded-[40px] flex items-center justify-center ">
+                                                                        <a href=""><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M6.89878 9.66928L6.83767 9.73039L6.77045 9.66928C3.86767 7.03539 1.94878 5.29373 1.94878 3.52762C1.94878 2.30539 2.86545 1.38873 4.08767 1.38873C5.02878 1.38873 5.94545 1.99984 6.26934 2.83095H7.40601C7.7299 1.99984 8.64656 1.38873 9.58767 1.38873C10.8099 1.38873 11.7266 2.30539 11.7266 3.52762C11.7266 5.29373 9.80767 7.03539 6.89878 9.66928ZM9.58767 0.166504C8.52434 0.166504 7.50378 0.661504 6.83767 1.43761C6.17156 0.661504 5.15101 0.166504 4.08767 0.166504C2.20545 0.166504 0.726562 1.63928 0.726562 3.52762C0.726562 5.8315 2.80434 7.71984 5.95156 10.5737L6.83767 11.3804L7.72378 10.5737C10.871 7.71984 12.9488 5.8315 12.9488 3.52762C12.9488 1.63928 11.4699 0.166504 9.58767 0.166504Z" fill="black"/>
+                                                                                </svg>
+                                                                                </a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h2 class="font-play font-bold text-base mt-[11px] mb-4 leading-[18px]">Galway Bay - Graft Beer Glass</h2>
+                                                <div class=" border border-white-creem w-[133px] py-2 px-[10px] bg-white-light-creem group-hover:border-light-green group-hover:bg-light-yellow duration-700 rounded-[5px] mb-1">
+                                                        <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl</p>
+                                                </div>
+                                                <div class=" flex justify-between items-center">
+                                                        <p class=" font-poppins font-semibold text-xl text-yellow group-hover:text-black duration-700 leading-[30px]"><span class="text-3xl leading-[45px]">€</span>7.59</p>
+                                                        <div class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center cursor-pointer">
+                                                             <a href=""><img src="./assets/images/glasses/svg/plusSvg.svg" alt=""></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="shadow-[0px_-6px_0px_0px_#000000] max-sm:max-w-[350px]  group bg-white rounded-[5px] w-full">
+                                        <div class="  h-[411px] w-full border border-black rounded-[5px] px-3.5 py-3 group-hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-700 ">
+                                                <div class="w-full h-[257px] bg-dark-gray flex justify-center items-center relative">
+                                                        <img class="w-[94px] h-[212px] mix-blend-multiply " src="./assets/images/glasses/webp/graftGlass.webp" alt="galwayGlass">
+                                                        <div class="absolute top-0 left-0">
+                                                            <div class="w-[74px] h-[31px] flex justify-center items-center group-hover:bg-black duration-700 bg-yellow rounded-[0_4px_4px_0] ">
+                                                                <p class="text-black font-poppins font-medium text-sm group-hover:text-white duration-700">Glass</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="absolute top-2 right-2">
+                                                                <div class="w-6 h-6 bg-white bg-opacity-[66%] rounded-[40px] flex items-center justify-center ">
+                                                                        <a href=""><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M6.89878 9.66928L6.83767 9.73039L6.77045 9.66928C3.86767 7.03539 1.94878 5.29373 1.94878 3.52762C1.94878 2.30539 2.86545 1.38873 4.08767 1.38873C5.02878 1.38873 5.94545 1.99984 6.26934 2.83095H7.40601C7.7299 1.99984 8.64656 1.38873 9.58767 1.38873C10.8099 1.38873 11.7266 2.30539 11.7266 3.52762C11.7266 5.29373 9.80767 7.03539 6.89878 9.66928ZM9.58767 0.166504C8.52434 0.166504 7.50378 0.661504 6.83767 1.43761C6.17156 0.661504 5.15101 0.166504 4.08767 0.166504C2.20545 0.166504 0.726562 1.63928 0.726562 3.52762C0.726562 5.8315 2.80434 7.71984 5.95156 10.5737L6.83767 11.3804L7.72378 10.5737C10.871 7.71984 12.9488 5.8315 12.9488 3.52762C12.9488 1.63928 11.4699 0.166504 9.58767 0.166504Z" fill="black"/>
+                                                                                </svg>
+                                                                                </a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h2 class="font-play font-bold text-base mt-[11px] mb-4 leading-[18px]">Galway Bay - Graft Beer Glass</h2>
+                                                <div class=" border border-white-creem w-[133px] py-2 px-[10px] bg-white-light-creem group-hover:border-light-green group-hover:bg-light-yellow duration-700 rounded-[5px] mb-1">
+                                                        <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl</p>
+                                                </div>
+                                                <div class=" flex justify-between items-center">
+                                                        <p class=" font-poppins font-semibold text-xl text-yellow group-hover:text-black duration-700 leading-[30px]"><span class="text-3xl leading-[45px]">€</span>7.59</p>
+                                                        <div class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center cursor-pointer">
+                                                             <a href=""><img src="./assets/images/glasses/svg/plusSvg.svg" alt=""></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="shadow-[0px_-6px_0px_0px_#000000] max-sm:max-w-[350px]  group bg-white rounded-[5px] w-full">
+                                        <div class="  h-[411px] w-full border border-black rounded-[5px] px-3.5 py-3 group-hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-700 ">
+                                                <div class="w-full h-[257px] bg-dark-gray flex justify-center items-center relative">
+                                                        <img class="w-[94px] h-[212px] mix-blend-multiply " src="./assets/images/glasses/webp/maxxGlass.webp" alt="galwayGlass">
+                                                        <div class="absolute top-0 left-0">
+                                                            <div class="w-[74px] h-[31px] flex justify-center items-center group-hover:bg-black duration-700 bg-yellow rounded-[0_4px_4px_0] ">
+                                                                <p class="text-black font-poppins font-medium text-sm group-hover:text-white duration-700">Glass</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="absolute top-2 right-2">
+                                                                <div class="w-6 h-6 bg-white bg-opacity-[66%] rounded-[40px] flex items-center justify-center ">
+                                                                        <a href=""><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M6.89878 9.66928L6.83767 9.73039L6.77045 9.66928C3.86767 7.03539 1.94878 5.29373 1.94878 3.52762C1.94878 2.30539 2.86545 1.38873 4.08767 1.38873C5.02878 1.38873 5.94545 1.99984 6.26934 2.83095H7.40601C7.7299 1.99984 8.64656 1.38873 9.58767 1.38873C10.8099 1.38873 11.7266 2.30539 11.7266 3.52762C11.7266 5.29373 9.80767 7.03539 6.89878 9.66928ZM9.58767 0.166504C8.52434 0.166504 7.50378 0.661504 6.83767 1.43761C6.17156 0.661504 5.15101 0.166504 4.08767 0.166504C2.20545 0.166504 0.726562 1.63928 0.726562 3.52762C0.726562 5.8315 2.80434 7.71984 5.95156 10.5737L6.83767 11.3804L7.72378 10.5737C10.871 7.71984 12.9488 5.8315 12.9488 3.52762C12.9488 1.63928 11.4699 0.166504 9.58767 0.166504Z" fill="black"/>
+                                                                                </svg>
+                                                                                </a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h2 class="font-play font-bold text-base mt-[11px] mb-4 leading-[18px]  text-nowrap">Rebelbeercans -x - Mass Glass</h2>
+                                                <div class=" border border-white-creem w-[133px] py-2 px-[10px] bg-white-light-creem group-hover:border-light-green group-hover:bg-light-yellow duration-700 rounded-[5px] mb-1">
+                                                        <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl</p>
+                                                </div>
+                                                <div class=" flex justify-between items-center">
+                                                        <p class=" font-poppins font-semibold text-xl text-yellow group-hover:text-black duration-700 leading-[30px]"><span class="text-3xl leading-[45px]">€</span>7.59</p>
+                                                        <div class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center cursor-pointer">
+                                                             <a href=""><img src="./assets/images/glasses/svg/plusSvg.svg" alt=""></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                
+                        </div>
+                        <div class="flex max-w-[296px] mx-auto pb-[117px] gap-3">
+                                <div class="w-[32px] h-[32px] border border-light-brown hover:bg-light-gray rounded flex justify-center items-center duration-300">
+                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" fill="#C4CDD5"/>
+                                        </svg>                
+                                </div>
+                                <div class="w-[32px] h-[32px] border border-dark-gray3 group hover:border-yellow duration-300 rounded flex justify-center items-center">
+                                   <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow">1</p>               
+                                </div>
+                                <div class="w-[32px] h-[32px] border border-dark-gray3 rounded flex group hover:border-yellow duration-300 justify-center items-center">
+                                   <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow">2</p>              
+                                </div>
+                                <div class="w-[32px] h-[32px] border border-dark-gray3 rounded group hover:border-yellow flex duration-300 justify-center items-center">
+                                    <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow">...</p>             
+                                </div>
+                                <div class="w-[32px] h-[32px] border border-dark-gray3 rounded flex group hover:border-yellow duration-300 justify-center items-center">
+                                    <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow">9</p>             
+                                </div>
+                                <div class="w-[32px] h-[32px] border border-dark-gray3 rounded flex group hover:border-yellow duration-300 justify-center items-center">
+                                    <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow">10</p>             
+                                </div>
+                                <div class="w-[32px] h-[32px] border border-light-brown rounded flex justify-center items-center duration-300 group hover:bg-dark-gray2">
+                                    <svg class="hover:fill-black" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z" fill="#C4CDD5"/>
+                                        </svg>                               
+                                </div>
+                            </div>
+                </div>
+                <img class="absolute left-0 top-[30%] -z-10 h-[57px]" src="./assets/images/glasses/svg/leftLines.svg" alt="leftLines">
+                <img class="absolute top-[5.5%] right-[2%] -z-10" src="./assets/images/glasses/svg/semicircle.svg" alt="semicircle">
+                <img class=" absolute bottom-[-2%] left-[1%] -z-10" src="./assets/images/glasses/svg/semicircleBlack.svg" alt="semicircleblack">
+        </section>
+    <!-- ============================== SWIPER JS LINK ========================= -->
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
 </body>
+
 </html>
