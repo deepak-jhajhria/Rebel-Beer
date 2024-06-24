@@ -4,11 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===================favicon======================== -->
+    <link rel="shortcut icon" href="./assets/images/common/webp/favicon.webp" type="image/x-icon">
     <title>Blogs</title>
     <!-- ============================style-css================================== -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- ======================tailwind-css=========================== -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ======================== SWIPER CDN ========================== -->
+    <link href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css " rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: '#FFCC02',
+                        'light-green': ' #A7E45F',
+                        'dark-gray': '#EBEBEB',
+                        gray: '#CCCCCC',
+                        'light-blue': '#BEDCFE',
+                        green: ' #76BD3D',
+                        'white-gray': '#F0F0EA',
+                    },
+                    fontSize: {
+                        'custom_2xl': '28px',
+                        'custom_3xl': '32px',
+                        'custom_9xl': '94px',
+                    },
+                    lineHeight: {
+                        '100': '100%',
+                        '110': '110%',
+                        '120': '120%',
+                        '130': '130%',
+                        '140': '140%',
+                        '150': '150%',
+                    }
+                },
+                fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'roboto': ['Roboto', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -56,13 +96,15 @@
 </svg>
 </span><span>April 1, 2023</span></p>
         </div>
-        <h2>3 Years Rebel Beer Cans!</h2>
-        <p>Beer cans have come a long way since their inception. Originally introduced in the mid-20th century as an alternative to glass bottles, beer cans have become an iconic vessel for enjoying our favorite brews. They offer several advantages, including
+        <h2 class="font-play font-">3 Years Rebel Beer Cans!</h2>
+        <p class="font-poppins font-base text-black opacity-70 !leading-normal">Beer cans have come a long way since their inception. Originally introduced in the mid-20th century as an alternative to glass bottles, beer cans have become an iconic vessel for enjoying our favorite brews. They offer several advantages, including
             portability, protection from light and oxygen, and recyclability.</p>
-        <p class="mt-[15px]">Over the years, beer cans have undergone various design changes, with breweries using them as a canvas for creative and eye-catching labels and graphics. Today, you can find a wide variety of beers in cans, from traditional lagers and ales to
+        <p class="font-poppins font-base text-black opacity-70 !leading-normal mt-[15px]">Over the years, beer cans have undergone various design changes, with breweries using them as a canvas for creative and eye-catching labels and graphics. Today, you can find a wide variety of beers in cans, from traditional lagers and ales to
             innovative craft brews. The convenience and versatility of beer cans continue to make them a popular choice among beer enthusiasts, ensuring that this humble container remains a staple in the world of brewing.</p>
         <div class="border-3 border-black"></div>
     </section>
+    <!-- ============================== SWIPER JS LINK ========================= -->
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
 </body>
 
 </html>
