@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./assets/css/root.css">
     <!-- =============== TAILWIND LINK ============= -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- ======================== SWIPER CDN ========================== -->
     <link href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css " rel="stylesheet">
     <!-- =============== META TAG ============== -->
@@ -86,7 +85,7 @@
         <section class="xl:mt-[111px] lg:mt-[90px] md:mt-[64px] mt-[48px] relative">
             <img src="./assets/images/homepage/png/delivery-halfcircle.png" alt="half-circle"
                 class="lg:max-w-[74px] max-w-[45px] h-[45px] w-full lg:h-[74px] absolute left-[2%] lg:top-[-30%] top-[-9%] md:block hidden pointer-events-none">
-            <div class="container xl:max-w-[1164px] mx-auto px-3">
+            <div class="container xl:max-w-[1164px] mx-auto px-4">
                 <div
                     class="flex flex-row flex-wrap gap-5 sm:gap-[30px] lg:gap-0 lg:justify-between justify-center relative">
                     <img src="./assets/images/homepage/png/deliver-line.png" alt="line"
@@ -135,24 +134,25 @@
             </div>
         </section>
         <!----------------Rebel-Selection--------------->
-        <section class="xl:mt-[112px] lg:mt-[90px] md:mt-[64px] mt-[48px]">
-            <div class="container xl:max-w-[1140px] mx-auto px-3">
-                <div class="flex items-center justify-between">
+        <section class="xl:mt-[112px] lg:mt-[90px] md:mt-[64px] mt-[48px] mb-[100px]">
+            <div class="container xl:max-w-[1140px] mx-auto px-4">
+                <div class="flex sm:flex-row flex-col sm:items-center sm:justify-between">
                     <div>
-                        <h2 class="text-black font-play font-bold text-5xl !leading-120 mb-2">Rebel Selection!</h2>
+                        <h2 class="text-black font-play font-bold text-4xl md:text-5xl !leading-120 mb-2">Rebel
+                            Selection!</h2>
                         <p
                             class="font-poppins text-black text-opacity-70 font-normal text-sm md:text-base max-w-[427px] !leadng-normal ">
                             Aliquet commodo in vulputate ac vitae nam egestas. Dui orci aliquet hendrerit auctor augue
                             tellus.</p>
                     </div>
-                    <div class="flex gap-3">
-                        <button
-                            class="h-[41.6px] w-[41.6px] bg-white border-[1.6px] border-solid border-black rounded-[68px] flex justify-center items-center">
+                    <div class="flex gap-3 mt-5 sm:mt-0">
+                        <button id="prevBtn"
+                            class="h-[41.6px] active-btn w-[41.6px] bg-white border-[1.6px] border-solid border-black rounded-[68px] flex justify-center items-center">
                             <img src="./assets/images/homepage/svg/prev-arrow.svg" alt="arrow"
                                 class="w-[22px] h-[22px]">
                         </button>
-                        <button
-                            class="h-[41.6px] w-[41.6px] bg-white border-[1.6px] border-solid border-black rounded-[68px] flex justify-center items-center">
+                        <button id="nextBtn"
+                            class="h-[41.6px] active-btn w-[41.6px] bg-white border-[1.6px] border-solid border-black rounded-[68px] flex justify-center items-center">
                             <img src="./assets/images/homepage/svg/next-arrow.svg" alt="arrow"
                                 class="w-[22px] h-[22px]">
                         </button>
@@ -163,7 +163,7 @@
                         <div class="swiper-wrapper pt-[10px]">
                             <div class="swiper-slide">
                                 <div
-                                    class="max-w-[270px] h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                    class="lg:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                                     <div class="relative">
                                         <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img"
                                             class="w-full">
@@ -192,7 +192,8 @@
                                     <div class="flex items-center justify-between">
                                         <p
                                             class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
-                                            <span class="text-3xl">€</span>7.59</p>
+                                            <span class="text-3xl">€</span>7.59
+                                        </p>
                                         <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
                                             class="cursor-pointer">
                                     </div>
@@ -200,9 +201,9 @@
                             </div>
                             <div class="swiper-slide">
                                 <div
-                                    class="max-w-[270px] h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                    class="lg:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                                     <div class="relative">
-                                        <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img"
+                                        <img src="./assets/images/homepage/png/rabelcard2.png" alt="rabel-img"
                                             class="w-full">
                                         <div
                                             class="rounded-[0px_4px_4px_0px] bg-yellow group-hover:bg-black p-[5px] max-w-[74px] absolute left-0 top-0 duration-300">
@@ -229,7 +230,8 @@
                                     <div class="flex items-center justify-between">
                                         <p
                                             class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
-                                            <span class="text-3xl">€</span>7.59</p>
+                                            <span class="text-3xl">€</span>7.59
+                                        </p>
                                         <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
                                             class="cursor-pointer">
                                     </div>
@@ -237,7 +239,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div
-                                    class="max-w-[270px] h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                    class="lg:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                                     <div class="relative">
                                         <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img"
                                             class="w-full">
@@ -266,7 +268,8 @@
                                     <div class="flex items-center justify-between">
                                         <p
                                             class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
-                                            <span class="text-3xl">€</span>7.59</p>
+                                            <span class="text-3xl">€</span>7.59
+                                        </p>
                                         <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
                                             class="cursor-pointer">
                                     </div>
@@ -274,9 +277,9 @@
                             </div>
                             <div class="swiper-slide">
                                 <div
-                                    class="max-w-[270px] h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                    class="lg:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                                     <div class="relative">
-                                        <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img"
+                                        <img src="./assets/images/homepage/png/rabelcard2.png" alt="rabel-img"
                                             class="w-full">
                                         <div
                                             class="rounded-[0px_4px_4px_0px] bg-yellow group-hover:bg-black p-[5px] max-w-[74px] absolute left-0 top-0 duration-300">
@@ -303,7 +306,8 @@
                                     <div class="flex items-center justify-between">
                                         <p
                                             class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
-                                            <span class="text-3xl">€</span>7.59</p>
+                                            <span class="text-3xl">€</span>7.59
+                                        </p>
                                         <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
                                             class="cursor-pointer">
                                     </div>
@@ -311,7 +315,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div
-                                    class="max-w-[270px] h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                    class="lg:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                                     <div class="relative">
                                         <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img"
                                             class="w-full">
@@ -340,44 +344,8 @@
                                     <div class="flex items-center justify-between">
                                         <p
                                             class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
-                                            <span class="text-3xl">€</span>7.59</p>
-                                        <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
-                                            class="cursor-pointer">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div
-                                    class="max-w-[270px] h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
-                                    <div class="relative">
-                                        <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img"
-                                            class="w-full">
-                                        <div
-                                            class="rounded-[0px_4px_4px_0px] bg-yellow group-hover:bg-black p-[5px] max-w-[74px] absolute left-0 top-0 duration-300">
-                                            <p
-                                                class="text-black group-hover:text-white text-sm font-medium !leading-normal duration-300">
-                                                Save 20%</p>
-                                        </div>
-                                        <div
-                                            class="w-[24px] h-[24px] rounded-[40px] flex justify-center items-center bg-off-white absolute top-[8px] right-[8px] ">
-                                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.58628 11.7801L7.52517 11.8412L7.45795 11.7801C4.55517 9.14623 2.63628 7.40457 2.63628 5.63845C2.63628 4.41623 3.55295 3.49957 4.77517 3.49957C5.71628 3.49957 6.63295 4.11068 6.95684 4.94179H8.09351C8.4174 4.11068 9.33406 3.49957 10.2752 3.49957C11.4974 3.49957 12.4141 4.41623 12.4141 5.63845C12.4141 7.40457 10.4952 9.14623 7.58628 11.7801ZM10.2752 2.27734C9.21184 2.27734 8.19128 2.77234 7.52517 3.54845C6.85906 2.77234 5.83851 2.27734 4.77517 2.27734C2.89295 2.27734 1.41406 3.75012 1.41406 5.63845C1.41406 7.94234 3.49184 9.83068 6.63906 12.6846L7.52517 13.4912L8.41128 12.6846C11.5585 9.83068 13.6363 7.94234 13.6363 5.63845C13.6363 3.75012 12.1574 2.27734 10.2752 2.27734Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <h4
-                                        class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
-                                        Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
-                                    <p
-                                        class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
-                                        IPA | 5,7| 12*33cl</p>
-                                    <div class="flex items-center justify-between">
-                                        <p
-                                            class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
-                                            <span class="text-3xl">€</span>7.59</p>
+                                            <span class="text-3xl">€</span>7.59
+                                        </p>
                                         <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
                                             class="cursor-pointer">
                                     </div>
@@ -393,13 +361,9 @@
     <script>
         const swiper = new Swiper(".firstSwiper", {
             spaceBetween: 20,
-            centeredSlides: true,
-            slidesPerView: 3,
+            slidesPerView: 4,
             Infinity: true,
             loop: true,
-            autoplay: {
-                delay: 5000,
-            },
             effect: "",
             cubeEffect: {
                 blur: true,
@@ -407,6 +371,52 @@
                 shadowOffset: 20,
                 shadowScale: 0.94,
             },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '#nextBtn',
+                prevEl: '#prevBtn',
+            },
+            breakpoints: {
+                360: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var prevBtn = document.getElementById('prevBtn');
+            var nextBtn = document.getElementById('nextBtn');
+
+            prevBtn.addEventListener('click', function () {
+                prevBtn.classList.add('active-btn');
+                nextBtn.classList.remove('active-btn');
+            });
+
+            nextBtn.addEventListener('click', function () {
+                nextBtn.classList.add('active-btn');
+                prevBtn.classList.remove('active-btn');
+            });
         });
     </script>
 </body>
