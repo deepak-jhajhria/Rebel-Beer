@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =============== FAVICON ============= -->
+    <link rel="shortcut icon" href="./assets/images/common/webp/favicon.webp" type="image/x-icon">
+    <!-- =============== CSS LINK ============= -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <!-- =============== TAILWIND LINK ============= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ======================== SWIPER CDN ========================== -->
+    <link href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css " rel="stylesheet">
+    <!-- =============== META TAG ============== -->
+    <title>Rebel Beer</title>
+    <meta name="title" content="Welcome to Cans" />
+    <meta name="description"
+        content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Welcome to 
+    Rebel Beer
+    Cans" />
+    <meta property="og:description"
+        content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Welcome to  Rebel Beer Cans" />
+    <meta property="twitter:description"
+        content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <meta property="twitter:image" content="./meta-img.webp" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: '#FFCC02',
+                        'light-green': ' #A7E45F',
+                        'dark-gray': '#EBEBEB',
+                        gray: '#CCCCCC',
+                        'light-blue': '#BEDCFE',
+                        green: ' #76BD3D',
+                        'white-gray': '#F0F0EA',
+                        'light-brown': '#B25E20',
+                        'cream': "#fff0b4",
+                        'light-yellow': '#EED056',
+                        'dark-brown': "#814328",
+                        'maroon': "#C33529",
+
+                    },
+                    fontSize: {
+                        'custom_2xl': '28px',
+                        'custom_3xl': '32px',
+                        'custom_4xl': '32px',
+                        'custom_9xl': '94px',
+                    },
+                    lineHeight: {
+                        '100': '100%',
+                        '110': '110%',
+                        '120': '120%',
+                        '130': '130%',
+                        '140': '140%',
+                        '150': '150%',
+                    }
+                },
+                fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'roboto': ['Roboto', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif'],
+                    'play': ['Play', 'sans-serif'],
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="bg-white">
+        <div class="max-w-[1172px] px-4 mx-auto">
+            <div class="flex pt-16">
+                <div class="flex flex-col w-full max-w-[269px]">
+                    <div class="flex items-center mb-1">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.2637 0.55957L15.1667 4.87336L20.2697 3.87578L19.2721 8.97883L23.5859 11.8818L19.2721 14.7848L20.2697 19.8879L15.1667 18.8903L12.2637 23.2041L9.36067 18.8903L4.25762 19.8879L5.2552 14.7848L0.941406 11.8818L5.2552 8.97883L4.25762 3.87578L9.36067 4.87336L12.2637 0.55957Z"
+                                fill="#FFCC02" />
+                        </svg>
+                        <p class="text-black font-medium text-xl ps-2">Offer</p>
+                    </div>
+                    <div class="border border-black rounded-[5px] p-5 mt-12 w-full">
+                        <div class="bg-cream border border-black ps-4 py-[10px] rounded-[5px] w-full">
+                            <p class="text-black font-bold text-xl">Color</p>
+                        </div>
+                        <div class="flex gap-[6px] pt-3">
+                            <div class="flex w-[33.08px] h-[27.38px] bg-light-brown rounded-[2.85px]">
+                            </div>
+                            <div class="flex w-[33.08px] h-[27.38px] bg-light-yellow rounded-[2.85px]">
+                            </div>
+                            <div class="flex w-[33.08px] h-[27.38px] bg-dark-brown rounded-[2.85px]">
+                            </div>
+                            <div class="flex w-[33.08px] h-[27.38px] bg-maroon rounded-[2.85px]">
+                            </div>
+                            <div class="flex w-[33.08px] h-[27.38px] bg-black rounded-[2.85px]">
+                            </div>
+                        </div>
+                        <div
+                            class="relative mt-4 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
+                            <button
+                                class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
+                                onclick="toggleDropdown('dropdown-menu-1')">
+                                Sort Beers
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+
+                            </button>
+                            <ul id="dropdown-menu-1"
+                                class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col overflow-x-hidden -me-4 pe-4  beerlist mt-4 h-[384px]">
+                            <div class="flex justify-between flex-row-reverse  items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Barleywine</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    18</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Beer Box</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    8</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Black IPA</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    3</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Berliner Wei</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                </p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Blond</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    10</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Bock</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    12</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Brown Ale</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    1</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Double IPA</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    1</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Doppelbock</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                </p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Farmhouse</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                </p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Fruit Beer</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    1</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Barleywine</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    18</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Barleywine</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    18</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Barleywine</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    18</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Barleywine</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    18</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Barleywine</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    18</p>
+                            </div>
+                            <div class="flex justify-between flex-row-reverse pt-3 items-center beer_list duration-300">
+                                <p class="text-black font-poppins font-normal text-base beer_names duration-300">
+                                    Barleywine</p>
+                                <p class="text-black font-poppins font-medium text-base beer_names duration-300">
+                                    18</p>
+                            </div>
+                        </div>
+                        <div
+                            class="relative mt-4 bg-cream w-full border flex items-center min-w-[229px] h-[44px] border-black rounded-[5px]">
+                            <button
+                                class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
+                                onclick="toggleDropdown('dropdown-menu-2')">
+                                Can Mark
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+
+                            </button>
+                            <ul id="dropdown-menu-2"
+                                class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <div class="flex items-center">
+                                <img src="./assets/images/product/svg/diamond.svg" alt="diamond">
+                                <p class="ps-5 font-poppins font-normal text-black text-base">Limited</p>
+                            </div>
+                            <div class="flex items-center pt-3">
+                                <img src="./assets/images/product/svg/heart.svg" alt="heart">
+                                <p class="ps-5 font-poppins font-normal text-black text-base">New Beer</p>
+                            </div>
+                            <div class="flex items-center pt-3">
+                                <img src="./assets/images/product/svg/beer-aged.svg" alt="beer-aged">
+                                <p class="ps-5 font-poppins font-normal text-black text-base">Beer Aged</p>
+                            </div>
+                            <div class="flex items-center pt-3 pb-16">
+                                <img src="./assets/images/product/svg/package.svg" alt="package">
+                                <p class="ps-5 font-poppins font-normal text-black text-base">Packages</p>
+                            </div>
+                        </div>
+                        <div
+                            class="relative mt-4 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
+                            <button
+                                class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
+                                onclick="toggleDropdown('dropdown-menu-3')">
+                                Land
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+
+                            </button>
+                            <ul id="dropdown-menu-3"
+                                class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex h-[164px] beerlist -me-4 pe-4 flex-col mt-5 overflow-x-hidden">
+                            <div class="flex items-center flex-row-reverse">
+                                <input class="border !border-black rounded-[4.1px]" type="checkbox"
+                                    name="custom_checkbox" id="land-checkbox"
+                                    class="w-[26px] h-[26px] border-black appearance-none rounded-md checked:bg-yellow-400 checked:border-transparent">
+                                <div class="flex items-center flex-row-reverse justify-between w-full pe-5">
+                                    <p class="text-black font-poppins text-base font-normal">Belgium</p>
+                                    <p class="text-black font-medium font-poppins">9</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center flex-row-reverse pt-2">
+                                <input class="border !border-black rounded-[4.1px]" type="checkbox"
+                                    name="custom_checkbox" id="land-checkbox"
+                                    class="w-[26px] h-[26px] border-black appearance-none rounded-md checked:bg-yellow-400 checked:border-transparent">
+                                <div class="flex items-center flex-row-reverse justify-between w-full pe-5">
+                                    <p class="text-black font-poppins text-base font-normal">Brazil</p>
+                                    <p class="text-black font-medium font-poppins">10</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center flex-row-reverse pt-2">
+                                <input class="border !border-black rounded-[4.1px]" type="checkbox"
+                                    name="custom_checkbox" id="land-checkbox"
+                                    class="w-[26px] h-[26px] border-black appearance-none rounded-md checked:bg-yellow-400 checked:border-transparent">
+                                <div class="flex items-center flex-row-reverse justify-between w-full pe-5">
+                                    <p class="text-black font-poppins text-base font-normal">Bulgaria</p>
+                                    <p class="text-black font-medium font-poppins">9</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center flex-row-reverse pt-2">
+                                <input class="border !border-black rounded-[4.1px]" type="checkbox"
+                                    name="custom_checkbox" id="land-checkbox"
+                                    class="w-[26px] h-[26px] border-black appearance-none rounded-md checked:bg-yellow-400 checked:border-transparent">
+                                <div class="flex items-center flex-row-reverse justify-between w-full pe-5">
+                                    <p class="text-black font-poppins text-base font-normal">Denmark</p>
+                                    <p class="text-black font-medium font-poppins">16</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center flex-row-reverse pt-2">
+                                <input class="border !border-black rounded-[4.1px]" type="checkbox"
+                                    name="custom_checkbox" id="land-checkbox"
+                                    class="w-[26px] h-[26px] border-black appearance-none rounded-md checked:bg-yellow-400 checked:border-transparent">
+                                <div class="flex items-center flex-row-reverse justify-between w-full pe-5">
+                                    <p class="text-black font-poppins text-base font-normal">Germany</p>
+                                    <p class="text-black font-medium font-poppins">65</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center flex-row-reverse pt-2">
+                                <input class="border !border-black rounded-[4.1px]" type="checkbox"
+                                    name="custom_checkbox" id="land-checkbox"
+                                    class="w-[26px] h-[26px] border-black appearance-none rounded-md checked:bg-yellow-400 checked:border-transparent">
+                                <div class="flex items-center flex-row-reverse justify-between w-full pe-5">
+                                    <p class="text-black font-poppins text-base font-normal">Brazil</p>
+                                    <p class="text-black font-medium font-poppins">10</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center flex-row-reverse pt-2">
+                                <input class="border !border-black rounded-[4.1px]" type="checkbox"
+                                    name="custom_checkbox" id="land-checkbox"
+                                    class="w-[26px] h-[26px] border-black appearance-none rounded-md checked:bg-yellow-400 checked:border-transparent">
+                                <div class="flex items-center flex-row-reverse justify-between w-full pe-5">
+                                    <p class="text-black font-poppins text-base font-normal">Bulgaria</p>
+                                    <p class="text-black font-medium font-poppins">9</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center flex-row-reverse pt-2">
+                                <input class="border !border-black rounded-[4.1px]" type="checkbox"
+                                    name="custom_checkbox" id="land-checkbox"
+                                    class="w-[26px] h-[26px] border-black appearance-none rounded-md checked:bg-yellow-400 checked:border-transparent">
+                                <div class="flex items-center flex-row-reverse justify-between w-full pe-5">
+                                    <p class="text-black font-poppins text-base font-normal">Denmark</p>
+                                    <p class="text-black font-medium font-poppins">16</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center flex-row-reverse pt-2">
+                            <input id="custom-checkbox" type="checkbox" class="hidden" /> <label for="custom-checkbox"
+                                class="flex items-center cursor-pointer"> <span
+                                    class="w-[28.74px] h-[28.74px] inline-block mr-2 border border-black transition duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
+                                To remember </label>
+                                <div class="flex items-center flex-row-reverse justify-between w-full pe-5">
+                                    <p class="text-black font-poppins text-base font-normal">Germany</p>
+                                    <p class="text-black font-medium font-poppins">65</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 pt-1">
+                            <p class="text-black font-play font-bold text-xl">Contents</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ============================== SWIPER JS LINK ========================= -->
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
+    <!-- ----------------------------- sort beers dropdown --------------------- -->
+    <script>
+        function toggleDropdown(menuId) {
+            const dropdownMenu = document.getElementById(menuId);
+            dropdownMenu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
