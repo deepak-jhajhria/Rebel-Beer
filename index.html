@@ -9,7 +9,6 @@
     <!-- =============== CSS LINK ============= -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="./assets/css/nav.css">
     <!-- =============== TAILWIND LINK ============= -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -38,6 +37,41 @@
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
     <!-- Meta Tags Generated with https://metatags.io -->
     <meta property="twitter:image" content="./meta-img.webp" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: '#FFCC02',
+                        'light-green': ' #A7E45F',
+                        'dark-gray': '#EBEBEB',
+                        gray: '#CCCCCC',
+                        'light-blue': '#BEDCFE',
+                        green: ' #76BD3D',
+                        'white-gray': '#F0F0EA',
+                    },
+                    fontSize: {
+                        'custom_2xl': '28px',
+                        'custom_3xl': '32px',
+                        'custom_9xl': '94px',
+                    },
+                    lineHeight: {
+                        '100': '100%',
+                        '110': '110%',
+                        '120': '120%',
+                        '130': '130%',
+                        '140': '140%',
+                        '150': '150%',
+                    }
+                },
+                fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'roboto': ['Roboto', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
