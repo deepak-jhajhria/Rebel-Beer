@@ -3,3 +3,11 @@
     padding: 0 12px;
     margin: 0 auto;
 }
+      .partnersslider_track {
+        @apply w-[calc(268px*_5)];
+      }
+
+      .partners_slider_track:hover {
+        animation-play-state: paused;
+      }
+
