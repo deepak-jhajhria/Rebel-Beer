@@ -85,18 +85,95 @@
 </head>
 
 <body>
-    <section class="bg-white">
+    <section class="bg-white pt-18">
         <div class="max-w-[1172px] px-4 mx-auto">
-            <div class="flex pt-16">
-                <div class="flex flex-col w-full max-w-[269px]">
-                    <div class="flex items-center mb-1">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.2637 0.55957L15.1667 4.87336L20.2697 3.87578L19.2721 8.97883L23.5859 11.8818L19.2721 14.7848L20.2697 19.8879L15.1667 18.8903L12.2637 23.2041L9.36067 18.8903L4.25762 19.8879L5.2552 14.7848L0.941406 11.8818L5.2552 8.97883L4.25762 3.87578L9.36067 4.87336L12.2637 0.55957Z"
-                                fill="#FFCC02" />
-                        </svg>
-                        <p class="text-black font-medium text-xl ps-2">Offer</p>
+            <div class="flex justify-between pb-1">
+                <div class="flex items-center mb-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.2637 0.55957L15.1667 4.87336L20.2697 3.87578L19.2721 8.97883L23.5859 11.8818L19.2721 14.7848L20.2697 19.8879L15.1667 18.8903L12.2637 23.2041L9.36067 18.8903L4.25762 19.8879L5.2552 14.7848L0.941406 11.8818L5.2552 8.97883L4.25762 3.87578L9.36067 4.87336L12.2637 0.55957Z"
+                            fill="#FFCC02" />
+                    </svg>
+                    <p class="text-black font-medium text-xl ps-2">Offer</p>
+                </div>
+                <div class="flex">
+                    <div class="flex justify-between items-center">
+                        <p class="text-black font-poppins text-base  font-normal me-7 pe-1">Resultaat 1-30 van de 734
+                            resultanten
+                            wordt getoond
+                        </p>
+                        <div class="relative bg-white border flex min-w-[190px] h-[44px] border-black rounded-[5px]">
+                            <button
+                                class="h-[44px] ps-4 pe-3 pb-1 flex min-w-[229px] justify-between items-center font-bold text-xl"
+                                onclick="toggleDropdown('dropdown-menu-17')">
+                                Standard sorting
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+
+                            </button>
+                            <ul id="dropdown-menu-17"
+                                class="absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="relative ms-8 bg-yellow border flex min-w-[190px] h-[44px] border-yellow rounded-[5px]">
+                            <button
+                                class="h-[44px] ps-4 pe-3 pb-1 flex min-w-[229px] justify-between items-center font-bold text-xl"
+                                onclick="toggleDropdown('dropdown-menu-16')">
+                                Category
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+
+                            </button>
+                            <ul id="dropdown-menu-16"
+                                class="absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                        beer</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex flex-col w-full max-w-[269px]">
                     <div class="border border-black rounded-[5px] p-5 mt-12 w-full">
                         <div class="bg-cream border border-black ps-4 py-[10px] rounded-[5px] w-full">
                             <p class="text-black font-bold text-xl">Color</p>
@@ -124,8 +201,8 @@
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-    
-    
+
+
                             </button>
                             <ul id="dropdown-menu-1"
                                 class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
@@ -262,8 +339,8 @@
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-    
-    
+
+
                             </button>
                             <ul id="dropdown-menu-2"
                                 class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
@@ -314,8 +391,8 @@
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-    
-    
+
+
                             </button>
                             <ul id="dropdown-menu-3"
                                 class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
@@ -339,8 +416,8 @@
                         </div>
                         <div class="flex h-[170px] beerlist -me-4 pe-4 flex-col mt-5 overflow-x-hidden">
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox" type="checkbox" class="hidden" /> <label for="custom-checkbox"
-                                    class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox" type="checkbox" class="hidden" /> <label
+                                    for="custom-checkbox" class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -350,8 +427,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox2" type="checkbox" class="hidden" /> <label for="custom-checkbox2"
-                                    class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox2" type="checkbox" class="hidden" /> <label
+                                    for="custom-checkbox2" class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -361,8 +438,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox3" type="checkbox" class="hidden" /> <label for="custom-checkbox3"
-                                    class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox3" type="checkbox" class="hidden" /> <label
+                                    for="custom-checkbox3" class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -372,8 +449,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox4" type="checkbox" class="hidden" /> <label for="custom-checkbox4"
-                                    class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox4" type="checkbox" class="hidden" /> <label
+                                    for="custom-checkbox4" class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -383,8 +460,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox5" type="checkbox" class="hidden" /> <label for="custom-checkbox5"
-                                    class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox5" type="checkbox" class="hidden" /> <label
+                                    for="custom-checkbox5" class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -394,8 +471,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox6" type="checkbox" class="hidden" /> <label for="custom-checkbox6"
-                                    class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox6" type="checkbox" class="hidden" /> <label
+                                    for="custom-checkbox6" class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -405,8 +482,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox7" type="checkbox" class="hidden" /> <label for="custom-checkbox7"
-                                    class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox7" type="checkbox" class="hidden" /> <label
+                                    for="custom-checkbox7" class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -416,8 +493,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox8" type="checkbox" class="hidden" /> <label for="custom-checkbox8"
-                                    class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox8" type="checkbox" class="hidden" /> <label
+                                    for="custom-checkbox8" class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -427,8 +504,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox9" type="checkbox" class="hidden" /> <label for="custom-checkbox9"
-                                    class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox9" type="checkbox" class="hidden" /> <label
+                                    for="custom-checkbox9" class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -469,7 +546,7 @@
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                 </div>
-    
+
                                 <div class="flex gap-[9.5px] pt-[2px]"><span
                                         class="bg-black h-[7.59px] w-[1px] flex"></span>
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
@@ -495,7 +572,7 @@
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                     <span class="bg-black h-[7.59px] w-[1px] flex"></span>
                                 </div>
-    
+
                             </div>
                             <div class="flex justify-between">
                                 <p class="font-poppins text-[10px] text-black -ms-1 font-normal">25cl.</p>
@@ -505,7 +582,7 @@
                                 <p class="font-poppins text-[10px] text-black font-normal -me-1">65cl.</p>
                                 <p class="font-poppins text-[10px] text-black font-normal -me-1">75cl.</p>
                             </div>
-    
+
                         </div>
                         <div class="mt-6 pt-1">
                             <p class="text-black font-play font-bold text-xl">Alcohol</p>
@@ -527,7 +604,7 @@
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                 </div>
-    
+
                                 <div class="flex gap-[9.5px] pt-[2px]"><span
                                         class="bg-black h-[7.59px] w-[1px] flex"></span>
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
@@ -553,7 +630,7 @@
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                     <span class="bg-black h-[7.59px] w-[1px] flex"></span>
                                 </div>
-    
+
                             </div>
                             <div class="flex justify-between">
                                 <p class="font-poppins text-[10px] text-black -ms-1 font-normal">25cl.</p>
@@ -563,7 +640,7 @@
                                 <p class="font-poppins text-[10px] text-black font-normal -me-1">65cl.</p>
                                 <p class="font-poppins text-[10px] text-black font-normal -me-1">75cl.</p>
                             </div>
-    
+
                         </div>
                         <p class="text-black font-play font-bold text-xl pt-[26px]">Price</p>
                         <div class="flex items-start pt-6">
@@ -594,8 +671,8 @@
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-    
-    
+
+
                             </button>
                             <ul id="dropdown-menu-5"
                                 class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
@@ -733,14 +810,10 @@
                     </div>
                 </div>
                 <div class="flex flex-col w-full">
-                    <div class="flex justify-between">
-                        <p class="text-black font-poppins font-normal">Resultaat 1-30 van de 734 resultanten wordt getoond
-                        </p>
-                    </div>
                     <div class="flex w-full flex-row mt-12 ps-5 flex-wrap">
                         <div class="md:w-4/12 sm:w-6/12 w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 mt-5 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative py-8 px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -773,12 +846,13 @@
                                     <span>
                                         <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="1.28516" y="0.506836" width="21" height="21" rx="3.5" stroke="black" />
+                                            <rect x="1.28516" y="0.506836" width="21" height="21" rx="3.5"
+                                                stroke="black" />
                                             <path
                                                 d="M11.1211 10.3398V6.33984H12.4544V10.3398H16.4544V11.6732H12.4544V15.6732H11.1211V11.6732H7.12109V10.3398H11.1211Z"
                                                 fill="black" />
                                         </svg>
-    
+
                                     </span>
                                 </div>
                             </div>
@@ -787,7 +861,7 @@
                 </div>
             </div>
         </div>
-    
+
     </section>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
