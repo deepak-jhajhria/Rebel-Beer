@@ -92,16 +92,121 @@
             inter: ["Inter", "sans-serif"],
             play: ["Play", "sans-serif"],
           },
+          keyframes: {
+                    scroll: {
+                        '0%': { transform: 'translateX(0)' },
+                        '100%': { transform: 'translateX(calc(-288px * 5))' },
+                    },
+                },
+                animation: {
+                    scroll: 'scroll 25s linear infinite',
+                },
         },
       };
     </script>
+    <style>
+        .partnersslider_track {
+            @apply w-[calc(268px*_5)];
+        }
+
+        .partners_slider_track:hover {
+            animation-play-state: paused;
+        }
+    </style>
   </head>
 
   <body>
     <!-- =========Images-overflow ======== -->
-     <section>
-
-     </section>
+    <section class=" max-w-[1920px] mx-auto">
+            <div class="partners_slider overflow-hidden relative whitespace-nowrap">
+                <div class="partners_slider_track animate-scroll flex">
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/homepage/webp/adr-img.webp" alt="adr-img"
+                                class="w-full md:max-w-[141.45px] max-w-[105px]">
+                        </a>
+                    </div>
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/homepage/webp/amundesen-img.webp" alt="amundesen-img"
+                                class="w-full md:max-w-[140.66px] max-w-[97.71px]">
+                        </a>
+                    </div>
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/homepage/webp/engineers.webp" alt="engineers"
+                                class="w-full md:max-w-[143.9px] mb-2 max-w-[106px]">
+                        </a>
+                    </div>
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/homepage/webp/wiack-img.webp" alt="wiack-img"
+                                class="w-full sm:max-w-[107px] max-w-[86.26px]">
+                        </a>
+                    </div>
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">
+                            <img src="./assets/images/homepage/webp/frontaal-img.webp" alt="frontaal-img"
+                                class="w-full md:max-w-[97.21px] max-w-[64px]">
+                        </a>
+                    </div>
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/homepage/webp/adr-img.webp" alt="adr-img"
+                                class="w-full md:max-w-[141.45px] max-w-[105px]">
+                        </a>
+                    </div>
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/homepage/webp/amundesen-img.webp" alt="amundesen-img"
+                                class="w-full md:max-w-[140.66px] max-w-[97.71px]">
+                        </a>
+                    </div>
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/homepage/webp/engineers.webp" alt="engineers"
+                                class="w-full md:max-w-[143.9px] mb-1 max-w-[106px]">
+                        </a>
+                    </div>
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/homepage/webp/wiack-img.webp" alt="wiack-img"
+                                class="w-full sm:max-w-[107px] max-w-[86.26px]">
+                        </a>
+                    </div>
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="https://www.ncbi.nlm.nih.gov/" target="_blank">
+                            <img src="./assets/images/homepage/webp/frontaal-img.webp" alt="frontaal-img"
+                                class="w-full md:max-w-[97.21px] max-w-[64px]">
+                        </a>
+                    </div>
+                 <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/homepage/webp/adr-img.webp" alt="adr-img"
+                                class="w-full md:max-w-[141.45px] max-w-[105px]">
+                        </a>
+                    </div>
+                    <div
+                        class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center">
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/homepage/webp/amundesen-img.webp" alt="amundesen-img"
+                                class="w-full md:max-w-[140.66px] max-w-[97.71px]">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- =========OFFER-SECTION ========== -->
      <section class="pt-16 relative z-0 mt-3">
@@ -111,15 +216,15 @@
             <div class="flex flex-row lg:mb-24 md:mb-20 sm:mb-16 mb-12 xl:pb-2.5 justify-center flex-wrap -mx-3">
                 <div class="md:w-1/3 sm:w-1/2 max-sm:mt-8  px-3">
                     <img src="./assets/images/homepage/webp/offer-img.webp" alt="offer-img" class="max-md:max-w-[310px] mx-auto xl:max-h-[400px] rounded-[5px] shadow-[0px_-9px_0px_0px_#000000]">
-                    <button class="text-black mx-auto xl:h-[96px] h-[18%] px-1 w-[80%] hover:text-white hover:bg-black duration-300 bg-white xl:w-[292px] lg:-translate-y-12 -translate-y-8 flex justify-center items-center lg:text-custom_2xl sm:text-2xl text-xl font-bold !leading-110 font-play border-black border-2">Offers</button>
+                    <button class="text-black mx-auto uppercase xl:h-[96px] h-[18%] px-1 w-[80%] hover:text-white hover:bg-black duration-300 bg-white xl:w-[292px] lg:-translate-y-12 -translate-y-8 flex justify-center items-center lg:text-custom_2xl sm:text-2xl text-xl font-bold !leading-110 font-play border-black border-2">Offers</button>
                 </div>
                 <div class="md:w-1/3 sm:w-1/2 max-sm:mt-8 px-3">
                     <img src="./assets/images/homepage/webp/beer-package.webp" alt="offer-img" class="max-md:max-w-[310px] mx-auto xl:max-h-[400px] rounded-[5px] shadow-[0px_-9px_0px_0px_#000000]">
-                    <button class="text-black mx-auto xl:h-[96px] h-[18%] hover:text-white hover:bg-black duration-300 px-2 w-[80%] bg-white xl:w-[292px] lg:-translate-y-12 -translate-y-8 flex justify-center items-center lg:text-custom_2xl sm:text-2xl text-xl font-bold !leading-110 font-play border-black border-2">Beer packages</button>
+                    <button class="text-black mx-auto uppercase xl:h-[96px] h-[18%] hover:text-white hover:bg-black duration-300 px-2 w-[80%] bg-white xl:w-[292px] lg:-translate-y-12 -translate-y-8 flex justify-center items-center lg:text-custom_2xl sm:text-2xl text-xl font-bold !leading-110 font-play border-black border-2">Beer packages</button>
                 </div>
                 <div class="md:w-1/3 max-md:mt-8 px-3">
                     <img src="./assets/images/homepage/webp/new-beer.webp" alt="offer-img" class="max-md:max-w-[310px] mx-auto xl:max-h-[400px] rounded-[5px] shadow-[0px_-9px_0px_0px_#000000]">
-                    <button class="text-black mx-auto xl:h-[96px] h-[18%] px-1 w-[80%] hover:text-white hover:bg-black duration-300 bg-white xl:w-[292px] lg:-translate-y-12 -translate-y-8 flex justify-center items-center lg:text-custom_2xl sm:text-2xl text-xl font-bold !leading-110 font-play border-black border-2">New Beers</button>
+                    <button class="text-black mx-auto uppercase xl:h-[96px] h-[18%] px-1 w-[80%] hover:text-white hover:bg-black duration-300 bg-white xl:w-[292px] lg:-translate-y-12 -translate-y-8 flex justify-center items-center lg:text-custom_2xl sm:text-2xl text-xl font-bold !leading-110 font-play border-black border-2">New Beers</button>
                 </div>
             </div>
         </div>
@@ -127,7 +232,7 @@
 
     <!-- ======== REBELBEER CANS ========== -->
     <section class="bg-[url(./assets/images/homepage/webp/bg-rebelbeer-cans.webp)] bg-cover relative z-[1] px-4 py-20">
-        <img src="./assets/images/homepage/svg/triangle-ellipse.svg" alt="triangle-ellipse" class="absolute bottom-[6%] right-[4%] z-[-1]">
+        <img src="./assets/images/homepage/svg/triangle-ellipse.svg" alt="triangle-ellipse" class="absolute bottom-[5%] right-[4%] z-[-1]">
         <img src="./assets/images/homepage/svg/wave-ellipse.svg" alt="wave-ellipse" class="absolute z-[-1] top-[16%] left-0">
       <div class="container max-w-[1164px] py-3 px-3 mx-auto">
         <div class="flex flex-row flex-wrap -mx-3 items-center">
@@ -142,19 +247,19 @@
             <img src="./assets/images/homepage/svg/yellow-ellipse.svg" alt="yellow-ellipse" class="pointer-events-none absolute z-[-1] top-[-6%] left-[0%]">
             </div>
           </div>
-          <div class="md:w-1/2 w-full px-3">
+          <div class="md:w-1/2 mb-2 w-full px-3">
             <h2
-              class="font-play lg:text-5xl max-md:text-center md:text-4xl sm:text-3xl text-2xl md:mb-5 mb-2 leading-120 text-black font-bold"
+              class=" font-play lg:text-5xl max-md:text-center md:text-4xl sm:text-3xl text-2xl md:mb-5 mb-2 !leading-120 text-black font-bold"
             >
               Rebelbeer cans, the specialty beer web shop that is worth a look
             </h2>
             <p
-              class="text-black text-opacity-70 max-md:text-center font-normal font-poppins sm:text-base text-sm leading-150"
+              class="text-black text-opacity-70 max-md:text-center font-normal font-poppins sm:text-base text-sm !leading-150"
             >
               Dear beer lovers, Beer Geeks, zythologists and ambassadors.
             </p>
             <p
-              class="text-black text-opacity-70 max-md:text-center font-normal md:max-w-[530px] md:py-3 py-2 font-poppins sm:text-base text-sm leading-150"
+              class="text-black text-opacity-70 max-md:text-center font-normal md:max-w-[530px] md:py-3 py-2 font-poppins sm:text-base text-sm !leading-150"
             >
               My name is Ruben and I am the owner of Rebelbeercans. I ran a
               special beer café in Boxtel with great passion for 5 years. With
@@ -163,7 +268,7 @@
               selling cans of special beer.
             </p>
             <p
-              class="text-black text-opacity-70 font-normal max-md:text-center  md:max-w-[530px] md:pb-3 pb-2 font-poppins sm:text-base text-sm leading-150"
+              class="text-black text-opacity-70 font-normal max-md:text-center  md:max-w-[530px] md:pb-3 pb-2 font-poppins sm:text-base text-sm !leading-150"
             >
               My love and knowledge of craft beers plays a major role in this.
               Rebelbeercans has a great range with new beers from home and
@@ -174,7 +279,7 @@
             >
               Follow Rebelbeercans
             </h3>
-            <div class="flex max-md:justify-center xl:pb-[2px] gap-[15px]">
+            <div class="flex max-md:justify-center gap-[15px]">
               <a rel="noopener noreffer" target="_blank" href="https://www.instagram.com/accounts/login/">
                   <div
                     class="border-[0.8px] group duration-300 hover:bg-black h-[43.8px] w-[43.8px] rounded-[3.19px] border-black flex justify-center items-center"
