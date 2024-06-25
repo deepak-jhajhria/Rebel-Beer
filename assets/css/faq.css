@@ -1,16 +1,7 @@
-.accordion-content {
-    transition: max-height 0.3s ease;
-    max-height: 0;
-    overflow: hidden;
+.active-border {
+  border-top: 5px solid red; /* Customize this as needed */
 }
 
-
-.shown-content {
-    max-height: 500px; 
-}
-.accordion.active {
-    border-top-width: 6px;
-}
 .hero-bg{
     background-image: url('../images/privacy/webp/hero-bg.webp');
     background-position: center;
@@ -22,5 +13,56 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media (max-width: 1023.9px) {
+  .overflow_hidden {
+    overflow: hidden !important;
+  }
+  .mobile-view {
+    background-color: #F0F0EB;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms linear;
+    z-index: 3;
+  }
+  .menu span:nth-child(1) {
+    height: 2px;
+    width: 15px;
+    display: block;
+    border-radius: 20px;
+  }
+
+  .menu span:nth-child(2) {
+    height: 2px;
+    width: 22px;
+    display: block;
+    border-radius: 20px;
+  }
+
+  .menu span:nth-child(3) {
+    height: 2px;
+    width: 30px;
+    display: block;
+    border-radius: 20px;
+  }
+  .menu span {
+    transition: 300ms linear;
+  }
+  .cross span:nth-child(1) {
+    transform: rotate(42deg) translateY(13px);
+    width: 30px;
+  }
+  .cross span:nth-child(2) {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  .cross span:nth-child(3) {
+    transform: rotate(-43deg) translateY(-13px);
+    width: 30px;
+  }
 }
 
