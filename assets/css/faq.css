@@ -1,0 +1,26 @@
+.accordion-content {
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+.shown-content {
+    max-height: 500px; 
+}
+.accordion.active {
+    border-top-width: 6px;
+}
+.hero-bg{
+    background-image: url('../images/privacy/webp/hero-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+.footerBg{
+    background-image: url('../images/privacy/webp/footer-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
