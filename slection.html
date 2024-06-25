@@ -79,7 +79,6 @@
         }
     </script>
 </head>
-
 <body>
     <main>
         <!--------------Fast-delivery---------------->
@@ -90,7 +89,7 @@
                 <div
                     class="flex flex-row flex-wrap gap-5 sm:gap-[30px] lg:gap-0 lg:justify-between justify-center relative">
                     <img src="./assets/images/homepage/png/deliver-line.png" alt="line"
-                        class="absolute h-[16px] w-full z-[0] top-[45%] lg:block hidden">
+                        class="absolute h-[16px] w-full z-[0] top-[45%] lg:block hidden pointer-events-none">
                     <div class="lg:w-[32%] sm:w-[42%] w-full relative z-[1]">
                         <div
                             class="sm:max-w-[364px] h-full sm:h-[262px] sm:p-[33px_20px_33px_19px] p-[28px_20px_28px_19px] border border-solid border-black rounded-[5px] shadow-[0px_-6px_0px_0px_#000000] bg-white group hover:bg-yellow transition-all duration-300 ease linear">
@@ -137,7 +136,7 @@
         <!----------------Rebel-Selection--------------->
         <section class="xl:mt-[112px] lg:mt-[90px] md:mt-[64px] mt-[48px] relative">
             <img src="./assets/images/homepage/png/half-blackcircle.png" alt="black-circle"
-                class="w-[64px] absolute right-0 top-[50%] xl:block hidden">
+                class="w-[64px] absolute right-0 top-[50%] xl:block hidden pointer-events-none">
             <div class="container xl:max-w-[1140px] mx-auto px-4">
                 <div class="flex sm:flex-row flex-col sm:items-center sm:justify-between">
                     <div>
@@ -163,9 +162,9 @@
                 </div>
                 <div class="md:mt-[48px] mt-[30px]">
                     <div class="swiper firstSwiper">
-                        <div class="swiper-wrapper pt-[10px]">
+                        <div class="swiper-wrapper py-[10px]">
                             <div class="swiper-slide">
-                                <div class="lg:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                <div class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                                     <div class="relative">
                                         <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img"
                                             class="w-full">
@@ -199,7 +198,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="lg:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                <div class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                                     <div class="relative">
                                         <img src="./assets/images/homepage/png/rabelcard2.png" alt="rabel-img"
                                             class="w-full">
@@ -233,7 +232,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="lg:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                <div class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                                     <div class="relative">
                                         <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img"
                                             class="w-full">
@@ -267,7 +266,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="lg:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                <div class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                                     <div class="relative">
                                         <img src="./assets/images/homepage/png/rabelcard2.png" alt="rabel-img"
                                             class="w-full">
@@ -300,7 +299,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="lg:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                <div class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                                     <div class="relative">
                                         <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img"
                                             class="w-full">
@@ -340,7 +339,8 @@
     </main>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
-    <script>
+   <!------------------swiper-slider------------------->
+   <script>
         const swiper = new Swiper(".firstSwiper", {
             spaceBetween: 20,
             slidesPerView: 4,
@@ -385,6 +385,7 @@
             }
         });
     </script>
+    <!-------------swiper-arrow-btn------------- -->
     <script>
         document.getElementById('prevBtn').addEventListener('click', function () {
             this.classList.add('bg-yellow');
