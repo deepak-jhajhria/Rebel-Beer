@@ -96,8 +96,11 @@
 <body>
     <main>
         <!----------------------------- BLOGS BY REBEL ----------------------------->
-        <section class="lg:pt-[89px] sm:pt-[72px] pt-12">
-            <div class="container xl:max-w-[1168px] px-4 mx-auto">
+        <section class="lg:pt-[89px] sm:pt-[72px] pt-12 relative">
+            <img src="./assets/images/homepage/webp/blogs_yellow_vector.webp" alt="blogs_yellow_vector" class="absolute -left-[1%] max-w-[160px] top-[34%]">
+            <img src="./assets/images/homepage/webp/blog_black_vector.webp" alt="blog_black_vector"
+                class="absolute w-[74.44px] h-[74.44px] right-0 top-[68%] xl:block hidden">
+            <div class="container xl:max-w-[1168px] px-4 mx-auto relative z-10">
                 <h2
                     class="text-black font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center leading-120 mb-2">
                     Blogs by Rebel</h2>
@@ -110,7 +113,7 @@
                 <div class="flex flex-row flex-wrap lg:justify-between justify-center lg:gap-0 gap-4">
                     <div class="lg:w-[49.3%] flex justify-center w-full lg:mb-8">
                         <div
-                            class="border border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
+                            class="border bg-white border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
                             <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
                                 <img src="./assets/images/homepage/webp/sunset_beer.webp" alt="sunset_beer"
                                     class="w-full min-[530px]:max-w-[213px] rounded-[5px] h-[228px] object-cover">
@@ -138,7 +141,7 @@
                     </div>
                     <div class="lg:w-[49.3%] flex justify-center w-full lg:mb-8">
                         <div
-                            class="border border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
+                            class="border border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] bg-white sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
                             <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
                                 <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
                                     <img src="./assets/images/homepage/webp/deposit.webp" alt="sunset_beer"
@@ -169,7 +172,7 @@
                     </div>
                     <div class="lg:w-[49.3%] flex justify-center w-full">
                         <div
-                            class="border border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
+                            class="border border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] bg-white sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
                             <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
                                 <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
                                     <img src="./assets/images/homepage/webp/rebel_beer.webp" alt="rebel_beer"
@@ -200,7 +203,7 @@
                     </div>
                     <div class="lg:w-[49.3%] flex justify-center w-full">
                         <div
-                            class="border border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
+                            class="border border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] bg-white sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
                             <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
                                 <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
                                     <img src="./assets/images/homepage/webp/usa_beer.webp" alt="usa_beer"
@@ -232,9 +235,11 @@
                 </div>
             </div>
         </section>
-        <section class="lg:pt-[92.92px] sm:pt-[72px] pt-12 max-w-[1920px] mx-auto">
+        <section class="lg:pt-[92.92px] sm:pt-[72px] pt-12 max-w-[1920px] mx-auto relative z-10">
+            <img src="./assets/images/homepage/webp/slider_blackdots.webp" alt="slider_blackdots"
+                class="absolute w-[78.6px] left-0 lg:top-[18%] md:top-[12%] z-[-1] md:block hidden">
             <div class="partners_slider overflow-hidden relative whitespace-nowrap">
-                <div class="partners_slider_track animate-scroll flex">
+                <div class="partners_slider_track animate-scroll flex relative z-[1]">
                     <div
                         class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[230px] h-[220px] flex items-center justify-center">
                         <a href="https://www.bancontact.com/" target="_blank">
