@@ -44,8 +44,11 @@
                 extend: {
                     colors: {
                         yellow: '#FFCC02',
+                        'skin-yellow': ' #FFFAE6',
                         'light-green': ' #A7E45F',
+                        'extralight-yellow': ' #FFD635',
                         'dark-gray': '#EBEBEB',
+                        'dark-yellow': '#e5e1cf',
                         gray: '#CCCCCC',
                         'light-blue': '#BEDCFE',
                         green: ' #76BD3D',
@@ -55,6 +58,8 @@
                         'light-yellow': '#EED056',
                         'dark-brown': "#814328",
                         'maroon': "#C33529",
+                        'light-green': ' #A7E45F',
+                        'light-grey': '#E5C130',
 
 
                     },
@@ -66,6 +71,7 @@
                     },
                     lineHeight: {
                         '100': '100%',
+                        '112': '112%',
                         '110': '110%',
                         '120': '120%',
                         '130': '130%',
@@ -78,6 +84,9 @@
                     'roboto': ['Roboto', 'sans-serif'],
                     'inter': ['Inter', 'sans-serif'],
                     'play': ['Play', 'sans-serif'],
+                },
+                boxShadow: { //contact
+                    "latestblogssidershadow": " 0px -6px 0px 0px #000000",
                 }
             }
         }
@@ -88,15 +97,8 @@
     <section class="bg-white">
         <div class="max-w-[1172px] px-4 mx-auto">
             <div class="flex pt-16">
+                <!-- -------side table-------- -->
                 <div class="flex flex-col w-full max-w-[269px]">
-                    <div class="flex items-center mb-1">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.2637 0.55957L15.1667 4.87336L20.2697 3.87578L19.2721 8.97883L23.5859 11.8818L19.2721 14.7848L20.2697 19.8879L15.1667 18.8903L12.2637 23.2041L9.36067 18.8903L4.25762 19.8879L5.2552 14.7848L0.941406 11.8818L5.2552 8.97883L4.25762 3.87578L9.36067 4.87336L12.2637 0.55957Z"
-                                fill="#FFCC02" />
-                        </svg>
-                        <p class="text-black font-medium text-xl ps-2">Offer</p>
-                    </div>
                     <div class="border border-black rounded-[5px] p-5 mt-12 w-full">
                         <div class="bg-cream border border-black ps-4 py-[10px] rounded-[5px] w-full">
                             <p class="text-black font-bold text-xl">Color</p>
@@ -732,16 +734,14 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ---------------- cards ------------- -->
                 <div class="flex flex-col w-full">
-                    <div class="flex justify-between">
-                        <p class="text-black font-poppins font-normal">Resultaat 1-30 van de 734 resultanten wordt getoond
-                        </p>
-                    </div>
-                    <div class="flex w-full flex-row mt-12 ps-5 flex-wrap">
-                        <div class="md:w-4/12 sm:w-6/12 w-full">
+                    <div class="flex w-full flex-row mt-12 ms-[10px] flex-wrap">
+                        <div class="lg:w-4/12 md:w-6/12 px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 mt-5 border max-h-[426px] border-black px-4">
-                                <div class="bg-dark-gray my-3 max-h-[257px] relative py-8 px-14">
+                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                <div class="bg-dark-gray my-3 max-h-[257px] relative py-8 flex justify-center items-center xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -756,14 +756,14 @@
                                         class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
                                         Save 10%</p>
                                     <img src="./assets/images/category/webp/blue-cane.png" alt="beer cane"
-                                        class="max-w-[121.59px] h-[210px]">
+                                        class="max-w-[121.59px] h-[210px] w-full">
                                 </div>
                                 <h4 class="text-base font-play text-black leading-112 mb-3 font-bold">Puhaste_ Faba_
                                     bourbon
                                     BA (Silvers Series)
                                 </h4>
                                 <p
-                                    class="px-[8px] flex items-center text-sm font-normal font-inter text-black bg-light-yellow  group-hover:bg-extralight-yellow  group-hover:border-light-grey transition-all duration-300 rounded-[5px] max-w-[133px] h-[33px] border border-dark-yellow">
+                                    class="px-[8px] flex items-center text-sm font-normal font-inter text-black bg-skin-yellow  group-hover:bg-extralight-yellow  group-hover:border-light-grey transition-all duration-300 rounded-[5px] max-w-[133px] h-[33px] border border-dark-yellow">
                                     IPA | 5,7| 12*33cl</p>
                                 <div class="flex items-center justify-between mb-[14px]">
                                     <p
@@ -783,6 +783,98 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="lg:w-4/12 md:w-6/12 px-[10px] w-full">
+                            <div
+                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                <div class="bg-dark-gray my-3 max-h-[257px] relative py-8 flex justify-center items-center xl:px-14">
+                                    <span class="absolute top-2 right-2">
+                                        <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.785156" y="0.0205078" width="24" height="24" rx="12" fill="white"
+                                                fill-opacity="0.66" />
+                                            <path
+                                                d="M12.5121 16.6898L12.451 16.7509L12.3837 16.6898C9.48095 14.0559 7.56207 12.3142 7.56207 10.5481C7.56207 9.3259 8.47873 8.40923 9.70095 8.40923C10.6421 8.40923 11.5587 9.02035 11.8826 9.85146H13.0193C13.3432 9.02035 14.2598 8.40923 15.201 8.40923C16.4232 8.40923 17.3398 9.3259 17.3398 10.5481C17.3398 12.3142 15.421 14.0559 12.5121 16.6898ZM15.201 7.18701C14.1376 7.18701 13.1171 7.68201 12.451 8.45812C11.7848 7.68201 10.7643 7.18701 9.70095 7.18701C7.81873 7.18701 6.33984 8.65979 6.33984 10.5481C6.33984 12.852 8.41762 14.7403 11.5648 17.5942L12.451 18.4009L13.3371 17.5942C16.4843 14.7403 18.5621 12.852 18.5621 10.5481C18.5621 8.65979 17.0832 7.18701 15.201 7.18701Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <p
+                                        class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
+                                        Save 10%</p>
+                                    <img src="./assets/images/category/webp/blue-cane.png" alt="beer cane"
+                                        class="max-w-[121.59px] h-[210px] w-full">
+                                </div>
+                                <h4 class="text-base font-play text-black leading-112 mb-3 font-bold">Puhaste_ Faba_
+                                    bourbon
+                                    BA (Silvers Series)
+                                </h4>
+                                <p
+                                    class="px-[8px] flex items-center text-sm font-normal font-inter text-black bg-skin-yellow  group-hover:bg-extralight-yellow  group-hover:border-light-grey transition-all duration-300 rounded-[5px] max-w-[133px] h-[33px] border border-dark-yellow">
+                                    IPA | 5,7| 12*33cl</p>
+                                <div class="flex items-center justify-between mb-[14px]">
+                                    <p
+                                        class="font-semibold font-poppins mt-1 text-yellow leading-150 group-hover:text-black duration-300 transition-all text-xl">
+                                        <span class="text-3xl">€</span>7.59
+                                    </p>
+                                    <span>
+                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1.28516" y="0.506836" width="21" height="21" rx="3.5" stroke="black" />
+                                            <path
+                                                d="M11.1211 10.3398V6.33984H12.4544V10.3398H16.4544V11.6732H12.4544V15.6732H11.1211V11.6732H7.12109V10.3398H11.1211Z"
+                                                fill="black" />
+                                        </svg>
+    
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 px-[10px] w-full">
+                            <div
+                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                <div class="bg-dark-gray my-3 max-h-[257px] relative py-8 flex justify-center items-center xl:px-14">
+                                    <span class="absolute top-2 right-2">
+                                        <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.785156" y="0.0205078" width="24" height="24" rx="12" fill="white"
+                                                fill-opacity="0.66" />
+                                            <path
+                                                d="M12.5121 16.6898L12.451 16.7509L12.3837 16.6898C9.48095 14.0559 7.56207 12.3142 7.56207 10.5481C7.56207 9.3259 8.47873 8.40923 9.70095 8.40923C10.6421 8.40923 11.5587 9.02035 11.8826 9.85146H13.0193C13.3432 9.02035 14.2598 8.40923 15.201 8.40923C16.4232 8.40923 17.3398 9.3259 17.3398 10.5481C17.3398 12.3142 15.421 14.0559 12.5121 16.6898ZM15.201 7.18701C14.1376 7.18701 13.1171 7.68201 12.451 8.45812C11.7848 7.68201 10.7643 7.18701 9.70095 7.18701C7.81873 7.18701 6.33984 8.65979 6.33984 10.5481C6.33984 12.852 8.41762 14.7403 11.5648 17.5942L12.451 18.4009L13.3371 17.5942C16.4843 14.7403 18.5621 12.852 18.5621 10.5481C18.5621 8.65979 17.0832 7.18701 15.201 7.18701Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <p
+                                        class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
+                                        Save 10%</p>
+                                    <img src="./assets/images/category/webp/blue-cane.png" alt="beer cane"
+                                        class="max-w-[121.59px] h-[210px] w-full">
+                                </div>
+                                <h4 class="text-base font-play text-black leading-112 mb-3 font-bold">Puhaste_ Faba_
+                                    bourbon
+                                    BA (Silvers Series)
+                                </h4>
+                                <p
+                                    class="px-[8px] flex items-center text-sm font-normal font-inter text-black bg-skin-yellow  group-hover:bg-extralight-yellow  group-hover:border-light-grey transition-all duration-300 rounded-[5px] max-w-[133px] h-[33px] border border-dark-yellow">
+                                    IPA | 5,7| 12*33cl</p>
+                                <div class="flex items-center justify-between mb-[14px]">
+                                    <p
+                                        class="font-semibold font-poppins mt-1 text-yellow leading-150 group-hover:text-black duration-300 transition-all text-xl">
+                                        <span class="text-3xl">€</span>7.59
+                                    </p>
+                                    <span>
+                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1.28516" y="0.506836" width="21" height="21" rx="3.5" stroke="black" />
+                                            <path
+                                                d="M11.1211 10.3398V6.33984H12.4544V10.3398H16.4544V11.6732H12.4544V15.6732H11.1211V11.6732H7.12109V10.3398H11.1211Z"
+                                                fill="black" />
+                                        </svg>
+    
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        
                     </div>
                 </div>
             </div>
