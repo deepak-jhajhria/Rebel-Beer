@@ -1,3 +1,9 @@
-.category_card:hover .like_svg rect{
-   fill: #F4456A;
-}
+.slide_icons:hover path {
+   fill: white;
+ }
+ .slide_icons:hover rect {
+   fill: black;
+ }
+ .slide_icons:hover g {
+   opacity: 100%;
+ }
