@@ -1,0 +1,11 @@
+.heart:hover svg path {
+    stroke: none;
+    fill: #F4456A;
+    width: 21px;
+    height: 20px;
+}
+
+.heart svg {
+    width: 12.22px;
+    height: 11.21px;
+}
