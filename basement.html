@@ -57,7 +57,7 @@
                         'dark-gray3': '#DFE3E8', //EXTAND BASEMENT
                         'dark-gray2': '#C8CED5', //EXTAND BASEMENT
                         'light-brown': '#E7E4D7', //EXTAND BASEMENT
-
+                        'light-gray': '#E1E6EA', //EXTAND BASEMENT
                     },
                     fontSize: {
                         'custom_2xl': '28px',
@@ -83,53 +83,64 @@
                     'inter': ['Inter', 'sans-serif'],
                     'play': ['Play', 'sans-serif'],
                 },
-
             }
         }
     </script>
 </head>
 
 <body>
-    <section class="pt-[65px] pb-[275px] px-3 relative z-20">
+    <section class="pt-[65px] pb-[275px] max-[1162px]:px-3 relative z-20">
         <div class=" max-w-[1140px] mx-auto px-4 flex  justify-center">
             <div
-                class=" grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-7 justify-center items-center -mx-4">
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]">
+                class=" grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-7 justify-center items-center -mx-4 ">
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
                             <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 10%</p>
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-green-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-2" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-2">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="./assets/images/basement/webp/basement-green-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px]">
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
                             <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
                             </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
                         </div>
                         <div class=" flex justify-between items-center">
                             <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
                             </p>
                             <div
                                 class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
@@ -144,91 +155,54 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
                             <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 20%</p>
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-3" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-3">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px] mix-blend-multiply">
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
                             <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
                             </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
                         </div>
                         <div class=" flex justify-between items-center">
                             <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
-                            </p>
-                            <div
-                                class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
-                                        fill="black" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
-                    <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
-                            <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 10%</p>
-                            </div>
-                            <img src="./assets/images/basement/webp/basement-white-green-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px] mix-blend-multiply">
-                            <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
-                            </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
-                        </div>
-                        <div class=" flex justify-between items-center">
-                            <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
                             </p>
                             <div
                                 class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
@@ -243,189 +217,54 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
                             <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 5%</p>
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-white-green-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-4" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-4">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px] mix-blend-multiply">
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
                             <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
                             </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
                         </div>
                         <div class=" flex justify-between items-center">
                             <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
-                            </p>
-                            <div
-                                class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
-                                        fill="black" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
-                    <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
-                            <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 10%</p>
-                            </div>
-                            <img src="./assets/images/basement/webp/basement-green-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px]">
-                            <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
-                            </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
-                        </div>
-                        <div class=" flex justify-between items-center">
-                            <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
-                            </p>
-                            <div
-                                class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
-                                        fill="black" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
-                    <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
-                            <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 20%</p>
-                            </div>
-                            <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px] mix-blend-multiply">
-                            <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
-                            </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
-                        </div>
-                        <div class=" flex justify-between items-center">
-                            <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
-                            </p>
-                            <div
-                                class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
-                                        fill="black" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
-                    <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
-                            <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 10%</p>
-                            </div>
-                            <img src="./assets/images/basement/webp/basement-white-green-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px] mix-blend-multiply">
-                            <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
-                            </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
-                        </div>
-                        <div class=" flex justify-between items-center">
-                            <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
                             </p>
                             <div
                                 class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
@@ -440,93 +279,54 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
                             <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 5%</p>
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-5" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-5">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px] mix-blend-multiply">
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
                             <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
                             </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
                         </div>
                         <div class=" flex justify-between items-center">
                             <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
-                            </p>
-                            <div
-                                class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
-                                        fill="black" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
-                    <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
-                            <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 10%</p>
-                            </div>
-                            <img src="./assets/images/basement/webp/basement-green-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px]">
-                            <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
-
-
-                            </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
-                        </div>
-                        <div class=" flex justify-between items-center">
-                            <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
                             </p>
                             <div
                                 class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
@@ -541,44 +341,54 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
                             <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 20%</p>
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-green-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-6" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-6">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px] mix-blend-multiply">
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
                             <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
-
-
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
                             </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
                         </div>
                         <div class=" flex justify-between items-center">
                             <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
                             </p>
                             <div
                                 class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
@@ -593,44 +403,54 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
                             <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 10%</p>
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-7" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-7">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="./assets/images/basement/webp/basement-white-green-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px] mix-blend-multiply">
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
                             <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
-
-
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
                             </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
                         </div>
                         <div class=" flex justify-between items-center">
                             <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
                             </p>
                             <div
                                 class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
@@ -645,44 +465,54 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class=" w-full bg-white max-sm:max-w-[365px]  group min-h-[426px] rounded-[5px] shadow-[0px_-6px_0px_black]  ">
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
-                        class="rounded-[5px] min-h-[426px] border p-[11.50px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow">
-                        <div class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
                             <div
-                                class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                <p
-                                    class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-100">
-                                    Save 5%</p>
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-white-green-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-8" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-8">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
-                                class=" w-100 max-w-[83px] mix-blend-multiply">
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
                             <div
-                                class=" flex items-center bg-white rounded-full heart justify-center w-6 h-6 absolute top-2 right-2">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                        stroke="black" stroke-width="2px" fill="none" />
-                                </svg>
-
-
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
                             </div>
-                        </div>
-                        <p class=" text-black font-play font-bold text-sm sm:text-base !leading-110 mt-3">Puhaste_ Faba_
-                            bourbon
-                            BA
-                            (Silvers Series)</p>
-                        <div
-                            class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                            <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7| 12*33cl
-                            </p>
                         </div>
                         <div class=" flex justify-between items-center">
                             <p
-                                class=" group-hover:text-black font-poppins duration-1000 font-semibold text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl lg:text-3xl">€</span>7.59
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
                             </p>
                             <div
                                 class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
@@ -697,13 +527,325 @@
                         </div>
                     </div>
                 </div>
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
+                    <div
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
+                            <div
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-9" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-9">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
+                            <div
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
+                            </div>
+                        </div>
+                        <div class=" flex justify-between items-center">
+                            <p
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
+                            </p>
+                            <div
+                                class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
+                                        fill="black" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
+                    <div
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
+                            <div
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-green-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-10" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-10">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
+                            <div
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
+                            </div>
+                        </div>
+                        <div class=" flex justify-between items-center">
+                            <p
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
+                            </p>
+                            <div
+                                class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
+                                        fill="black" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
+                    <div
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
+                            <div
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-11" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-11">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
+                            <div
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
+                            </div>
+                        </div>
+                        <div class=" flex justify-between items-center">
+                            <p
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
+                            </p>
+                            <div
+                                class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
+                                        fill="black" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
+                    <div
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
+                            <div
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-white-green-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-12" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-12">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
+                            <div
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
+                            </div>
+                        </div>
+                        <div class=" flex justify-between items-center">
+                            <p
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
+                            </p>
+                            <div
+                                class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
+                                        fill="black" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
+                    <div
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-700 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
+                            <div
+                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <div
+                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
+                                    <p
+                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
+                                        Save 10%</p>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
+                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart">
+                                        <input type="checkbox" id="heart-checkbox-1" class=" hidden" />
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="heart-checkbox-1">
+                                            <svg width="14" height="15" viewBox="0 0 15 14"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
+                            <div
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-700 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
+                            </div>
+                        </div>
+                        <div class=" flex justify-between items-center">
+                            <p
+                                class=" group-hover:text-black font-poppins duration-1000 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
+                            </p>
+                            <div
+                                class=" border border-black w-[22px] h-[22px] rounded flex items-center justify-center">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
+                                        fill="black" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="flex justify-center md:pt-[73.5px] sm:pt-10 pt-6 gap-3 self-center">
             <div
-                class="w-[32px] h-[32px] border border-light-brown rounded flex justify-center items-center hover:bg-dark-gray2">
+                class="w-[32px] group h-[32px] border border-light-brown rounded flex justify-center items-center hover:bg-dark-gray2">
                 <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z"
+                    <path class=" group-hover:fill-light-gray"
+                        d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z"
                         fill="#C4CDD5" />
                 </svg>
             </div>
@@ -729,16 +871,21 @@
             </div>
             <div
                 class="w-[32px] h-[32px] group border border-light-brown rounded flex justify-center items-center group hover:bg-dark-gray2">
-                <svg  width="9" height="12" viewBox="0 0 9 12" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-black" d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z"
+                <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="group-hover:fill-light-gray"
+                        d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z"
                         fill="#C4CDD5" />
                 </svg>
             </div>
         </div>
-        <div class=" absolute right-0 z-[-1] top-[37%]">
-            <img src="./assets/images/basement/svg/waves-svg.svg" alt="waves-svg">
-        </div>
+        <img src="./assets/images/basement/svg/yellow-ellipse.svg" alt="yellow-ellipse"
+            class="absolute right-2 bottom-[23.7%] hidden xl:block">
+        <img src="./assets/images/basement/svg/black-ellipse.svg" alt="black-ellipse"
+            class=" absolute hidden xl:block top-[8%]">
+        <img src="./assets/images/basement/svg/waves-svg.svg" alt="waves-svg"
+            class="absolute right-0 hidden xl:block z-[-1] top-[34.3%]">
+        <img src="./assets//images/basement/svg/yellow-stroke-svg.svg" alt="yellow-ellipse"
+            class="left-0 bottom-[40%] absolute hidden xl:block">
     </section>
 </body>
 
