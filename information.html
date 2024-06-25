@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="./assets/images/common/webp/favicon.webp" type="image/x-icon">
     <!-- =============== CSS LINK ============= -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/root.css">
     <!-- =============== TAILWIND LINK ============= -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -37,6 +36,7 @@
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
     <!-- Meta Tags Generated with https://metatags.io -->
     <meta property="twitter:image" content="./meta-img.webp" />
+
     <script>
         tailwind.config = {
             theme: {
@@ -68,18 +68,111 @@
                     'poppins': ['Poppins', 'sans-serif'],
                     'roboto': ['Roboto', 'sans-serif'],
                     'inter': ['Inter', 'sans-serif'],
+                    'play': ['Play', 'sans-serif'],
+
                 }
             }
         }
     </script>
+    <style>
+    </style>
 </head>
 
 <body>
     <main>
-        homepage
+        <!-- ============================ INFORMATION SECTION START =============================== -->
+        <section>
+            <div class="container max-w-[1140px] mx-auto px-4 mt-10">
+                <div id="progress-container"
+                    class="progress-container relative flex items-center justify-between max-w-[905px] w-full ml-12">
+                    <div class="flex flex-col items-center">
+                        <p class="text-black font-poppins text-sm font-medium">Information</p>
+                        <span
+                            class="flex rounded-full duration-300 svgIcon border border-gray bg-white p-0.5 mt-1.5 items-center justify-center">
+                            <svg class="fill-transparent duration-300" id="mySvg" width="15" height="15"
+                                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.3897 5.31248L7.07169 10.7115L3.67969 7.88448L4.31969 7.11648L6.92769 9.28948L10.6097 4.68848L11.3897 5.31248Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-black font-poppins text-sm font-medium">Delivery</p>
+                        <span
+                            class="flex rounded-full duration-300 svgIcon border bg-white border-gray p-0.5 mt-1.5 items-center justify-center">
+                            <svg class="fill-transparent duration-300" id="mySvg" width="15" height="15"
+                                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.3897 5.31248L7.07169 10.7115L3.67969 7.88448L4.31969 7.11648L6.92769 9.28948L10.6097 4.68848L11.3897 5.31248Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-black font-poppins text-sm font-medium">Overview</p>
+                        <span
+                            class="flex rounded-full duration-300 svgIcon border bg-white border-gray p-0.5 mt-1.5 items-center justify-center">
+                            <svg class="fill-transparent duration-300" id="mySvg" width="15" height="15"
+                                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.3897 5.31248L7.07169 10.7115L3.67969 7.88448L4.31969 7.11648L6.92769 9.28948L10.6097 4.68848L11.3897 5.31248Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-black font-poppins text-sm font-medium">Pay</p>
+                        <span
+                            class="flex rounded-full duration-300 svgIcon border bg-white border-gray p-0.5 mt-1.5 items-center justify-center">
+                            <svg class="fill-transparent duration-300" id="mySvg" width="15" height="15"
+                                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.3897 5.31248L7.07169 10.7115L3.67969 7.88448L4.31969 7.11648L6.92769 9.28948L10.6097 4.68848L11.3897 5.31248Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="absolute w-[95%] top-[35px] left-8 -z-10">
+                        <div
+                            class="relative after:absolute after:bg-gray after:w-full after:h-0.5 after:top-0 after:z-10">
+                            <span id="myBar"
+                                class="bg-yellow flex h-1.5 w-0 duration-300 progress-line absolute -top-0.5 z-20"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="flex items-center gap-10 mt-20 justify-center">
+                    <button onclick="moveProgressBar(0)">step 0</button>
+                    <button onclick="moveProgressBar(1)">step 1</button>
+                    <button onclick="moveProgressBar(2)">step 2</button>
+                    <button onclick="moveProgressBar(3)">step 3</button>
+                    <button onclick="moveProgressBar(4)">step 4</button>
+                </div> -->
+                <div class="grid grid-cols-2 mt-20 pt-2">
+                    <div class="col-span-1">
+                        <div class="flex flex-col">
+                            <p class="font-play font-bold text-custom_3xl leading-normal text-black uppercase">Information</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================ INFORMATION SECTION END =============================== -->
     </main>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
+    <script>
+        function moveProgressBar(step) {
+            const progressContainer = document.getElementById("progress-container");
+            const progressBar = document.getElementById("myBar");
+            const width = Math.min(100, step * 34.5);
+            progressBar.style.width = width + '%';
+
+            const svgElement = document.querySelectorAll("#mySvg");
+            const currentSvg = svgElement[step - 1];
+            currentSvg.style.fill = 'black';
+            // Add the background black class to the svgElement parent span
+            const svgParentSpan = svgElement[step - 1].parentElement;
+            svgParentSpan.classList.add('bg-yellow');
+            svgParentSpan.classList.add('border-black');
+        }
+    </script>
 </body>
 
 </html>
