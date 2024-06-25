@@ -44,8 +44,11 @@
                 extend: {
                     colors: {
                         yellow: '#FFCC02',
+                        'skin-yellow': ' #FFFAE6',
                         'light-green': ' #A7E45F',
+                        'extralight-yellow': ' #FFD635',
                         'dark-gray': '#EBEBEB',
+                        'dark-yellow': '#e5e1cf',
                         gray: '#CCCCCC',
                         'light-blue': '#BEDCFE',
                         green: ' #76BD3D',
@@ -55,7 +58,8 @@
                         'light-yellow': '#EED056',
                         'dark-brown': "#814328",
                         'maroon': "#C33529",
-
+                        'light-green': ' #A7E45F',
+                        'light-grey': '#E5C130',
 
                     },
                     fontSize: {
@@ -78,6 +82,9 @@
                     'roboto': ['Roboto', 'sans-serif'],
                     'inter': ['Inter', 'sans-serif'],
                     'play': ['Play', 'sans-serif'],
+                },
+                boxShadow: { 
+                    "latestblogssidershadow": " 0px -6px 0px 0px #000000",
                 }
             }
         }
@@ -87,94 +94,125 @@
 <body>
     <section class="bg-white pt-18">
         <div class="max-w-[1172px] px-4 mx-auto">
-            <div class="flex justify-between pb-1">
-                <div class="flex items-center mb-1">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.2637 0.55957L15.1667 4.87336L20.2697 3.87578L19.2721 8.97883L23.5859 11.8818L19.2721 14.7848L20.2697 19.8879L15.1667 18.8903L12.2637 23.2041L9.36067 18.8903L4.25762 19.8879L5.2552 14.7848L0.941406 11.8818L5.2552 8.97883L4.25762 3.87578L9.36067 4.87336L12.2637 0.55957Z"
-                            fill="#FFCC02" />
-                    </svg>
-                    <p class="text-black font-medium text-xl ps-2">Offer</p>
+            <div class="flex lg:flex-row flex-col gap-3 lg:gap-0  justify-between pb-1">
+                <div class="flex justify-between w-full  lg:justify-start  items-center mb-1">
+
+                    <div class="flex items-center w-full justify-between">
+                        <div class="flex items-center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.2637 0.55957L15.1667 4.87336L20.2697 3.87578L19.2721 8.97883L23.5859 11.8818L19.2721 14.7848L20.2697 19.8879L15.1667 18.8903L12.2637 23.2041L9.36067 18.8903L4.25762 19.8879L5.2552 14.7848L0.941406 11.8818L5.2552 8.97883L4.25762 3.87578L9.36067 4.87336L12.2637 0.55957Z"
+                                    fill="#FFCC02" />
+                            </svg>
+                            <p class="text-black font-medium text-xl ps-2">Offer</p>
+                        </div>
+                        <div>
+                            <p
+                                class="text-black lg:block hidden font-poppins text-sm md:text-base sm:text-start text-center sm:max-w-full max-w-[320px]  font-normal md:me-7 pe-1">
+                                Resultaat 1-30
+                                van de 734
+                                resultanten
+                                wordt getoond
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block lg:hidden">
+                        <button onclick="showSidebar()" id="toggleButton"
+                            class="flex items-center flex-col px-3 py-2 border rounded text-gray-500 border-gray-600 transition duration-300">
+                            <div class="toggle-line bg-black h-1 w-6 rounded-full transition duration-300"></div>
+                            <div class="toggle-line bg-black h-1 w-6 rounded-full my-1 transition duration-300"></div>
+                            <div class="toggle-line bg-black h-1 w-6 rounded-full transition duration-300"></div>
+                        </button>
+                    </div>
                 </div>
-                <div class="flex">
-                    <div class="flex justify-between items-center">
-                        <p class="text-black font-poppins text-base  font-normal me-7 pe-1">Resultaat 1-30 van de 734
+                <div class="flex justify-center gap-3 sm:gap-0 sm:justify-start">
+                    <div class="flex sm:flex-row flex-col items-center justify-center sm:justify-between ">
+                        <p
+                            class="text-black lg:hidden font-poppins text-sm md:text-base sm:text-start text-center sm:max-w-full max-w-[320px]  font-normal md:me-7 pe-1">
+                            Resultaat 1-30
+                            van de 734
                             resultanten
                             wordt getoond
                         </p>
-                        <div class="relative bg-white border flex min-w-[190px] h-[44px] border-black rounded-[5px]">
-                            <button
-                                class="h-[44px] ps-4 pe-3 pb-1 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-17')">
-                                Standard sorting
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                        <div>
 
-
-                            </button>
-                            <ul id="dropdown-menu-17"
-                                class="absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                            </ul>
                         </div>
-                        <div
-                            class="relative ms-8 bg-yellow border flex min-w-[190px] h-[44px] border-yellow rounded-[5px]">
-                            <button
-                                class="h-[44px] ps-4 pe-3 pb-1 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-16')">
-                                Category
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                        <div class="flex gap-6 mt-4 sm:mt-0 sm:gap-0">
+                            <div
+                                class="relative bg-white border flex sm:min-w-[181px] h-[44px] border-black rounded-[5px]">
+                                <button
+                                    class="h-[44px] w-full px-[10px] pb-1 flex sm:min-w-[190px] justify-between font-poppins items-center font-semibold text-sm sm:text-base"
+                                    onclick="toggleDropdown('dropdown-menu-17')">
+                                    Standard sorting
+                                    <svg class="sm:me-2 ms-1" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
 
 
-                            </button>
-                            <ul id="dropdown-menu-16"
-                                class="absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                            </ul>
+                                </button>
+                                <ul id="dropdown-menu-17"
+                                    class="absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
+                                    <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                            beer</a>
+                                    </li>
+                                    <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                            beer</a>
+                                    </li>
+                                    <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                            beer</a>
+                                    </li>
+                                    <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                            beer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="relative sm:ms-3 lg:ms-8 bg-yellow border flex sm:min-w-[181px] h-[44px] border-yellow rounded-[5px]">
+                                <button
+                                    class="h-[44px] ps-4 pe-3 pb-1 flex sm:min-w-[181px] justify-center gap-6 items-center font-bold text-sm"
+                                    onclick="toggleDropdown('dropdown-menu-16')">
+                                    Category
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+
+                                </button>
+                                <ul id="dropdown-menu-16"
+                                    class="absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
+                                    <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                            beer</a>
+                                    </li>
+                                    <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                            beer</a>
+                                    </li>
+                                    <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                            beer</a>
+                                    </li>
+                                    <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
+                                            beer</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex">
-                <div class="flex flex-col w-full max-w-[269px]">
-                    <div class="border border-black rounded-[5px] p-5 mt-12 w-full">
+                <div id="main" class="bg-white duration-300 z-10 top-0 flex flex-col w-full absolute -start-full lg:static max-w-[269px]">
+                    <div class="border border-black rounded-[5px] p-5 lg:mt-12 w-full">
                         <div class="bg-cream border border-black ps-4 py-[10px] rounded-[5px] w-full">
                             <p class="text-black font-bold text-xl">Color</p>
                         </div>
@@ -836,7 +874,7 @@
                                     BA (Silvers Series)
                                 </h4>
                                 <p
-                                    class="px-[8px] flex items-center text-sm font-normal font-inter text-black bg-light-yellow  group-hover:bg-extralight-yellow  group-hover:border-light-grey transition-all duration-300 rounded-[5px] max-w-[133px] h-[33px] border border-dark-yellow">
+                                    class="px-[8px] flex items-center text-sm font-normal font-inter text-black bg-skin-yellow  group-hover:bg-extralight-yellow  group-hover:border-light-grey transition-all duration-300 rounded-[5px] max-w-[133px] h-[33px] border border-dark-yellow">
                                     IPA | 5,7| 12*33cl</p>
                                 <div class="flex items-center justify-between mb-[14px]">
                                     <p
@@ -870,6 +908,13 @@
         function toggleDropdown(menuId) {
             const dropdownMenu = document.getElementById(menuId);
             dropdownMenu.classList.toggle('hidden');
+        }
+    </script>
+    <script>
+        const mainContent = document.getElementById('main');
+
+        function showSidebar() {
+            mainContent.classList.toggle('start-0');
         }
     </script>
 </body>
