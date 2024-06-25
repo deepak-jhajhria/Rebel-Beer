@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/offers.css">
     <script>
       tailwind.config = {
         theme: {
@@ -22,6 +22,7 @@
               "dark-blue": "#212B36", //offers sec color
               "light-brown": "#E7E4D7", //offers sec color
               "light-white": "#E1E6EA", //offers sec color
+              "light-yellow": "#FFD635", //offers sec color
             },
             fontSize: {
               custom_2xl: "28px",
@@ -49,1254 +50,1410 @@
     </script>
   </head>
   <body>
-    <section class="px-3 overflow-hidden relative z-10">
-       <img class=" absolute left-0 top-[25%] -z-10" src="/assets/images/offers/svg/lining-rows.svg" alt="lining">
-       <img class=" absolute right-[1%] top-[0%] -z-10" src="/assets/images/offers/svg/half-circle.svg" alt="half">
-       <img class=" absolute left-[1%] bottom-[37%] -z-10" src="/assets/images/offers/svg/without-bg-circle.svg" alt="without">
+    <section class=" overflow-hidden relative z-10">
+       <img class=" absolute left-0 top-[33%] -z-10" src="/assets/images/offers/svg/lining-rows.svg" alt="lining">
+       <img class=" absolute right-[1%] top-[17%] -z-10" src="/assets/images/offers/svg/half-circle.svg" alt="half">
+       <img class=" absolute left-[1%] bottom-[32%] -z-10" src="/assets/images/offers/svg/without-bg-circle.svg" alt="without">
        <img class=" absolute right-[-2px] bottom-[10%] -z-10 hidden sm:block" src="/assets/images/offers/svg/black-halfcircle.svg" alt="halfcircle">
-      <div class="container max-w-[1140px]  mx-auto">
-        <div class="flex justify-center items-center">
-            <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 pt-7 gap-5 ">
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+<!----- navbar ------>
+       <div class="relative">
+        <span class="absolute right-[0px] top-[8%] z-0 hidden xl:block ">
+            <svg width="71" height="57" viewBox="0 0 71 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_408_5620" fill="white">
+                    <path d="M65.0809 56.4555C70.0168 47.9064 71.3543 37.7467 68.7993 28.2114C66.2444 18.6762 60.0062 10.5464 51.4571 5.61055C42.908 0.674727 32.7483 -0.662823 23.213 1.89215C13.6777 4.44712 5.54793 10.6853 0.612106 19.2344L32.8465 37.845L65.0809 56.4555Z"></path>
+                </mask>
+                <path d="M65.0809 56.4555C70.0168 47.9064 71.3543 37.7467 68.7993 28.2114C66.2444 18.6762 60.0062 10.5464 51.4571 5.61055C42.908 0.674727 32.7483 -0.662823 23.213 1.89215C13.6777 4.44712 5.54793 10.6853 0.612106 19.2344L32.8465 37.845L65.0809 56.4555Z" fill="#FFCC02" stroke="#FFCC02" stroke-width="6" mask="url(#path-1-inside-1_408_5620)"></path>
+            </svg>
+        </span>
+      <div class=" relative z-[100] max-w-[1920px] mx-auto"><div class="flex justify-center gap-3 items-center py-[5px] bg-black"><span><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.5695 9.65527H19.375V20.8825H29.5242V15.8291L28.3405 11.7382C27.9837 10.5046 26.8537 9.65527 25.5695 9.65527Z" fill="#FFB700"></path><path d="M28.0427 15.7776L26.9878 12.131C26.8059 11.5041 26.2228 11.0654 25.5698 11.0654H20.7852V15.7776H28.0427Z" fill="#84DBFF"></path><path d="M28.0464 15.7756H20.7852V11.0635L28.0464 15.7756Z" fill="#CDD6E0"></path><path d="M28.0427 15.7776L26.9878 12.131C26.8059 11.5041 26.2228 11.0654 25.5698 11.0654H20.7852L28.0427 15.7776Z" fill="#F2F2F2"></path><path d="M1.87484 4.01904H17.501C18.5359 4.01904 19.3759 4.85833 19.3759 5.89389V20.882H0V5.89389C0 4.85839 0.839285 4.01904 1.87484 4.01904Z" fill="#FFD15C"></path><path d="M12.6976 4.02197V8.97589L11.9726 8.25097L11.2127 9.01093L10.4534 8.25097L9.69412 9.01093L8.93352 8.25097L8.16425 9.01093L7.40552 8.25097L6.67188 8.98468V4.02197H12.6976Z" fill="#F2F2F2"></path><path d="M30.0014 20.8815V23H0.00390625V20.8815H3.13489C3.86608 19.5691 5.27221 18.6816 6.88458 18.6816C8.49067 18.6816 9.89681 19.5691 10.6343 20.8815H20.7084C21.4396 19.5691 22.8389 18.6816 24.4513 18.6816C26.0636 18.6816 27.4635 19.5691 28.201 20.8815H30.0014Z" fill="#334A5E"></path><path d="M27.444 22.9868C27.444 24.6404 26.1035 25.9809 24.4499 25.9809C22.7963 25.9809 21.457 24.6404 21.457 22.9868C21.457 21.3332 22.7969 19.9927 24.4499 19.9927C26.1042 19.9927 27.444 21.3332 27.444 22.9868Z" fill="#40596B"></path><path d="M25.6522 22.9866C25.6522 23.6509 25.1134 24.189 24.4497 24.189C23.7854 24.189 23.2461 23.6509 23.2461 22.9866C23.2461 22.3223 23.7848 21.7842 24.4497 21.7842C25.1134 21.7836 25.6522 22.3223 25.6522 22.9866Z" fill="#ACB3BA"></path><path d="M9.87497 22.9868C9.87497 24.6404 8.53381 25.9809 6.88084 25.9809C5.22723 25.9809 3.88672 24.6404 3.88672 22.9868C3.88672 21.3332 5.22723 19.9927 6.88084 19.9927C8.53381 19.9927 9.87497 21.3332 9.87497 22.9868Z" fill="#40596B"></path><path d="M8.0812 22.9866C8.0812 23.6509 7.54312 24.189 6.87879 24.189C6.21445 24.189 5.67578 23.6509 5.67578 22.9866C5.67578 22.3223 6.21451 21.7842 6.87879 21.7842C7.54307 21.7842 8.0812 22.3223 8.0812 22.9866Z" fill="#ACB3BA"></path></svg></span><p class="text-[#F0F0EA] text-[14px] font-play font-normal">Free Shipping Over First Order</p></div><div class="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto justify-between flex py-[11px] px-3 xl:px-0"><div><div class="lg:me-[210px]"><a class="relative cursor-pointer" href="/"><img alt="logo" src="./assets/images/privacy/svg/pageLogo.svg"></a></div></div>
+      <ul class="flex gap-5 items-center lg:flex-row flex-col justify-center lg:static fixed top-0 lg:w-auto w-screen z-50 lg:min-h-max min-h-screen lg:bg-transparent bg-white duration-200 -left-full">
+        <li class="absolute top-16 cursor-pointer end-8 lg:hidden">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.28033 0.54L11.0003 8.26L18.6803 0.58C18.85 0.399435 19.0543 0.254989 19.2812 0.155324C19.508 0.0556597 19.7526 0.00282869 20.0003 0C20.5308 0 21.0395 0.210714 21.4145 0.585786C21.7896 0.960859 22.0003 1.46957 22.0003 2C22.005 2.2452 21.9595 2.48877 21.8666 2.71576C21.7738 2.94275 21.6355 3.14837 21.4603 3.32L13.6803 11L21.4603 18.78C21.79 19.1025 21.9832 19.5392 22.0003 20C22.0003 20.5304 21.7896 21.0391 21.4145 21.4142C21.0395 21.7893 20.5308 22 20.0003 22C19.7454 22.0106 19.4911 21.968 19.2536 21.8751C19.016 21.7821 18.8003 21.6408 18.6203 21.46L11.0003 13.74L3.30033 21.44C3.13134 21.6145 2.92945 21.7539 2.70633 21.85C2.4832 21.9461 2.24325 21.9971 2.00033 22C1.46989 22 0.961185 21.7893 0.586112 21.4142C0.211039 21.0391 0.000325413 20.5304 0.000325413 20C-0.00433758 19.7548 0.0411562 19.5112 0.134015 19.2842C0.226874 19.0572 0.36514 18.8516 0.540325 18.68L8.32032 11L0.540325 3.22C0.210695 2.89752 0.0174046 2.46082 0.000325413 2C0.000325413 1.46957 0.211039 0.960859 0.586112 0.585786C0.961185 0.210714 1.46989 0 2.00033 0C2.48033 0.006 2.94033 0.2 3.28033 0.54Z" fill="black"></path></svg></li>
+                <li><a class="font-poppins text-black font-normal text-xl md:text-2xl lg:text-base after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#000000] relative after:left-1/2 hover:after:left-0 after:duration-200 after:bottom-[-2px] after:rounded-[50px]  " href="">All Beers</a></li>
+                <li><a class="font-poppins text-black font-normal text-xl md:text-2xl lg:text-base after:content-[''] after:absolute  transition duration-300 after:w-0 after:h-[2px] after:bg-[#000000] relative after:left-1/2 hover:after:left-0 after:duration-200 after:bottom-[-2px] after:rounded-[50px] " href="">About Us</a></li>
+                <li><a class="font-poppins text-black font-normal text-xl md:text-2xl lg:text-base after:content-[''] after:absolute  after:w-0 after:h-[2px] after:bg-[#000000] relative after:left-1/2 hover:after:left-0 after:duration-200 after:bottom-[-2px] after:rounded-[50px] " href="">Beer Shop</a></li>
+                <li><a class="font-poppins text-black font-normal text-xl md:text-2xl lg:text-base after:content-[''] after:absolute  after:w-0 after:h-[2px] after:bg-[#000000] relative after:left-1/2 hover:after:left-0 after:duration-200 after:bottom-[-2px] after:rounded-[50px] " href="">Beer packages</a></li>
+                <li><a class="font-poppins text-black font-normal text-xl md:text-2xl lg:text-base after:content-[''] after:absolute  after:w-0 after:h-[2px] after:bg-[#000000] relative after:left-1/2 hover:after:left-0 after:duration-200 after:bottom-[-2px] after:rounded-[50px] " href="">Faq</a></li>
+                <li><a class="md:py-4 py-3 px-7 md:px-10 lg:py-[10.5px]  lg:px-[15px] rounded-[5px] bg-yellow font-poppins text-black font-normal text-xl md:text-2xl lg:hidden block hover:shadow-[inset_0_70px_#000000] border-2 border-transparent hover:border-black duration-[0.5s]" href="">Contact Us</a></li>
+            </ul><div class="flex items-center gap-[17px]">
+                <div class="flex items-center gap-[9px]">
+                    <div class="w-[30px] sm:w-[36px] h-[30px] sm:h-[36px] border border-[#00000033] border-solid rounded-full flex justify-center items-center cursor-pointer hover:scale-[1.1] duration-300"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.87446 0.5C5.8579 0.500087 4.85611 0.743273 3.95265 1.20927C3.04919 1.67527 2.27028 2.35056 1.68088 3.17882C1.09149 4.00707 0.708715 4.96426 0.564489 5.97053C0.420263 6.97681 0.51877 8.00298 0.851791 8.96344C1.18481 9.9239 1.74269 10.7908 2.47889 11.4918C3.21508 12.1928 4.10824 12.7076 5.08384 12.9932C6.05945 13.2788 7.08921 13.327 8.08722 13.1337C9.08523 12.9404 10.0225 12.5112 10.821 11.882L13.56 14.621C13.7014 14.7576 13.8909 14.8332 14.0875 14.8315C14.2842 14.8298 14.4723 14.7509 14.6113 14.6119C14.7504 14.4728 14.8293 14.2847 14.831 14.0881C14.8327 13.8914 14.7571 13.702 14.6205 13.5605L11.8815 10.8215C12.6225 9.88146 13.0838 8.7518 13.2128 7.56179C13.3417 6.37179 13.1331 5.16952 12.6106 4.09257C12.0882 3.01562 11.2731 2.10752 10.2587 1.47217C9.24425 0.83683 8.07143 0.49992 6.87446 0.5ZM1.99946 6.875C1.99946 5.58207 2.51307 4.34209 3.42731 3.42785C4.34155 2.51361 5.58153 2 6.87446 2C8.16739 2 9.40736 2.51361 10.3216 3.42785C11.2358 4.34209 11.7495 5.58207 11.7495 6.875C11.7495 8.16793 11.2358 9.40791 10.3216 10.3221C9.40736 11.2364 8.16739 11.75 6.87446 11.75C5.58153 11.75 4.34155 11.2364 3.42731 10.3221C2.51307 9.40791 1.99946 8.16793 1.99946 6.875Z" fill="black"></path></svg>
+                    </div>
+                    <a class="w-[30px] sm:w-[36px] h-[30px] sm:h-[36px] border border-[#00000033] border-solid rounded-full flex justify-center items-center cursor-pointer hover:scale-[1.1] duration-300" href=""><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 13.5C3 12.7044 3.31607 11.9413 3.87868 11.3787C4.44129 10.8161 5.20435 10.5 6 10.5H12C12.7956 10.5 13.5587 10.8161 14.1213 11.3787C14.6839 11.9413 15 12.7044 15 13.5C15 13.8978 14.842 14.2794 14.5607 14.5607C14.2794 14.842 13.8978 15 13.5 15H4.5C4.10218 15 3.72064 14.842 3.43934 14.5607C3.15804 14.2794 3 13.8978 3 13.5Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"></path><path d="M9 7.5C10.2426 7.5 11.25 6.49264 11.25 5.25C11.25 4.00736 10.2426 3 9 3C7.75736 3 6.75 4.00736 6.75 5.25C6.75 6.49264 7.75736 7.5 9 7.5Z" stroke="black" stroke-width="1.5"></path></svg></a>
+                    <a class="w-[30px] sm:w-[36px] h-[30px] sm:h-[36px] border border-[#00000033] border-solid rounded-full flex justify-center items-center cursor-pointer hover:scale-[1.1] duration-300" href=""><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.99881 2.0625C8.55125 2.0625 8.12203 2.24029 7.80556 2.55676C7.48909 2.87322 7.3113 3.30245 7.3113 3.75V3.945C7.72905 3.9375 8.1873 3.9375 8.69131 3.9375H9.30705C9.80956 3.9375 10.2686 3.9375 10.6871 3.945V3.75C10.6871 3.52833 10.6434 3.30883 10.5585 3.10405C10.4737 2.89926 10.3493 2.7132 10.1925 2.55649C10.0358 2.39978 9.84964 2.2755 9.64481 2.19074C9.43999 2.10598 9.22047 2.0624 8.99881 2.0625ZM11.8113 3.996V3.75C11.8113 3.00408 11.515 2.28871 10.9875 1.76126C10.4601 1.23382 9.74473 0.9375 8.99881 0.9375C8.25288 0.9375 7.53751 1.23382 7.01007 1.76126C6.48262 2.28871 6.1863 3.00408 6.1863 3.75V3.996C6.07905 4.005 5.9763 4.0155 5.8758 4.02825C5.1183 4.122 4.4943 4.3185 3.9633 4.75875C3.43305 5.199 3.1248 5.7765 2.89305 6.504C2.66805 7.209 2.49855 8.11425 2.28555 9.2535L2.2698 9.336C1.9683 10.9432 1.7313 12.21 1.68705 13.2083C1.64205 14.232 1.79505 15.0795 2.37255 15.7748C2.95005 16.4708 3.7548 16.7768 4.7688 16.9215C5.7588 17.0625 7.04656 17.0625 8.6823 17.0625H9.31606C10.9511 17.0625 12.2396 17.0625 13.2288 16.9215C14.2428 16.7768 15.0483 16.4708 15.6258 15.7748C16.2033 15.0795 16.3548 14.232 16.3106 13.2083C16.2671 12.21 16.0293 10.9432 15.7278 9.336L15.7128 9.2535C15.4991 8.11425 15.3288 7.20825 15.1053 6.504C14.8728 5.7765 14.5653 5.199 14.0343 4.75875C13.5041 4.3185 12.8793 4.12125 12.1218 4.02825C12.0185 4.01558 11.915 4.00483 11.8113 3.996ZM6.0138 5.145C5.37256 5.22375 4.9848 5.373 4.6818 5.625C4.37955 5.8755 4.1613 6.22875 3.9648 6.84525C3.76455 7.47525 3.6063 8.31375 3.3843 9.498C3.0723 11.1607 2.85105 12.348 2.8113 13.2577C2.7723 14.1503 2.9163 14.6678 3.23805 15.057C3.56055 15.4447 4.0428 15.681 4.9278 15.807C5.8278 15.936 7.0368 15.9375 8.72806 15.9375H9.26956C10.9608 15.9375 12.1691 15.936 13.0698 15.8077C13.9548 15.681 14.4371 15.4447 14.7596 15.057C15.0821 14.6685 15.2253 14.151 15.1871 13.257C15.1466 12.3488 14.9253 11.1607 14.6133 9.498C14.3913 8.313 14.2338 7.476 14.0328 6.84525C13.8363 6.22875 13.6188 5.8755 13.3158 5.62425C13.0128 5.373 12.6258 5.22375 11.9838 5.14425C11.3268 5.06325 10.4741 5.0625 9.2688 5.0625H8.72881C7.52356 5.0625 6.6708 5.06325 6.0138 5.145Z" fill="black"></path></svg></a></div>
+<!------ hero------>
+                    <a class="py-[10.5px] px-[15px] rounded-[5px] font-poppins text-black font-normal text-[16px] lg:block hidden hover:shadow-[inset_0_70px_#ffffff] border-2 border-transparent hover:border-black duration-[0.5s] undefined bg-yellow" href="">Contact Us</a><div style="z-index:1" class="w-6 h-5 flex flex-col justify-between relative lg:hidden cursor-pointer"><span class="w-full border-black bg-black border-solid border-[2px] transition-all duration-300 rounded-full  "></span><span class="w-full border-black bg-black border-solid border-[2px] transition-all duration-300 rounded-full "></span><span class="w-full border-black bg-black border-solid border-[2px] transition-all duration-300 rounded-full  "></span></div></div></div></div>
+        <div class="bg-cover bg-bottom flex justify-center items-center flex-col min-h-[243px] sm:pb-7  px-3 hero-bg">
+            <h2 class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-115 text-center">Offers</h2>
+            <p class="font-poppins font-normal text-sm lg:text-base text-black opacity-70 text-center lg:pt-4 pt-2 undefined max-w-[420px] mx-auto">Shop the special canned beers here with an extra discount! Be quick. Cheers!</p></div>
+            <div class="bg-[#F0F0EA] undefined"><div class="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto xl:px-0 px-4 py-[14.5px]"><h3 class="font-poppins font-normal lg:text-base text-sm text-black flex items-center gap-1"><a class="opacity-70 hover:opacity-100 duration-200 font-poppins font-normal text-sm lg:text-base" href="/">Home</a><span><svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.504 0.98H2.344L6.216 4.644L2.344 8.324H0.504L4.376 4.644L0.504 0.98Z" fill="black"></path></svg></span><span class="duration-200 font-poppins font-normal text-sm lg:text-base !cursor-pointer !opacity-100">FAQ</span><span class="opacity-70 font-poppins font-normal text-sm lg:text-base  "> </span><span class="opacity-70 font-poppins font-normal text-sm lg:text-base undefined"></span></h3></div></div>
+<!---- dropdown ---->
+                <div class="max-w-[1140px] mx-auto px-3 pt-[67px]">
+                  <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+                      <div class="flex items-center gap-[11px]">
+                          <img src="./assets/images/offers/svg/bxs-offer.svg" alt="bxs-offer">
+                          <p class="font-poppins font-medium text-xl text-black">Offer</p>
+                      </div>
+                      <div class="gap-6 flex flex-col lg:flex-row items-center w-full md:w-auto">
+                          <p class="font-poppins font-normal text-base text-black max-lg:text-center">Resultaat 1-30 van de 734 resultanten wordt getoond</p>
+                          <div class=" flex gap-6 flex-wrap justify-center items-center">
+                            <div class="border border-black hover:border hover:border-transparent bg-transparent p-[10px] rounded-[5px] hover:bg-yellow2 duration-300 relative w-[190px] sm:w-auto hover:shadow-[inset_0_70px_#FFCC02]">
+                                <a id="standardSortingButton" class="flex items-center justify-between gap-2 font-poppins font-semibold sm:text-base text-sm text-black w-full md:w-auto" href="#">Standard sorting
+                                    <img src="/assets/images/offers/svg/dropdown-arrow.svg" alt="arrowIcon">
+                                </a>
+                                <select class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer" onchange="changeText('standardSortingButton', this)">
+                                    <option value="Standard sorting 1">Standard sorting 1</option>
+                                    <option value="Standard sorting 2">Standard sorting 2</option>
+                                    <option value="Standard sorting 3">Standard sorting 3</option>
+                                </select>
+                            </div>
+                            <div class="hover:border-2 border-2 border-transparent hover:border-black bg-transparent px-3 py-[10px] rounded-[5px] hover:bg-yellow2 bg-yellow duration-300 relative !w-[182px] sm:w-auto hover:shadow-[inset_0_70px_#fff]">
+                                <a id="beerGlassesButton" class="flex items-center justify-between gap-[85px] font-poppins text-nowrap font-semibold sm:text-base text-sm text-black w-full md:w-auto " href="#">Offers
+                                    <img src="/assets/images/offers/svg/dropdown-arrow.svg" alt="arrowIcon">
+                                </a>
+                                <select class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer" onchange="changeText('beerGlassesButton', this)">
+                                    <option class="!w-full" value="Offers 1">Offers 1</option>
+                                    <option class="!w-full" value="Offers 2">Offers 2</option>
+                                    <option class="!w-full" value="Offers 3">Offers 3</option>
+                                </select>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+<!--------- cards ---------->
+      <div class="px-3">
+        <div class="container max-w-[1140px]  mx-auto">
+          <div class="flex justify-center items-center">
+              <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 pt-[79px] gap-5 ">
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[121px] h-[210px]"
-                      src="/assets/images/offers/webp/blue-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[121px] h-[210px]"
+                        src="/assets/images/offers/webp/blue-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-1" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-1">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-               <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                 <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[93px] h-[215px]"
-                      src="/assets/images/offers/webp/yellow-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[93px] h-[215px]"
+                        src="/assets/images/offers/webp/yellow-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                        <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                <div class="heart">
+                                    <input type="checkbox" id="heart-checkbox-2" class=" hidden"/>
+                                    <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-2">
+                                        <svg width="16" height="15" viewBox="0 0 16 15"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                stroke-width="1px" />
+                                        </svg>
+                                    </label>
+                                </div>
+                      </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[78px] h-[217px]"
-                      src="/assets/images/offers/webp/bear-Bottle.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[78px] h-[217px]"
+                        src="/assets/images/offers/webp/bear-Bottle.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-3" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-3">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-base !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-base leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[97px] h-[200px]"
-                      src="/assets/images/offers/webp/white-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[97px] h-[200px]"
+                        src="/assets/images/offers/webp/white-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-4" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-4">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[78px] h-[217px]"
-                      src="/assets/images/offers/webp/bear-Bottle.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[78px] h-[217px]"
+                        src="/assets/images/offers/webp/bear-Bottle.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-5" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-5">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[121px] h-[210px]"
-                      src="/assets/images/offers/webp/blue-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[121px] h-[210px]"
+                        src="/assets/images/offers/webp/blue-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-6" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-6">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[97px] h-[200px]"
-                      src="/assets/images/offers/webp/white-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[97px] h-[200px]"
+                        src="/assets/images/offers/webp/white-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-7" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-7">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[121px] h-[210px]"
-                      src="/assets/images/offers/webp/blue-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[121px] h-[210px]"
+                        src="/assets/images/offers/webp/blue-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-8" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-8">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[121px] h-[210px]"
-                      src="/assets/images/offers/webp/blue-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[121px] h-[210px]"
+                        src="/assets/images/offers/webp/blue-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-9" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-9">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[78px] h-[217px]"
-                      src="/assets/images/offers/webp/bear-Bottle.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[78px] h-[217px]"
+                        src="/assets/images/offers/webp/bear-Bottle.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-10" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-10">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[121px] h-[210px]"
-                      src="/assets/images/offers/webp/blue-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[121px] h-[210px]"
+                        src="/assets/images/offers/webp/blue-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-11" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-11">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[97px] h-[200px]"
-                      src="/assets/images/offers/webp/white-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[97px] h-[200px]"
+                        src="/assets/images/offers/webp/white-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-12" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-12">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[97px] h-[200px]"
-                      src="/assets/images/offers/webp/white-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[97px] h-[200px]"
+                        src="/assets/images/offers/webp/white-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-13" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-13">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[121px] h-[210px]"
-                      src="/assets/images/offers/webp/blue-Can.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[121px] h-[210px]"
+                        src="/assets/images/offers/webp/blue-Can.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-14" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-14">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
-              </div>
-              <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
-                <div
-                  class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
-                >
+                <div class="shadow-[0px_-6px_0px_0px_#000000] bg-white max-w-[270px] rounded-[5px] overflow-hidden">
                   <div
-                    class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
+                    class="rounded-[5px] border px-3.5 py-3 max-w-[270px] group hover:shadow-[inset_0px_460px_0px_0px_#FFCC02] duration-300 group-hover:duration-300"
                   >
-                    <img
-                      class="w-[78px] h-[217px]"
-                      src="/assets/images/offers/webp/bear-Bottle.webp"
-                      alt="blueCan"
-                    />
                     <div
-                      class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
+                      class="max-w-[240px] h-[257px] bg-dark-gray flex items-center justify-center relative"
                     >
-                      <p
-                        class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                      <img
+                        class="w-[78px] h-[217px]"
+                        src="/assets/images/offers/webp/bear-Bottle.webp"
+                        alt="blueCan"
+                      />
+                      <div
+                        class="rounded-l-[0] rounded-r bg-yellow p-[5px] absolute top-0 left-0 group-hover:bg-black duration-300 group-hover:duration-300"
                       >
-                        Save 10%
+                        <p
+                          class="font-poppins !font-medium text-sm text-black group-hover:text-white duration-300 group-hover:duration-300"
+                        >
+                          Save 10%
+                        </p>
+                      </div>
+                      <div class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                        <div class="heart">
+                            <input type="checkbox" id="heart-checkbox-15" class=" hidden"/>
+                            <label class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer" for="heart-checkbox-15">
+                                <svg width="16" height="15" viewBox="0 0 16 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                        stroke-width="1px" />
+                                </svg>
+                            </label>
+                        </div>
+              </div>
+                    </div>
+                    <p
+                      class="font-bold sm:text-base text-sm !leading-[18px] text-black font-play pt-[11px]"
+                    >
+                      Puhaste_ Faba_ bourbon BA (Silvers Series)
+                    </p>
+                    <div
+                      class=" group-hover:bg-light-yellow duration-300 hover:duration-300 w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
+                    >
+                      <p class="font-normal text-sm font-inter text-black text-nowrap">
+                        IPA | 5,7| 12*33cl
                       </p>
                     </div>
-                    <div
-                      class="w-[24px] h-[24px] rounded-[40px] absolute bg-white bg-opacity-[66%] flex justify-center items-center top-[4%] right-[4%]"
-                    >
+                    <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
+                      <p
+                        class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
+                      >
+                        <span class="text-3xl">€</span>7.59
+                      </p>
                       <svg
-                        class=""
-                        width="15"
-                        height="16"
-                        viewBox="0 0 15 16"
+                        width="23"
+                        height="23"
+                        viewBox="0 0 23 23"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
+                        <rect
+                          x="1.19531"
+                          y="1.34521"
+                          width="21"
+                          height="21"
+                          rx="3.5"
+                          stroke="black"
+                        />
                         <path
-                          d="M7.42222 12.5282L7.36111 12.5893L7.29389 12.5282C4.39111 9.89428 2.47222 8.15261 2.47222 6.3865C2.47222 5.16428 3.38889 4.24761 4.61111 4.24761C5.55222 4.24761 6.46889 4.85872 6.79278 5.68984H7.92944C8.25333 4.85872 9.17 4.24761 10.1111 4.24761C11.3333 4.24761 12.25 5.16428 12.25 6.3865C12.25 8.15261 10.3311 9.89428 7.42222 12.5282ZM10.1111 3.02539C9.04778 3.02539 8.02722 3.52039 7.36111 4.2965C6.695 3.52039 5.67444 3.02539 4.61111 3.02539C2.72889 3.02539 1.25 4.49817 1.25 6.3865C1.25 8.69039 3.32778 10.5787 6.475 13.4326L7.36111 14.2393L8.24722 13.4326C11.3944 10.5787 13.4722 8.69039 13.4722 6.3865C13.4722 4.49817 11.9933 3.02539 10.1111 3.02539Z"
+                          d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
                           fill="black"
                         />
                       </svg>
                     </div>
                   </div>
-                  <p
-                    class="font-bold sm:text-base text-sm leading-[18px] text-black font-play pt-[11px]"
-                  >
-                    Puhaste_ Faba_ bourbon BA (Silvers Series)
-                  </p>
-                  <div
-                    class="w-[133px] rounded-[5px] border border-black border-opacity-[10%] py-2 px-[10px] bg-yellow bg-opacity-[10%] sm:mt-[11px] mt-[6px]"
-                  >
-                    <p class="font-normal text-sm font-inter text-black text-nowrap">
-                      IPA | 5,7| 12*33cl
-                    </p>
-                  </div>
-                  <div class="flex justify-between items-center pb-1 sm:pt-2 pt-1">
-                    <p
-                      class="font-poppins font-semibold text-base sm:text-lg lg:text-xl text-yellow group-hover:text-black duration-300 group-hover:duration-300"
-                    >
-                      <span class="text-3xl">€</span>7.59
-                    </p>
-                    <svg
-                      width="23"
-                      height="23"
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.19531"
-                        y="1.34521"
-                        width="21"
-                        height="21"
-                        rx="3.5"
-                        stroke="black"
-                      />
-                      <path
-                        d="M11.0312 11.1782V7.17822H12.3646V11.1782H16.3646V12.5116H12.3646V16.5116H11.0312V12.5116H7.03125V11.1782H11.0312Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </div>
                 </div>
               </div>
+          </div>
+          <div class="flex justify-center sm:py-[100px] py-5 mb-5 lg:mb-0 gap-3">
+              <div class="w-[32px] h-[32px] border border-light-brown rounded flex justify-center items-center group hover:bg-dark-gray2 duration-300 hover:duration-300">
+                  <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="group-hover:fill-light-white duration-300 hover:duration-300" d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" fill="#C4CDD5"/>
+                      </svg>
+              </div>
+              <div class="w-[32px] h-[32px] border border-dark-gray3 group hover:border-yellow rounded flex justify-center items-center duration-300 hover:duration-300">
+                 <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow duration-300 hover:duration-300">1</p>
+              </div>
+              <div class="w-[32px] h-[32px] border border-dark-gray3 rounded flex group hover:border-yellow justify-center items-center duration-300 hover:duration-300">
+                 <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow duration-300 hover:duration-300">2</p>
+              </div>
+              <div class="w-[32px] h-[32px] border border-dark-gray3 rounded group hover:border-yellow flex justify-center items-center duration-300 hover:duration-300">
+                  <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow duration-300 hover:duration-300">...</p>
+              </div>
+              <div class="w-[32px] h-[32px] border border-dark-gray3 rounded flex group hover:border-yellow justify-center items-center duration-300 hover:duration-300">
+                  <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow duration-300 hover:duration-300">9</p>
+              </div>
+              <div class="w-[32px] h-[32px] border border-dark-gray3 rounded flex group hover:border-yellow justify-center items-center duration-300 hover:duration-300">
+                  <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow duration-300 hover:duration-300">10</p>
+              </div>
+              <div class="w-[32px] h-[32px] border border-light-brown rounded flex justify-center items-center group hover:bg-dark-gray2 duration-300 hover:duration-300">
+                  <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="group-hover:fill-light-white duration-300 hover:duration-300" d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z" fill="#C4CDD5"/>
+                      </svg>
+              </div>
+          </div>
+          <div class="pb-[110px]">
+              <div class=" max-w-[1139px] rounded-[5px] border bg-yellow bg-opacity-[80%] shadow-[0px_-6px_0px_0px_#000000] py-8 px-2 z-10 relative overflow-hidden">
+         <p class=" font-poppins font-normal sm:text-base text-sm max-w-[940px] text-center mx-auto">As a lover of canned beer, it is always nice to know where you can find <span class=" font-semibold">the best offers. At Rebelbeercans</span> there are regularly various promotions and discounts available, with which you can save a lot on your favorite beers.</p>
+         <p class=" font-poppins font-normal sm:text-base text-sm max-w-[940px] text-center mx-auto py-5">For example, you can benefit from <span class=" font-semibold">discounts of up to 25% on various canned beers.</span></p>
+         <p class=" font-poppins font-normal sm:text-base text-sm max-w-[847px] text-center mx-auto ">Rebelbeercans is an online store that specializes in offering canned craft beers. We have an extensive range of beers in different flavors and styles, from <span class=" font-semibold">both Dutch and international breweries.</span> Whether you are looking for a light, refreshing beer for a sunny day, or a powerful and tasty specialty beer to go with a hearty meal, you will find it all at Rebelbeercans.</p>
+         <p class=" font-poppins font-normal sm:text-base text-sm max-w-[846px] text-center mx-auto pt-5">In addition to the wide range, Rebelbeercans also regularly offers attractive discounts. For example, you can benefit from discounts on selected beers, or discounts when purchasing multiple cans at the same time. This makes it extra affordable to replenish your stock and try new flavors.</p>
+         <p class=" font-poppins font-normal sm:text-base text-sm max-w-[857px] text-center mx-auto pt-5">At Rebelbeercans, all orders are processed quickly and carefully, so that you receive your favorite beers quickly. Moreover, the webshop is clear and user-friendly, <span class=" font-semibold">making it easy to search and order</span> what you are looking for.</p>
+         <p class=" font-poppins font-normal sm:text-base text-sm max-w-[840px] text-center mx-auto pt-5">In short, if you are looking for good offers on canned beer, Rebelbeercans is definitely an online store to keep an eye on. <span class=" font-semibold">With regular discounts of up to 25%,</span> and an extensive range of high-quality beers, there is something for every beer lover</p>
+              </div>
+          </div>
             </div>
-        </div>
-        <div class="flex justify-center sm:py-[100px] py-5 mb-5 lg:mb-0 gap-3">
-            <div class="w-[32px] h-[32px] border border-light-brown rounded flex justify-center items-center hover:bg-dark-gray2">
-                <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.16016 1.41L3.58016 6L8.16016 10.59L6.75016 12L0.750156 6L6.75016 0L8.16016 1.41Z" fill="#C4CDD5"/>
-                    </svg>                
-            </div>
-            <div class="w-[32px] h-[32px] border border-dark-gray3 group hover:border-yellow rounded flex justify-center items-center">
-               <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow">1</p>               
-            </div>
-            <div class="w-[32px] h-[32px] border border-dark-gray3 rounded flex group hover:border-yellow justify-center items-center">
-               <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow">2</p>              
-            </div>
-            <div class="w-[32px] h-[32px] border border-dark-gray3 rounded group hover:border-yellow flex justify-center items-center">
-                <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow">...</p>             
-            </div>
-            <div class="w-[32px] h-[32px] border border-dark-gray3 rounded flex group hover:border-yellow justify-center items-center">
-                <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow">9</p>             
-            </div>
-            <div class="w-[32px] h-[32px] border border-dark-gray3 rounded flex group hover:border-yellow justify-center items-center">
-                <p class=" font-bold text-sm font-poppins text-dark-blue group-hover:text-yellow">10</p>             
-            </div>
-            <div class="w-[32px] h-[32px] border border-light-brown rounded flex justify-center items-center group hover:bg-dark-gray2">
-                <svg class="hover:fill-black" width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.839844 1.41L5.41984 6L0.839844 10.59L2.24984 12L8.24984 6L2.24984 0L0.839844 1.41Z" fill="#C4CDD5"/>
-                    </svg>                               
-            </div>
-        </div>
-        <div class="pb-[110px]">
-            <div class=" max-w-[1139px] rounded-[5px] border bg-yellow bg-opacity-[80%] shadow-[0px_-6px_0px_0px_#000000] py-8 px-2 z-10 relative overflow-hidden">
-       <p class=" font-poppins font-normal sm:text-base text-sm max-w-[940px] text-center mx-auto">As a lover of canned beer, it is always nice to know where you can find <span class=" font-semibold">the best offers. At Rebelbeercans</span> there are regularly various promotions and discounts available, with which you can save a lot on your favorite beers.</p>
-       <p class=" font-poppins font-normal sm:text-base text-sm max-w-[940px] text-center mx-auto py-5">For example, you can benefit from <span class=" font-semibold">discounts of up to 25% on various canned beers.</span></p>
-       <p class=" font-poppins font-normal sm:text-base text-sm max-w-[847px] text-center mx-auto ">Rebelbeercans is an online store that specializes in offering canned craft beers. We have an extensive range of beers in different flavors and styles, from <span class=" font-semibold">both Dutch and international breweries.</span> Whether you are looking for a light, refreshing beer for a sunny day, or a powerful and tasty specialty beer to go with a hearty meal, you will find it all at Rebelbeercans.</p>
-       <p class=" font-poppins font-normal sm:text-base text-sm max-w-[846px] text-center mx-auto pt-5">In addition to the wide range, Rebelbeercans also regularly offers attractive discounts. For example, you can benefit from discounts on selected beers, or discounts when purchasing multiple cans at the same time. This makes it extra affordable to replenish your stock and try new flavors.</p>
-       <p class=" font-poppins font-normal sm:text-base text-sm max-w-[857px] text-center mx-auto pt-5">At Rebelbeercans, all orders are processed quickly and carefully, so that you receive your favorite beers quickly. Moreover, the webshop is clear and user-friendly, <span class=" font-semibold">making it easy to search and order</span> what you are looking for.</p>
-       <p class=" font-poppins font-normal sm:text-base text-sm max-w-[840px] text-center mx-auto pt-5">In short, if you are looking for good offers on canned beer, Rebelbeercans is definitely an online store to keep an eye on. <span class=" font-semibold">With regular discounts of up to 25%,</span> and an extensive range of high-quality beers, there is something for every beer lover</p>
-            </div>
-        </div>
-    </div>
+      </div>
       </div>
     </section>
+    <!-------- footer ------->
+    <footer class="footerBg bg-center bg-cover bg-no-repeat pt-10 md:pt-[69.66px]">
+      <div class="container xl:max-w-[1178px] !px-4 mx-auto pb-10 md:pb-20 xl:pb-[104.42px]">
+          <div class="flex flex-row flex-wrap">
+              <div class="lg:w-4/12">
+                  <a href="/">
+                      <svg width="153" height="123" viewBox="0 0 153 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M81.5114 1.32557C79.2085 2.09321 76.5261 4.45096 75.7405 6.34265C75.2797 7.4941 75.0901 7.4667 74.6837 6.31525C74.2502 5.13636 72.2452 3.24468 70.6466 2.53187C69.8337 2.17546 68.8042 1.98355 67.6121 1.98355C63.7376 1.95614 60.3779 4.56062 59.8358 8.01501L59.6463 9.16646L58.6707 8.97457C55.311 8.3166 52.2225 9.9341 51.1657 12.9498C50.7322 14.1561 50.6779 15.8559 51.0574 16.5687C51.274 17.0074 51.1114 17.1719 49.6214 17.8847C47.2369 19.0361 45.8009 20.3795 44.7714 22.5453C43.9858 24.1629 43.8772 24.6289 43.8772 26.5754C43.8772 28.4397 44.0128 29.0154 44.7171 30.5508C45.1779 31.5377 45.9366 32.744 46.397 33.2649C46.8848 33.7584 47.2642 34.2244 47.2642 34.2793C47.2642 34.3341 46.5596 34.5809 45.7197 34.8276C44.8527 35.0743 43.7959 35.5404 43.3625 35.842C41.7096 37.021 40.4905 41.2978 39.9214 48.0144L39.5693 51.9077L37.5912 52.6204C34.8819 53.5799 32.4976 55.0604 30.872 56.7329C29.6798 57.9939 29.1379 58.2955 26.4555 59.3097C24.7486 59.9404 22.3101 60.6807 21.0367 60.9547C18.0563 61.6129 17.4873 61.8321 16.5931 62.7916C14.1276 65.4511 15.4281 69.6456 19.4652 71.9484C20.2238 72.3872 21.4702 73.3742 22.2017 74.1417L23.5564 75.5399V77.9251C23.5564 79.2412 23.4481 81.2973 23.3126 82.5035C23.1229 84.5596 23.1229 84.7516 23.7461 85.6562C24.6673 87.0272 26.1575 87.6851 28.298 87.6578C30.4655 87.6303 35.1801 86.5061 38.4585 85.2451C39.8132 84.7243 42.6581 83.7097 44.8258 82.9695C46.993 82.2295 49.7297 81.1877 50.8948 80.6118C53.3873 79.4604 54.661 79.2684 63.6563 78.7749C70.6736 78.3914 82.3513 78.583 89.2607 79.2137C95.411 79.762 103.837 80.9409 104.705 81.3797C105.084 81.5713 106.601 82.3663 108.091 83.1066C112.941 85.6014 116.22 86.7528 120.582 87.4659C125.242 88.2334 127.491 87.5755 128.764 85.1079C129.36 83.9565 129.387 83.6549 129.225 80.8586C129.144 79.1861 129.171 77.5687 129.279 77.2396C129.387 76.9108 130.607 75.4578 131.961 74.0321C135.132 70.7422 136.541 68.1378 136.541 65.4783C136.541 63.5318 136.026 62.5996 134.481 61.6677C133.75 61.229 132.856 61.0918 130.011 60.9547C125.865 60.7627 124.239 60.1872 123.21 58.5147C121.611 55.9651 121.557 55.9378 115.407 53.8266L111.614 52.538L111.532 51.0851C111.315 46.0131 109.798 38.4739 108.66 36.7194C108.389 36.3079 107.522 35.6776 106.682 35.2937C105.409 34.6905 105.219 34.526 105.382 34.0051C106.276 31.0442 106.194 28.6042 105.138 26.4932C104.488 25.2047 102.51 23.1485 101.887 23.1485C100.938 23.1211 100.911 22.6824 101.724 21.1197C102.997 18.6249 102.781 16.2397 101.02 13.9094C99.4211 11.7984 95.8988 11.0856 93.7312 12.4564L92.6474 13.1418L93.8937 13.3063C98.3373 13.9642 100.803 18.1863 99.0416 22.1889C98.7164 22.9018 98.4725 23.5323 98.4725 23.5871C98.4725 23.642 98.9603 23.5049 99.5837 23.2582C100.667 22.7921 100.667 22.7921 101.67 23.6146C103.268 24.9305 104.027 26.7125 104.027 29.1799C104.027 30.8797 103.919 31.4554 103.323 32.4698C102.916 33.1826 102.483 33.6761 102.239 33.6213C102.022 33.5665 100.938 33.2923 99.8272 33.0182C94.7607 31.7296 88.556 30.7426 82.7851 30.2766C80.7801 30.1395 79.0459 30.0024 78.9376 30.0024C78.829 30.0024 78.6664 29.7831 78.6124 29.5089C78.5312 29.2622 78.4768 30.8523 78.4499 33.0456C78.4229 35.6776 78.2873 37.4869 78.0164 38.3916C76.743 42.6412 71.6222 43.957 68.479 40.8043C66.9617 39.269 66.5013 37.6241 66.3114 33.3471C66.2301 31.4829 66.0675 30.0847 65.9865 30.2218C65.9053 30.3863 63.9272 30.8249 61.6243 31.2361C59.3211 31.6199 56.097 32.2505 54.4441 32.6069L51.4909 33.2923L50.5696 32.415C50.0819 31.9215 49.3776 30.8797 48.9711 30.0847C47.4538 26.9319 48.2937 23.2856 51.0574 20.9552C52.4934 19.7489 56.1783 17.6653 56.9639 17.6379C57.9664 17.6105 55.9884 17.0622 54.2545 16.8977L52.4121 16.7058L53.0624 15.335C54.5797 12.0725 57.9394 10.7566 61.0553 12.1822C61.7056 12.4838 62.3017 12.6757 62.383 12.5935C62.6268 12.3467 61.8139 10.784 61.1905 10.2905C60.8384 9.98893 60.5405 9.63254 60.5405 9.46805C60.5405 8.78265 63.033 6.45231 64.3607 5.8766C68.0725 4.28647 72.706 5.904 74.4398 9.44062L75.1171 10.784L75.2797 9.9067C75.7675 7.52153 78.9376 4.31389 81.62 3.49142C86.9847 1.9013 91.943 4.50579 94.0563 10.0986L94.7063 11.771L94.5441 9.98893C94.2729 6.50714 92.0513 3.35434 88.7729 1.81906C87.5265 1.24333 86.7679 1.07883 84.9254 1.024C83.5707 0.996585 82.1617 1.13366 81.5114 1.32557ZM87.9599 38.7755C94.1916 39.6801 101.236 41.3251 102.157 42.0929C102.483 42.3669 103.214 45.8487 103.485 48.5627C103.702 50.5643 103.783 50.5095 100.83 49.8789C97.7952 49.2482 91.943 48.3983 87.5535 47.9596C82.1887 47.4389 68.1268 47.4389 62.4369 47.9324C58.2103 48.3163 51.4096 49.2757 49.1876 49.7693C48.5376 49.9061 47.9416 49.9612 47.8603 49.8789C47.6704 49.7145 48.2668 43.4635 48.5103 42.778C48.5916 42.5313 49.4589 42.1201 50.4884 41.8186C54.5797 40.5848 64.2254 38.6383 64.442 39.0222C64.4963 39.1046 64.6858 39.7077 64.8484 40.338C65.3089 42.0929 67.016 44.0666 68.8585 44.9713C71.8387 46.4518 75.7945 45.8763 78.0977 43.6279C79.1542 42.6137 80.184 40.6944 80.4549 39.2414L80.6445 38.2272H82.3786C83.3268 38.2272 85.8466 38.4739 87.9599 38.7755ZM89.5315 52.5928C96.7927 53.5251 103.621 54.896 109.582 56.623C112.914 57.5828 114.729 58.2407 114.729 58.4874C114.729 58.597 114.404 58.8714 113.998 59.1178L113.293 59.5565L114.215 59.7485C116.491 60.2144 118.685 60.7903 118.956 61.0095C119.2 61.2014 119.173 62.6272 118.929 62.6272C118.902 62.6272 118.17 62.3256 117.33 61.9417C115.325 61.037 112.697 61.0095 110.936 61.8597L109.717 62.4352L111.884 62.7643C114.485 63.1755 117.764 63.9705 118.089 64.2997C118.225 64.4365 118.197 64.6832 118.008 64.93C117.683 65.3139 117.574 65.3139 116.87 64.9576C116.464 64.738 115.759 64.5461 115.352 64.5461C114.512 64.5461 112.697 65.3687 112.697 65.7526C112.697 65.8622 113.591 66.2186 114.675 66.4929C115.759 66.7669 116.734 67.0685 116.87 67.1232C117.087 67.2604 116.951 68.6586 116.707 68.6586C116.653 68.6586 116.165 68.3295 115.624 67.9183C114.35 66.9313 111.559 66.6845 110.015 67.4248C109.473 67.6991 109.066 67.9459 109.121 68.0007C109.175 68.0555 110.394 68.4118 111.857 68.7957C114.025 69.3713 115.813 70.0295 116.301 70.4407C116.328 70.4679 116.247 70.8246 116.111 71.2082C115.84 71.9212 115.84 71.9212 114.946 71.4549C113.619 70.797 111.153 70.6874 109.69 71.263C109.012 71.5097 108.525 71.8113 108.633 71.8937C108.714 71.976 109.906 72.2776 111.261 72.5516C114.567 73.237 115.542 73.6758 115.352 74.3612C115.244 74.8272 115.109 74.882 114.377 74.6628C113.158 74.3061 110.665 75.0463 110.665 75.7594C110.665 75.869 111.424 76.1157 112.372 76.3077C114.296 76.6913 114.865 76.9656 114.621 77.3768C114.242 78.0347 112.101 78.0074 108.226 77.2944C95.3567 74.9643 87.6621 74.3061 73.2747 74.3061C58.8333 74.2789 54.4441 74.6352 37.9437 77.2672C37.7812 77.2672 37.6455 77.1028 37.5912 76.856C37.483 76.3897 39.4337 75.6222 41.52 75.3207C42.8207 75.1287 42.929 74.882 42.0078 74.2789C40.897 73.5386 39.5963 73.4838 38.2146 74.0869C37.5373 74.416 36.9682 74.5528 36.9682 74.416C36.9682 74.3061 36.8869 74.0045 36.8056 73.7853C36.616 73.2646 38.865 72.3872 42.2247 71.6745C43.525 71.4001 44.6632 71.0986 44.7171 71.0438C44.7984 70.9614 44.338 70.7147 43.6876 70.4407C41.9265 69.728 39.9484 69.81 38.2959 70.6874C37.5373 71.0714 36.8056 71.3178 36.67 71.2357C36.2366 70.989 36.3992 70.0843 36.9682 69.6728C37.5373 69.2617 41.0322 68.0555 43.1999 67.5072L44.4193 67.2056L43.3355 66.7121C41.2761 65.7526 38.3772 66.2462 36.7786 67.8087C36.02 68.549 35.9927 68.549 35.6405 67.562C35.3966 66.8217 35.424 66.7121 36.1283 66.3558C36.5348 66.1362 37.6725 65.7799 38.6481 65.5879C39.5963 65.3963 40.4635 65.0944 40.5175 64.9576C40.6801 64.5461 38.865 63.7238 37.7538 63.7238C37.1578 63.7238 36.3991 63.9978 35.8031 64.4093C34.8006 65.0672 34.8006 65.0672 34.5027 64.5189C34.3128 64.1349 34.2858 63.861 34.4754 63.669C34.8549 63.2851 39.488 62.1061 41.52 61.9145C42.4412 61.8045 43.2812 61.6401 43.3355 61.5305C43.6063 61.0918 41.2491 60.4339 39.4337 60.4339C37.456 60.4339 35.7761 60.8999 34.5297 61.8045C33.5272 62.5176 33.4459 62.49 33.4459 61.5578C33.4459 60.4339 34.1775 59.9952 37.2934 59.2825C38.7294 58.9534 39.8402 58.5695 39.7589 58.4326C39.6776 58.2955 39.1628 57.9939 38.6211 57.7744L37.6455 57.336L38.5398 56.9521C42.4682 55.3072 55.4736 52.8944 64.2254 52.2093C68.9668 51.8253 85.5758 52.0997 89.5315 52.5928ZM29.4089 63.9157C29.5714 64.3545 30.0862 65.6155 30.601 66.7397C31.6848 69.1521 31.9557 70.2487 32.4976 74.2241C32.9582 77.6511 33.6085 79.3232 34.9362 80.6118L35.8844 81.5165L34.1775 82.0648C31.3596 82.9422 28.027 83.5729 27.7832 83.2986C27.6477 83.1614 27.6477 82.4487 27.7561 81.6812C28.1896 79.2136 28.0541 76.2253 27.4851 74.3612C27.0245 72.8259 26.6994 72.3596 25.1279 70.8246C24.0983 69.8376 22.6081 68.6586 21.7682 68.1651C20.4135 67.37 19.3568 66.109 19.8445 65.8347C19.9529 65.7526 20.4677 65.6155 20.9825 65.5331C23.4481 65.0396 25.8595 64.4093 27.2142 63.8334C29.1108 63.0383 29.0837 63.0383 29.4089 63.9157ZM124.971 64.8204C126.217 65.2043 127.464 65.3687 129.36 65.3687C130.824 65.3687 132.097 65.4783 132.178 65.6155C132.53 66.1638 130.715 68.9601 128.385 71.4277C125.079 74.9095 124.917 75.2931 124.944 79.6796C124.971 83.6825 124.998 83.6549 122.506 83.3262C121.069 83.1614 116.572 82.1196 116.382 81.928C116.301 81.8728 116.761 81.3797 117.412 80.8314C118.848 79.57 119.2 78.8573 119.579 76.3349C120.094 73.0726 121.394 68.1378 122.289 66.109C122.749 65.0944 123.156 64.2721 123.21 64.2721C123.237 64.2721 124.05 64.5189 124.971 64.8204Z" fill="white"/>
+                          <path d="M72.192 60.9002C72.192 63.285 72.1107 66.0541 72.0024 67.0684L71.8398 68.9329H76.3916C80.5913 68.9329 80.9708 68.8781 81.7294 68.357C83.2737 67.2331 83.7884 64.6835 82.7319 63.3126C82.1629 62.5999 82.1629 62.5451 82.5963 61.6401C83.1654 60.4067 83.1384 59.392 82.515 58.3502C81.7021 57.0068 80.1035 56.5957 75.7956 56.5957H72.192V60.9002ZM77.7193 59.6116C78.0988 59.7484 78.4237 60.05 78.4237 60.2967C78.4237 60.7354 77.2859 61.1466 76.8251 60.845C76.4999 60.6534 76.419 59.8035 76.7168 59.5292C76.9337 59.2825 76.9064 59.2825 77.7193 59.6116ZM78.4237 64.4092C78.9114 64.9851 78.2884 65.6978 77.3672 65.5882C76.8251 65.5334 76.6355 65.3414 76.5812 64.7383C76.4999 64.0801 76.5812 63.9981 77.2859 63.9981C77.7193 63.9981 78.2341 64.19 78.4237 64.4092Z" fill="white"/>
+                          <path d="M63.9827 57.3088C62.1945 57.5008 60.7043 57.72 60.623 57.7748C60.569 57.8571 60.6773 59.4473 60.9212 61.3117C61.1377 63.1483 61.4089 65.8898 61.4899 67.3432L61.6798 70.0299L62.655 69.8928C65.2834 69.5088 68.3719 69.2073 69.3744 69.2073C70.7021 69.2073 70.8377 68.9881 70.8377 66.8221C70.8377 65.3415 70.8104 65.3143 70.1604 65.4787C69.8082 65.5611 68.7514 65.7255 67.8571 65.835C66.4755 65.9722 66.2046 65.9174 66.069 65.5063C65.7981 64.8208 66.3942 64.5465 68.2093 64.5465H69.7539V62.8195V61.065L68.074 61.3117C66.2859 61.5582 65.3374 61.3938 65.4999 60.9003C65.6355 60.4615 66.6381 60.2148 68.5075 60.1875C69.7269 60.16 70.0517 60.078 69.9435 59.7764C69.8622 59.5844 69.6996 58.8442 69.6183 58.1315L69.4287 56.8701L68.2906 56.8977C67.6945 56.9249 65.7438 57.1169 63.9827 57.3088Z" fill="white"/>
+                          <path d="M86.0096 57.1713C86.0096 58.2131 85.3319 63.6414 84.8985 66.0266C84.6006 67.6443 84.3837 69.0425 84.438 69.0697C84.492 69.1245 86.1719 69.426 88.1769 69.7279C90.1819 70.0567 92.16 70.3858 92.5391 70.4679C93.2165 70.6326 93.2978 70.5227 93.8398 68.9053C94.1377 67.9731 94.3816 67.178 94.3276 67.1508C94.3003 67.1232 93.2978 66.9313 92.1057 66.7669C89.8028 66.4377 89.2067 66.1362 89.7485 65.5879C89.9924 65.3411 90.4528 65.3411 91.7265 65.5879C92.6477 65.7526 93.4877 65.8346 93.596 65.7798C93.7042 65.6978 93.8668 65.1767 93.9751 64.5736C94.0564 63.9705 94.192 63.3126 94.2733 63.1206C94.3816 62.8191 93.9751 62.6544 92.4852 62.4352C90.5614 62.1336 89.7215 61.6129 90.4801 61.1742C90.6967 61.0646 91.7535 61.1466 92.8373 61.3933C93.9211 61.6129 94.8424 61.8045 94.8963 61.8045C94.9237 61.8045 94.9506 61.0094 94.9506 60.0227C94.9506 57.9663 95.5467 58.2406 89.8841 57.5004C87.7434 57.1988 86.0096 57.0617 86.0096 57.1713Z" fill="white"/>
+                          <path d="M50.2457 59.5014C48.7014 59.8853 47.3737 60.2141 47.3468 60.2692C47.2925 60.324 47.5633 61.6398 47.9698 63.2024C48.3493 64.7653 48.891 67.3972 49.1619 69.0146C49.4331 70.6323 49.704 72.0305 49.7853 72.1125C50.0291 72.3868 54.3101 71.3174 54.3101 70.9887C54.3101 70.8243 54.1202 70.0292 53.8763 69.2341C53.6597 68.4391 53.5241 67.6988 53.6054 67.6164C53.795 67.4245 53.768 67.3697 54.9331 69.2614C55.4748 70.1388 56.0712 70.8515 56.2608 70.8515C56.6942 70.8515 60.623 70.0292 60.7313 69.9193C60.7856 69.8645 60.1622 68.9874 59.3223 67.9456C58.5097 66.9037 57.8324 65.9715 57.8324 65.8619C57.8324 65.7523 58.1032 65.2312 58.4011 64.6829C59.2683 63.2024 59.0245 60.9819 57.8863 59.8029C57.1007 59.0079 56.8568 58.9258 55.0687 58.8707C53.741 58.8435 52.1694 59.0354 50.2457 59.5014ZM54.4183 62.956C54.8248 63.6139 54.3371 64.3814 53.4428 64.491C52.8738 64.5733 52.7385 64.4362 52.5759 63.7235C52.4946 63.23 52.4946 62.7364 52.5759 62.572C52.8198 62.1609 54.0932 62.4349 54.4183 62.956Z" fill="white"/>
+                          <path d="M97.1434 61.585C96.8182 63.1479 96.1679 65.8071 95.7344 67.5068C95.2736 69.2341 94.9758 70.6871 95.0297 70.7419C95.111 70.8243 96.1679 71.1258 97.4143 71.4274C98.6607 71.7289 100.449 72.2225 101.397 72.524C102.346 72.8528 103.185 73.0447 103.266 72.9627C103.348 72.8804 103.7 72.0029 104.025 71.0435L104.675 69.2614L102.589 68.9598C101.451 68.7954 100.422 68.5487 100.286 68.4115C100.042 68.1648 100.937 64.5185 101.939 61.5302L102.454 60.0225L100.666 59.5562C99.6902 59.2822 98.6333 59.0079 98.3081 58.8983C97.7934 58.7611 97.7121 58.9806 97.1434 61.585Z" fill="white"/>
+                          <path d="M79.2917 13.5523C77.7744 14.4844 76.9075 16.5406 77.5848 17.6098C77.7474 17.884 77.8827 17.884 78.1539 17.5276C78.8039 16.7325 80.1046 16.239 81.4863 16.239C82.5431 16.239 83.0579 16.4035 84.0334 17.0889C84.7107 17.5824 85.3068 17.9388 85.3338 17.884C85.7672 17.4453 85.6859 16.2664 85.1442 15.2247C84.0604 13.1136 81.2967 12.3186 79.2917 13.5523Z" fill="white"/>
+                          <path d="M81.4574 80.9412C80.4549 81.27 78.9376 82.641 78.5312 83.628C77.7456 85.5469 78.2333 87.7129 79.7506 89.0287C81.4035 90.4269 83.8689 90.6189 85.3319 89.4399L86.0092 88.9191L85.4675 87.8225C84.8714 86.6711 84.7632 86.6163 83.7333 87.0274C81.7283 87.7949 80.4009 84.9438 82.3517 84.0664C83.0833 83.7376 83.7063 83.8472 84.438 84.4778C84.8445 84.8342 84.9527 84.7794 85.6031 83.7648C86.0092 83.1617 86.2804 82.4766 86.1991 82.257C85.8466 81.2976 82.8934 80.5025 81.4574 80.9412Z" fill="white"/>
+                          <path d="M67.2894 81.1877L66.043 81.2973L66.1786 85.7386C66.2329 88.1786 66.3142 90.1799 66.3412 90.2075C66.3412 90.2347 67.1268 90.1799 68.0753 90.0979L69.8092 89.9607L69.6196 88.6446C69.5113 87.9046 69.5383 87.3012 69.6739 87.3012C69.7822 87.3012 70.1613 87.9319 70.4865 88.6997C71.0825 90.0427 71.1368 90.0979 71.9498 89.9331C72.4102 89.8511 73.2232 89.7687 73.7379 89.7687H74.6592L73.8192 88.1514L72.9523 86.5337L73.5484 85.7386C74.4153 84.5324 74.2257 82.5035 73.1962 81.7085C72.4102 81.1329 70.1613 80.9134 67.2894 81.1877ZM70.5678 83.8745C70.839 84.2033 70.839 84.368 70.5678 84.6968C70.0261 85.3547 69.2131 85.2179 69.2131 84.4776C69.2131 83.4082 69.9178 83.1067 70.5678 83.8745Z" fill="white"/>
+                          <path d="M60.6761 82.0371C59.1859 82.2563 57.9395 82.4758 57.8855 82.5306C57.8312 82.5578 57.9938 84.1755 58.2376 86.122C58.9693 91.8794 58.8607 91.4955 59.538 91.3036C59.8632 91.2212 61.3265 91.002 62.7894 90.8376L65.4175 90.5085V89.1927C65.4175 88.4524 65.3635 87.8493 65.3092 87.8493C65.2553 87.8493 64.6049 87.9589 63.8189 88.1233C62.1934 88.4248 61.4348 88.2604 61.9225 87.6846C62.1121 87.4654 62.7355 87.301 63.4128 87.301H64.6049V86.0396V84.7786L63.7377 84.9706C63.2502 85.0802 62.6542 85.1898 62.4373 85.2721C62.2204 85.3269 61.8682 85.2721 61.6517 85.135C60.947 84.6963 61.6517 84.2851 63.1416 84.2851H64.6589L64.4693 83.1061C64.361 82.4758 64.2254 81.8727 64.1441 81.7355C64.0089 81.516 64.1715 81.4888 60.6761 82.0371Z" fill="white"/>
+                          <path d="M88.0452 85.7661C86.8527 88.0962 85.9315 90.0702 86.0128 90.125C86.284 90.3718 89.2642 90.5089 89.2642 90.2622C89.2642 89.851 91.7027 90.0154 91.8653 90.4266C91.9466 90.6461 92.4614 90.8929 93.0034 90.9749C93.5452 91.0845 94.3308 91.2216 94.7103 91.304L95.4146 91.4412L94.8999 88.7544C94.629 87.2739 94.1412 85.1902 93.8434 84.1212C93.2743 82.2019 93.247 82.1471 92.2718 81.9827C91.7297 81.9004 91.0524 81.7632 90.7545 81.6812C90.2937 81.544 89.9146 82.1195 88.0452 85.7661ZM91.784 86.9175C91.7027 87.1367 91.4588 87.3014 91.2693 87.3014C90.7002 87.3014 90.5106 86.5336 90.9171 86.0401C91.2423 85.6562 91.2963 85.6562 91.5945 86.0677C91.784 86.3144 91.8653 86.698 91.784 86.9175Z" fill="white"/>
+                          <path d="M52.1167 83.5725L49.543 84.148L50.139 86.7524C50.4642 88.1782 50.8164 89.9875 50.9246 90.7278C51.1685 92.7566 51.3581 92.9486 52.6045 92.5922C53.1735 92.4003 54.5825 92.1259 55.7476 91.934L57.834 91.6052V90.2342C57.834 88.9457 57.8066 88.8909 57.2376 89.0828C56.8854 89.1652 56.0455 89.3296 55.3412 89.4119C54.2843 89.5215 54.0405 89.494 54.0405 89.1376C54.0405 88.6992 54.8264 88.3973 56.0185 88.3973C56.7228 88.3973 56.7502 88.3153 56.7502 87.1363C56.7502 86.1769 56.6689 85.9025 56.3707 86.0125C56.1811 86.0945 55.4495 86.2592 54.7451 86.3413C53.7156 86.5057 53.4987 86.4784 53.4987 86.1221C53.4987 85.8205 53.8509 85.6286 54.5282 85.519C56.8315 85.1351 56.7228 85.2174 56.425 84.0109C56.0998 82.695 55.9915 82.6951 52.1167 83.5725Z" fill="white"/>
+                          <path d="M97.5538 83.3807C97.4725 83.6547 97.2829 84.6141 97.1473 85.5191C96.985 86.4238 96.6056 88.0139 96.3074 89.083C96.0095 90.1248 95.7656 91.1394 95.7656 91.2762C95.7656 91.5778 98.448 92.2633 98.8002 92.0441C98.9084 91.9893 99.071 91.331 99.1796 90.5635C99.2879 89.8233 99.4775 89.1378 99.6131 89.0558C99.7484 88.9734 100.263 89.796 100.751 90.8927C101.672 92.8664 101.699 92.8939 103.027 93.1955L104.382 93.5243L105.466 89.1654L106.522 84.8337L105.818 84.6693C105.438 84.5869 104.707 84.3949 104.219 84.2854C103.217 84.011 103.217 84.011 102.946 85.9851C102.865 86.6978 102.675 87.356 102.566 87.4381C102.431 87.4929 101.916 86.5882 101.428 85.382C100.588 83.3259 100.507 83.1887 99.7214 83.1887C99.2609 83.1887 98.6106 83.1064 98.2854 83.0243C97.8789 82.9144 97.6624 82.9968 97.5538 83.3807Z" fill="white"/>
+                          <path d="M43.8789 85.6559C42.8494 85.9574 41.6573 86.2865 41.2508 86.3686C40.8174 86.4785 40.4922 86.6701 40.4922 86.7801C40.4922 86.9169 40.8983 88.5618 41.4134 90.3987C41.9282 92.2356 42.4159 94.1001 42.5242 94.5112C42.6325 95.0595 42.7951 95.2515 43.0659 95.1419C43.2828 95.0595 44.6645 94.6756 46.1278 94.292C49.0541 93.4969 49.9753 92.7839 49.9753 91.3857C49.9753 90.4535 49.5415 89.4668 48.9728 89.1101C48.7016 88.9733 48.6203 88.6169 48.7289 88.0135C48.9185 86.9992 48.0785 85.3819 47.3469 85.3819C47.076 85.3819 46.6156 85.3267 46.3174 85.2447C46.0192 85.1899 44.9357 85.3819 43.8789 85.6559ZM45.3149 88.0411C45.2605 88.3154 44.9627 88.5618 44.6105 88.6169C44.1498 88.699 44.0145 88.5618 44.0145 88.1507C44.0145 87.7119 44.1771 87.5751 44.7188 87.5751C45.2336 87.5751 45.3962 87.7119 45.3149 88.0411ZM46.5343 91.057C46.8051 91.3309 46.1818 91.9616 45.613 91.9616C45.044 91.9616 44.7188 91.5501 44.9627 91.139C45.1523 90.8374 46.2631 90.7554 46.5343 91.057Z" fill="white"/>
+                          <path d="M108.311 86.862C107.606 87.4651 107.552 87.6843 107.552 89.384C107.552 91.1661 107.525 91.2757 106.74 91.6872C106.306 91.9064 105.873 92.1256 105.818 92.1532C105.791 92.1807 105.818 92.8386 105.927 93.5789C106.117 94.9223 106.144 94.9771 106.929 94.9771C108.23 94.9771 109.774 94.4012 110.451 93.6885C110.966 93.1126 111.075 92.7563 111.02 91.4677C110.966 90.0971 111.047 89.8227 111.59 89.3568C112.213 88.8357 112.24 88.7261 111.969 87.4923L111.671 86.2041H110.37C109.395 86.2041 108.88 86.3685 108.311 86.862Z" fill="white"/>
+                          <path d="M55.0175 95.1148C54.7463 95.8826 54.8275 97.418 55.234 98.3498C55.5322 99.1177 56.67 100.187 57.1578 100.187C57.2391 100.187 57.2934 99.5564 57.2934 98.8161C57.2934 97.2808 56.8869 96.2665 55.8574 95.3067C55.2883 94.7584 55.1801 94.7312 55.0175 95.1148Z" fill="white"/>
+                          <path d="M96.6868 95.4437C95.5217 96.6227 94.8984 98.9528 95.4674 99.885C95.6843 100.214 95.8196 100.214 96.3886 99.8302C97.3912 99.1723 98.0415 97.2531 97.7433 95.8001L97.5268 94.6211L96.6868 95.4437Z" fill="white"/>
+                          <path d="M102.512 96.8966C101.401 97.2257 100.426 97.9932 99.8027 98.9803C99.1254 100.104 99.288 100.461 100.507 100.461C101.97 100.461 102.756 99.9401 103.488 98.4595C104.355 96.6774 104.192 96.3759 102.512 96.8966Z" fill="white"/>
+                          <path d="M49.0538 97.774C49.3786 98.9254 49.975 99.8849 50.5711 100.296C51.2211 100.762 53.7682 100.899 53.7682 100.488C53.7682 99.9945 52.4948 98.3771 51.6275 97.8012C51.1128 97.4449 50.2999 97.1709 49.7851 97.1709C48.9452 97.1709 48.8639 97.2257 49.0538 97.774Z" fill="white"/>
+                          <path d="M59.5657 98.4323C59.3219 99.8029 59.8639 101.393 60.8934 102.27L61.7603 103.011L61.8416 101.695C61.9499 99.9676 61.7877 99.3097 60.9204 98.2951C60.0265 97.1985 59.7826 97.2261 59.5657 98.4323Z" fill="white"/>
+                          <path d="M92.1871 98.1844C91.2659 99.1714 90.8867 100.186 90.8867 101.721C90.8867 103.037 91.022 103.147 91.9162 102.488C92.7831 101.885 93.3252 100.652 93.3252 99.3086C93.3252 97.5813 93.027 97.2797 92.1871 98.1844Z" fill="white"/>
+                          <path d="M65.2558 101.174C65.0119 102.489 65.5267 104.135 66.4209 104.82C66.8 105.149 67.2335 105.396 67.3421 105.396C67.6943 105.396 67.64 102.709 67.2878 102.023C66.9087 101.283 65.9331 100.187 65.6623 100.187C65.5267 100.187 65.3641 100.625 65.2558 101.174Z" fill="white"/>
+                          <path d="M86.523 100.762C85.7104 101.585 85.1953 103.011 85.1953 104.436V105.697L86.0083 105.231C87.0378 104.601 87.6341 103.312 87.6341 101.75C87.6341 100.241 87.309 99.9674 86.523 100.762Z" fill="white"/>
+                          <path d="M71.5727 101.749C71.4641 101.831 71.3828 102.653 71.3828 103.558C71.3828 105.039 71.4641 105.258 72.3314 106.135C72.8461 106.656 73.3878 107.012 73.5504 106.903C73.9026 106.684 73.9026 105.285 73.5504 103.997C73.2796 102.982 71.8979 101.42 71.5727 101.749Z" fill="white"/>
+                          <path d="M80.2123 102.517C79.2371 103.586 78.695 105.889 79.2101 106.739C79.5349 107.259 80.4835 106.711 80.9982 105.669C81.4587 104.765 81.5673 101.831 81.1335 101.831C80.9709 101.831 80.5648 102.133 80.2123 102.517Z" fill="white"/>
+                          <path d="M92.9214 103.805C88.2613 105.998 81.894 108.658 78.6426 109.782L75.9875 110.686L73.4947 109.782C70.758 108.795 63.0361 105.505 58.9451 103.586C57.5361 102.928 56.344 102.434 56.2897 102.489C56.0728 102.681 60.0829 105.697 62.3318 107.04C64.7703 108.493 68.0217 110.001 70.2976 110.714C72.7361 111.509 72.6548 111.454 72.0588 111.701C71.7066 111.865 72.194 111.947 73.549 111.975C74.6598 111.975 76.3667 112.085 77.3422 112.222C78.3174 112.331 79.6451 112.359 80.3224 112.277L81.5419 112.085L80.4037 111.865C79.2386 111.646 78.7782 111.152 79.7534 111.152C80.7289 111.152 85.8768 109.316 88.207 108.137C90.835 106.794 94.7368 104.162 95.8746 102.955C96.3354 102.489 96.6332 102.105 96.5519 102.105C96.498 102.133 94.8721 102.873 92.9214 103.805Z" fill="white"/>
+                          <path d="M50.7611 104.655C50.2463 104.984 49.8398 105.395 49.8398 105.533C49.8398 105.697 50.3003 105.971 50.8693 106.136C51.7363 106.437 52.0614 106.41 52.9014 106.053C54.0665 105.587 55.1773 104.6 54.9607 104.271C54.8794 104.134 54.1208 104.024 53.2539 104.024C52.0614 104.024 51.4654 104.189 50.7611 104.655Z" fill="white"/>
+                          <path d="M97.7118 104.271C97.2241 104.573 98.714 105.834 100.069 106.245C100.909 106.492 101.234 106.464 101.965 106.108C103.022 105.56 102.941 105.203 101.722 104.518C100.746 103.997 98.3618 103.833 97.7118 104.271Z" fill="white"/>
+                          <path d="M57.3201 107.095C56.0737 107.314 54.3125 108.466 54.3125 109.069C54.3125 109.562 54.9085 109.782 56.1819 109.782C56.9949 109.782 57.4823 109.562 58.4848 108.658C59.1622 108.054 59.7312 107.451 59.7312 107.314C59.7312 106.985 58.6204 106.848 57.3201 107.095Z" fill="white"/>
+                          <path d="M93.3539 107.89C94.492 109.535 96.5783 110.248 97.9873 109.48C98.529 109.178 98.529 109.178 97.8787 108.493C96.9035 107.424 95.928 107.04 94.2751 107.04H92.7578L93.3539 107.89Z" fill="white"/>
+                          <path d="M61.379 110.111C59.2657 111.208 59.2387 112.222 61.2977 112.25C62.3545 112.25 63.4113 111.729 64.3052 110.769C65.0912 109.919 64.9826 109.782 63.6009 109.618C62.8692 109.508 62.2462 109.645 61.379 110.111Z" fill="white"/>
+                          <path d="M88.2606 109.699C87.448 109.864 87.475 110.083 88.4232 110.988C89.4527 112.002 91.0243 112.523 92.0538 112.222C93.0563 111.947 93.1106 111.893 92.8937 111.344C92.4876 110.275 89.8592 109.343 88.2606 109.699Z" fill="white"/>
+                          <path d="M67.183 111.948C66.8848 112.085 66.2888 112.524 65.8823 112.963C65.1507 113.676 65.1507 113.758 65.5841 114.087C66.2075 114.553 67.4266 114.553 68.3478 114.059C69.3503 113.538 70.4071 112.36 70.1632 112.003C69.9737 111.647 67.9686 111.619 67.183 111.948Z" fill="white"/>
+                          <path d="M82.5431 111.92C82.1096 112.222 83.0309 113.456 84.1147 114.031C84.9816 114.47 86.4719 114.579 87.0679 114.196C87.5827 113.867 87.0409 112.907 85.9301 112.249C85.0359 111.701 83.1935 111.536 82.5431 111.92Z" fill="white"/>
+                          </svg>                        
+                  </a>
+                  <div class="flex gap-[15px] pt-[25.58px]">
+                      <a class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                          href="https://www.instagram.com/" target="_blank">
+                          <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path class="group-hover:fill-white transition-all ease-linear duration-300"
+                                  d="M13.134 2.65846C13.8638 2.65566 14.5935 2.66299 15.323 2.68046L15.517 2.68746C15.741 2.69546 15.962 2.70546 16.229 2.71746C17.293 2.76746 18.019 2.93546 18.656 3.18246C19.316 3.43646 19.872 3.78046 20.428 4.33646C20.9364 4.83606 21.3299 5.4404 21.581 6.10746C21.828 6.74446 21.996 7.47146 22.046 8.53546C22.058 8.80146 22.068 9.02346 22.076 9.24746L22.082 9.44146C22.0998 10.1706 22.1075 10.9001 22.105 11.6295L22.106 12.3755V13.6855C22.1085 14.4152 22.1008 15.1449 22.083 15.8745L22.077 16.0685C22.069 16.2925 22.059 16.5135 22.047 16.7805C21.997 17.8445 21.827 18.5705 21.581 19.2075C21.3307 19.8752 20.9371 20.4801 20.428 20.9795C19.928 21.4878 19.3234 21.8812 18.656 22.1325C18.019 22.3795 17.293 22.5475 16.229 22.5975C15.962 22.6095 15.741 22.6195 15.517 22.6275L15.323 22.6335C14.5935 22.6512 13.8638 22.6589 13.134 22.6565L12.388 22.6575H11.079C10.3493 22.6599 9.61957 22.6523 8.89005 22.6345L8.69605 22.6285C8.45866 22.6199 8.22132 22.6099 7.98405 22.5985C6.92005 22.5485 6.19405 22.3785 5.55605 22.1325C4.88873 21.8818 4.28428 21.4883 3.78505 20.9795C3.27609 20.4797 2.88227 19.875 2.63105 19.2075C2.38405 18.5705 2.21605 17.8445 2.16605 16.7805C2.15491 16.5432 2.14491 16.3058 2.13605 16.0685L2.13105 15.8745C2.11261 15.1449 2.10428 14.4152 2.10605 13.6855V11.6295C2.10325 10.9001 2.11059 10.1707 2.12805 9.44146L2.13505 9.24746C2.14305 9.02346 2.15305 8.80146 2.16505 8.53546C2.21505 7.47046 2.38305 6.74546 2.63005 6.10746C2.88142 5.44008 3.27601 4.8359 3.78605 4.33746C4.28494 3.82821 4.88901 3.43403 5.55605 3.18246C6.19405 2.93546 6.91905 2.76746 7.98405 2.71746L8.69605 2.68746L8.89005 2.68246C9.61923 2.66403 10.3486 2.6557 11.078 2.65746L13.134 2.65846ZM12.106 7.65846C11.4436 7.64909 10.7858 7.77148 10.171 8.01852C9.55624 8.26557 8.99669 8.63234 8.52489 9.09751C8.05309 9.56269 7.67845 10.117 7.42273 10.7282C7.16702 11.3394 7.03534 11.9954 7.03534 12.658C7.03534 13.3205 7.16702 13.9765 7.42273 14.5877C7.67845 15.1989 8.05309 15.7532 8.52489 16.2184C8.99669 16.6836 9.55624 17.0503 10.171 17.2974C10.7858 17.5444 11.4436 17.6668 12.106 17.6575C13.4321 17.6575 14.7039 17.1307 15.6416 16.193C16.5793 15.2553 17.106 13.9835 17.106 12.6575C17.106 11.3314 16.5793 10.0596 15.6416 9.12192C14.7039 8.18424 13.4321 7.65846 12.106 7.65846ZM12.106 9.65846C12.5046 9.65111 12.9005 9.72325 13.2708 9.87066C13.6412 10.0181 13.9784 10.2378 14.2628 10.517C14.5473 10.7962 14.7732 11.1293 14.9275 11.4968C15.0818 11.8643 15.1612 12.2589 15.1613 12.6574C15.1614 13.056 15.082 13.4506 14.9279 13.8182C14.7737 14.1857 14.5479 14.5189 14.2635 14.7982C13.9792 15.0775 13.642 15.2973 13.2718 15.4449C12.9015 15.5924 12.5056 15.6647 12.107 15.6575C11.3114 15.6575 10.5483 15.3414 9.98573 14.7788C9.42312 14.2162 9.10705 13.4531 9.10705 12.6575C9.10705 11.8618 9.42312 11.0987 9.98573 10.5361C10.5483 9.97353 11.3114 9.65746 12.107 9.65746L12.106 9.65846ZM17.356 6.15846C17.0334 6.17137 16.7283 6.30861 16.5047 6.54143C16.281 6.77425 16.156 7.08459 16.156 7.40746C16.156 7.73032 16.281 8.04066 16.5047 8.27349C16.7283 8.50631 17.0334 8.64354 17.356 8.65646C17.6876 8.65646 18.0055 8.52476 18.2399 8.29034C18.4744 8.05592 18.606 7.73798 18.606 7.40646C18.606 7.07494 18.4744 6.75699 18.2399 6.52257C18.0055 6.28815 17.6876 6.15646 17.356 6.15646V6.15846Z"
+                                  fill="#FFCC02" />
+                          </svg>
+  
+                      </a>
+                      <a class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                          href="https://www.facebook.com/" target="_blank">
+                          <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path class="group-hover:fill-white transition-all ease-linear duration-300"
+                                  d="M17.0573 16.4069H19.974L21.1406 11.7402H17.0573V9.4069C17.0573 8.20523 17.0573 7.07357 19.3906 7.07357H21.1406V3.15357C20.7603 3.1034 19.3241 2.99023 17.8075 2.99023C14.64 2.99023 12.3906 4.9234 12.3906 8.47357V11.7402H8.89062V16.4069H12.3906V26.3236H17.0573V16.4069Z"
+                                  fill="#FFCC02" />
+                          </svg>
+  
+                      </a>
+                      <a class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                          href="https://web.telegram.org/a/" target="_blank">
+                          <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path class="group-hover:fill-white transition-all ease-linear duration-300"
+                                  fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M19.5659 21.637V21.6348L19.5846 21.5882L22.7086 5.2082V5.1562C22.7086 4.74779 22.5628 4.39137 22.2482 4.17795C21.9721 3.99054 21.6544 3.97754 21.4315 3.99487C21.224 4.01439 21.0193 4.05799 20.8211 4.12487C20.7366 4.1532 20.6532 4.18501 20.5711 4.2202L20.5575 4.22562L3.14088 11.3312L3.13567 11.3334C3.08272 11.3522 3.03089 11.3742 2.98046 11.3995C2.8566 11.4573 2.73775 11.5262 2.62525 11.6053C2.4013 11.7656 1.97525 12.1426 2.04713 12.7406C2.1065 13.2368 2.43463 13.551 2.6565 13.7145C2.78747 13.81 2.92827 13.8899 3.0763 13.9529L3.10963 13.968L3.12005 13.9713L3.12734 13.9745L6.17525 15.0416C6.16484 15.2399 6.18359 15.4425 6.23463 15.6429L7.76067 21.6651C7.84404 21.9934 8.02418 22.2863 8.2758 22.5026C8.52742 22.7189 8.83787 22.8479 9.16356 22.8713C9.48925 22.8947 9.81382 22.8115 10.0917 22.6332C10.3695 22.455 10.5867 22.1907 10.7128 21.8775L13.0961 19.2276L17.1888 22.4906L17.2471 22.5166C17.619 22.6856 17.9659 22.7387 18.2836 22.6943C18.6013 22.6488 18.8534 22.5101 19.043 22.353C19.2622 22.1681 19.437 21.9326 19.5534 21.6651L19.5617 21.6467L19.5648 21.6402L19.5659 21.637ZM7.74505 15.229C7.72815 15.1622 7.73216 15.0915 7.75651 15.0272C7.78086 14.963 7.82428 14.9084 7.88046 14.8715L18.2148 8.04654C18.2148 8.04654 18.8232 7.66195 18.8013 8.04654C18.8013 8.04654 18.9096 8.1137 18.5836 8.42895C18.2753 8.72904 11.218 15.8151 10.5034 16.5323C10.4636 16.5724 10.4358 16.6235 10.4232 16.6796L9.27109 21.2513L7.74505 15.228V15.229Z"
+                                  fill="#FFCC02" />
+                          </svg>
+  
+                      </a>
+                  </div>
+              </div>
+              <div class="lg:w-8/12 lg:pt-0 pt-8">
+                  <div class="flex flex-row flex-wrap justify-between">
+                      <div class="md:w-3/12 min-[520px]:w-6/12 w-full">
+                          <ul class="flex flex-col gap-4">
+                              <li class="capitalize text-white font-play font-bold text-lg leading-110 mb-1">
+                                  Contact</li>
+                              <li><a class="capitalize font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">Rebelbeercans</a></li>
+                              <li><a class="capitalize font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">Achterberghstraat 23</a></li>
+                              <li><a class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">5281 AB Boxtel</a></li>
+                              <li><a class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="https://mail.google.com/" target="_blank">Contac @rebelbeercans.nl</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7">
+                          <ul class="flex flex-col gap-4">
+                              <li class="capitalize text-white font-play font-bold text-lg leading-110 mb-1">
+                                  Information</li>
+                              <li><a class="capitalize font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">Returns</a></li>
+                              <li><a class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">Payment options</a></li>
+                              <li><a class="capitalize font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">My Account</a></li>
+                              <li><a class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">Responsible alcohol consumption</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7">
+                          <ul class="flex flex-col gap-4">
+                              <li class="capitalize text-white font-play font-bold text-lg leading-110 mb-1">
+                                  Conditions(nl)</li>
+                              <li><a class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">Remove cookies</a></li>
+                              <li><a class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">Cookies statement rebelbeercans</a></li>
+                              <li><a class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">Disclaimer rebelbeercan</a></li>
+                              <li><a class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">General terms and conditions rebelbeercans</a>
+                              </li>
+                              <li><a class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                      href="">Privacy policy rebelbeercans</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="w-full border border-solid border-white opacity-20"></div>
+      <p
+          class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-[23.5px] md:leading-110 leading-normal  text-center">
+          <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
+      </p>
+      <script>     const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>
+  </footer>
+  <script>function changeText(buttonId, selectElement) {
+    var button = document.getElementById(buttonId);
+    button.innerHTML = selectElement.value + ' <img src="/assets/images/offers/svg/dropdown-arrow.svg" alt="arrowIcon">';
+}
+</script>
   </body>
 </html>
