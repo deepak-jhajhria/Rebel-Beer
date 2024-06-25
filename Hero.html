@@ -11,7 +11,7 @@
     <!-- =============== TAILWIND LINK ============= -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/myaccount.css">
-    <!-- =============== META TAG ============== -->
+    <link rel="stylesheet" href="./assets/css/root.css">
     <title>Rebel Beer</title>
     <meta name="title" content="Welcome to Cans" />
     <meta name="description"
@@ -44,6 +44,7 @@
                         'light-blue': '#BEDCFE',
                         green: ' #76BD3D',
                         'white-gray': '#F0F0EA',
+                        
                     },
                     fontSize: {
                         'custom_2xl': '28px',
@@ -79,50 +80,106 @@
             }
     
             .tab-button.active {
-               border: 1px solid #FFCC02;
+                border: 1px solid #FFCC02;
             }
-            .text{
-                -webkit-text-stroke: solid;
-                -webkit-text-stroke-width: 1.5px;
-                -webkit-text-stroke-color: black;
+
+            .navbtn {
+                background-color: transparent;
+                transition: background-color 0.3s;
             }
-            .tab-button.active div{
+
+            .navbtn.yellow {
+                background-color: #FFCC02;
+            }
+
+            .navbtn.blue {
+                background-color: #BEDCFE;
+            }
+
+            .navbtn.green {
+                background-color: #A7E45F;
+            }
+
+            .tab-button.active div {
                 background-color: #FFCC02;
                 border-color: #FFCC02;
                 width: 20px;
                 height: 20px;
             }
-            #blue.tab-button.active{
+
+            #blue.tab-button.active {
                 border: 1px solid #BEDCFE !important;
             }
-            #blue.tab-button.active div{
+
+            #blue.tab-button.active div {
                 background-color: #BEDCFE;
                 border-color: #BEDCFE !important;
                 width: 20px;
                 height: 20px;
             }
-            #green.tab-button.active{
+
+            #green.tab-button.active {
                 border: 1px solid #A7E45F !important;
             }
-            #green.tab-button.active div{
+
+            #green.tab-button.active div {
                 background-color: #A7E45F;
-                border-color: #A7E45F!important;
+                border-color: #A7E45F !important;
                 width: 20px;
                 height: 20px;
             }
-    
+.text_outline{
+    -webkit-text-stroke: solid;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+        
             .can-img {
                 max-width: 100%;
             }
         </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const tabButtons = document.querySelectorAll('.tab-button');
+                const navbtn = document.querySelector('.navbtn');
+
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        tabButtons.forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+
+                        // Update navbtn background color
+                        if (button.id === 'yellow') {
+                            navbtn.classList.remove('blue', 'green');
+                            navbtn.classList.add('yellow');
+                        } else if (button.id === 'blue') {
+                            navbtn.classList.remove('yellow', 'green');
+                            navbtn.classList.add('blue');
+                        } else if (button.id === 'green') {
+                            navbtn.classList.remove('yellow', 'blue');
+                            navbtn.classList.add('green');
+                        }
+                        // else if (button.id === 'yellow') {
+                        //     navbtn.classList.remove('blue', 'green');
+                        //     navbtn.classList.add('yellow');
+                        // }
+                        
+                    });
+                });
+            });
+        </script>
 </head>
 
 <body class="h-full bg-yellow-500">
     <div id="main-content" class="relative bg-[url(./assets/images/homepage/webp/yellow-background.webp)] bg-cover bg-no-repeat bg-center min-h-screen flex flex-col">
     <!-- =============== NAVBAR ============= -->
-    <nav class="flex items-center py-[10.52px] justify-between max-w-[1165px] mx-auto px-3">
+     <div class=" bg-black w-full flex gap-3 justify-center items-center py-1">
+        <img src="./assets/images/homepage/svg/yellow-truck.svg" alt="truck" class="truck-img">
+        <p class="text-white-gray font-play text-sm leading-115">Free Shipping Over First Order</p>
+     </div>
+    <nav class="flex container items-center py-[10.52px] justify-between max-w-[1165px] mx-auto px-3">
         <a href="#">
-            <img src="./assets/images/homepage/svg/logo.svg" alt="headerlogo">
+            <img src="./assets/images/myaccount/svg/header_logo.svg" alt="headerlogo">
         </a>
         <div class="flex items-center">
             <ul  class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1024px]:h-screen max-[1024px]:w-full duration-300 ease-in-out lg:justify-start justify-center" id="navbar">
@@ -196,7 +253,7 @@
                             </svg>                                    
                     </a>
             </div>
-                <button class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
+                <button class="px-4 navbtn  py-3 rounded-[5px] yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
                     Contact Us
                 </button>
                 <div onclick="openNav()" class="menu d-block d-lg-none z-[5]">
@@ -206,6 +263,7 @@
                   </div>
             </div>
             </div>
+         
     </nav>
         <header class="relative flex-grow flex items-center justify-center">
             <div class=" container max-w-[1164px] px-3 mx-auto">
@@ -214,7 +272,7 @@
                     <div class="flex flex-row flex-wrap -mx-3 items-center h-full">
                     <div class="lg:w-1/2 w-full px-3">
                     <h1 class=" font-play text-custom_9xl leading-100 font-bold ">Welcome to</h1>
-                    <h1 class=" font-play text-custom_9xl leading-100 font-bold text text-transparent">Rebel Beer</h1>
+                    <h1 class=" font-play text-custom_9xl leading-100 font-bold text_outline text-transparent">Rebel Beer</h1>
                     <h1 class=" font-play text-custom_9xl leading-100 font-bold mb-3">Cans</h1>
                     <p class=" font-poppins text-base max-w-[527px] font-normal text-black mb-9">Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa.</p>
                     <button class=" bg-white text-black text-base font-poppins font-normal py-[18px] px-4 rounded-[5px]">Shop the latest beers now!</button>
@@ -230,16 +288,16 @@
           
         </header>
         <div class="flex flex-col gap-3 justify-center items-center absolute top-[50%] right-[2%]">
-            <div class="tab-button active border w-[30px] h-[30px] border-solid border-transparent rounded-full p-[5px] flex justify-center items-center" data-bg="yellow-background.webp" data-can="yellow-cans.webp"><div class="w-3 h-3 rounded-full bg-transparent border border-solid border-black "></div></div>
-            <div id="blue" class="tab-button  border w-[30px] h-[30px] border-solid border-transparent rounded-full flex justify-center items-center" data-bg="blue-bg.webp" data-can="blue-cans.webp"><div class="w-3 h-3 rounded-full bg-transparent border border-solid border-black "></div></div>
-            <button id="green" class="tab-button  border w-[30px] h-[30px] border-solid border-transparent rounded-full flex justify-center items-center" data-bg="green-bg.webp" data-can="green-cans.webp"><div class="w-3 h-3 rounded-full bg-transparent border border-solid border-black "></div></button>
+            <div class="tab-button active border w-[30px] h-[30px] border-solid border-transparent rounded-full p-[5px] flex justify-center items-center" data-bg="yellow-background.webp" data-can="yellow-cans.webp" data-truck="yellow-truck.svg"><div class="w-3 h-3 rounded-full bg-transparent border border-solid border-black "></div></div>
+            <div id="blue" class="tab-button  border w-[30px] h-[30px] border-solid border-transparent rounded-full flex justify-center items-center" data-bg="blue-bg.webp" data-can="blue-cans.webp" data-truck="blue-truck.svg"><div class="w-3 h-3 rounded-full bg-transparent border border-solid border-black "></div></div>
+            <button id="green" class="tab-button  border w-[30px] h-[30px] border-solid border-transparent rounded-full flex justify-center items-center" data-bg="green-bg.webp" data-can="green-cans.webp" data-truck="green-truck.svg"><div class="w-3 h-3 rounded-full bg-transparent border border-solid border-black "></div></button>
         </div>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const tabButtons = document.querySelectorAll('.tab-button');
             const mainContent = document.getElementById('main-content');
-            const navButtons = document.querySelectorAll('nav a');
+            // const navButtons = document.querySelectorAll('.navbtn');
 
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
@@ -257,18 +315,19 @@
                     const canImage = button.getAttribute('data-can');
                     document.querySelector('.can-img').src = `./assets/images/homepage/webp/${canImage}`;
 
-                    // Change navigation button color
-                    navButtons.forEach(navButton => {
-                        navButton.style.color = button.classList.contains('active') ? '#FFCC02' : '#FFFFFF';
-                    });
+                    const truckImage = button.getAttribute('data-truck');
+                    document.querySelector('.truck-img').src = `./assets/images/homepage/svg/${truckImage}`;
+
                 });
             });
         });
     </script>
-    <script>function openNav() {
+    <script>    // <!-- =============== NAVBAR JAVASCRIPT ============= -->
+        function openNav() {
         document.getElementById("navbar").classList.toggle("left-0");
         document.body.classList.toggle("overflow_hidden");
-        document.querySelector(".menu").classList.toggle("cross");}</script>
+        document.querySelector(".menu").classList.toggle("cross");
+    }</script>
 </body>
 
 </html>
