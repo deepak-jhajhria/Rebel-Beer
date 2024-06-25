@@ -1,0 +1,17 @@
+.faq_circle_animation {
+    animation: faqblackcircle 6s linear infinite;
+}
+
+
+.hero-bg{
+    background-image: url('../images/privacy/webp/hero-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+.footerBg{
+    background-image: url('../images/privacy/webp/footer-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
