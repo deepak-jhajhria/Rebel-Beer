@@ -8,13 +8,13 @@ border: 1px solid black !important;
 }
 
 .hero-bg{
-    background-image: url('../images/privacy/webp/hero-bg.webp');
+    background-image: url('../images/about/webp/hero-bg.webp');
     background-position: center;
     background-repeat: no-repeat;
      background-size: cover;
 }
 .footerBg{
-    background-image: url('../images/privacy/webp/footer-bg.webp');
+    background-image: url('../images/about/webp/footer-bg.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
