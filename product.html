@@ -88,6 +88,9 @@
                 },
                 boxShadow: {
                     "latestblogssidershadow": " 0px -6px 0px 0px #000000",
+                },
+                screen: {
+                    'xs': '500px',
                 }
             }
         }
@@ -95,12 +98,58 @@
 </head>
 
 <body>
-    <section class="relative lg:pb-24 md:pb-20 sm:pb-16 pb-12 xl:pb-[144px]">
-        <img class="absolute top-[1%] -z-0 pointer-events-none end-0" src="./assets/images/product/svg/semi-circle-vector.svg" alt="vector">
-        <img class="absolute top-[50%] -z-0 pointer-events-none end-0" src="./assets/images/product/svg/black-semi-vector.svg" alt="vector">
-        <img class="absolute bottom-[5%] -z-0 pointer-events-none start-[2%]" src="./assets/images/product/svg/wave-vector.svg" alt="vector">
-        <div class="max-w-[1172px] px-4 mx-auto pt-12 sm:pt-16">
-            <div class="flex lg:flex-row flex-col relative z-10 gap-3 lg:gap-0  justify-between pb-1">
+    <section class="bg-white xl:pb-[144px] lg:pb-24 md:pb-20 sm:pb-16 pb-12 pt-[64px] relative">
+        <span>
+            <svg class="pointer-event-none -z-0 absolute top-[50%]" width="60" height="69" viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_408_9161" fill="white">
+                    <path
+                        d="M0.54664 61.5214C8.58726 67.2483 18.5736 69.5466 28.3087 67.9106C38.0439 66.2746 46.7304 60.8383 52.4573 52.7977C58.1843 44.757 60.4825 34.7707 58.8465 25.0356C57.2105 15.3005 51.7742 6.61394 43.7336 0.886998L22.1401 31.2042L0.54664 61.5214Z" />
+                </mask>
+                <path
+                    d="M0.54664 61.5214C8.58726 67.2483 18.5736 69.5466 28.3087 67.9106C38.0439 66.2746 46.7304 60.8383 52.4573 52.7977C58.1843 44.757 60.4825 34.7707 58.8465 25.0356C57.2105 15.3005 51.7742 6.61394 43.7336 0.886998L22.1401 31.2042L0.54664 61.5214Z"
+                    fill="black" stroke="black" stroke-width="10" mask="url(#path-1-inside-1_408_9161)" />
+            </svg>
+
+        </span>
+        <span class="absolute right-0 pointer-events-none top-2">
+            <svg width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_453_7935" fill="white">
+                    <path
+                        d="M65.4559 55.8686C70.3918 47.3195 71.7293 37.1598 69.1743 27.6245C66.6194 18.0892 60.3812 9.95946 51.8321 5.02364C43.283 0.0878134 33.1233 -1.24974 23.588 1.30523C14.0527 3.8602 5.92293 10.0984 0.987106 18.6475L33.2215 37.2581L65.4559 55.8686Z" />
+                </mask>
+                <path
+                    d="M65.4559 55.8686C70.3918 47.3195 71.7293 37.1598 69.1743 27.6245C66.6194 18.0892 60.3812 9.95946 51.8321 5.02364C43.283 0.0878134 33.1233 -1.24974 23.588 1.30523C14.0527 3.8602 5.92293 10.0984 0.987106 18.6475L33.2215 37.2581L65.4559 55.8686Z"
+                    fill="#FFCC02" stroke="#FFCC02" stroke-width="6" mask="url(#path-1-inside-1_453_7935)" />
+            </svg>
+
+        </span>
+        <span class="absolute left-0 pointer-events-none top-[19%]">
+            <svg width="47" height="57" viewBox="0 0 47 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_453_7936" fill="white">
+                    <path
+                        d="M-18.3505 0.396039C-23.2863 8.94514 -24.6239 19.1048 -22.0689 28.6401C-19.5139 38.1754 -13.2757 46.3052 -4.72661 51.241C3.82249 56.1768 13.9822 57.5144 23.5175 54.9594C33.0528 52.4044 41.1825 46.1662 46.1184 37.6171L13.8839 19.0066L-18.3505 0.396039Z" />
+                </mask>
+                <path
+                    d="M-18.3505 0.396039C-23.2863 8.94514 -24.6239 19.1048 -22.0689 28.6401C-19.5139 38.1754 -13.2757 46.3052 -4.72661 51.241C3.82249 56.1768 13.9822 57.5144 23.5175 54.9594C33.0528 52.4044 41.1825 46.1662 46.1184 37.6171L13.8839 19.0066L-18.3505 0.396039Z"
+                    stroke="black" stroke-width="10" mask="url(#path-1-inside-1_453_7936)" />
+            </svg>
+        </span>
+        <span class="absolute left-5 pointer-events-none bottom-[7%]">
+            <svg width="52" height="192" viewBox="0 0 52 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M50.1175 0.652344C50.1175 11.231 39.0391 11.231 39.0391 21.8097C39.0391 32.3884 50.1175 32.5015 50.1175 42.9671C50.1175 53.4328 39.0391 53.5458 39.0391 64.1245C39.0391 74.7032 50.1175 74.6806 50.1175 85.2593C50.1175 95.838 39.0391 95.838 39.0391 106.417C39.0391 116.995 50.1175 116.995 50.1175 127.574C50.1175 138.153 39.0391 138.153 39.0391 148.731C39.0391 159.31 50.1175 159.333 50.1175 169.911C50.1175 180.49 39.0391 180.49 39.0391 191.069"
+                    stroke="#FFCC02" stroke-width="2" stroke-miterlimit="10" />
+                <path
+                    d="M31.3633 0.652344C31.3633 11.231 20.3945 11.231 20.3945 21.8097C20.3945 32.3884 31.3633 32.3884 31.3633 42.9671C31.3633 53.5458 20.3945 53.5458 20.3945 64.1245C20.3945 74.7032 31.3633 74.6806 31.3633 85.2593C31.3633 95.838 20.3945 95.838 20.3945 106.417C20.3945 116.995 31.3633 116.995 31.3633 127.574C31.3633 138.153 20.3945 138.153 20.3945 148.731C20.3945 159.31 31.3633 159.333 31.3633 169.911C31.3633 180.49 20.3945 180.49 20.3945 191.069"
+                    stroke="#FFCC02" stroke-width="2" stroke-miterlimit="10" />
+                <path
+                    d="M12.6761 0.652344C12.6761 11.231 1.59766 11.231 1.59766 21.8097C1.59766 32.3884 12.6761 32.3884 12.6761 42.9671C12.6761 53.5458 1.59766 53.5458 1.59766 64.1245C1.59766 74.7032 12.6761 74.6806 12.6761 85.2593C12.6761 95.838 1.59766 95.838 1.59766 106.417C1.59766 116.995 12.6761 116.995 12.6761 127.574C12.6761 138.153 1.59766 138.153 1.59766 148.731C1.59766 159.31 12.6761 159.333 12.6761 169.911C12.6761 180.49 1.59766 180.49 1.59766 191.069"
+                    stroke="#FFCC02" stroke-width="2" stroke-miterlimit="10" />
+            </svg>
+
+        </span>
+        <div class="max-w-[1172px] px-4 mx-auto relative z-10">
+            <div class="flex lg:flex-row flex-col gap-3 lg:gap-0 justify-between pb-1">
                 <div class="flex justify-between w-full  lg:justify-start  items-center mb-1">
 
                     <div class="flex items-center w-full justify-between">
@@ -221,7 +270,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex">
+            <div class="flex justify-center">
                 <!-- ------------------------------------------- side bar ------------------------------------------------ -->
                 <div id="main"
                     class="bg-white duration-300 z-10 top-14 flex flex-col w-full absolute -start-full lg:static max-w-[269px]">
@@ -866,9 +915,9 @@
                     <div class="flex w-full flex-row mt-12 ps-[10px] flex-wrap">
                         <!-- --------------row 1------------- -->
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -914,9 +963,9 @@
                             </div>
                         </div>
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 mt-5 sm:mt-0   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 mt-5 min-[500px]:mt-0   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -962,9 +1011,9 @@
                             </div>
                         </div>
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 mt-5 md:mt-0  flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 mt-5 md:mt-0  flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1013,9 +1062,9 @@
 
                         <!-- --------------row 2 ------------- -->
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1061,9 +1110,9 @@
                             </div>
                         </div>
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1109,9 +1158,9 @@
                             </div>
                         </div>
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1159,9 +1208,9 @@
 
                         <!-- --------------row 3------------- -->
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1207,9 +1256,9 @@
                             </div>
                         </div>
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1255,9 +1304,9 @@
                             </div>
                         </div>
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1305,9 +1354,9 @@
 
                         <!-- --------------row 4 ------------- -->
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1353,9 +1402,9 @@
                             </div>
                         </div>
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1401,9 +1450,9 @@
                             </div>
                         </div>
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1451,9 +1500,9 @@
 
                         <!-- --------------row 5------------- -->
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1499,9 +1548,9 @@
                             </div>
                         </div>
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1547,9 +1596,9 @@
                             </div>
                         </div>
                         <div
-                            class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                            class="md:w-4/12  min-[500px]:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
@@ -1598,45 +1647,157 @@
                     </div>
                 </div>
             </div>
+            <div class="flex justify-center pt-10 md:pt-14 xl:pt-24 items-center gap-3 sm:gap-4">
+                <svg class="rotate-[-180deg] duration-300 transition-all slide_icons" width="40" height="40"
+                    viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
+                        rx="4.34033" fill="white" />
+                    <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
+                        rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
+                    <path class="duaration-300"
+                        d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
+                        fill="#C4CDD5" />
+                </svg>
+                <div
+                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                    1</div>
+                <div
+                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                    2</div>
+                <div
+                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                    ...</div>
+                <div
+                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                    9</div>
+                <div
+                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                    26</div>
+                <svg class="slide_icons duration-300 transition-all" width="40" height="40" viewBox="0 0 40 40"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
+                        rx="4.34033" fill="white" />
+                    <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
+                        rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
+                    <path class="duartion-300"
+                        d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
+                        fill="#C4CDD5" />
+                </svg>
+            </div>
         </div>
+<footer class="footer_bg bg-center bg-cover bg-no-repeat pt-[69.66px]">
+    <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[104.42px]">
+        <div class="flex flex-row flex-wrap">
+            <div class="lg:w-4/12">
+                <a href="/">
+                    <img src="./assets/images/myaccount/svg/footer_logo.svg" alt="footer_logo">
+                </a>
+                <div class="flex gap-[15px] pt-[25.58px]">
+                    <a class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                        href="https://www.instagram.com/" target="_blank">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-white transition-all ease-linear duration-300"
+                                d="M13.134 2.65846C13.8638 2.65566 14.5935 2.66299 15.323 2.68046L15.517 2.68746C15.741 2.69546 15.962 2.70546 16.229 2.71746C17.293 2.76746 18.019 2.93546 18.656 3.18246C19.316 3.43646 19.872 3.78046 20.428 4.33646C20.9364 4.83606 21.3299 5.4404 21.581 6.10746C21.828 6.74446 21.996 7.47146 22.046 8.53546C22.058 8.80146 22.068 9.02346 22.076 9.24746L22.082 9.44146C22.0998 10.1706 22.1075 10.9001 22.105 11.6295L22.106 12.3755V13.6855C22.1085 14.4152 22.1008 15.1449 22.083 15.8745L22.077 16.0685C22.069 16.2925 22.059 16.5135 22.047 16.7805C21.997 17.8445 21.827 18.5705 21.581 19.2075C21.3307 19.8752 20.9371 20.4801 20.428 20.9795C19.928 21.4878 19.3234 21.8812 18.656 22.1325C18.019 22.3795 17.293 22.5475 16.229 22.5975C15.962 22.6095 15.741 22.6195 15.517 22.6275L15.323 22.6335C14.5935 22.6512 13.8638 22.6589 13.134 22.6565L12.388 22.6575H11.079C10.3493 22.6599 9.61957 22.6523 8.89005 22.6345L8.69605 22.6285C8.45866 22.6199 8.22132 22.6099 7.98405 22.5985C6.92005 22.5485 6.19405 22.3785 5.55605 22.1325C4.88873 21.8818 4.28428 21.4883 3.78505 20.9795C3.27609 20.4797 2.88227 19.875 2.63105 19.2075C2.38405 18.5705 2.21605 17.8445 2.16605 16.7805C2.15491 16.5432 2.14491 16.3058 2.13605 16.0685L2.13105 15.8745C2.11261 15.1449 2.10428 14.4152 2.10605 13.6855V11.6295C2.10325 10.9001 2.11059 10.1707 2.12805 9.44146L2.13505 9.24746C2.14305 9.02346 2.15305 8.80146 2.16505 8.53546C2.21505 7.47046 2.38305 6.74546 2.63005 6.10746C2.88142 5.44008 3.27601 4.8359 3.78605 4.33746C4.28494 3.82821 4.88901 3.43403 5.55605 3.18246C6.19405 2.93546 6.91905 2.76746 7.98405 2.71746L8.69605 2.68746L8.89005 2.68246C9.61923 2.66403 10.3486 2.6557 11.078 2.65746L13.134 2.65846ZM12.106 7.65846C11.4436 7.64909 10.7858 7.77148 10.171 8.01852C9.55624 8.26557 8.99669 8.63234 8.52489 9.09751C8.05309 9.56269 7.67845 10.117 7.42273 10.7282C7.16702 11.3394 7.03534 11.9954 7.03534 12.658C7.03534 13.3205 7.16702 13.9765 7.42273 14.5877C7.67845 15.1989 8.05309 15.7532 8.52489 16.2184C8.99669 16.6836 9.55624 17.0503 10.171 17.2974C10.7858 17.5444 11.4436 17.6668 12.106 17.6575C13.4321 17.6575 14.7039 17.1307 15.6416 16.193C16.5793 15.2553 17.106 13.9835 17.106 12.6575C17.106 11.3314 16.5793 10.0596 15.6416 9.12192C14.7039 8.18424 13.4321 7.65846 12.106 7.65846ZM12.106 9.65846C12.5046 9.65111 12.9005 9.72325 13.2708 9.87066C13.6412 10.0181 13.9784 10.2378 14.2628 10.517C14.5473 10.7962 14.7732 11.1293 14.9275 11.4968C15.0818 11.8643 15.1612 12.2589 15.1613 12.6574C15.1614 13.056 15.082 13.4506 14.9279 13.8182C14.7737 14.1857 14.5479 14.5189 14.2635 14.7982C13.9792 15.0775 13.642 15.2973 13.2718 15.4449C12.9015 15.5924 12.5056 15.6647 12.107 15.6575C11.3114 15.6575 10.5483 15.3414 9.98573 14.7788C9.42312 14.2162 9.10705 13.4531 9.10705 12.6575C9.10705 11.8618 9.42312 11.0987 9.98573 10.5361C10.5483 9.97353 11.3114 9.65746 12.107 9.65746L12.106 9.65846ZM17.356 6.15846C17.0334 6.17137 16.7283 6.30861 16.5047 6.54143C16.281 6.77425 16.156 7.08459 16.156 7.40746C16.156 7.73032 16.281 8.04066 16.5047 8.27349C16.7283 8.50631 17.0334 8.64354 17.356 8.65646C17.6876 8.65646 18.0055 8.52476 18.2399 8.29034C18.4744 8.05592 18.606 7.73798 18.606 7.40646C18.606 7.07494 18.4744 6.75699 18.2399 6.52257C18.0055 6.28815 17.6876 6.15646 17.356 6.15646V6.15846Z"
+                                fill="#FFCC02" />
+                        </svg>
+
+                    </a>
+                    <a class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                        href="https://www.facebook.com/" target="_blank">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-white transition-all ease-linear duration-300"
+                                d="M17.0573 16.4069H19.974L21.1406 11.7402H17.0573V9.4069C17.0573 8.20523 17.0573 7.07357 19.3906 7.07357H21.1406V3.15357C20.7603 3.1034 19.3241 2.99023 17.8075 2.99023C14.64 2.99023 12.3906 4.9234 12.3906 8.47357V11.7402H8.89062V16.4069H12.3906V26.3236H17.0573V16.4069Z"
+                                fill="#FFCC02" />
+                        </svg>
+
+                    </a>
+                    <a class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                        href="https://web.telegram.org/a/" target="_blank">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-white transition-all ease-linear duration-300"
+                                fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.5659 21.637V21.6348L19.5846 21.5882L22.7086 5.2082V5.1562C22.7086 4.74779 22.5628 4.39137 22.2482 4.17795C21.9721 3.99054 21.6544 3.97754 21.4315 3.99487C21.224 4.01439 21.0193 4.05799 20.8211 4.12487C20.7366 4.1532 20.6532 4.18501 20.5711 4.2202L20.5575 4.22562L3.14088 11.3312L3.13567 11.3334C3.08272 11.3522 3.03089 11.3742 2.98046 11.3995C2.8566 11.4573 2.73775 11.5262 2.62525 11.6053C2.4013 11.7656 1.97525 12.1426 2.04713 12.7406C2.1065 13.2368 2.43463 13.551 2.6565 13.7145C2.78747 13.81 2.92827 13.8899 3.0763 13.9529L3.10963 13.968L3.12005 13.9713L3.12734 13.9745L6.17525 15.0416C6.16484 15.2399 6.18359 15.4425 6.23463 15.6429L7.76067 21.6651C7.84404 21.9934 8.02418 22.2863 8.2758 22.5026C8.52742 22.7189 8.83787 22.8479 9.16356 22.8713C9.48925 22.8947 9.81382 22.8115 10.0917 22.6332C10.3695 22.455 10.5867 22.1907 10.7128 21.8775L13.0961 19.2276L17.1888 22.4906L17.2471 22.5166C17.619 22.6856 17.9659 22.7387 18.2836 22.6943C18.6013 22.6488 18.8534 22.5101 19.043 22.353C19.2622 22.1681 19.437 21.9326 19.5534 21.6651L19.5617 21.6467L19.5648 21.6402L19.5659 21.637ZM7.74505 15.229C7.72815 15.1622 7.73216 15.0915 7.75651 15.0272C7.78086 14.963 7.82428 14.9084 7.88046 14.8715L18.2148 8.04654C18.2148 8.04654 18.8232 7.66195 18.8013 8.04654C18.8013 8.04654 18.9096 8.1137 18.5836 8.42895C18.2753 8.72904 11.218 15.8151 10.5034 16.5323C10.4636 16.5724 10.4358 16.6235 10.4232 16.6796L9.27109 21.2513L7.74505 15.228V15.229Z"
+                                fill="#FFCC02" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-8/12 lg:pt-0 pt-8">
+                <div class="flex flex-row flex-wrap justify-between">
+                    <div class="md:w-3/12 min-[520px]:w-6/12 w-full">
+                        <div class="flex flex-col gap-2 sm:gap-4">
+                            <a href="./contactpage.html"
+                                class="capitalize cursor-pointer text-white font-play font-bold text-lg leading-110 mb-1">
+                                Contact</a>
+                            <a href="#"
+                                class="capitalize cursor-pointer font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300">Rebelbeercans</a>
+                            <a href=""
+                                class="capitalize cursor-pointer font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300">Achterberghstraat
+                                23</a>
+                            <a href=""
+                                class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300">5281
+                                AB Boxtel</a>
+                            <a href=""
+                                class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                href="https://mail.google.com/" target="_blank">Contac @rebelbeercans.nl
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7">
+                        <div class="flex flex-col gap-2 sm:gap-4">
+                            <a href=""
+                                class="capitalize cursor-pointer text-white font-play font-bold text-lg leading-110 mb-1">
+                                Information</a>
+                            <a href=""
+                                class="capitalize cursor-pointer font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300">Returns</a>
+                            <a href=""
+                                class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300">Payment
+                                options</a>
+                            <a href="./myaccount.html"
+                                class="capitalize cursor-pointer font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300">My
+                                Account</a>
+                            <a href=""
+                                class="cursor-pointer font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300">Responsible
+                                alcohol consumption
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7">
+                        <div class="flex flex-col gap-2 sm:gap-4">
+                            <a href=""
+                                class="capitalize cursor-pointer text-white font-play font-bold text-lg leading-110 mb-1">
+                                Conditions(nl)</a>
+                            <a href=""
+                                class="font-poppins cursor-pointer font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300">Remove
+                                cookies</a>
+                            <a href=""
+                                class="font-poppins cursor-pointer font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300">Cookies
+                                statement rebelbeercans</a>
+                            <a href=""
+                                class="font-poppins cursor-pointer font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                href="">Disclaimer rebelbeercan</a>
+                            <a href=""
+                                class="font-poppins cursor-pointer font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300">General
+                                terms and conditions rebelbeercans
+                            </a>
+                            <a href=""
+                                class="font-poppins cursor-pointer font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                                href="">Privacy policy rebelbeercans
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flex justify-center pt-24 items-center gap-4">
-            <svg class="rotate-[-180deg] duration-300 transition-all slide_icons" width="40" height="40"
-                viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-                    rx="4.34033" fill="white" />
-                <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-                    rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
-                <path class="duaration-300"
-                    d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
-                    fill="#C4CDD5" />
-            </svg>
-            <div
-                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-                1</div>
-            <div
-                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-                2</div>
-            <div
-                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-                ...</div>
-            <div
-                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-                9</div>
-            <div
-                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-                26</div>
-            <svg class="slide_icons duration-300 transition-all" width="40" height="40" viewBox="0 0 40 40" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-                    rx="4.34033" fill="white" />
-                <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-                    rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
-                <path class="duartion-300"
-                    d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
-                    fill="#C4CDD5" />
-            </svg>
-        </div>
+    </div>
+    <div class="w-full border border-solid border-white opacity-20"></div>
+    <p
+        class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-4 sm:py-[23.5px] md:leading-110 leading-normal text-center">
+        <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
+    </p>
+    <script>  const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>
+</footer>
     </section>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
