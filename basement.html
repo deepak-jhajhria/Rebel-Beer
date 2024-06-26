@@ -99,7 +99,7 @@
     <!----- navbar ------>
     <nav class="flex items-center py-[10.52px] justify-between max-w-[1165px] mx-auto px-3">
         <a href="#">
-            <img src="/assets/images/basement/svg/header-logo.svg" alt="headerlogo">
+            <img src="/assets/images/basement/svg/header-logo.svg" alt="headerlogo" class="w-[48.97px] h-[48.98px]">
         </a>
         <div class="flex items-center">
             <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1024px]:h-screen max-[1024px]:w-full duration-300 ease-in-out lg:justify-start justify-center"
@@ -205,7 +205,7 @@
                     </a>
                 </div>
                 <button
-                    class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
+                    class="px-4 py-[11.2px] rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-yellow hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
                     Contact Us
                 </button>
                 <div class="menu d-block d-lg-none z-[5]" id="openNav">
@@ -217,7 +217,7 @@
         </div>
     </nav>
     <!------ hero------>
-    <div class="bg-cover bg-bottom flex justify-center items-center flex-col min-h-[243px] sm:pb-6  px-3 hero-bg">
+    <div class="bg-cover bg-bottom flex justify-center items-center flex-col min-h-[239px] sm:pb-5  px-3 hero-bg">
         <h2 class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-115 text-center">
             Basement Beer</h2>
     </div>
@@ -238,7 +238,7 @@
         </div>
     </div>
 
-    <div class="max-w-[1140px] mx-auto px-3 sm:pt-[67px] pt-5">
+    <div class="max-w-[1140px] mx-auto px-3 sm:pt-[65.09px] pt-5">
         <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-[11px]">
                 <img src="./assets/images/basement/svg/bxs-offer.svg" alt="bxs-offer">
@@ -1071,17 +1071,17 @@
             </div>
         </div>
         <img src="./assets/images/basement/svg/yellow-ellipse.svg" alt="yellow-ellipse"
-            class="absolute right-2 bottom-[23.7%] hidden xl:block">
+            class="absolute right-2 bottom-[21.7%] hidden xl:block">
         <img src="./assets/images/basement/svg/black-ellipse.svg" alt="black-ellipse"
-            class=" absolute hidden xl:block top-[8%]">
+            class=" absolute hidden xl:block left-2 top-[6.5%]">
         <img src="./assets/images/basement/svg/waves-svg.svg" alt="waves-svg"
             class="absolute right-0 hidden xl:block z-[-1] top-[34.3%]">
         <img src="./assets//images/basement/svg/yellow-stroke-svg.svg" alt="yellow-ellipse"
             class="left-0 bottom-[40%] absolute hidden xl:block">
     </section>
     <!-- =============== FOOTER ============= -->
-    <footer class="bg-footer bg-center bg-cover bg-no-repeat pt-[69.66px]">
-        <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[104.42px]">
+    <footer class="bg-footer bg-center bg-cover bg-no-repeat pt-[70.07px] min-h-[439px]">
+        <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[109px]">
             <div class="flex flex-row flex-wrap">
                 <div class="lg:w-4/12">
                     <a href="/">
@@ -1191,12 +1191,14 @@
         </div>
         <div class="w-full border border-solid border-white opacity-20"></div>
         <p
-            class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-4 sm:py-[23.5px] md:leading-110 leading-normal text-center">
+            class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-4 sm:py-[23.3px] md:leading-110 leading-normal text-center">
             <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
         </p>
         <script>  const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>
     </footer>
     <script>
+
+        // ====================NAVBAR JS=====================
         let navopen = document.getElementById('openNav')
 
         navopen.addEventListener("click", () => {
@@ -1215,6 +1217,7 @@
             });
         })
 
+        // ======================SELECTER JS====================
         function changeText(buttonId, selectElement) {
             var button = document.getElementById(buttonId);
             button.innerHTML = selectElement.value + ' <img src="/assets/images/basement/svg/dropdown-svg.svg" alt="arrowIcon">';
