@@ -1,0 +1,21 @@
+.hero-bg{
+    background-image: url('../images/privacy/webp/hero-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+.accordion-content {
+  transition: max-height 0.3s ease-out;
+}
+
+.active-border {
+box-shadow: 0px 6px 0px 0px #000000 inset;
+
+}
+.footerBg{
+    background-image: url('../images/privacy/webp/footer-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

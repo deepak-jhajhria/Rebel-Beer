@@ -38,3 +38,10 @@ input:checked + label > span::after {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.footer_bg{
+    background-image: url(../images/myaccount/footer_bg.png);
+}
+.hero_bg{
+    background-image: url(../images/myaccount/header_bg.png);
+}

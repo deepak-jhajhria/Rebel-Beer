@@ -1,0 +1,12 @@
+.heart svg {
+    fill: none;
+    stroke: black;
+    transition: stroke 0.3s ease;
+}
+
+.heart input:checked+label svg path {
+    stroke: #F4456A;
+    fill: #F4456A;
+    /* Change this to any color you like */
+}
+
