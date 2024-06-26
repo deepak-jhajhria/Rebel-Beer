@@ -11,8 +11,14 @@
     <link rel="stylesheet" href="./assets/css/root.css">
     <!-- =============== TAILWIND LINK ============= -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ======================== SWIPER CDN ========================== -->
+    <link href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css " rel="stylesheet">
     <!-- =============== META TAG ============== -->
     <title>Rebel Beer</title>
+    <meta name="title" content="Welcome to Cans" />
+    <meta name="description"
+        content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://metatags.io/" />
@@ -43,10 +49,12 @@
                         'light-blue': '#BEDCFE',
                         green: ' #76BD3D',
                         'white-gray': '#F0F0EA',
+                        "light-gray": "#D6D6D0" //contact
                     },
                     fontSize: {
                         'custom_2xl': '28px',
                         'custom_3xl': '32px',
+                        'custom_4xl': '40px',
                         'custom_9xl': '94px',
                     },
                     lineHeight: {
@@ -56,41 +64,25 @@
                         '130': '130%',
                         '140': '140%',
                         '150': '150%',
-                        //blogs
-                        '115': '115%',
                     }
                 },
                 fontFamily: {
                     'poppins': ['Poppins', 'sans-serif'],
                     'roboto': ['Roboto', 'sans-serif'],
                     'inter': ['Inter', 'sans-serif'],
+                    'play': ['Play', 'sans-serif'],
                 },
-                //blogs
-                backgroundImage: {
-                    footer_bg: "url('/assets/images/homepage/webp/footer_bg.webp')",
+                boxShadow: { //contact
+                    "blogssectionyellowshadow": "13px 0px 0px 0px #FFCC02 inset",
+                    "latestblogssidershadow": " 0px -6px 0px 0px #000000",
+                    "formShadow": "0px 6px 0px 0px #000000 inset"
+
+
                 },
-                //blogs
-                keyframes: {
-                    scroll: {
-                        '0%': { transform: 'translateX(0)' },
-                        '100%': { transform: 'translateX(calc(-288px * 5))' },
-                    },
-                },
-                animation: {
-                    scroll: 'scroll 25s linear infinite',
-                },
+
             }
         }
     </script>
-    <style>
-        .partners_slider_track {
-            @apply w-[calc(268px_*_5)];
-        }
-
-        .partners_slider_track:hover {
-            animation-play-state: paused;
-        }
-    </style>
 </head>
 
 <body>
@@ -138,115 +130,81 @@
                                                 alt="read_more_arrow" class="w-[10.4px] h-[10.36px]"></span></button>
                                 </div>
                             </div>
+                            <p
+                                class=" font-poppins font-medium text-sm md:text-base text-black !leading-150 mt-4 uppercase">
+                                Not part of a category</p>
+                            <p class=" font-play font-bold text-xl sm:text-2xl xl:text-custom_2xl !leading-115 mt-1">
+                                Sunset Beer Sale!</p>
+                            <p class="font-poppins font-base text-black opacity-70 !leading-150 mt-2.5">Its summer time!
+                                and we herald that with a 15% discount on all our...</p>
+                            <p class="font-play font-medium text-sm md:text-base text-yellow !leading-150 mt-[6px]">July
+                                25, 2023</p>
                         </div>
                     </div>
-                    <div class="lg:w-[49.3%] flex justify-center w-full lg:mb-8">
-                        <div
-                            class="border xl:h-[259px] border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] bg-white sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
-                            <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
-                                <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
-                                    <img src="./assets/images/homepage/webp/deposit.webp" alt="sunset_beer"
-                                        class="w-full min-[530px]:max-w-[213px] rounded-[5px] h-[228px] object-cover">
-                                    <div>
-                                        <p
-                                            class="uppercase font-poppins font-medium text-base text-black !leading-normal mb-1">
-                                            Not part of a category</p>
-                                        <p
-                                            class="capitalize font-play xl:text-custom_2xl text-2xl font-bold leading-115 mb-[10px]">
-                                            Deposit On Can!</p>
-                                        <p
-                                            class="font-poppins font-normal xl:text-base text-sm text-black opacity-70 !leading-normal mb-[5.36px]">
-                                            What will change? After small plastic bottles, it is now the turn of...</p>
-                                        <p
-                                            class="text-yellow !leading-medium font-semibold text-base group-hover:text-black tranision-colors ease-linear duration-300 md:mb-[46.2px] sm:mb-9 mb-7">
-                                            April 1, 2023</p>
-                                        <button
-                                            class="uppercase !leading-normal font-poppins font-medium text-base relative after:absolute after:w-full after:h-[2px] after:bg-black after:max-w-[91px] after:bottom-0 after:left-0 flex items-center gap-1">Read
-                                            More
-                                            <span><img src="./assets/images/homepage/svg/read_more_arrow.svg"
-                                                    alt="read_more_arrow"
-                                                    class="w-[10.4px] h-[10.36px]"></span></button>
-                                    </div>
-                                </div>
+                    <div class="swiper-slide">
+                        <div class="max-w-[367px] max-[480px]:mx-auto">
+                            <div
+                                class="max-w-[367px] max-h-[355px] border border-black rounded-[5px] shadow-latestblogssidershadow">
+                                <img class="w-full rounded-[5px]"
+                                    src="./assets/images/blogspage/webp/big_usa_beer_sale.webp" alt="sunset_beer_sale">
                             </div>
+                            <p
+                                class=" font-poppins font-medium text-sm md:text-base text-black !leading-150 mt-4 uppercase">
+                                Not part of a category</p>
+                            <p class=" font-play font-bold text-xl sm:text-2xl xl:text-custom_2xl !leading-115 mt-1">Big
+                                USA Beer Sale!</p>
+                            <p class="font-poppins font-base text-black opacity-70 !leading-150 mt-2.5">Up to 25%
+                                discount on all American beers in our range!...</p>
+                            <p class="font-play font-medium text-sm md:text-base text-yellow !leading-150 mt-[6px]">
+                                March 12, 2023</p>
                         </div>
                     </div>
-                    <div class="lg:w-[49.3%] flex justify-center w-full">
-                        <div
-                            class="border xl:h-[259px] border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] bg-white sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
-                            <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
-                                <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
-                                    <img src="./assets/images/homepage/webp/rebel_beer.webp" alt="rebel_beer"
-                                        class="w-full min-[530px]:max-w-[213px] rounded-[5px] h-[228px] object-cover">
-                                    <div>
-                                        <p
-                                            class="uppercase font-poppins font-medium text-base text-black !leading-normal mb-1">
-                                            Not part of a category</p>
-                                        <p
-                                            class="capitalize font-play xl:text-custom_2xl text-2xl font-bold leading-115 mb-[10px]">
-                                            3 Years Rebel Beer Cans!</p>
-                                        <p
-                                            class="font-poppins font-normal xl:text-base text-sm text-black opacity-70 !leading-normal mb-[5.36px]">
-                                            As of today, we are celebrating a special milestone...</p>
-                                        <p
-                                            class="text-yellow !leading-medium font-semibold text-base group-hover:text-black tranision-colors ease-linear duration-300 mb-[14px]">
-                                            April 1, 2023</p>
-                                        <button
-                                            class="uppercase !leading-normal font-poppins font-medium text-base relative after:absolute after:w-full after:h-[2px] after:bg-black after:max-w-[91px] after:bottom-0 after:left-0 flex items-center gap-1">Read
-                                            More
-                                            <span><img src="./assets/images/homepage/svg/read_more_arrow.svg"
-                                                    alt="read_more_arrow"
-                                                    class="w-[10.4px] h-[10.36px]"></span></button>
-                                    </div>
-                                </div>
+                    <div class="swiper-slide">
+
+                        <div class="max-w-[367px] max-[480px]:mx-auto">
+                            <div
+                                class=" max-w-[367px] max-h-[355px] border border-black rounded-[5px] !shadow-latestblogssidershadow">
+                                <img class="w-full rounded-[5px]"
+                                    src="./assets/images/blogspage/webp/rebel_beer_cans.webp" alt="sunset_beer_sale">
                             </div>
+                            <p
+                                class=" font-poppins font-medium text-sm md:text-base text-black !leading-150 mt-4 uppercase">
+                                Not part of a category</p>
+                            <p class=" font-play font-bold text-xl sm:text-2xl xl:text-custom_2xl !leading-115 mt-1">3
+                                Years Rebel Beer Cans!</p>
+                            <p class="font-poppins font-base text-black opacity-70 !leading-150 mt-2.5">As of today, we
+                                are celebrating a special milestone...</p>
+                            <p class="font-play font-medium text-sm md:text-base text-yellow !leading-150 mt-[6px]">
+                                April 1, 2023</p>
                         </div>
+
                     </div>
-                    <div class="lg:w-[49.3%] flex justify-center w-full">
-                        <div
-                            class="border xl:h-[259px] border-solid border-black shadow-[-8px_0px_0px_0px_#000000] sm:pt-4 sm:pr-[17px] bg-white sm:pb-[15px] sm:pl-[13px] p-3 rounded-[5px] w-full h-full max-w-[560px] hover:bg-yellow tranision-all ease-linear duration-300 group">
-                            <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
-                                <div class="flex gap-[22px] min-[530px]:flex-row flex-col">
-                                    <img src="./assets/images/homepage/webp/usa_beer.webp" alt="usa_beer"
-                                        class="w-full min-[530px]:max-w-[213px] rounded-[5px] h-[228px] object-cover">
-                                    <div>
-                                        <p
-                                            class="uppercase font-poppins font-medium text-base text-black !leading-normal mb-1">
-                                            Not part of a category</p>
-                                        <p
-                                            class="capitalize font-play xl:text-custom_2xl text-2xl font-bold leading-115 mb-[10px]">
-                                            Big USA Beer Sale!</p>
-                                        <p
-                                            class="font-poppins font-normal xl:text-base text-sm text-black opacity-70 !leading-normal mb-[5.36px]">
-                                            Up to 25% discount on all American beers in our range!...</p>
-                                        <p
-                                            class="text-yellow !leading-medium font-semibold text-base group-hover:text-black tranision-colors ease-linear duration-300 md:mb-[45.7px] sm:mb-9 mb-7">
-                                            March 12, 2023</p>
-                                        <button
-                                            class="uppercase !leading-normal font-poppins font-medium text-base relative after:absolute after:w-full after:h-[2px] after:bg-black after:max-w-[91px] after:bottom-0 after:left-0 flex items-center gap-1">Read
-                                            More
-                                            <span><img src="./assets/images/homepage/svg/read_more_arrow.svg"
-                                                    alt="read_more_arrow"
-                                                    class="w-[10.4px] h-[10.36px]"></span></button>
-                                    </div>
-                                </div>
+                    <div class="swiper-slide">
+                        <div class="max-w-[367px] max-[480px]:mx-auto">
+                            <div
+                                class="max-w-[367px] max-h-[355px] border border-black rounded-[5px] shadow-latestblogssidershadow">
+                                <img class="w-full rounded-[5px]"
+                                    src="./assets/images/blogspage/webp/big_usa_beer_sale.webp" alt="sunset_beer_sale">
                             </div>
+                            <p
+                                class=" font-poppins font-medium text-sm md:text-base text-black !leading-150 mt-4 uppercase">
+                                Not part of a category</p>
+                            <p class=" font-play font-bold text-xl sm:text-2xl xl:text-custom_2xl !leading-115 mt-1">3
+                                Years Rebel Beer Cans!</p>
+                            <p class="font-poppins font-base text-black opacity-70 !leading-150 mt-2.5">As of today, we
+                                are celebrating a special milestone...</p>
+                            <p class="font-play font-medium text-sm md:text-base text-yellow !leading-150 mt-[6px]">
+                                April 1, 2023</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-<<<<<<< HEAD
-        <section class="lg:pt-[92.92px] sm:pt-[72px] pt-12">
-            <div class="relative overflow-hidden partners_slider whitespace-nowrap">
-                <div class="flex partners_slider_track animate-scroll">
-=======
         <section class="lg:pt-[92.92px] sm:pt-[72px] pt-12 max-w-[1920px] mx-auto relative z-10">
             <img src="./assets/images/homepage/webp/slider_blackdots.webp" alt="slider_blackdots"
                 class="absolute w-[78.6px] left-0 lg:top-[18%] md:top-[12%] z-[-1] md:block hidden pointer-events-none">
             <div class="relative overflow-hidden partners_slider whitespace-nowrap">
                 <div class="partners_slider_track animate-scroll flex relative z-[1]">
->>>>>>> 62e11251b50be21641dc27e8e21363386b723d17
                     <div
                         class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[230px] h-[220px] flex items-center justify-center">
                         <a href="https://www.bancontact.com/" target="_blank">
@@ -431,15 +389,74 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full border border-white border-solid opacity-20"></div>
-            <p
-                class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-[23.5px] md:leading-110 leading-normal  text-center">
-                <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
-            </p>
-            <script>
-                const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>
-        </footer>
-    </main>
+        </div>
+        <div class="w-full border border-solid border-white opacity-20"></div>
+        <p
+            class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-[23.5px] md:leading-110 !leading-150 text-center">
+            <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
+        </p>
+        <script>
+            const currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        </script>
+    </footer>
+    <!-- ============================== SWIPER JS LINK ========================= -->
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
+    <script>
+        // <!-- =============== NAVBAR JAVASCRIPT ============= -->
+        function openNav() {
+            document.getElementById("navbar").classList.toggle("left-0");
+            document.body.classList.toggle("overflow_hidden");
+            document.querySelector(".menu").classList.toggle("cross");
+        }
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            speed: 400,
+            spaceBetween: 20,
+            // autoplay: true,
+            slidesPerView: 3,
+            breakpoints: {
+                '320': {
+                    slidesPerView: 1,
+                },
+                '480': {
+                    slidesPerView: 1.5,
+
+                },
+                '640': {
+                    slidesPerView: 1.9,
+                },
+                '768': {
+                    slidesPerView: 2,
+                },
+                '850': {
+                    slidesPerView: 2.5,
+                },
+                '950': {
+                    slidesPerView: 3,
+                },
+            },
+            pagination: {
+                clickable: true,
+                bulletActiveClass: 'swiper-pagination-bullet ',
+            },
+
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+        });
+    </script>
+
 </body>
 
+<<<<<<< HEAD </html>
+    =======
+    >>>>>>> 45ab861a439877bbd81ae89ec9512e0494f0b2b2
+    =======
+
 </html>
+>>>>>>> a9971782a6993b3506eeab5e3b00f087f1d9e4bf
