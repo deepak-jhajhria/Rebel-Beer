@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/myaccount.css">
     <link rel="stylesheet" href="./assets/css/product.css">
-    <!-- =============== TAILWIND LINK ============= -->
+   <!-- =============== TAILWIND LINK ============= -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- ======================== SWIPER CDN ========================== -->
     <link href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css " rel="stylesheet">
     <!-- =============== META TAG ============== -->
@@ -63,6 +62,10 @@
                         'light-grey': '#E5C130',
                         'off-grey': '#E7E4D7',
                         'numbers-grey': '#DFE3E8',
+                        'light-yellow': '#FFCC021A',
+                        'light-grey': '#0000001A',
+                        'off-white': '#FFFFFFA8',
+                        'red': '#F4456A',
 
                     },
                     fontSize: {
@@ -272,63 +275,328 @@
             <div class="max-w-[1165px] mx-auto px-3"></div>
             <h2
                 class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-[115%] text-center">
-                Beer Shop</h2>
-            <p
-                class="font-poppins font-normal text-sm lg:text-base text-black opacity-70 text-center lg:pt-4 pt-2 undefined">
-            </p>
+                My Cart</h2>
         </div>
         <div class="bg-[#F0F0EA] undefined">
             <div class="container max-w-[1165px] mx-auto px-3 py-[14.5px]">
-                <h3 class="font-poppins font-normal lg:text-base text-sm text-black flex items-center gap-1"><a
-                        class="opacity-70 hover:opacity-100 duration-200 font-poppins font-normal text-sm lg:text-base"
+                <h3 class="font-poppins font-normal lg text-sm:xs:text-base text-sm text-black flex items-center gap-1">
+                    <a class="opacity-70 hover:opacity-100 duration-200 font-poppins font-normal text-sm lg text-sm:xs:text-base"
                         href="/">Home</a><span><svg width="7" height="9" viewBox="0 0 7 9" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.504 0.98H2.344L6.216 4.644L2.344 8.324H0.504L4.376 4.644L0.504 0.98Z"
                                 fill="black">
                             </path>
                         </svg></span><span
-                        class="duration-200 font-poppins font-normal text-sm lg:text-base !cursor-pointer !opacity-100">Account</span><span
-                        class="opacity-70 font-poppins font-normal text-sm lg:text-base  "> </span><span
-                        class="opacity-70 font-poppins font-normal text-sm lg:text-base undefined"></span></h3>
+                        class="duration-200 font-poppins font-normal text-sm lg text-sm:xs:text-base !cursor-pointer !opacity-100">Account</span><span
+                        class="opacity-70 font-poppins font-normal text-sm lg text-sm:xs:text-base  "> </span><span
+                        class="opacity-70 font-poppins font-normal text-sm lg text-sm:xs:text-base undefined"></span>
+                </h3>
             </div>
         </div>
     </header>
     <!-- ------------------------ tabs ----------------------- -->
-    <div class="max-w-[1172px] px-4 mx-auto">
+    <div class="max-w-[1172px] sm:pt-16 pt-12 md:pt-[75px] md:pb-20 sm:pb-16 pb-12 lg:pb-24 mb-1 px-4 mx-auto">
         <div
-            class="flex overflow-hidden relative flex-col items-start px-14 py-10 text-base leading-6 rounded-md border-black border-solid border-[3px] min-h-[346px] max-md:px-5">
+            class="flex overflow-hidden relative flex-col items-start px-14 pt-6 pb-10 text-sm xs:text-base leading-150 rounded-md border-black border-solid border-[3px] min-h-[346px] max-md:px-5">
             <img loading="lazy" src="./assets/images/newcart/tabs-bg.webp"
                 class="object-cover absolute inset-0 size-full" />
-            <div
-                class="flex relative gap-5 justify-between items-center self-stretch text-lg font-medium text-black max-md:flex-wrap max-md:max-w-full">
-                <div class="self-stretch font-poppins text-black opacity-50 relative before:w-0 before:absolute before:start-[50%] before:translate-x-[-50%] before:bottom-0 before:duration-300 text-md before:bg-yellow before:h-[2px] before:hover:w-full hover:opacity-100 duration-300 px-1.5 pb-2 whitespace-nowrap">Description</div>
-                <div class="self-stretch font-poppins text-black opacity-50 relative before:w-0 before:absolute before:start-[50%] before:translate-x-[-50%] before:bottom-0 before:duration-300 text-md before:bg-yellow before:h-[2px] before:hover:w-full hover:opacity-100 duration-300 my-auto">Soort</div>
-                <div class="self-stretch font-poppins text-black opacity-50 relative before:w-0 before:absolute before:start-[50%] before:translate-x-[-50%] before:bottom-0 before:duration-300 text-md before:bg-yellow before:h-[2px] before:hover:w-full hover:opacity-100 duration-300 my-auto">Alchohol Percentage</div>
-                <div class="self-stretch font-poppins text-black opacity-50 relative before:w-0 before:absolute before:start-[50%] before:translate-x-[-50%] before:bottom-0 before:duration-300 text-md before:bg-yellow before:h-[2px] before:hover:w-full hover:opacity-100 duration-300 my-auto">Content</div>
-                <div class="self-stretch font-poppins text-black opacity-50 relative before:w-0 before:absolute before:start-[50%] before:translate-x-[-50%] before:bottom-0 before:duration-300 text-md before:bg-yellow before:h-[2px] before:hover:w-full hover:opacity-100 duration-300 my-auto">Color</div>
+            <div id="caart-tabs"
+                class="flex gap-5 overflow-x-auto max-w-[750px] justify-between items-center self-stretch text-lg font-medium text-black max-md:max-w-full">
+                <div class="tab-button self-stretch font-poppins whitespace-nowrap text-black opacity-50 relative before:w-0 before:absolute before:start-[50%] before:translate-x-[-50%] before:bottom-0 before:duration-300 text-sm sm:text-base md:text-md before:bg-yellow before:h-[2px] before:hover:w-full hover:opacity-100 duration-300 px-1.5 active-tab"
+                    data-tab="description">Description</div>
+                <div class="tab-button self-stretch font-poppins whitespace-nowrap text-black opacity-50 relative before:w-0 before:absolute before:start-[50%] before:translate-x-[-50%] before:bottom-0 before:duration-300 text-sm sm:text-base md:text-md before:bg-yellow before:h-[2px] before:hover:w-full hover:opacity-100 duration-300 my-auto"
+                    data-tab="soort">Soort</div>
+                <div class="tab-button self-stretch font-poppins whitespace-nowrap text-black opacity-50 relative before:w-0 before:absolute before:start-[50%] before:translate-x-[-50%] before:bottom-0 before:duration-300 text-sm sm:text-base md:text-md before:bg-yellow before:h-[2px] before:hover:w-full hover:opacity-100 duration-300 my-auto"
+                    data-tab="percentage">Alcohol Percentage</div>
+                <div class="tab-button self-stretch font-poppins whitespace-nowrap text-black opacity-50 relative before:w-0 before:absolute before:start-[50%] before:translate-x-[-50%] before:bottom-0 before:duration-300 text-sm sm:text-base md:text-md before:bg-yellow before:h-[2px] before:hover:w-full hover:opacity-100 duration-300 my-auto"
+                    data-tab="content">Content</div>
+                <div class="tab-button self-stretch font-poppins whitespace-nowrap text-black opacity-50 relative before:w-0 before:absolute before:start-[50%] before:translate-x-[-50%] before:bottom-0 before:duration-300 text-sm sm:text-base md:text-md before:bg-yellow before:h-[2px] before:hover:w-full hover:opacity-100 duration-300 my-auto"
+                    data-tab="color">Color</div>
             </div>
-            <div class="relative self-stretch mt-10 leading-6 text-black max-md:max-w-full">
-               <p class="font-poppins text-black text-md">In conclusion, shopping for beer cans offers a diverse and exciting
-            experience with a wide range of choices, from beer styles and brands to
-            packaging sizes and designs. Whether you're a seasoned beer enthusiast or
-            just looking to try something new, the beer aisle provides ample
-            opportunities to explore and enjoy different flavors and brews. </p>
+            <div id="description-tab-content"
+                class="tab-content relative self-stretch mt-6 sm:mt-8 leading-150 text-black max-md:max-w-full">
+                <p class="font-poppins text-black text-sm sm:text-base md:text-md leading-150">In conclusion, shopping
+                    for
+                    beer cans offers a diverse and exciting experience with a wide range of choices, from beer styles
+                    and
+                    brands to packaging sizes and designs. Whether you're a seasoned beer enthusiast or just looking to
+                    try
+                    something new, the beer aisle provides ample opportunities to explore and enjoy different flavors
+                    and
+                    brews.</p>
             </div>
-            <div class="flex relative gap-5 justify-between mt-8 max-w-full whitespace-nowrap w-[127px]">
-                <div class="font-bold text-black">Land</div>
-                <div class="text-black">US</div>
+            <div id="soort-tab-content" class="tab-content hidden mt-8">
+                <p class="font-poppins text-black text-sm sm:text-base md:text-md leading-150">In conclusion, shopping
+                    for
+                    beer cans offers a diverse and exciting experience with a wide range of choices, from beer styles
+                    and
+                    brands to packaging sizes and designs. Whether you're a seasoned beer enthusiast or just looking to
+                    try
+                </p>
             </div>
-            <div class="flex relative gap-5 justify-between mt-8 max-w-full whitespace-nowrap w-[140px]">
-                <div class="font-bold text-black">Type</div>
-                <div class="text-black">Can</div>
+
+            <div id="percentage-tab-content" class="tab-content hidden mt-8">
+                <p class="font-poppins text-black text-sm sm:text-base md:text-md leading-150">In conclusion, shopping
+                    for
+                    beer cans offers a diverse and exciting experience with a wide range of choices, from beer styles
+                    and
+                    brands to packaging sizes and designs. Whether you're a seasoned beer enthusiast or just looking to
+                    try
+                </p>
             </div>
-            <div class="flex relative gap-5 justify-between mt-7 max-w-full w-[182px]">
-                <div class="font-bold text-black">Flavor</div>
-                <div class="text-black">Fruit beer</div>
+
+            <div id="content-tab-content" class="tab-content mt-8 hidden">
+                <p class="font-poppins text-black text-sm sm:text-base md:text-md leading-150">In conclusion, shopping
+                    for
+                    beer cans offers a diverse and exciting experience with a wide range of choices, from beer styles
+                    and
+                    brands to packaging sizes and designs. Whether you're a seasoned beer enthusiast or just looking to
+                    try
+                </p>
+            </div>
+
+            <div id="color-tab-content" class="tab-content mt-8 hidden">
+
+                <p class="font-poppins text-black text-sm sm:text-base md:text-md leading-150">In conclusion, shopping
+                    for
+                    beer cans offers a diverse and exciting experience with a wide range of choices, from beer styles
+                    and
+                    brands to packaging sizes and designs. Whether you're a seasoned beer enthusiast or just looking to
+                    try
+                </p>
+            </div>
+            <div class="flex gap-5 justify-between mt-6 max-w-full whitespace-nowrap w-[127px]">
+                <div class="font-bold text-black font-poppins leading-150">Land</div>
+                <div class="text-black font-poppins leading-150">US</div>
+            </div>
+            <div class="flex gap-5 justify-between mt-4 max-w-full whitespace-nowrap w-[140px]">
+                <div class="font-bold text-black font-poppins leading-150">Type</div>
+                <div class="text-black font-poppins leading-150">Can</div>
+            </div>
+            <div class="flex gap-5 justify-between mt-4 max-w-full w-[182px]">
+                <div class="font-bold text-black font-poppins leading-150">Flavor</div>
+                <div class="text-black font-poppins leading-150">Fruit beer</div>
             </div>
         </div>
     </div>
-    <!-- ----------------------- footer --------------------- -->
+<!----------------Rebel-Selection--------------->
+<section class="lg:mb-24 md:mb-20 sm:pb-16 pb-12 xl:mb-[109px] relative max-w-[1920px] mx-auto">
+    <img src="./assets/images/homepage/png/half-blackcircle.png" alt="black-circle"
+        class="w-[64px] absolute right-0 top-[50%] xl:block hidden pointer-events-none">
+    <div class="container xl:max-w-[1164px] mx-auto px-4">
+        <div class="flex sm:flex-row flex-col sm:items-center sm:justify-between">
+            <div>
+                <h2 class="text-black font-play font-bold text-4xl md:text-5xl !leading-120 mb-2">Rebel
+                    Selection!</h2>
+                <p
+                    class="font-poppins text-black text-opacity-70 font-normal text-sm md:text-base max-w-[427px] !leadng-normal ">
+                    Aliquet commodo in vulputate ac vitae nam egestas. Dui orci aliquet hendrerit auctor augue
+                    tellus.</p>
+            </div>
+            <div class="flex gap-3 mt-5 sm:mt-0">
+                <button id="prevBtn"
+                    class="h-[41.6px] w-[41.6px] bg-white border-[1.6px] border-solid border-black rounded-[68px] flex justify-center items-center">
+                    <img src="./assets/images/homepage/svg/prev-arrow.svg" alt="arrow" class="w-[22px] h-[22px]">
+                </button>
+                <button id="nextBtn"
+                    class="h-[41.6px] w-[41.6px] bg-white border-[1.6px] border-solid border-black rounded-[68px] flex justify-center items-center">
+                    <img src="./assets/images/homepage/svg/next-arrow.svg" alt="arrow" class="w-[22px] h-[22px]">
+                </button>
+            </div>
+        </div>
+        <div class="md:mt-[48px] mt-[30px]">
+            <div class="swiper firstSwiper">
+                <div class="swiper-wrapper py-[10px]">
+                    <div class="swiper-slide">
+                        <div
+                            class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                            <div class="relative">
+                                <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img" class="w-full">
+                                <div
+                                    class="rounded-[0px_4px_4px_0px] bg-yellow group-hover:bg-black p-[5px] max-w-[74px] absolute left-0 top-0 duration-300">
+                                    <p
+                                        class="text-black group-hover:text-white text-sm font-medium !leading-normal duration-300">
+                                        Save 10%</p>
+                                </div>
+                                <div
+                                    class="w-[24px] h-[24px] rounded-[40px] flex justify-center items-center bg-off-white absolute top-[8px] right-[8px] ">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="group-hover:fill-red group-hover:stroke-red duration-300"
+                                            d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                            fill="#ffffff" stroke="#000000" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h4
+                                class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
+                                Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
+                            <p
+                                class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
+                                IPA | 5,7| 12*33cl</p>
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
+                                    <span class="text-3xl">€</span>7.59
+                                </p>
+                                <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
+                                    class="cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                            <div class="relative">
+                                <img src="./assets/images/homepage/png/rabelcard2.png" alt="rabel-img" class="w-full">
+                                <div
+                                    class="rounded-[0px_4px_4px_0px] bg-yellow group-hover:bg-black p-[5px] max-w-[74px] absolute left-0 top-0 duration-300">
+                                    <p
+                                        class="text-black group-hover:text-white text-sm font-medium !leading-normal duration-300">
+                                        Save 20%</p>
+                                </div>
+                                <div
+                                    class="w-[24px] h-[24px] rounded-[40px] flex justify-center items-center bg-off-white absolute top-[8px] right-[8px] ">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="group-hover:fill-red group-hover:stroke-red duration-300"
+                                            d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                            fill="#ffffff" stroke="#000000" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h4
+                                class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
+                                Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
+                            <p
+                                class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
+                                IPA | 5,7| 12*33cl</p>
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
+                                    <span class="text-3xl">€</span>7.59
+                                </p>
+                                <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
+                                    class="cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                            <div class="relative">
+                                <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img" class="w-full">
+                                <div
+                                    class="rounded-[0px_4px_4px_0px] bg-yellow group-hover:bg-black p-[5px] max-w-[74px] absolute left-0 top-0 duration-300">
+                                    <p
+                                        class="text-black group-hover:text-white text-sm font-medium !leading-normal duration-300">
+                                        Save 10%</p>
+                                </div>
+                                <div
+                                    class="w-[24px] h-[24px] rounded-[40px] flex justify-center items-center bg-off-white absolute top-[8px] right-[8px] ">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="group-hover:fill-red group-hover:stroke-red duration-300"
+                                            d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                            fill="#ffffff" stroke="#000000" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h4
+                                class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
+                                Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
+                            <p
+                                class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
+                                IPA | 5,7| 12*33cl</p>
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
+                                    <span class="text-3xl">€</span>7.59
+                                </p>
+                                <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
+                                    class="cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                            <div class="relative">
+                                <img src="./assets/images/homepage/png/rabelcard2.png" alt="rabel-img" class="w-full">
+                                <div
+                                    class="rounded-[0px_4px_4px_0px] bg-yellow group-hover:bg-black p-[5px] max-w-[74px] absolute left-0 top-0 duration-300">
+                                    <p
+                                        class="text-black group-hover:text-white text-sm font-medium !leading-normal duration-300">
+                                        Save 5%</p>
+                                </div>
+                                <div
+                                    class="w-[24px] h-[24px] rounded-[40px] flex justify-center items-center bg-off-white absolute top-[8px] right-[8px] ">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="group-hover:fill-red group-hover:stroke-red duration-300"
+                                            d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                            fill="#ffffff" stroke="#000000" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h4
+                                class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
+                                Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
+                            <p
+                                class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
+                                IPA | 5,7| 12*33cl</p>
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
+                                    <span class="text-3xl">€</span>7.59
+                                </p>
+                                <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
+                                    class="cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                            <div class="relative">
+                                <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img" class="w-full">
+                                <div
+                                    class="rounded-[0px_4px_4px_0px] bg-yellow group-hover:bg-black p-[5px] max-w-[74px] absolute left-0 top-0 duration-300">
+                                    <p
+                                        class="text-black group-hover:text-white text-sm font-medium !leading-normal duration-300">
+                                        Save 10%</p>
+                                </div>
+                                <div
+                                    class="w-[24px] h-[24px] rounded-[40px] flex justify-center items-center bg-off-white absolute top-[8px] right-[8px] ">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="group-hover:fill-red group-hover:stroke-red duration-300"
+                                            d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                            fill="#ffffff" stroke="#000000" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h4
+                                class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
+                                Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
+                            <p
+                                class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
+                                IPA | 5,7| 12*33cl</p>
+                            <div class="flex items-center justify-between">
+                                <p
+                                    class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
+                                    <span class="text-3xl">€</span>7.59
+                                </p>
+                                <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon"
+                                    class="cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    <!-- ---------------------------- footer --------------------- -->
     <footer class="footer_bg bg-center bg-cover bg-no-repeat pt-[69.66px]">
         <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[104.42px]">
             <div class="flex flex-row flex-wrap">
@@ -454,6 +722,93 @@
             mainContent.classList.toggle('start-0');
         }
     </script>
+    <script>  document.addEventListener("DOMContentLoaded", function () {
+            // Get all tab buttons
+            const tabButtons = document.querySelectorAll(".tab-button");
+
+            // Get all tab contents
+            const tabContents = document.querySelectorAll(".tab-content");
+
+            // Add click event listeners to each tab button
+            tabButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const tab = this.getAttribute("data-tab");
+
+                    // Toggle active tab button
+                    tabButtons.forEach(btn => btn.classList.remove("active-tab"));
+                    this.classList.add("active-tab");
+
+                    // Hide all tab contents
+                    tabContents.forEach(content => content.classList.add("hidden"));
+
+                    // Display the selected tab content
+                    document.getElementById(`${tab}-tab-content`).classList.remove("hidden");
+                });
+            });
+
+            // Set the initial tab as active (Description tab in this case)
+            document.querySelector(".tab-button[data-tab='description']").classList.add("active-tab");
+            document.getElementById("description-tab-content").classList.remove("hidden");
+        });</script>
+        <!------------------swiper-slider------------------->
+        <script>
+            const swiper = new Swiper(".firstSwiper", {
+                spaceBetween: 20,
+                slidesPerView: 4,
+                Infinity: true,
+                loop: true,
+                effect: "",
+                cubeEffect: {
+                    blur: true,
+                    slideShadows: true,
+                    shadowOffset: 20,
+                    shadowScale: 0.94,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '#nextBtn',
+                    prevEl: '#prevBtn',
+                },
+                breakpoints: {
+                    360: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    500: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                }
+            });
+        </script>
+        <!-------------swiper-arrow-btn------------- -->
+        <script>
+            document.getElementById('prevBtn').addEventListener('click', function () {
+                this.classList.add('bg-yellow');
+                this.classList.add('border-transparent');
+                document.getElementById('nextBtn').classList.remove('bg-yellow', 'border-transparent');
+            });
+            document.getElementById('nextBtn').addEventListener('click', function () {
+                this.classList.add('bg-yellow');
+                this.classList.add('border-transparent');
+                document.getElementById('prevBtn').classList.remove('bg-yellow', 'border-transparent');
+            });
+        </script>
     <!-- =============== JAVASCRIPT ============= -->
     <script src="./assets/js/myaccount.js"></script>
 </body>

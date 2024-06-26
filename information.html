@@ -390,15 +390,26 @@
 
                             </div>
                         </div>
-                        <div class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7">
-                            <div class="flex flex-col gap-4">
-                                <p class="capitalize text-white font-play font-bold text-lg leading-110 mb-1">
-                                    Information</p>
-                                <a class="capitalize font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300" href="">Returns</a>
-                                <a class="font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300" href="">Payment options</a>
-                                <a class="capitalize font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300" href="">My Account</a>
-                                <a class="font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300" href="">Responsible alcohol consumption</a>
-
+                    </div>
+                </div>
+                <!-- <div class="flex items-center justify-center gap-10 mt-20">
+                    <button onclick="moveProgressBar(0)">step 0</button>
+                    <button onclick="moveProgressBar(1)">step 1</button>
+                    <button onclick="moveProgressBar(2)">step 2</button>
+                    <button onclick="moveProgressBar(3)">step 3</button>
+                    <button onclick="moveProgressBar(4)">step 4</button>
+                </div> -->
+                <div class="grid grid-cols-2 pt-2 mt-20">
+                    <div class="col-span-1">
+                        <div id="information" class="flex flex-col tabcontent">
+                            <p class="font-bold leading-normal text-black uppercase font-play text-custom_3xl">
+                                Information</p>
+                            <p class="mb-3 text-base font-bold font-play leading-115">Type of Order</p>
+                            <div class="flex gap-3 mb-[26px]">
+                                <button
+                                    class=" text-base font-poppins font-normal text-black py-3 px-9 rounded-[5px] border border-solid border-black">Particular</button>
+                                <button
+                                    class=" text-base font-poppins font-normal text-black py-3 px-10 rounded-[5px] border border-solid border-black">Business</button>
                             </div>
                         </div>
                         <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7">
@@ -411,20 +422,83 @@
                                 <a class="font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300" href="">General terms and conditions rebelbeercans</a>
                                 <a class="font-poppins font-normal text-sm text-white opacity-70 leading-110 hover:opacity-100 transition-opacity ease-linear duration-300" href="">Privacy policy rebelbeercans</a>
                             </div>
+                            <div class="flex mb-[26px] items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L15 12L10 7" stroke="#FFCC02" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="text-base font-normal text-yellow font-poppins">
+                                    Change or add a delivery address
+                                </p>
+                            </div>
+                            <p class="mb-3 text-base font-bold font-play leading-115">
+                                Billing Address
+                            </p>
+                            <textarea name="text"
+                                class="max-w-[536px] w-full min-h-[105px] border border-solid border-black rounded-[5px] focus:outline-none p-2 text-base font-poppins font-normal text-black"
+                                id=""></textarea>
+                            <button onclick="moveProgressBar(1)"
+                                class="text-poppins py-[14px] flex justify-center bg-yellow w-full max-w-[206px] mt-[62px] rounded-[5px]">Next</button>
+                        </div>
+                        <div id="collection" class="hidden tabcontent">
+                            <p class="font-bold leading-normal text-black uppercase font-play text-custom_3xl">
+                                Delivery Of Collection</p>
+                            <p class="mb-3 text-base font-bold font-play leading-115">Type of Order</p>
+                        </div>
+                        <div id="Overview" class="hidden tabcontent">
+                            <p class="font-bold leading-normal text-black uppercase font-play text-custom_3xl">
+                                Delivery Of Collection</p>
+                            <p class="mb-3 text-base font-bold font-play leading-115">Type of Order</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-end w-full col-span-1">
+                        <div
+                            class="p-[20.56px_24px_25px_21px] max-h-[460px] items-start w-full max-w-[413px] rounded-[5px] border-black border shadow-[0px_6px_0px_0px_#000000_inset]">
+                            <p class="mb-6 text-lg font-bold text-black font-poppins leading-150">Shopping Cart</p>
+                            <div class="flex items-center pb-1 gap-[26px]">
+                                <img src="./assets/images/common/webp/silver-series.webp" alt="silver-series"
+                                    class="w-[40px]">
+                                <p class="text-black  text-base font-play max-w-[240px] !leading-120 font-bold">Puhaste_
+                                    Faba_ bourbon BA (Silvers Series)</p>
+                            </div>
+                            <div class="w-full bg-black my-3.5 h-[1px] opacity-20"></div>
+                            <div class="flex items-center pb-1 gap-[26px]">
+                                <img src="./assets/images/common/webp/silver-series.webp" alt="silver-series"
+                                    class="w-[40px]">
+                                <p class="text-black  text-base font-play max-w-[240px] !leading-120 font-bold">Puhaste_
+                                    Faba_ bourbon BA (Silvers Series)</p>
+                            </div>
+                            <div class="w-full bg-black my-3.5 h-[1px] opacity-20"></div>
+                            <div class="flex justify-between pt-1 pb-4">
+                                <p class="font-play text-black font-bold text-lg !leading-100">Delivery</p>
+                                <p class="text-black font-play text-lg font-normal !leading-100">Free</p>
+                            </div>
+                            <div class="flex pb-2.5 justify-between">
+                                <div class="mb-0">
+                                    <p class="font-play pb-1.5 font-bold text-lg text-black !leading-115">Total Amount
+                                    </p>
+                                    <p class="font-poppins font-normal text-sm !leading-130 text-black opacity-70">
+                                        Including VAT and private copying tax</p>
+                                </div>
+                                <p class="font-semibold font-poppins text-custom_2xxl text-yellow">€<span
+                                        class="text-xl align-middle">25.59</span></p>
+                            </div>
+                            <p class="flex items-center text-base font-normal align-middle font-poppins text-yellow">
+                                <span class="align-middle"><svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 11L6 6L1 1" stroke="#FFCC02" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span><span class="ps-2">Change Shopping Cart</span>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="w-full border border-solid border-white opacity-20"></div>
-        <p class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-[23.5px] md:leading-110 !leading-150 text-center">
-            <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
-        </p>
-        <script>
-            const currentYear = new Date().getFullYear();
-            document.getElementById('currentYear').textContent = currentYear;
-        </script>
-    </footer>
+        </section>
+
+    </main>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
     <script>
