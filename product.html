@@ -95,8 +95,12 @@
 </head>
 
 <body>
+    <section class="relative lg:pb-24 md:pb-20 sm:pb-16 pb-12 xl:pb-[144px]">
+        <img class="absolute top-[1%] -z-0 pointer-events-none end-0" src="./assets/images/product/svg/semi-circle-vector.svg" alt="vector">
+        <img class="absolute top-[50%] -z-0 pointer-events-none end-0" src="./assets/images/product/svg/black-semi-vector.svg" alt="vector">
+        <img class="absolute bottom-[5%] -z-0 pointer-events-none start-[2%]" src="./assets/images/product/svg/wave-vector.svg" alt="vector">
         <div class="max-w-[1172px] px-4 mx-auto pt-12 sm:pt-16">
-            <div class="flex lg:flex-row flex-col gap-3 lg:gap-0  justify-between pb-1">
+            <div class="flex lg:flex-row flex-col relative z-10 gap-3 lg:gap-0  justify-between pb-1">
                 <div class="flex justify-between w-full  lg:justify-start  items-center mb-1">
 
                     <div class="flex items-center w-full justify-between">
@@ -1595,9 +1599,8 @@
                 </div>
             </div>
         </div>
-        
         </div>
-<div class="flex justify-center pt-24 items-center gap-4">
+        <div class="flex justify-center pt-24 items-center gap-4">
             <svg class="rotate-[-180deg] duration-300 transition-all slide_icons" width="40" height="40"
                 viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
@@ -1634,33 +1637,33 @@
                     fill="#C4CDD5" />
             </svg>
         </div>
-        </section>
-        <!-- ============================== SWIPER JS LINK ========================= -->
-        <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
-        <!-- ----------------------------- sort beers dropdown --------------------- -->
-        <script>
-            function toggleDropdown(menuId) {
-                const dropdownMenu = document.getElementById(menuId);
-                dropdownMenu.classList.toggle('hidden');
+    </section>
+    <!-- ============================== SWIPER JS LINK ========================= -->
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
+    <!-- ----------------------------- sort beers dropdown --------------------- -->
+    <script>
+        function toggleDropdown(menuId) {
+            const dropdownMenu = document.getElementById(menuId);
+            dropdownMenu.classList.toggle('hidden');
 
-                // Close dropdown when clicking on an option
-                const dropdownOptions = dropdownMenu.querySelectorAll('.dropdown-option');
-                dropdownOptions.forEach(option => {
-                    option.addEventListener('click', () => {
-                        dropdownMenu.classList.add('hidden');
-                    });
+            // Close dropdown when clicking on an option
+            const dropdownOptions = dropdownMenu.querySelectorAll('.dropdown-option');
+            dropdownOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    dropdownMenu.classList.add('hidden');
                 });
-            }
-        </script>
+            });
+        }
+    </script>
 
 
-        <script>
-            const mainContent = document.getElementById('main');
+    <script>
+        const mainContent = document.getElementById('main');
 
-            function showSidebar() {
-                mainContent.classList.toggle('start-0');
-            }
-        </script>
+        function showSidebar() {
+            mainContent.classList.toggle('start-0');
+        }
+    </script>
 </body>
 
 </html>
