@@ -44,8 +44,11 @@
                 extend: {
                     colors: {
                         yellow: '#FFCC02',
+                        'skin-yellow': ' #FFFAE6',
                         'light-green': ' #A7E45F',
+                        'extralight-yellow': ' #FFD635',
                         'dark-gray': '#EBEBEB',
+                        'dark-yellow': '#e5e1cf',
                         gray: '#CCCCCC',
                         'light-blue': '#BEDCFE',
                         green: ' #76BD3D',
@@ -55,6 +58,8 @@
                         'light-yellow': '#EED056',
                         'dark-brown': "#814328",
                         'maroon': "#C33529",
+                        'light-green': ' #A7E45F',
+                        'light-grey': '#E5C130',
 
 
                     },
@@ -66,6 +71,7 @@
                     },
                     lineHeight: {
                         '100': '100%',
+                        '112': '112%',
                         '110': '110%',
                         '120': '120%',
                         '130': '130%',
@@ -78,6 +84,9 @@
                     'roboto': ['Roboto', 'sans-serif'],
                     'inter': ['Inter', 'sans-serif'],
                     'play': ['Play', 'sans-serif'],
+                },
+                boxShadow: { //contact
+                    "latestblogssidershadow": " 0px -6px 0px 0px #000000",
                 }
             }
         }
@@ -85,94 +94,10 @@
 </head>
 
 <body>
-    <section class="bg-white pt-18">
+    <section class="bg-white">
         <div class="max-w-[1172px] px-4 mx-auto">
-            <div class="flex justify-between pb-1">
-                <div class="flex items-center mb-1">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.2637 0.55957L15.1667 4.87336L20.2697 3.87578L19.2721 8.97883L23.5859 11.8818L19.2721 14.7848L20.2697 19.8879L15.1667 18.8903L12.2637 23.2041L9.36067 18.8903L4.25762 19.8879L5.2552 14.7848L0.941406 11.8818L5.2552 8.97883L4.25762 3.87578L9.36067 4.87336L12.2637 0.55957Z"
-                            fill="#FFCC02" />
-                    </svg>
-                    <p class="text-black font-medium text-xl ps-2">Offer</p>
-                </div>
-                <div class="flex">
-                    <div class="flex justify-between items-center">
-                        <p class="text-black font-poppins text-base  font-normal me-7 pe-1">Resultaat 1-30 van de 734
-                            resultanten
-                            wordt getoond
-                        </p>
-                        <div class="relative bg-white border flex min-w-[190px] h-[44px] border-black rounded-[5px]">
-                            <button
-                                class="h-[44px] ps-4 pe-3 pb-1 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-17')">
-                                Standard sorting
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-
-
-                            </button>
-                            <ul id="dropdown-menu-17"
-                                class="absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div
-                            class="relative ms-8 bg-yellow border flex min-w-[190px] h-[44px] border-yellow rounded-[5px]">
-                            <button
-                                class="h-[44px] ps-4 pe-3 pb-1 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-16')">
-                                Category
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-
-
-                            </button>
-                            <ul id="dropdown-menu-16"
-                                class="absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                                <li class="hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex">
+            <div class="flex pt-16">
+                <!-- -------side table-------- -->
                 <div class="flex flex-col w-full max-w-[269px]">
                     <div class="border border-black rounded-[5px] p-5 mt-12 w-full">
                         <div class="bg-cream border border-black ps-4 py-[10px] rounded-[5px] w-full">
@@ -201,8 +126,8 @@
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
+    
+    
                             </button>
                             <ul id="dropdown-menu-1"
                                 class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
@@ -339,8 +264,8 @@
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
+    
+    
                             </button>
                             <ul id="dropdown-menu-2"
                                 class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
@@ -391,8 +316,8 @@
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
+    
+    
                             </button>
                             <ul id="dropdown-menu-3"
                                 class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
@@ -416,8 +341,8 @@
                         </div>
                         <div class="flex h-[170px] beerlist -me-4 pe-4 flex-col mt-5 overflow-x-hidden">
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox" type="checkbox" class="hidden" /> <label
-                                    for="custom-checkbox" class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox" type="checkbox" class="hidden" /> <label for="custom-checkbox"
+                                    class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -427,8 +352,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox2" type="checkbox" class="hidden" /> <label
-                                    for="custom-checkbox2" class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox2" type="checkbox" class="hidden" /> <label for="custom-checkbox2"
+                                    class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -438,8 +363,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox3" type="checkbox" class="hidden" /> <label
-                                    for="custom-checkbox3" class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox3" type="checkbox" class="hidden" /> <label for="custom-checkbox3"
+                                    class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -449,8 +374,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox4" type="checkbox" class="hidden" /> <label
-                                    for="custom-checkbox4" class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox4" type="checkbox" class="hidden" /> <label for="custom-checkbox4"
+                                    class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -460,8 +385,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox5" type="checkbox" class="hidden" /> <label
-                                    for="custom-checkbox5" class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox5" type="checkbox" class="hidden" /> <label for="custom-checkbox5"
+                                    class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -471,8 +396,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox6" type="checkbox" class="hidden" /> <label
-                                    for="custom-checkbox6" class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox6" type="checkbox" class="hidden" /> <label for="custom-checkbox6"
+                                    class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -482,8 +407,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox7" type="checkbox" class="hidden" /> <label
-                                    for="custom-checkbox7" class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox7" type="checkbox" class="hidden" /> <label for="custom-checkbox7"
+                                    class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -493,8 +418,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox8" type="checkbox" class="hidden" /> <label
-                                    for="custom-checkbox8" class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox8" type="checkbox" class="hidden" /> <label for="custom-checkbox8"
+                                    class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -504,8 +429,8 @@
                                 </div>
                             </div>
                             <div class="flex items-center flex-row-reverse pt-2">
-                                <input id="custom-checkbox9" type="checkbox" class="hidden" /> <label
-                                    for="custom-checkbox9" class="flex items-center cursor-pointer rounded-[4.1px]">
+                                <input id="custom-checkbox9" type="checkbox" class="hidden" /> <label for="custom-checkbox9"
+                                    class="flex items-center cursor-pointer rounded-[4.1px]">
                                     <span
                                         class="w-[26px] h-[26px] inline-block mr-2 border border-black transition rounded-[4.1px] duration-300 ease-in-out font-poppins text-black font-normal text-base leading-150"></span>
                                 </label>
@@ -546,7 +471,7 @@
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                 </div>
-
+    
                                 <div class="flex gap-[9.5px] pt-[2px]"><span
                                         class="bg-black h-[7.59px] w-[1px] flex"></span>
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
@@ -572,7 +497,7 @@
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                     <span class="bg-black h-[7.59px] w-[1px] flex"></span>
                                 </div>
-
+    
                             </div>
                             <div class="flex justify-between">
                                 <p class="font-poppins text-[10px] text-black -ms-1 font-normal">25cl.</p>
@@ -582,7 +507,7 @@
                                 <p class="font-poppins text-[10px] text-black font-normal -me-1">65cl.</p>
                                 <p class="font-poppins text-[10px] text-black font-normal -me-1">75cl.</p>
                             </div>
-
+    
                         </div>
                         <div class="mt-6 pt-1">
                             <p class="text-black font-play font-bold text-xl">Alcohol</p>
@@ -604,7 +529,7 @@
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                 </div>
-
+    
                                 <div class="flex gap-[9.5px] pt-[2px]"><span
                                         class="bg-black h-[7.59px] w-[1px] flex"></span>
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
@@ -630,7 +555,7 @@
                                     <span class="bg-black h-[4.69px] w-[1px] flex"></span>
                                     <span class="bg-black h-[7.59px] w-[1px] flex"></span>
                                 </div>
-
+    
                             </div>
                             <div class="flex justify-between">
                                 <p class="font-poppins text-[10px] text-black -ms-1 font-normal">25cl.</p>
@@ -640,7 +565,7 @@
                                 <p class="font-poppins text-[10px] text-black font-normal -me-1">65cl.</p>
                                 <p class="font-poppins text-[10px] text-black font-normal -me-1">75cl.</p>
                             </div>
-
+    
                         </div>
                         <p class="text-black font-play font-bold text-xl pt-[26px]">Price</p>
                         <div class="flex items-start pt-6">
@@ -671,8 +596,8 @@
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
+    
+    
                             </button>
                             <ul id="dropdown-menu-5"
                                 class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
@@ -809,12 +734,14 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ---------------- cards ------------- -->
                 <div class="flex flex-col w-full">
-                    <div class="flex w-full flex-row mt-12 ps-5 flex-wrap">
-                        <div class="md:w-4/12 sm:w-6/12 w-full">
+                    <div class="flex w-full flex-row mt-12 ms-[10px] flex-wrap">
+                        <div class="lg:w-4/12 md:w-6/12 px-[10px] w-full">
                             <div
                                 class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
-                                <div class="bg-dark-gray my-3 max-h-[257px] relative py-8 px-14">
+                                <div class="bg-dark-gray my-3 max-h-[257px] relative py-8 flex justify-center items-center xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -829,14 +756,14 @@
                                         class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
                                         Save 10%</p>
                                     <img src="./assets/images/category/webp/blue-cane.png" alt="beer cane"
-                                        class="max-w-[121.59px] h-[210px]">
+                                        class="max-w-[121.59px] h-[210px] w-full">
                                 </div>
                                 <h4 class="text-base font-play text-black leading-112 mb-3 font-bold">Puhaste_ Faba_
                                     bourbon
                                     BA (Silvers Series)
                                 </h4>
                                 <p
-                                    class="px-[8px] flex items-center text-sm font-normal font-inter text-black bg-light-yellow  group-hover:bg-extralight-yellow  group-hover:border-light-grey transition-all duration-300 rounded-[5px] max-w-[133px] h-[33px] border border-dark-yellow">
+                                    class="px-[8px] flex items-center text-sm font-normal font-inter text-black bg-skin-yellow  group-hover:bg-extralight-yellow  group-hover:border-light-grey transition-all duration-300 rounded-[5px] max-w-[133px] h-[33px] border border-dark-yellow">
                                     IPA | 5,7| 12*33cl</p>
                                 <div class="flex items-center justify-between mb-[14px]">
                                     <p
@@ -846,22 +773,113 @@
                                     <span>
                                         <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="1.28516" y="0.506836" width="21" height="21" rx="3.5"
-                                                stroke="black" />
+                                            <rect x="1.28516" y="0.506836" width="21" height="21" rx="3.5" stroke="black" />
                                             <path
                                                 d="M11.1211 10.3398V6.33984H12.4544V10.3398H16.4544V11.6732H12.4544V15.6732H11.1211V11.6732H7.12109V10.3398H11.1211Z"
                                                 fill="black" />
                                         </svg>
-
+    
                                     </span>
                                 </div>
                             </div>
                         </div>
+                        <div class="lg:w-4/12 md:w-6/12 px-[10px] w-full">
+                            <div
+                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                <div class="bg-dark-gray my-3 max-h-[257px] relative py-8 flex justify-center items-center xl:px-14">
+                                    <span class="absolute top-2 right-2">
+                                        <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.785156" y="0.0205078" width="24" height="24" rx="12" fill="white"
+                                                fill-opacity="0.66" />
+                                            <path
+                                                d="M12.5121 16.6898L12.451 16.7509L12.3837 16.6898C9.48095 14.0559 7.56207 12.3142 7.56207 10.5481C7.56207 9.3259 8.47873 8.40923 9.70095 8.40923C10.6421 8.40923 11.5587 9.02035 11.8826 9.85146H13.0193C13.3432 9.02035 14.2598 8.40923 15.201 8.40923C16.4232 8.40923 17.3398 9.3259 17.3398 10.5481C17.3398 12.3142 15.421 14.0559 12.5121 16.6898ZM15.201 7.18701C14.1376 7.18701 13.1171 7.68201 12.451 8.45812C11.7848 7.68201 10.7643 7.18701 9.70095 7.18701C7.81873 7.18701 6.33984 8.65979 6.33984 10.5481C6.33984 12.852 8.41762 14.7403 11.5648 17.5942L12.451 18.4009L13.3371 17.5942C16.4843 14.7403 18.5621 12.852 18.5621 10.5481C18.5621 8.65979 17.0832 7.18701 15.201 7.18701Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <p
+                                        class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
+                                        Save 10%</p>
+                                    <img src="./assets/images/category/webp/blue-cane.png" alt="beer cane"
+                                        class="max-w-[121.59px] h-[210px] w-full">
+                                </div>
+                                <h4 class="text-base font-play text-black leading-112 mb-3 font-bold">Puhaste_ Faba_
+                                    bourbon
+                                    BA (Silvers Series)
+                                </h4>
+                                <p
+                                    class="px-[8px] flex items-center text-sm font-normal font-inter text-black bg-skin-yellow  group-hover:bg-extralight-yellow  group-hover:border-light-grey transition-all duration-300 rounded-[5px] max-w-[133px] h-[33px] border border-dark-yellow">
+                                    IPA | 5,7| 12*33cl</p>
+                                <div class="flex items-center justify-between mb-[14px]">
+                                    <p
+                                        class="font-semibold font-poppins mt-1 text-yellow leading-150 group-hover:text-black duration-300 transition-all text-xl">
+                                        <span class="text-3xl">€</span>7.59
+                                    </p>
+                                    <span>
+                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1.28516" y="0.506836" width="21" height="21" rx="3.5" stroke="black" />
+                                            <path
+                                                d="M11.1211 10.3398V6.33984H12.4544V10.3398H16.4544V11.6732H12.4544V15.6732H11.1211V11.6732H7.12109V10.3398H11.1211Z"
+                                                fill="black" />
+                                        </svg>
+    
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 md:w-6/12 px-[10px] w-full">
+                            <div
+                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                <div class="bg-dark-gray my-3 max-h-[257px] relative py-8 flex justify-center items-center xl:px-14">
+                                    <span class="absolute top-2 right-2">
+                                        <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.785156" y="0.0205078" width="24" height="24" rx="12" fill="white"
+                                                fill-opacity="0.66" />
+                                            <path
+                                                d="M12.5121 16.6898L12.451 16.7509L12.3837 16.6898C9.48095 14.0559 7.56207 12.3142 7.56207 10.5481C7.56207 9.3259 8.47873 8.40923 9.70095 8.40923C10.6421 8.40923 11.5587 9.02035 11.8826 9.85146H13.0193C13.3432 9.02035 14.2598 8.40923 15.201 8.40923C16.4232 8.40923 17.3398 9.3259 17.3398 10.5481C17.3398 12.3142 15.421 14.0559 12.5121 16.6898ZM15.201 7.18701C14.1376 7.18701 13.1171 7.68201 12.451 8.45812C11.7848 7.68201 10.7643 7.18701 9.70095 7.18701C7.81873 7.18701 6.33984 8.65979 6.33984 10.5481C6.33984 12.852 8.41762 14.7403 11.5648 17.5942L12.451 18.4009L13.3371 17.5942C16.4843 14.7403 18.5621 12.852 18.5621 10.5481C18.5621 8.65979 17.0832 7.18701 15.201 7.18701Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <p
+                                        class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
+                                        Save 10%</p>
+                                    <img src="./assets/images/category/webp/blue-cane.png" alt="beer cane"
+                                        class="max-w-[121.59px] h-[210px] w-full">
+                                </div>
+                                <h4 class="text-base font-play text-black leading-112 mb-3 font-bold">Puhaste_ Faba_
+                                    bourbon
+                                    BA (Silvers Series)
+                                </h4>
+                                <p
+                                    class="px-[8px] flex items-center text-sm font-normal font-inter text-black bg-skin-yellow  group-hover:bg-extralight-yellow  group-hover:border-light-grey transition-all duration-300 rounded-[5px] max-w-[133px] h-[33px] border border-dark-yellow">
+                                    IPA | 5,7| 12*33cl</p>
+                                <div class="flex items-center justify-between mb-[14px]">
+                                    <p
+                                        class="font-semibold font-poppins mt-1 text-yellow leading-150 group-hover:text-black duration-300 transition-all text-xl">
+                                        <span class="text-3xl">€</span>7.59
+                                    </p>
+                                    <span>
+                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1.28516" y="0.506836" width="21" height="21" rx="3.5" stroke="black" />
+                                            <path
+                                                d="M11.1211 10.3398V6.33984H12.4544V10.3398H16.4544V11.6732H12.4544V15.6732H11.1211V11.6732H7.12109V10.3398H11.1211Z"
+                                                fill="black" />
+                                        </svg>
+    
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        
                     </div>
                 </div>
             </div>
         </div>
-
+    
     </section>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
