@@ -27,10 +27,10 @@ input:checked + label > span::after {
     cursor: pointer;
 }
 .footer_bg{
-    background-image: url(../images/myaccount/footer_bg.png);
+    background-image: url(../images/myaccount/footer_bg.webp)
 }
 .hero_bg{
-    background-image: url(../images/myaccount/header_bg.png);
+    background-image: url(../images/myaccount/header_bg.webp)
 }
 @media (max-width: 1023.9px) {
     .overflow_hidden {

@@ -1,129 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- =============== FAVICON ============= -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/common/webp/favicon.webp"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/images/common/webp/favicon.webp" type="image/x-icon" />
     <!-- =============== CSS LINK ============= -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/root.css" />
+    <link rel="stylesheet" href="./assets/css/blogspage.css">
     <!-- =============== TAILWIND LINK ============= -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- ======================== SWIPER CDN ========================== -->
-    <link
-      href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css "
-      rel="stylesheet"
-    />
+    <link href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css " rel="stylesheet" />
     <!-- =============== META TAG ============== -->
     <title>Rebel Beer</title>
     <meta name="title" content="Welcome to Cans" />
-    <meta
-      name="description"
-      content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa."
-    />
+    <meta name="description" content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://metatags.io/" />
-    <meta
-      property="og:title"
-      content="Welcome to 
+    <meta property="og:title" content="Welcome to 
     Rebel Beer
-    Cans"
-    />
-    <meta
-      property="og:description"
-      content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa."
-    />
-    <meta
-      property="og:image"
-      content="https://metatags.io/images/meta-tags.png"
-    />
+    Cans" />
+    <meta property="og:description" content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://metatags.io/" />
     <meta property="twitter:title" content="Welcome to  Rebel Beer Cans" />
-    <meta
-      property="twitter:description"
-      content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa."
-    />
-    <meta
-      property="twitter:image"
-      content="https://metatags.io/images/meta-tags.png"
-    />
+    <meta property="twitter:description" content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
     <!-- Meta Tags Generated with https://metatags.io -->
     <meta property="twitter:image" content="./meta-img.webp" />
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              yellow: "#FFCC02",
-              "light-green": " #A7E45F",
-              "dark-gray": "#EBEBEB",
-              gray: "#CCCCCC",
-              "light-blue": "#BEDCFE",
-              green: " #76BD3D",
-              "white-gray": "#F0F0EA",
-              "sea-blue": "#EAF5E2",
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: "#FFCC02",
+                        "light-green": " #A7E45F",
+                        "dark-gray": "#EBEBEB",
+                        gray: "#CCCCCC",
+                        "light-blue": "#BEDCFE",
+                        green: " #76BD3D",
+                        "white-gray": "#F0F0EA",
+                        "sea-blue": "#EAF5E2",
+                    },
+                    fontSize: {
+                        custom_2xl: "28px",
+                        custom_2xxl: "30.24px",
+                        custom_3xl: "32px",
+                        custom_4xl: "32px",
+                        custom_5xl: "40px",
+                        custom_9xl: "94px",
+                    },
+                    lineHeight: {
+                        "100": "100%",
+                        "110": "110%",
+                        "115": "115%",
+                        "120": "120%",
+                        "130": "130%",
+                        "140": "140%",
+                        "150": "150%",
+                    },
+                },
+                fontFamily: {
+                    poppins: ["Poppins", "sans-serif"],
+                    roboto: ["Roboto", "sans-serif"],
+                    inter: ["Inter", "sans-serif"],
+                    play: ["Play", "sans-serif"],
+                },
+                keyframes: {
+                    scroll: {
+                        "0%": {
+                            transform: "translateX(0)"
+                        },
+                        "100%": {
+                            transform: "translateX(calc(-288px * 5))"
+                        },
+                    },
+                },
+                animation: {
+                    scroll: "scroll 25s linear infinite",
+                },
             },
-            fontSize: {
-              custom_2xl: "28px",
-              custom_2xxl:"30.24px",
-              custom_3xl: "32px",
-              custom_4xl: "32px",
-              custom_5xl:"40px",
-              custom_9xl: "94px",
-            },
-            lineHeight: {
-              "100": "100%",
-              "110": "110%",
-              "115":"115%",
-              "120": "120%",
-              "130": "130%",
-              "140": "140%",
-              "150": "150%",
-            },
-          },
-          fontFamily: {
-            poppins: ["Poppins", "sans-serif"],
-            roboto: ["Roboto", "sans-serif"],
-            inter: ["Inter", "sans-serif"],
-            play: ["Play", "sans-serif"],
-          },
-          keyframes: {
-            scroll: {
-              "0%": { transform: "translateX(0)" },
-              "100%": { transform: "translateX(calc(-288px * 5))" },
-            },
-          },
-          animation: {
-            scroll: "scroll 25s linear infinite",
-          },
-        },
-      };
+        };
     </script>
     <style>
-      .partnersslider_track {
-        @apply w-[calc(268px*_5)];
-      }
-
-      .partners_slider_track:hover {
-        animation-play-state: paused;
-      }
+        .partnersslider_track {
+            @apply w-[calc(268px*_5)];
+        }
+        
+        .partners_slider_track:hover {
+            animation-play-state: paused;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- =========Images-overflow ======== -->
     <section class="max-w-[1920px] mx-auto">
-      <div class="relative overflow-hidden partners_slider whitespace-nowrap">
-        <div class="flex partners_slider_track animate-scroll">
+      <div class="partners_slider overflow-hidden relative whitespace-nowrap">
+        <div class="partners_slider_track animate-scroll flex">
           <div
             class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center"
           >
@@ -135,7 +114,9 @@
               />
             </a>
           </div>
-          <div class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center" >
+          <div
+            class="border-[1.01px] shrink-0 border-solid border-gray md:w-[288px] w-[255px] md:h-[240px] h-[220px] flex items-center justify-center"
+          >
             <a href="#" target="_blank">
               <img
                 src="./assets/images/homepage/webp/amundesen-img.webp"
@@ -259,7 +240,7 @@
     </section>
 
     <!-- =========OFFER-SECTION ========== -->
-    <section class="relative z-0 pt-16 mt-3">
+    <section class="pt-16 relative z-0 mt-3">
       <img
         src="./assets/images/homepage/svg/yellow-wave.svg"
         alt="yellow-wave"
@@ -274,7 +255,7 @@
         <div
           class="flex flex-row lg:mb-24 md:mb-20 sm:mb-16 mb-12 xl:pb-2.5 justify-center flex-wrap -mx-3"
         >
-          <div class="px-3 md:w-1/3 sm:w-1/2 max-sm:mt-8">
+          <div class="md:w-1/3 sm:w-1/2 max-sm:mt-8 px-3">
             <img
               src="./assets/images/homepage/webp/offer-img.webp"
               alt="offer-img"
@@ -286,7 +267,7 @@
               Offers
             </button>
           </div>
-          <div class="px-3 md:w-1/3 sm:w-1/2 max-sm:mt-8">
+          <div class="md:w-1/3 sm:w-1/2 max-sm:mt-8 px-3">
             <img
               src="./assets/images/homepage/webp/beer-package.webp"
               alt="offer-img"
@@ -298,7 +279,7 @@
               Beer packages
             </button>
           </div>
-          <div class="px-3 md:w-1/3 max-md:mt-8">
+          <div class="md:w-1/3 max-md:mt-8 px-3">
             <img
               src="./assets/images/homepage/webp/new-beer.webp"
               alt="offer-img"
@@ -309,9 +290,9 @@
             >
               New Beers
             </button>
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- ======== REBELBEER CANS ========== -->
@@ -329,8 +310,8 @@
         class="absolute z-[-1] top-[16%] left-0"
       />
       <div class="container max-w-[1164px] py-3 px-3 mx-auto">
-        <div class="flex flex-row flex-wrap items-center -mx-3">
-          <div class="relative z-0 w-full md:w-1/2 max-md:mb-5">
+        <div class="flex flex-row flex-wrap -mx-3 items-center">
+          <div class="md:w-1/2 w-full relative max-md:mb-5 z-0">
             <div class="relative z-0">
               <img
                 src="./assets/images/homepage/webp/rebelbeer-cans.webp"
@@ -349,7 +330,7 @@
               />
             </div>
           </div>
-          <div class="w-full px-3 mb-2 md:w-1/2">
+          <div class="md:w-1/2 mb-2 w-full px-3">
             <h2
               class="font-play lg:text-5xl max-md:text-center md:text-4xl sm:text-3xl text-2xl md:mb-5 mb-2 !leading-120 text-black font-bold"
             >
@@ -405,18 +386,11 @@
                       />
                     </svg>
                   </span>
-                </div>
-              </a>
-              <a
-                rel="noopener noreffer"
-                target="_blank"
-                href="https://www.facebook.com/login/"
-              >
-                <div
-                  class="border-[0.8px] group hover:bg-black duration-300 h-[43.8px] w-[43.8px] rounded-[3.19px] border-black flex justify-center items-center"
-                >
-                  <span
-                    ><svg
+                            </div>
+                        </a>
+                        <a rel="noopener noreffer" target="_blank" href="https://www.facebook.com/login/">
+                            <div class="border-[0.8px] group hover:bg-black duration-300 h-[43.8px] w-[43.8px] rounded-[3.19px] border-black flex justify-center items-center">
+                                <span><svg
                       width="29"
                       height="29"
                       viewBox="0 0 29 29"
@@ -430,15 +404,16 @@
                       />
                     </svg>
                   </span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-              </a>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
-  </body>
+</body>
+
 </html>
