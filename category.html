@@ -9,7 +9,7 @@
     <!-- =============== CSS LINK ============= -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/category.css">
     <!-- =============== TAILWIND LINK ============= -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -60,6 +60,8 @@
                         'maroon': "#C33529",
                         'light-green': ' #A7E45F',
                         'light-grey': '#E5C130',
+                        'off-grey': '#E7E4D7',
+                        'numbers-grey': '#DFE3E8',
 
                     },
                     fontSize: {
@@ -93,9 +95,34 @@
 </head>
 
 <body>
-    <section class="bg-white pt-18">
-        <div class="max-w-[1172px] px-4 mx-auto">
-            <div class="flex lg:flex-row flex-col gap-3 lg:gap-0  justify-between pb-1">
+    <section class="bg-white pt-[64px] relative">
+        <span class="absolute right-0 pointer-events-none top-2">
+            <svg width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_453_7935" fill="white">
+                <path d="M65.4559 55.8686C70.3918 47.3195 71.7293 37.1598 69.1743 27.6245C66.6194 18.0892 60.3812 9.95946 51.8321 5.02364C43.283 0.0878134 33.1233 -1.24974 23.588 1.30523C14.0527 3.8602 5.92293 10.0984 0.987106 18.6475L33.2215 37.2581L65.4559 55.8686Z"/>
+                </mask>
+                <path d="M65.4559 55.8686C70.3918 47.3195 71.7293 37.1598 69.1743 27.6245C66.6194 18.0892 60.3812 9.95946 51.8321 5.02364C43.283 0.0878134 33.1233 -1.24974 23.588 1.30523C14.0527 3.8602 5.92293 10.0984 0.987106 18.6475L33.2215 37.2581L65.4559 55.8686Z" fill="#FFCC02" stroke="#FFCC02" stroke-width="6" mask="url(#path-1-inside-1_453_7935)"/>
+                </svg>
+                
+        </span>
+        <span class="absolute left-0 pointer-events-none top-[19%]">
+            <svg width="47" height="57" viewBox="0 0 47 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_453_7936" fill="white">
+                <path d="M-18.3505 0.396039C-23.2863 8.94514 -24.6239 19.1048 -22.0689 28.6401C-19.5139 38.1754 -13.2757 46.3052 -4.72661 51.241C3.82249 56.1768 13.9822 57.5144 23.5175 54.9594C33.0528 52.4044 41.1825 46.1662 46.1184 37.6171L13.8839 19.0066L-18.3505 0.396039Z"/>
+                </mask>
+                <path d="M-18.3505 0.396039C-23.2863 8.94514 -24.6239 19.1048 -22.0689 28.6401C-19.5139 38.1754 -13.2757 46.3052 -4.72661 51.241C3.82249 56.1768 13.9822 57.5144 23.5175 54.9594C33.0528 52.4044 41.1825 46.1662 46.1184 37.6171L13.8839 19.0066L-18.3505 0.396039Z" stroke="black" stroke-width="10" mask="url(#path-1-inside-1_453_7936)"/>
+                </svg>
+        </span>
+        <span class="absolute left-5 pointer-events-none bottom-[7%]">
+            <svg width="52" height="192" viewBox="0 0 52 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50.1175 0.652344C50.1175 11.231 39.0391 11.231 39.0391 21.8097C39.0391 32.3884 50.1175 32.5015 50.1175 42.9671C50.1175 53.4328 39.0391 53.5458 39.0391 64.1245C39.0391 74.7032 50.1175 74.6806 50.1175 85.2593C50.1175 95.838 39.0391 95.838 39.0391 106.417C39.0391 116.995 50.1175 116.995 50.1175 127.574C50.1175 138.153 39.0391 138.153 39.0391 148.731C39.0391 159.31 50.1175 159.333 50.1175 169.911C50.1175 180.49 39.0391 180.49 39.0391 191.069" stroke="#FFCC02" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M31.3633 0.652344C31.3633 11.231 20.3945 11.231 20.3945 21.8097C20.3945 32.3884 31.3633 32.3884 31.3633 42.9671C31.3633 53.5458 20.3945 53.5458 20.3945 64.1245C20.3945 74.7032 31.3633 74.6806 31.3633 85.2593C31.3633 95.838 20.3945 95.838 20.3945 106.417C20.3945 116.995 31.3633 116.995 31.3633 127.574C31.3633 138.153 20.3945 138.153 20.3945 148.731C20.3945 159.31 31.3633 159.333 31.3633 169.911C31.3633 180.49 20.3945 180.49 20.3945 191.069" stroke="#FFCC02" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M12.6761 0.652344C12.6761 11.231 1.59766 11.231 1.59766 21.8097C1.59766 32.3884 12.6761 32.3884 12.6761 42.9671C12.6761 53.5458 1.59766 53.5458 1.59766 64.1245C1.59766 74.7032 12.6761 74.6806 12.6761 85.2593C12.6761 95.838 1.59766 95.838 1.59766 106.417C1.59766 116.995 12.6761 116.995 12.6761 127.574C12.6761 138.153 1.59766 138.153 1.59766 148.731C1.59766 159.31 12.6761 159.333 12.6761 169.911C12.6761 180.49 1.59766 180.49 1.59766 191.069" stroke="#FFCC02" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+                
+        </span>
+        <div class="max-w-[1172px] px-4 mx-auto relative z-10">
+            <div class="flex lg:flex-row flex-col gap-3 lg:gap-0 justify-between pb-1">
                 <div class="flex justify-between w-full  lg:justify-start  items-center mb-1">
 
                     <div class="flex items-center w-full justify-between">
@@ -212,7 +239,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex">
+            <div class="flex justify-center">
                 <!-- ------------------------------------------- side bar ------------------------------------------------ -->
                 <div id="main"
                     class="bg-white duration-300 z-10 top-14 flex flex-col w-full absolute -start-full lg:static max-w-[269px]">
@@ -855,9 +882,9 @@
                 <div class="flex flex-col w-full max-w-[576px] md:max-w-[890px] xl:max-w-full justify-center lg:justify-start items-center lg:items-start">
                     <div class="flex w-full flex-row mt-12 ps-[10px] flex-wrap">
                         <!-- --------------row 1------------- -->
-                        <div class="md:w-4/12 sm:w-6/12 px-2 flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -901,9 +928,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-4/12 sm:w-6/12 px-2 mt-5 sm:mt-0   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 mt-5 sm:mt-0   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -947,9 +974,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-4/12 sm:w-6/12 px-2 mt-5 md:mt-0  flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 mt-5 md:mt-0  flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -996,9 +1023,9 @@
 
 
                            <!-- --------------row 2 ------------- -->
-                        <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1042,9 +1069,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1088,9 +1115,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1136,9 +1163,9 @@
                         </div>
 
                           <!-- --------------row 3------------- -->
-                        <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1182,9 +1209,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1228,9 +1255,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1276,9 +1303,9 @@
                         </div>
                     
                            <!-- --------------row 4 ------------- -->
-                           <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
+                           <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1322,9 +1349,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1368,9 +1395,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1416,9 +1443,9 @@
                         </div>
                     
                            <!-- --------------row 5------------- -->
-                           <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
+                           <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px]  mt-5  flex justify-center items-center  lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1462,9 +1489,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px] mt-5    flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1508,9 +1535,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-4/12 sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
+                        <div class="md:w-4/12  sm:w-6/12 px-2 xl:mt-[30px] mt-5   flex justify-center items-center lg:px-1 xl:px-[10px] w-full">
                             <div
-                                class="max-w-[270px] category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
+                                class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
                                     <span class="absolute top-2 right-2">
                                         <svg class="like_svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -1557,6 +1584,43 @@
                     
                     </div>
                 </div>
+            </div>
+            <div class="flex justify-center pt-10 md:pt-14 xl:pt-24 items-center gap-3 sm:gap-4">
+                <svg class="rotate-[-180deg] duration-300 transition-all slide_icons" width="40" height="40"
+                    viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
+                        rx="4.34033" fill="white" />
+                    <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
+                        rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
+                    <path class="duaration-300"
+                        d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
+                        fill="#C4CDD5" />
+                </svg>
+                <div
+                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                    1</div>
+                <div
+                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                    2</div>
+                <div
+                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                    ...</div>
+                <div
+                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                    9</div>
+                <div
+                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                    26</div>
+                <svg class="slide_icons duration-300 transition-all" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
+                        rx="4.34033" fill="white" />
+                    <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
+                        rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
+                    <path class="duartion-300"
+                        d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
+                        fill="#C4CDD5" />
+                </svg>
             </div>
         </div>
 
