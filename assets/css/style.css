@@ -8,6 +8,10 @@
                 background-image: url(../images/beerpackagepage/header_bg.webp);
             }
             
+            .animate-spin {
+                animation: spin 7s linear infinite !important;
+            }
+            
             @media (max-width: 1023.9px) {
                 .overflow_hidden {
                     overflow: hidden !important;
