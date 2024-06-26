@@ -95,4 +95,8 @@
         transform: rotate(-43deg) translateY(-13px);
         width: 30px;
     }
+
+    .show {
+        left: 0;
+    }
 }

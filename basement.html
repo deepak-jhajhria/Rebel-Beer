@@ -90,8 +90,6 @@
 </head>
 
 <body>
-
-
     <div class="flex justify-center gap-3 items-center py-[5px] bg-black">
         <img src="/assets/images/basement/svg/delivery-truck.svg" alt="turck">
         <p class="text-[#F0F0EA] text-[14px] font-play font-normal">Free Shipping Over First Order</p>
@@ -99,29 +97,29 @@
     <!----- navbar ------>
     <nav class="flex items-center py-[10.52px] justify-between max-w-[1165px] mx-auto px-3">
         <a href="#">
-            <img src="/assets/images/basement/svg/header-logo.svg" alt="headerlogo">
+            <img src="/assets/images/basement/svg/header-logo.svg" alt="headerlogo" class="w-[48.97px] h-[48.98px]">
         </a>
         <div class="flex items-center">
             <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1024px]:h-screen max-[1024px]:w-full duration-300 ease-in-out lg:justify-start justify-center"
                 id="navbar">
                 <li>
                     <a href="#"
-                        class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black">All
+                        class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black navLink">All
                         Beers</a>
                 </li>
                 <li>
                     <a href="#"
-                        class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black">About
+                        class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black navLink">About
                         Us</a>
                 </li>
                 <li>
                     <a href="#"
-                        class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black">Beer
+                        class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black navLink">Beer
                         Shop</a>
                 </li>
                 <li>
                     <a href="#"
-                        class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black">Beer
+                        class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black navLink">Beer
                         packages</a>
                 </li>
                 <div class="flex flex-row gap-2 sm:hidden">
@@ -205,10 +203,10 @@
                     </a>
                 </div>
                 <button
-                    class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
+                    class="px-4 py-[11.2px] rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-yellow hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
                     Contact Us
                 </button>
-                <div onclick="openNav()" class="menu d-block d-lg-none z-[5]">
+                <div class="menu d-block d-lg-none z-[5]" id="openNav">
                     <span class="bg-black duration-300 ease-in-out"></span>
                     <span class="my-2 bg-black  duration-300 ease-in-out"></span>
                     <span class="bg-black  duration-300 ease-in-out"></span>
@@ -217,7 +215,7 @@
         </div>
     </nav>
     <!------ hero------>
-    <div class="bg-cover bg-bottom flex justify-center items-center flex-col min-h-[243px] sm:pb-7  px-3 hero-bg">
+    <div class="bg-cover bg-bottom flex justify-center items-center flex-col min-h-[239px] sm:pb-5  px-3 hero-bg">
         <h2 class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-115 text-center">
             Basement Beer</h2>
     </div>
@@ -225,7 +223,7 @@
         <div class="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto xl:px-0 px-4 py-[14.5px]">
             <h3 class="font-poppins font-normal lg:text-base text-sm text-black flex items-center gap-1">
                 <a class="opacity-70 hover:opacity-100 duration-200 font-poppins font-normal text-sm lg:text-base"
-                    href="">Home</a>
+                    href="/">Home</a>
                 <span><svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.504 0.98H2.344L6.216 4.644L2.344 8.324H0.504L4.376 4.644L0.504 0.98Z" fill="black">
                         </path>
@@ -238,13 +236,13 @@
         </div>
     </div>
 
-    <div class="max-w-[1140px] mx-auto px-3 sm:pt-[67px] pt-5">
+    <div class="max-w-[1140px] mx-auto px-3 sm:pt-[65.09px] pt-5">
         <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-[11px]">
                 <img src="./assets/images/basement/svg/bxs-offer.svg" alt="bxs-offer">
                 <p class="font-poppins font-medium text-xl text-black">Offer</p>
             </div>
-            <div class="gap-6 flex flex-col lg:flex-row items-center w-full md:w-auto">
+            <div class="gap-6 flex flex-col lg:flex-row items-center w-full md:w-auto max-[412px]:mb-5">
                 <p class="font-poppins font-normal text-base text-black !leading-150 max-lg:text-center">Resultaat 1-30
                     van de 734
                     resultanten wordt getoond</p>
@@ -281,7 +279,7 @@
             </div>
         </div>
     </div>
-    <section class="pt-[65px] xl:pb-[275px] lg:pb-[150px] md:pb-24 sm:pb-20 pb-16 max-[1162px]:px-3 relative z-20">
+    <section class="pt-[65px] xl:pb-[275px] lg:pb-[150px] md:pb-24 sm:pb-20 pb-16 max-[1162px]:px-3 relative z-1">
         <div class=" max-w-[1140px] mx-auto px-4 flex  justify-center">
             <div
                 class=" grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-7 justify-center items-center -mx-4 ">
@@ -357,7 +355,7 @@
                                     class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
                                     <p
                                         class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                        Save 20%</p>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
                                     class=" w-100 max-w-[83px] mix-blend-multiply">
@@ -481,7 +479,7 @@
                                     class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
                                     <p
                                         class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                        Save 5%</p>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
                                     class=" w-100 max-w-[83px] mix-blend-multiply">
@@ -605,7 +603,7 @@
                                     class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
                                     <p
                                         class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                        Save 20%</p>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
                                     class=" w-100 max-w-[83px] mix-blend-multiply">
@@ -729,7 +727,7 @@
                                     class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
                                     <p
                                         class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                        Save 5%</p>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
                                     class=" w-100 max-w-[83px] mix-blend-multiply">
@@ -853,7 +851,7 @@
                                     class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
                                     <p
                                         class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                        Save 20%</p>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
                                     class=" w-100 max-w-[83px] mix-blend-multiply">
@@ -977,7 +975,7 @@
                                     class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
                                     <p
                                         class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                        Save 5%</p>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
                                     class=" w-100 max-w-[83px] mix-blend-multiply">
@@ -1071,17 +1069,17 @@
             </div>
         </div>
         <img src="./assets/images/basement/svg/yellow-ellipse.svg" alt="yellow-ellipse"
-            class="absolute right-2 bottom-[23.7%] hidden xl:block">
+            class="absolute right-2 bottom-[21.7%] hidden xl:block">
         <img src="./assets/images/basement/svg/black-ellipse.svg" alt="black-ellipse"
-            class=" absolute hidden xl:block top-[8%]">
+            class=" absolute hidden xl:block left-2 top-[6.5%]">
         <img src="./assets/images/basement/svg/waves-svg.svg" alt="waves-svg"
             class="absolute right-0 hidden xl:block z-[-1] top-[34.3%]">
         <img src="./assets//images/basement/svg/yellow-stroke-svg.svg" alt="yellow-ellipse"
             class="left-0 bottom-[40%] absolute hidden xl:block">
     </section>
     <!-- =============== FOOTER ============= -->
-    <footer class="bg-footer bg-center bg-cover bg-no-repeat pt-[69.66px]">
-        <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[104.42px]">
+    <footer class="bg-footer bg-center bg-cover bg-no-repeat pt-[70.07px] min-h-[438px]">
+        <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[111px]">
             <div class="flex flex-row flex-wrap">
                 <div class="lg:w-4/12">
                     <a href="/">
@@ -1189,18 +1187,40 @@
                 </div>
             </div>
         </div>
-        <div class="w-full border border-solid border-white opacity-20"></div>
+        <div class="w-full h-[1px] bg-white opacity-20"></div>
         <p
-            class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-4 sm:py-[23.5px] md:leading-110 leading-normal text-center">
+            class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-4 sm:py-[23.3px] md:leading-110 leading-normal text-center">
             <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
         </p>
         <script>  const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>
     </footer>
     <script>
+
+        // ====================NAVBAR JS=====================
+        let navopen = document.getElementById('openNav')
+
+        navopen.addEventListener("click", () => {
+            let navBar = document.querySelector("#navbar");
+            let menu = document.querySelector(".menu");
+            menu.classList.toggle("cross");
+            let body = document.body;
+            body.classList.toggle('overflow-hidden')
+            navBar.classList.toggle("show");
+            let navLinks = document.querySelectorAll(".navLink");
+            navLinks.forEach(n => {
+                n.addEventListener("click", () => {
+                    navBar.classList.remove("show");
+                    menu.classList.remove("cross");
+                });
+            });
+        })
+
+        // ======================SELECTER JS====================
         function changeText(buttonId, selectElement) {
             var button = document.getElementById(buttonId);
             button.innerHTML = selectElement.value + ' <img src="/assets/images/basement/svg/dropdown-svg.svg" alt="arrowIcon">';
         }
+
     </script>
 </body>
 
