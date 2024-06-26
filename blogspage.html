@@ -69,13 +69,25 @@
                     'inter': ['Inter', 'sans-serif'],
                     'play': ['Play', 'sans-serif'],
                 },
-                boxShadow: { //contact
+                // ===================contact=============
+                boxShadow: {
                     "blogssectionyellowshadow": "13px 0px 0px 0px #FFCC02 inset",
                     "latestblogssidershadow": " 0px -6px 0px 0px #000000",
                     "formShadow": "0px 6px 0px 0px #000000 inset"
-
-
                 },
+                animation: {
+                    circle: 'circle 5s ease-in-out infinite',
+                },
+                keyframes: {
+                    circle: {
+                        '0%, 100%': {
+                            transform: 'rotate(-15deg)'
+                        },
+                        '50%': {
+                            transform: 'rotate(30deg)'
+                        },
+                    }
+                }
 
             }
         }
@@ -95,7 +107,7 @@
                 <img src="./assets/images/blogspage/svg/logo-blogs.svg" alt="headerlogo">
             </a>
             <div class="flex items-center">
-                <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1024px]:h-screen max-[1024px]:w-full duration-300 ease-in-out lg:justify-start justify-center" id="navbar">
+                <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:h-screen max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center" id="navbar">
                     <li>
                         <a href="#" class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black">All Beers</a>
                     </li>
@@ -191,9 +203,9 @@
     </header>
     <!-- ============================REBEL BEER CANS========================= -->
     <section class="relative z-[1] pt-[61px] overflow-x-clip max-w-[1920px] mx-auto">
-        <div class="absolute bottom-[22%] translate-y-1/2 -left-1 pointer-events-none rotate-[50deg]"><img src="./assets/images/blogspage/svg/common_vector_black_semicirle.svg" alt="common_vector"></div>
-        <div class="absolute top-8 right-[1px] z-[-1] animate-spin "><img class="pointer-events-none" src="./assets/images/blogspage/svg/common_vector_yellow_semicircle.svg" alt="common"></div>
-        <div class="absolute top-[27%] left-0"><img class="pointer-events-none" src="./assets/images/blogspage/svg/common_vector.svg" alt="common"></div>
+        <div class="absolute -bottom-[4%] xl:bottom-[22%] xl:translate-y-1/2 -left-1 pointer-events-none rotate-[50deg] max-sm:hidden animate-circle"><img src="./assets/images/blogspage/svg/common_vector_black_semicirle.svg" alt="common_vector"></div>
+        <div class="absolute top-8 right-[1px] z-[-1] animate-circle "><img class="pointer-events-none" src="./assets/images/blogspage/svg/common_vector_yellow_semicircle.svg" alt="common"></div>
+        <div class="absolute top-[20%] sm:top-[27%] left-0 z-[-1]"><img class="pointer-events-none" src="./assets/images/blogspage/svg/common_vector.svg" alt="common"></div>
         <div class="container max-w-[1164px] mx-auto px-3">
             <div class="relative max-h-[431px]"><img class="w-full rounded-[5px] object-cover min-h-[320px]" src="./assets/images/blogspage/webp/beer_shop.webp" alt="beer_shop">
                 <div class="p-[5px] bg-white rounded-[5px] flex flex-col gap-[5px] absolute top-1/2 right-[14px] -translate-y-1/2">
@@ -239,10 +251,10 @@
         </div>
     </section>
     <!-- =========================LATEST BLOGS============================== -->
-    <section class="pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-[112px] xl:pb-[94px] relative overflow-x-clip z-[1] max-w-[1920px] mx-auto">
+    <section class="py-12 sm:py-16 md:py-20 lg:py-24 xl:pt-[112px] xl:pb-[94px] relative overflow-x-clip z-[1] max-w-[1920px] mx-auto">
         <div class="absolute right-0 translate-y-1/2 top-1/2 pointer-events-none -z-[1]"><img src="./assets/images/blogspage/svg/common_vector.svg" alt="common_vector"></div>
-        <div class="absolute top-[27%] -left-5 pointer-events-none -z-[1]"><img src="./assets/images/blogspage/svg/semicircle_yellow_vector.svg" alt="blank "></div>
-        <div class="absolute bottom-[9%] -right-5 pointer-events-none -z-[1]"><img src="./assets/images/blogspage/svg/semicircle_black_vector.svg" alt="blank "></div>
+        <div class="absolute top-[27%] -left-5 pointer-events-none -z-[1] animate-circle"><img src="./assets/images/blogspage/svg/semicircle_yellow_vector.svg" alt="blank "></div>
+        <div class="absolute bottom-2 sm:bottom-[9%] -right-5 pointer-events-none -z-[1]"><img src="./assets/images/blogspage/svg/semicircle_black_vector.svg" alt="blank "></div>
         <div class="container max-w-[1164px] px-3 mx-auto ">
             <div class="flex justify-between items-center">
                 <h2 class="font-play font-bold text-4xl sm:text-custom_4xl lg:text-5xl !leading-120">Latest Blogs</h2>
@@ -418,6 +430,22 @@
             document.getElementById('currentYear').textContent = currentYear;
         </script>
     </footer>
+    <!-- -==========================BACK TO TOP-========================== -->
+    <button id="backtotop" onclick="window.scroll(0,0)" class="hidden fixed bottom-2.5 right-2.5 border border-transparent bg-yellow rounded-full transition-all duration-300 bg-opacity-80 hover:bg-black ease-linear z-20">
+    <span class="w-7 sm:w-10 h-7 sm:h-10 cursor-pointer flex justify-center items-center mb-0">
+            <svg
+      class="max-sm:max-w-4 max-sm:max-h-4"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="white"
+      viewBox="0 0 16 16"
+    >
+      <path d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+      <path d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+    </svg>
+    </span>
+</button>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
     <script>
@@ -469,7 +497,20 @@
             },
         });
     </script>
-
+    <script>
+        // back to top
+        function backtotop() {
+            window.scroll(0, 0);
+        }
+        window.addEventListener("scroll", function() {
+            let backtotop = document.getElementById("backtotop");
+            if (window.scrollY > 250) {
+                backtotop.style.display = "block";
+            } else {
+                backtotop.style.display = "none";
+            }
+        });
+    </script>
 </body>
 
 </html>
