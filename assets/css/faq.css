@@ -1,6 +1,12 @@
-.active-border {
-  border-top: 5px solid red; /* Customize this as needed */
+.accordion-content {
+  transition: max-height 0.3s ease-out;
 }
+
+.active-border {
+box-shadow: 0px 6px 0px 0px #000000 inset;
+
+}
+
 
 .hero-bg{
     background-image: url('../images/privacy/webp/hero-bg.webp');
