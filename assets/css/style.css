@@ -141,13 +141,14 @@
 .animate-spin {
     animation: spin 7s linear infinite !important;
 }
+
 .active_tab {
     background-color: #ffcc02;
     border: 1px solid transparent !important;
-  }
+}
+
 input:checked+label>span {
     background-color: #ffcc02;
-    /* Your preferred color */
 }
 
 input:checked+label>span::after {
@@ -168,7 +169,20 @@ input:checked+label>span::after {
 .cursor-pointer {
     cursor: pointer;
 }
-/* ======================================================== */
+
+/* ====================== BASEMENT CSS================================== */
+.heart svg {
+    fill: none;
+    stroke: black;
+    transition: stroke 0.3s ease;
+}
+
+.heart input:checked+label svg path {
+    stroke: #F4456A;
+    fill: #F4456A;
+}
+
+/* ======================================================================== */
 
 .slide_icons:hover path {
     fill: white;
