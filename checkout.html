@@ -80,6 +80,9 @@
         }
     </script>
     <style>
+        .tabcontent {
+            display: none;
+        }
     </style>
 </head>
 
@@ -339,13 +342,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="flex items-center justify-center gap-10 mt-20">
-                    <button onclick="moveProgressBar(0)">step 0</button>
-                    <button onclick="moveProgressBar(1)">step 1</button>
-                    <button onclick="moveProgressBar(2)">step 2</button>
-                    <button onclick="moveProgressBar(3)">step 3</button>
-                    <button onclick="moveProgressBar(4)">step 4</button>
-                </div> -->
                 <div id="finalsubmit" class="grid grid-cols-2 pt-2 mt-20 mb-[108px]">
                     <div class="col-span-1">
                         <!-- ==================  STEP FIRST ===================== -->
@@ -354,9 +350,9 @@
                                 Information</p>
                             <p class="mb-3 text-base font-bold font-play leading-115">Type of Order</p>
                             <div class="flex gap-3 mb-[26px]">
-                                <button
+                                <button id="particular"
                                     class=" text-base font-poppins font-normal text-black py-3 px-9 rounded-[5px] border border-solid border-black">Particular</button>
-                                <button
+                                <button id="business"
                                     class=" text-base font-poppins font-normal text-black py-3 px-10 rounded-[5px] border border-solid border-black">Business</button>
                             </div>
                             <p class="mb-3 text-base font-bold font-play leading-115">Delivery Address</p>
@@ -403,16 +399,22 @@
                                 <input type="text" placeholder="Phone number"
                                     class="border border-solid border-black rounded-[5px] w-full min-h-[46px] focus:outline-none p-2 text-base font-poppins font-normal text-black placeholder:text-gray max-w-[239px]">
                             </div>
-                            <button onclick="moveProgressBar(1)"
-                                class="text-poppins py-[14px] flex justify-center bg-yellow w-full max-w-[206px] mt-[62px] rounded-[5px]">Next</button>
+                            <div onclick="openTab(event, 'collection')">
+                                <button onclick="moveProgressBar(1)"
+                                    class="text-poppins py-[14px] flex justify-center bg-yellow w-full max-w-[206px] mt-[62px] rounded-[5px]">Next</button>
+                            </div>
                         </div>
-                        <div id="collection" class="hidden tabcontent">
+                        <div id="collection" class="tabcontent">
                             <p class="font-bold leading-normal text-black uppercase font-play text-custom_3xl">
                                 Delivery Of Collection</p>
                             <p class="mb-3 text-base font-bold font-play leading-115">Type of Order</p>
+                            <div onclick="openTab(event, 'overview')">
+                                <button onclick="moveProgressBar(2)"
+                                    class="text-poppins py-[14px] flex justify-center bg-yellow w-full max-w-[206px] mt-[62px] rounded-[5px]">Next</button>
+                            </div>
                         </div>
                         <!-- overview -->
-                        <div id="overview" class="hidden tabcontent">
+                        <div id="overview" class="tabcontent">
                             <div class="lg:w-[586px] w-[500px]">
                                 <h5 class="text-black uppercase font-play !leading-115 mb-8 font-bold text-2xl">
                                     Overview
@@ -530,11 +532,13 @@
                                     <a href="" class="duration-300 text-yellow hover:text-black">terms and
                                         conditions.</span></a>
                                 </p>
-                                <button
-                                    class="px-[85.5px] py-[14px] mb-3 bg-yellow text-black font-poppins font-normal sm:text-base text-sm rounded-[5px]">Next</button>
+                                <div onclick="openTab(event, 'delivery')">
+                                    <button onclick="moveProgressBar(3)"
+                                        class="px-[85.5px] py-[14px] mb-3 bg-yellow text-black font-poppins font-normal sm:text-base text-sm rounded-[5px]">Next</button>
+                                </div>
                             </div>
                         </div>
-                        <div id="delivery" class="hidden tabcontent">
+                        <div id="delivery" class="tabcontent">
                             <div class="max-w-[594px] px-3 max-lg:pb-10">
                                 <h4 class=" text-2xl font-play font-bold leading-115 mb-[26px]">Delivery Of
                                     Collection</h4>
@@ -600,9 +604,10 @@
                                         In the next step, choose a collection point near you.
                                     </p>
                                 </div>
-                                <button
-                                    class=" bg-yellow text-base   font-poppins font-normal text-black py-[14px] px-[85.5px] rounded-[5px] ">Next</button>
-
+                                <div onclick="toggleContent('successfull', 'finalsubmit')">
+                                    <button onclick="moveProgressBar(4)"
+                                        class="px-[85.5px] py-[14px] mb-3 bg-yellow text-black font-poppins font-normal sm:text-base text-sm rounded-[5px]">Next</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -649,7 +654,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="successfull" class="hidden pt-5 my-36 tabcontent">
+                <div id="successfull" class="pt-5 my-36 tabcontent">
                     <div class="container max-w-[1440px] mx-auto px-3">
                         <div class="flex justify-center">
                             <div
@@ -804,6 +809,7 @@
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
     <script>
+        // ======================= PROGRESS BAR =========================== 
         function moveProgressBar(step) {
             const progressContainer = document.getElementById("progress-container");
             const progressBar = document.getElementById("myBar");
@@ -817,6 +823,54 @@
             const svgParentSpan = svgElement[step - 1].parentElement;
             svgParentSpan.classList.add('bg-yellow');
             svgParentSpan.classList.add('border-black');
+        }
+        // ==================================STEPS ============================== 
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        function toggleContent(section1, section2) {
+            const section1Element = document.getElementById(section1);
+            const section2Element = document.getElementById(section2);
+
+            if (section1Element.style.display === 'block' && section2Element.style.display === 'none') {
+                section1Element.style.display = 'none';
+                section2Element.style.display = 'block';
+            } else {
+                section1Element.style.display = 'block';
+                section2Element.style.display = 'none';
+            }
+        }
+        // ================================VALIDATION ============================= 
+        var btnParticular = document.getElementById('particular');
+        var btnBusiness = document.getElementById('business');
+        function deselectButtons() {
+            btnParticular.classList.remove('selected');
+            btnBusiness.classList.remove('selected');
+        }
+        btnParticular.onclick = function () {
+            deselectButtons();
+            this.classList.add('selected');
+        };
+        btnBusiness.onclick = function () {
+            deselectButtons();
+            this.classList.add('selected');
+        };
+        function validateSelection() {
+            if (btnParticular.classList.contains('selected') || btnBusiness.classList.contains('selected')) {
+                alert('A selection has been made. Proceeding...');
+            } else {
+                alert('Please select a type of order.');
+            }
         }
     </script>
 </body>
