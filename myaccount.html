@@ -48,6 +48,7 @@
                         'light-blue': '#BEDCFE',
                         green: ' #76BD3D',
                         'white-gray': '#F0F0EA',
+                        'spanish-gray': '#999999'
                     },
                     fontSize: {
                         'custom_2xl': '28px',
@@ -77,21 +78,37 @@
 
 <body>
     <header>
+        <!-- ===============================BACK TO TOP=============================== -->
+    <button id="backtotop" onclick="window.scroll(0,0)" class="hidden fixed bottom-8 sm:bottom-2.5 right-2.5 border border-white bg-yellow rounded-full transition-all duration-300 bg-opacity-80 hover:bg-black ease-linear z-20">
+        <span class="flex items-center justify-center mb-0 cursor-pointer w-7 sm:w-10 h-7 sm:h-10">
+                <svg
+          class="max-sm:max-w-4 max-sm:max-h-4"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="white"
+          viewBox="0 0 16 16"
+        >
+          <path d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+          <path d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+        </svg>
+        </span>
+    </button>
         <!-- =============== NAVBAR TOP ============= -->
         <div class="bg-black">
-        <div class="flex sm:-ms-10 justify-center gap-3 items-center pt-[5.92px] pb-[8.08px] relative">
+        <div class="flex sm:-ms-10 justify-center gap-2 sm:gap-3 items-center sm:pt-[5.92px] py-1  sm:pb-[8.08px] relative">
             <span>
-                <svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-[23px] sm:w-[29px]" width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.625 13.4238H14.5V14.9863H3.625V13.4238ZM1.8125 9.51758H10.875V11.0801H1.8125V9.51758Z"
                         fill="white" />
                     <path
                         d="M27.116 13.8973L24.3972 8.42852C24.3274 8.28795 24.2113 8.16815 24.0633 8.08398C23.9152 7.99982 23.7417 7.95499 23.5644 7.95508H20.8456V6.39258C20.8456 6.18538 20.7501 5.98666 20.5802 5.84015C20.4102 5.69364 20.1797 5.61133 19.9394 5.61133H5.43936V7.17383H19.0331V16.9832C18.6202 17.1899 18.2588 17.4651 17.9698 17.7928C17.6808 18.1205 17.4699 18.4943 17.3493 18.8926H11.6544C11.4338 18.1561 10.9093 17.5143 10.179 17.0874C9.4488 16.6605 8.56304 16.4779 7.68777 16.5737C6.8125 16.6696 6.00782 17.0373 5.42457 17.608C4.84132 18.1787 4.51953 18.9132 4.51953 19.6738C4.51953 20.4344 4.84132 21.1689 5.42457 21.7396C6.00782 22.3103 6.8125 22.6781 7.68777 22.7739C8.56304 22.8698 9.4488 22.6871 10.179 22.2602C10.9093 21.8334 11.4338 21.1915 11.6544 20.4551H17.3493C17.5464 21.1256 17.9973 21.7203 18.6305 22.1451C19.2638 22.5698 20.0432 22.8005 20.8456 22.8005C21.648 22.8005 22.4274 22.5698 23.0607 22.1451C23.6939 21.7203 24.1448 21.1256 24.3419 20.4551H26.2831C26.5235 20.4551 26.754 20.3728 26.9239 20.2263C27.0939 20.0797 27.1894 19.881 27.1894 19.6738V14.2051C27.1894 14.0992 27.1644 13.9945 27.116 13.8973ZM8.15811 21.2363C7.79963 21.2363 7.4492 21.1447 7.15114 20.973C6.85308 20.8013 6.62076 20.5573 6.48358 20.2718C6.34639 19.9863 6.3105 19.6721 6.38044 19.369C6.45037 19.0659 6.623 18.7875 6.87648 18.569C7.12996 18.3505 7.45292 18.2016 7.80451 18.1414C8.1561 18.0811 8.52053 18.112 8.85172 18.2303C9.18291 18.3485 9.46599 18.5488 9.66515 18.8057C9.86431 19.0627 9.97061 19.3648 9.97061 19.6738C9.97013 20.0881 9.77902 20.4853 9.43921 20.7782C9.09941 21.0712 8.63867 21.2359 8.15811 21.2363ZM20.8456 9.51758H22.9662L24.9092 13.4238H20.8456V9.51758ZM20.8456 21.2363C20.4871 21.2363 20.1367 21.1447 19.8386 20.973C19.5406 20.8013 19.3083 20.5573 19.1711 20.2718C19.0339 19.9863 18.998 19.6721 19.0679 19.369C19.1379 19.0659 19.3105 18.7875 19.564 18.569C19.8175 18.3505 20.1404 18.2016 20.492 18.1414C20.8436 18.0811 21.208 18.112 21.5392 18.2303C21.8704 18.3485 22.1535 18.5488 22.3526 18.8057C22.5518 19.0627 22.6581 19.3648 22.6581 19.6738C22.6576 20.0881 22.4665 20.4853 22.1267 20.7782C21.7869 21.0712 21.3262 21.2359 20.8456 21.2363ZM25.3769 18.8926H24.3419C24.1423 18.2234 23.6907 17.6302 23.058 17.2061C22.4252 16.7819 21.6471 16.5507 20.8456 16.5488V14.9863H25.3769V18.8926Z"
                         fill="white" />
                 </svg></span>
-            <p class="text-white-gray text-[14px] font-play font-normal">Free Shipping Over First Order</p>
+            <p class="text-white-gray text-xs sm:text-[14px] font-play font-normal">Free Shipping Over First Order</p>
         </div>
-        <div class="flex justify-center gap-3 items-center py-[5px] relative">
-            <span><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="flex justify-center gap-2 sm:gap-3 items-center py-1 sm:py-[5px] relative">
+            <span><svg class="w-[23px] sm:w-[30px] h-[23px] sm:h-[30px]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M25.5695 9.65527H19.375V20.8825H29.5242V15.8291L28.3405 11.7382C27.9837 10.5046 26.8537 9.65527 25.5695 9.65527Z"
                         fill="#FFB700"></path>
@@ -124,7 +141,7 @@
                         d="M8.0812 22.9866C8.0812 23.6509 7.54312 24.189 6.87879 24.189C6.21445 24.189 5.67578 23.6509 5.67578 22.9866C5.67578 22.3223 6.21451 21.7842 6.87879 21.7842C7.54307 21.7842 8.0812 22.3223 8.0812 22.9866Z"
                         fill="#ACB3BA"></path>
                 </svg></span>
-            <p class="text-white-gray text-[14px] font-play font-normal">Free Shipping Over First Order</p>
+            <p class="text-white-gray text-xs sm:text-[14px] font-play font-normal">Free Shipping Over First Order</p>
         </div>
     </div>
         <!-- =============== NAVBAR ============= -->
@@ -136,7 +153,7 @@
                 <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:h-screen max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center"
                     id="navbar">
                     <li>
-                        <a aria-label="all_beers" href="#" onclick="openNav()"
+                        <a aria-label="all_beers" href="./" onclick="openNav()"
                             class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">All
                             Beers</a>
                     </li>
@@ -156,8 +173,8 @@
                             packages</a>
                     </li>
                     <li class="flex flex-row gap-2 sm:hidden">
-                        <a aria-label="search_icon" href="#" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                        <a aria-label="search_icon" href="#" onclick="openNav()" class="duration-500 ease-in-out group">
+                            <svg width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
@@ -168,8 +185,8 @@
                                 </g>
                             </svg>
                         </a>
-                        <a href="#" aria-label="people_icon" class="duration-500 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                        <a href="#" onclick="openNav()" aria-label="people_icon" class="duration-500 ease-in-out group">
+                            <svg width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
@@ -181,8 +198,8 @@
                                     stroke="black" stroke-width="1.5" />
                             </svg>
                         </a>
-                        <a href="#" aria-label="add_to_cart_icon" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                        <a href="#" onclick="openNav()" aria-label="add_to_cart_icon" class="duration-500 ease-in-out group">
+                            <svg width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
@@ -196,8 +213,8 @@
                 </ul>
                 <div class="flex items-center gap-[17px]">
                     <div class="hidden sm:flex gap-[9px] items-center">
-                        <a href="#" aria-label="search_icon" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                        <a href="#" aria-label="search_icon" class="duration-500 ease-in-out group">
+                            <svg width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
@@ -214,7 +231,7 @@
                             </svg>
                         </a>
                         <a href="#" aria-label="people_icon" class="duration-500 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                            <svg width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
@@ -226,8 +243,8 @@
                                     stroke="black" stroke-width="1.5" />
                             </svg>
                         </a>
-                        <a href="#" aria-label="add_to_cart_icon"  class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                        <a href="#" aria-label="add_to_cart_icon"  class="duration-500 ease-in-out group">
+                            <svg width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
@@ -239,22 +256,22 @@
                         </a>
                     </div>
                     <button
-                        class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
+                        class="px-2 sm:px-3 lg:px-4 py-2 sm:py-2.5 lg:py-3 rounded-[5px] max-h-[48px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black lg:ms-2">
                         Contact Us
                     </button>
                     <div onclick="openNav()" class="menu d-block d-lg-none z-[5]">
                         <span class="duration-300 ease-in-out bg-black"></span>
-                        <span class="my-2 duration-300 ease-in-out bg-black"></span>
+                        <span class="my-1.5 sm:my-2 duration-300 ease-in-out bg-black"></span>
                         <span class="duration-300 ease-in-out bg-black"></span>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- =============== HERO SECTION ============= -->
-        <div class="bg-cover bg-bottom flex justify-center items-center flex-col pb-14 md:pb-[111px] pt-10  px-3 common_hero_bg max-h-[210px] h-full">
-            <h2
+        <div class="bg-cover bg-bottom flex justify-center items-center flex-col pb-12 md:pb-16 lg:pb-[111px] pt-12 sm:pt-10  px-3 account_hero_bg max-h-[210px] h-full">
+            <h1
                 class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-[115%] text-center">
-                My Account</h2>
+                My Account</h1>
         </div>
         <div class="bg-white-gray ">
             <div class="container max-w-[1165px] mx-auto px-3 py-[14.5px]">
@@ -274,8 +291,8 @@
 
     <!-- =============== TABS ============= -->
     <div class="relative">
-        <span class="absolute top-[-2%] sm:top-[1%] right-[3%] animate-spin z-[-1]">
-            <svg class="sm:w-[71px] w-[30px]" width="71" height="57" viewBox="0 0 71 57" fill="none"
+        <span class="absolute top-[-2%] sm:top-[5%] right-[5%] z-[-1]">
+            <svg class="lg:w-[71px] md:w-[50px] w-[30px]" width="71" height="57" viewBox="0 0 71 57" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-inside-1_408_9141" fill="white">
                     <path
@@ -287,7 +304,7 @@
             </svg>
         </span>
         <span class="absolute bottom-[36%] left-[1%] animate-spin z-[-1]">
-            <svg class="sm:w-[57px] w-[30px]" width="57" height="46" viewBox="0 0 57 46" fill="none"
+            <svg class="lg:w-[57px] md:w-[40px]  w-[30px]" width="57" height="46" viewBox="0 0 57 46" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-inside-1_408_9137" fill="white">
                     <path
@@ -298,7 +315,7 @@
                     fill="black" stroke="black" stroke-width="10" mask="url(#path-1-inside-1_408_9137)" />
             </svg>
         </span>
-        <span class=" absolute bottom-[-1.5%] md:bottom-[10%] right-0 z-[-1]">
+        <span class=" absolute bottom-0 sm:bottom-[1%] lg:bottom-[10%] right-0 z-[-1]">
             <svg class="sm:w-[150px] w-[90px]" width="150" height="52" viewBox="0 0 150 52" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -312,30 +329,30 @@
                     stroke="black" stroke-width="2" stroke-miterlimit="10" />
             </svg>
         </span>
-        <div class="max-w-[1165px] mx-auto px-3 container pt-10 sm:pt-16 pb-10 sm:pb-16 md:pb-[125px]">
+        <div class="max-w-[1165px] mx-auto px-3 container pt-12 sm:pt-16 pb-12 sm:pb-16 lg:pb-20 xl:pb-[125px]">
             <div class="max-w-[652px] mx-auto">
                 <!-- =============== TAB BUTTON ============= -->
                 <div class="flex items-center justify-center gap-5">
                     <button id="loginTab"
-                        class="sm:py-4 py-2 px-8 max-w-[223px] w-full border border-solid hover:shadow-[0px_68px_0px_0px_#FFCC02_inset] duration-300 ease-linear border-black rounded-[5px] max-h-[68px] font-poppins font-medium text-lg sm:text-xl lg:text-2xl leading-150 text-black flex justify-center"
+                        class="lg:py-[17px] sm:py-3 py-2 px-6 lg:px-8 max-w-[180px] lg:max-w-[223px] w-full border border-solid hover:bg-yellow duration-300 ease-linear border-black rounded-[5px] font-poppins font-medium text-lg sm:text-xl lg:text-2xl leading-150 text-black flex justify-center"
                         onclick="showTab('login')">
                         Login
                     </button>
                     <button id="registerTab"
-                        class="sm:py-4 py-2 px-8 max-w-[223px] w-full border border-solid hover:shadow-[0px_68px_0px_0px_#FFCC02_inset] duration-300 ease-linear border-black rounded-[5px] max-h-[68px] font-poppins font-medium text-lg sm:text-xl lg:text-2xl leading-150 text-black flex justify-center active_tab"
+                        class="lg:py-[17px] sm:py-3 py-2 px-6 lg:px-8 max-w-[180px] lg:max-w-[223px] w-full border border-solid hover:bg-yellow duration-300 ease-linear border-black rounded-[5px] font-poppins font-medium text-lg sm:text-xl lg:text-2xl leading-150 text-black flex justify-center active_tab"
                         onclick="showTab('register')">
                         Register
                     </button>
                 </div>
                 <div
-                    class="mt-5 sm:mt-7 md:mt-10 py-4 sm:py-6 px-3 sm:px-[18px] border border-solid border-black shadow-[0px_6px_0px_0px_black_inset] rounded-[5px] relative z-[1] bg-white">
+                    class="mt-5 sm:mt-7 md:mt-10 py-3 sm:py-6 px-3 sm:px-[18px] border border-solid border-black shadow-[0px_6px_0px_0px_black_inset] rounded-[5px] relative z-[1] bg-white">
                     <!-- =============== LOGINTAB ============= -->
                     <div id="loginContent" class="hidden tab-content">
                         <div class="flex gap-2 sm:gap-[13px] flex-col relative">
                             <p class="text-sm font-normal text-black sm:text-base leading-150 font-poppins">User name or
                                 e-mail address *</p>
                             <input id="email" type="text"
-                                class="border border-solid border-black opacity-40 p-3 rounded-[5px] w-full text-black font-poppins text-sm sm:text-base font-normal outline-none max-h-[48px]">
+                                class="border border-solid border-spanish-gray p-3 rounded-[5px] w-full text-black font-poppins text-sm sm:text-base font-normal outline-none max-h-[48px]">
                             <ul id="emailSuggestions"
                                 class="absolute z-10 hidden w-full mt-1 overflow-y-auto bg-white border border-gray-300 rounded-lg suggestions max-h-40">
                             </ul>
@@ -344,7 +361,7 @@
                             <p class="text-sm font-normal text-black sm:text-base leading-150 font-poppins">Password *
                             </p>
                             <input type="password" id="password"
-                                class="border border-solid border-black opacity-40 p-3 rounded-[5px] w-full text-black font-poppins text-sm sm:text-base font-normal outline-none max-h-[48px]">
+                                class="border border-solid border-spanish-gray p-3 rounded-[5px] w-full text-black font-poppins text-sm sm:text-base font-normal outline-none max-h-[48px]">
                             <ul id="passwordSuggestions"
                                 class="absolute z-10 hidden w-full mt-1 overflow-y-auto bg-white border border-gray-300 rounded-lg suggestions max-h-40">
                             </ul>
@@ -376,7 +393,7 @@
                             </label>
                         </div>
                         <button id="loginButton"
-                            class="bg-yellow p-3 w-full font-poppins text-black font-normal text-sm sm:text-base leading-150 rounded-[5px] mt-8 sm:mt-[52px] cursor-not-allowed"
+                            class="bg-yellow p-3 w-full font-poppins max-h-[48px] text-black font-normal text-sm sm:text-base leading-150 rounded-[5px] mt-8 sm:mt-[52px] cursor-not-allowed"
                             disabled>
                             Login
                         </button>
@@ -391,7 +408,7 @@
                             <p class="text-sm font-normal text-black sm:text-base leading-150 font-poppins">E-mail
                                 address *</p>
                             <input id="emailInput" type="email"
-                                class="border border-solid border-black opacity-40 p-3 rounded-[5px] w-full text-black font-poppins text-sm sm:text-base font-normal outline-none max-h-[48px]">
+                                class="border border-solid border-spanish-gray p-3 !placeholder:opacity-100 rounded-[5px] w-full text-black font-poppins text-sm sm:text-base font-normal outline-none max-h-[48px]">
                         </div>
                         <p
                             class="mt-3 text-sm font-normal text-black font-poppins sm:text-base leading-150 opacity-70 sm:mt-5">
@@ -401,7 +418,7 @@
                             Your personal information will be used to support your experience on this site, to manage
                             access to your account, and for other purposes described in our privacy policy.</p>
                         <button id="registerButton"
-                            class="bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out p-3 w-full font-poppins text-black font-normal text-sm sm:text-base leading-150 rounded-[5px] mt-5 sm:mt-9">
+                            class="bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] max-h-[48px] border border-transparent hover:border-black duration-500 ease-in-out p-3 w-full font-poppins text-black font-normal text-sm sm:text-base leading-150 rounded-[5px] mt-5 sm:mt-9">
                             Register
                         </button>
                     </div>
@@ -411,17 +428,17 @@
     </div>
 
     <!-- =============== FOOTER ============= -->
-    <footer class="common_footer_bg bg-center bg-cover bg-no-repeat pt-[71.66px]">
-        <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[107.42px]">
+    <footer class="common_footer_bg bg-center bg-cover bg-no-repeat pt-12 sm:pt-14 md:pt-[69px]">
+        <div class="container xl:max-w-[1178px] px-4 mx-auto pb-12 sm:pb-14 md:pb-16 xl:pb-[107.42px]">
             <div class="flex flex-row flex-wrap">
-                <div class="lg:w-4/12">
-                    <a aria-label="footer_logo" href="/">
-                        <img src="./assets/images/myaccount/svg/footer_logo.svg" alt="footer_logo">
-                    </a>
-                    <div class="flex gap-[15px] pt-[25.58px]">
-                        <a aria-label="Instagram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                <div class=" lg:w-1/4 xl:w-4/12">
+                    <div >
+                        <img src="./assets/images/myaccount/svg/footer_logo.svg" alt="footer_logo" class="cursor-pointer w-[100px] sm:w-[152px]">
+                    </div>
+                    <div class="flex gap-2 sm:gap-[15px] pt-4 sm:pt-[25.58px]">
+                        <a aria-label="Instagram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px]  sm:w-[43.8px] sm:h-[43.8px] w-[30px] h-[30px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
                             href="https://www.instagram.com/" target="_blank">
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                            <svg class="w-[20px] sm:w-[25px]" width="25" height="25" viewBox="0 0 25 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="transition-all duration-300 ease-linear group-hover:fill-white"
                                     d="M13.134 2.65846C13.8638 2.65566 14.5935 2.66299 15.323 2.68046L15.517 2.68746C15.741 2.69546 15.962 2.70546 16.229 2.71746C17.293 2.76746 18.019 2.93546 18.656 3.18246C19.316 3.43646 19.872 3.78046 20.428 4.33646C20.9364 4.83606 21.3299 5.4404 21.581 6.10746C21.828 6.74446 21.996 7.47146 22.046 8.53546C22.058 8.80146 22.068 9.02346 22.076 9.24746L22.082 9.44146C22.0998 10.1706 22.1075 10.9001 22.105 11.6295L22.106 12.3755V13.6855C22.1085 14.4152 22.1008 15.1449 22.083 15.8745L22.077 16.0685C22.069 16.2925 22.059 16.5135 22.047 16.7805C21.997 17.8445 21.827 18.5705 21.581 19.2075C21.3307 19.8752 20.9371 20.4801 20.428 20.9795C19.928 21.4878 19.3234 21.8812 18.656 22.1325C18.019 22.3795 17.293 22.5475 16.229 22.5975C15.962 22.6095 15.741 22.6195 15.517 22.6275L15.323 22.6335C14.5935 22.6512 13.8638 22.6589 13.134 22.6565L12.388 22.6575H11.079C10.3493 22.6599 9.61957 22.6523 8.89005 22.6345L8.69605 22.6285C8.45866 22.6199 8.22132 22.6099 7.98405 22.5985C6.92005 22.5485 6.19405 22.3785 5.55605 22.1325C4.88873 21.8818 4.28428 21.4883 3.78505 20.9795C3.27609 20.4797 2.88227 19.875 2.63105 19.2075C2.38405 18.5705 2.21605 17.8445 2.16605 16.7805C2.15491 16.5432 2.14491 16.3058 2.13605 16.0685L2.13105 15.8745C2.11261 15.1449 2.10428 14.4152 2.10605 13.6855V11.6295C2.10325 10.9001 2.11059 10.1707 2.12805 9.44146L2.13505 9.24746C2.14305 9.02346 2.15305 8.80146 2.16505 8.53546C2.21505 7.47046 2.38305 6.74546 2.63005 6.10746C2.88142 5.44008 3.27601 4.8359 3.78605 4.33746C4.28494 3.82821 4.88901 3.43403 5.55605 3.18246C6.19405 2.93546 6.91905 2.76746 7.98405 2.71746L8.69605 2.68746L8.89005 2.68246C9.61923 2.66403 10.3486 2.6557 11.078 2.65746L13.134 2.65846ZM12.106 7.65846C11.4436 7.64909 10.7858 7.77148 10.171 8.01852C9.55624 8.26557 8.99669 8.63234 8.52489 9.09751C8.05309 9.56269 7.67845 10.117 7.42273 10.7282C7.16702 11.3394 7.03534 11.9954 7.03534 12.658C7.03534 13.3205 7.16702 13.9765 7.42273 14.5877C7.67845 15.1989 8.05309 15.7532 8.52489 16.2184C8.99669 16.6836 9.55624 17.0503 10.171 17.2974C10.7858 17.5444 11.4436 17.6668 12.106 17.6575C13.4321 17.6575 14.7039 17.1307 15.6416 16.193C16.5793 15.2553 17.106 13.9835 17.106 12.6575C17.106 11.3314 16.5793 10.0596 15.6416 9.12192C14.7039 8.18424 13.4321 7.65846 12.106 7.65846ZM12.106 9.65846C12.5046 9.65111 12.9005 9.72325 13.2708 9.87066C13.6412 10.0181 13.9784 10.2378 14.2628 10.517C14.5473 10.7962 14.7732 11.1293 14.9275 11.4968C15.0818 11.8643 15.1612 12.2589 15.1613 12.6574C15.1614 13.056 15.082 13.4506 14.9279 13.8182C14.7737 14.1857 14.5479 14.5189 14.2635 14.7982C13.9792 15.0775 13.642 15.2973 13.2718 15.4449C12.9015 15.5924 12.5056 15.6647 12.107 15.6575C11.3114 15.6575 10.5483 15.3414 9.98573 14.7788C9.42312 14.2162 9.10705 13.4531 9.10705 12.6575C9.10705 11.8618 9.42312 11.0987 9.98573 10.5361C10.5483 9.97353 11.3114 9.65746 12.107 9.65746L12.106 9.65846ZM17.356 6.15846C17.0334 6.17137 16.7283 6.30861 16.5047 6.54143C16.281 6.77425 16.156 7.08459 16.156 7.40746C16.156 7.73032 16.281 8.04066 16.5047 8.27349C16.7283 8.50631 17.0334 8.64354 17.356 8.65646C17.6876 8.65646 18.0055 8.52476 18.2399 8.29034C18.4744 8.05592 18.606 7.73798 18.606 7.40646C18.606 7.07494 18.4744 6.75699 18.2399 6.52257C18.0055 6.28815 17.6876 6.15646 17.356 6.15646V6.15846Z"
@@ -429,9 +446,9 @@
                             </svg>
 
                         </a>
-                        <a aria-label="facebook" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                        <a aria-label="facebook" class="border-[0.8px] border-solid border-yellow rounded-[3.19px]  sm:w-[43.8px] sm:h-[43.8px] w-[30px] h-[30px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
                             href="https://www.facebook.com/" target="_blank">
-                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                            <svg class="w-[23px] sm:w-[29px]" width="29" height="29" viewBox="0 0 29 29" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="transition-all duration-300 ease-linear group-hover:fill-white"
                                     d="M17.0573 16.4069H19.974L21.1406 11.7402H17.0573V9.4069C17.0573 8.20523 17.0573 7.07357 19.3906 7.07357H21.1406V3.15357C20.7603 3.1034 19.3241 2.99023 17.8075 2.99023C14.64 2.99023 12.3906 4.9234 12.3906 8.47357V11.7402H8.89062V16.4069H12.3906V26.3236H17.0573V16.4069Z"
@@ -439,9 +456,9 @@
                             </svg>
 
                         </a>
-                        <a aria-label="telegram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                        <a aria-label="telegram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px]  sm:w-[43.8px] sm:h-[43.8px] w-[30px] h-[30px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
                             href="https://web.telegram.org/a/" target="_blank">
-                            <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                            <svg class="w-[21px] sm:w-[26px]" width="26" height="27" viewBox="0 0 26 27" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="transition-all duration-300 ease-linear group-hover:fill-white"
                                     fill-rule="evenodd" clip-rule="evenodd"
@@ -452,9 +469,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="pt-8 lg:w-8/12 lg:pt-0">
+                <div class="pt-8 lg:w-3/4 xl:w-8/12 lg:pt-0">
                     <div class="flex flex-row flex-wrap justify-between">
-                        <div class="md:w-3/12 min-[520px]:w-6/12 w-full">
+                        <div class="md:w-4/12 min-[520px]:w-6/12 w-full px-2 lg:px-0">
                             <div class="flex flex-col gap-2 sm:gap-4">
                                 <a aria-label="Contact" href="./contactpage.html"
                                     class="mb-1 text-lg font-bold text-white capitalize cursor-pointer font-play leading-110">
@@ -472,7 +489,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7">
+                        <div class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7 px-2 lg:px-0">
                             <div class="flex flex-col gap-2 sm:gap-4">
                                 <a aria-label="information" href=""
                                     class="mb-1 text-lg font-bold text-white capitalize cursor-pointer font-play leading-110">
@@ -491,10 +508,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7">
+                        <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7 px-2 lg:px-0">
                             <div class="flex flex-col gap-2 sm:gap-4">
                                 <a aria-label="Conditions(nl)" href=""
-                                    class="mb-1 text-lg font-bold text-white capitalize cursor-pointer font-play leading-110">
+                                    class="mb-1 text-lg font-bold text-white cursor-pointer font-play leading-110">
                                     Conditions(nl)</a>
                                 <a aria-label="Remove" href=""
                                     class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Remove
@@ -505,7 +522,7 @@
                                 <a aria-label="Conditions(nl)" class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100"
                                     href="">Disclaimer rebelbeercan</a>
                                 <a aria-label="General_terms_and_conditions_rebelbeercans" href=""
-                                    class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">General
+                                    class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 !leading-120 hover:opacity-100">General
                                     terms and conditions rebelbeercans
                                 </a>
                                 <a aria-label="Privacy_policy_rebelbeercans" class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100"
@@ -517,9 +534,9 @@
                 </div>
             </div>
         </div>
-        <div class="w-full border border-white border-solid opacity-20"></div>
+        <hr class="w-full bg-white h-[2px] opacity-20"/>
         <p
-            class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-4 sm:py-[23.5px] md:leading-110 leading-normal text-center">
+            class="px-4 font-poppins font-normal text-xs sm:text-sm text-white opacity-40 py-3 sm:py-4 md:py-5 lg:py-[23.5px] md:leading-110 leading-normal text-center">
             <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
         </p>
         <script>  const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>

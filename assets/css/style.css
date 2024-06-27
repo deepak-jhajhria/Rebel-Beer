@@ -129,7 +129,9 @@
 .common_footer_bg {
   background-image: url("../images/basement/webp/bg-footer-img.webp");
 }
-
+.account_hero_bg {
+  background-image: url(../images/myaccount/header_bg.webp);
+}
 /* ====================BLOGS , BEERPACKAGE AND CONTACT PAGE CSS============================ */
 
 .animate-spin {
@@ -144,9 +146,12 @@
   background-color: #ffcc02;
   border: 1px solid transparent !important;
 }
+.active_tab:hover {
+  box-shadow: 0px 5px 10px 0 #ffcc02;
+}
+
 input:checked + label > span {
   background-color: #ffcc02;
-  /* Your preferred color */
 }
 
 input:checked + label > span::after {
@@ -202,14 +207,14 @@ input:checked + label > span::after {
 
   .menu span:nth-child(1) {
     height: 2px;
-    width: 15px;
+    width: 30px;
     display: block;
     border-radius: 20px;
   }
 
   .menu span:nth-child(2) {
     height: 2px;
-    width: 22px;
+    width: 30px;
     display: block;
     border-radius: 20px;
   }
@@ -227,7 +232,6 @@ input:checked + label > span::after {
 
   .cross span:nth-child(1) {
     transform: rotate(42deg) translateY(13px);
-    width: 30px;
   }
 
   .cross span:nth-child(2) {
@@ -237,6 +241,29 @@ input:checked + label > span::after {
 
   .cross span:nth-child(3) {
     transform: rotate(-43deg) translateY(-13px);
-    width: 30px;
   }
+}
+
+@media (max-width: 639.9px) {
+    .menu span:nth-child(1) {
+        height: 2px;
+        width: 25px;
+      }
+    
+      .menu span:nth-child(2) {
+        height: 2px;
+        width: 25px;
+      }
+    
+      .menu span:nth-child(3) {
+        height: 2px;
+        width: 25px;
+      }
+      .cross span:nth-child(1) {
+        transform: rotate(53deg) translateY(13px);
+      }
+    
+      .cross span:nth-child(3) {
+        transform: rotate(-53deg) translateY(-13px);
+      }
 }
