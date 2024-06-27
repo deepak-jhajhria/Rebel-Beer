@@ -16,52 +16,81 @@
     background-size: cover;
 }
 
-@media (max-width: 1023.9px) {
-    .overflow_hidden {
-      overflow: hidden !important;
-    }
-    .mobile-view {
-      background-color: #F0F0EB;
-      width: 100%;
-      top: 0;
-      left: -100%;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transition: 300ms linear;
-      z-index: 3;
-    }
-    .menu span:nth-child(1) {
+@media (max-width: 639.9px) {
+  .menu span:nth-child(1) {
       height: 2px;
-      width: 15px;
-      display: block;
-      border-radius: 20px;
+      width: 25px;
     }
+
     .menu span:nth-child(2) {
       height: 2px;
-      width: 22px;
-      display: block;
-      border-radius: 20px;
+      width: 25px;
     }
+
     .menu span:nth-child(3) {
       height: 2px;
-      width: 30px;
-      display: block;
-      border-radius: 20px;
-    }
-    .menu span {
-      transition: 300ms linear;
+      width: 25px;
     }
     .cross span:nth-child(1) {
-      transform: rotate(42deg) translateY(13px);
-      width: 30px;
+      transform: rotate(53deg) translateY(13px);
     }
-    .cross span:nth-child(2) {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
+
     .cross span:nth-child(3) {
-      transform: rotate(-43deg) translateY(-13px);
-      width: 30px;
+      transform: rotate(-53deg) translateY(-13px);
     }
-  }
+}
+@media (max-width: 1023.9px) {
+.overflow_hidden {
+  overflow: hidden !important;
+}
+
+.mobile-view {
+  background-color: #f0f0eb;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms linear;
+  z-index: 3;
+}
+
+.menu span:nth-child(1) {
+  height: 2px;
+  width: 30px;
+  display: block;
+  border-radius: 20px;
+}
+
+.menu span:nth-child(2) {
+  height: 2px;
+  width: 30px;
+  display: block;
+  border-radius: 20px;
+}
+
+.menu span:nth-child(3) {
+  height: 2px;
+  width: 30px;
+  display: block;
+  border-radius: 20px;
+}
+
+.menu span {
+  transition: 300ms linear;
+}
+
+.cross span:nth-child(1) {
+  transform: rotate(42deg) translateY(13px);
+}
+
+.cross span:nth-child(2) {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.cross span:nth-child(3) {
+  transform: rotate(-43deg) translateY(-13px);
+}
+}

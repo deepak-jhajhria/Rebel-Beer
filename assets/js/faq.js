@@ -3,33 +3,48 @@ function openNav() {
   document.body.classList.toggle("overflow_hidden");
   document.querySelector(".menu").classList.toggle("cross");
 }
-
-function toggleAccordion(element) {
-const content = element.nextElementSibling;
-const plusIcon = element.querySelector('.plus-icon');
-const minusIcon = element.querySelector('.minus-icon');
-
-document.querySelectorAll('.accordion-content').forEach((item) => {
-  if (item !== content) {
-    item.style.maxHeight = null;
-    item.previousElementSibling.querySelector('.plus-icon').classList.remove('hidden');
-    item.previousElementSibling.querySelector('.minus-icon').classList.add('hidden');
-    item.parentElement.classList.remove('active-border');
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  // Open the first accordion by default
+  const firstAccordion = document.querySelector(".container .border");
+  firstAccordion.classList.add("active-border");
+  firstAccordion.querySelector(".accordion-content").style.maxHeight = "300px";
+  firstAccordion.querySelector(".plus-icon").classList.add("hidden");
+  firstAccordion.querySelector(".minus-icon").classList.remove("hidden");
 });
 
-if (content.style.maxHeight) {
-  content.style.maxHeight = null;
-  element.parentElement.classList.remove('active-border');
-} else {
-  content.style.maxHeight = content.scrollHeight + "px";
-  element.parentElement.classList.add('active-border');
-}
+function toggleAccordion(element) {
+  const accordion = element.parentElement;
+  const content = accordion.querySelector(".accordion-content");
 
-plusIcon.classList.toggle('hidden');
-minusIcon.classList.toggle('hidden');
-}
+  if (accordion.classList.contains("active-border")) {
+    content.style.maxHeight = 0;
+    accordion.classList.remove("active-border");
+    element.querySelector(".plus-icon").classList.remove("hidden");
+    element.querySelector(".minus-icon").classList.add("hidden");
+  } else {
+    const allAccordions = document.querySelectorAll(".container .border");
+    allAccordions.forEach((acc) => {
+      acc.classList.remove("active-border");
+      acc.querySelector(".accordion-content").style.maxHeight = 0;
+      acc.querySelector(".plus-icon").classList.remove("hidden");
+      acc.querySelector(".minus-icon").classList.add("hidden");
+    });
 
-document.getElementById("show").addEventListener("click", function() {
-show.classList.toggle("w-screen");
+    content.style.maxHeight = content.scrollHeight + "px";
+    accordion.classList.add("active-border");
+    element.querySelector(".plus-icon").classList.add("hidden");
+    element.querySelector(".minus-icon").classList.remove("hidden");
+  }
+}
+  // back to top
+  function backtotop() {
+    window.scroll(0, 0);
+}
+window.addEventListener("scroll", function() {
+    let backtotop = document.getElementById("backtotop");
+    if (window.scrollY > 250) {
+        backtotop.style.display = "block";
+    } else {
+        backtotop.style.display = "none";
+    }
 });
