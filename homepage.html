@@ -54,6 +54,8 @@
             "light-grey": "#0000001A",
             "off-white": "#FFFFFFA8",
             red: "#F4456A",
+            "blur-white": "#FFFFFF33",
+
           },
           fontSize: {
             custom_2xl: "28px",
@@ -221,6 +223,7 @@
         </div>
       </div>
     </nav>
+   <!--========================HERO=========================-->
     <header class="flex items-center justify-center flex-grow ">
       <div class=" container max-w-[1164px] px-3 mx-auto">
         <div class="flex flex-row flex-wrap -mx-3 ">
@@ -355,7 +358,6 @@
       </div>
     </div>
   </section>
-
   <!-- =========OFFER-SECTION ========== -->
   <section class="relative z-0 pt-12 md:pt-16 sm:pt-14 xl:mt-3">
     <img src="./assets/images/homepage/svg/yellow-wave.svg" alt="yellow-wave"
@@ -391,7 +393,6 @@
       </div>
     </div>
   </section>
-
   <!-- ======== REBELBEER CANS ========== -->
   <section class="bg-rebelcans_bg bg-cover relative z-[1] px-4  lg:py-20 md:py-16 sm:py-14 py-12">
     <img src="./assets/images/homepage/svg/triangle-ellipse.svg" alt="triangle-ellipse"
@@ -465,15 +466,14 @@
       </div>
     </div>
   </section>
-
   <!--======== Fast-delivery ==========-->
   <section class="xl:mt-[111px] lg:mt-20 md:mt-16 sm:mt-14 mt-12 relative max-w-[1920px] mx-auto">
     <img src="./assets/images/homepage/png/delivery-halfcircle.png" alt="half-circle"
-      class="lg:max-w-[74px] max-w-[45px] w-full absolute left-[2%] lg:top-[-30%] top-[-9%] md:block hidden pointer-events-none">
+      class="lg:max-w-[74px] max-w-[45px] w-full absolute left-[25px] lg:top-[-39px] top-[-9%] md:block hidden pointer-events-none">
     <div class="container xl:max-w-[1164px] mx-auto px-4">
       <div class="flex flex-row flex-wrap gap-5 sm:gap-[30px] lg:gap-0 lg:justify-between justify-center relative">
         <img src="./assets/images/homepage/png/deliver-line.png" alt="line"
-          class="absolute h-[16px] w-full z-[0] top-[45%] max-w-[800px] lg:block hidden pointer-events-none">
+          class="absolute h-[16px] w-full z-[0] top-[45%] max-w-[822px] lg:block hidden pointer-events-none">
         <div class="lg:w-[32.3%] sm:w-[42%] w-full relative z-[1]">
           <div
             class="sm:max-w-[364px] h-full sm:h-[262px] sm:p-[33px_20px_33px_19px] p-[28px_20px_28px_19px] border border-solid border-black rounded-[5px] shadow-[0px_-6px_0px_0px_#000000] bg-white group hover:bg-yellow transition-all duration-300 ease linear">
@@ -515,38 +515,36 @@
       </div>
     </div>
   </section>
-
   <!--======== Rebel-Selection ==========-->
   <section class="xl:mt-[112px] lg:mt-[90px] md:mt-[64px] mt-[48px] relative max-w-[1920px] mx-auto">
     <img src="./assets/images/homepage/png/half-blackcircle.png" alt="black-circle"
-      class="w-[64px] absolute right-0 top-[50%] xl:block hidden pointer-events-none">
+      class="w-[64px] absolute right-[-1%] top-[50%] xl:block hidden pointer-events-none">
     <div class="container xl:max-w-[1164px] mx-auto px-4">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h2 class="text-black font-play font-bold lg:text-5xl md:text-4xl text-3xl !leading-120 mb-2">Rebel
+          <h2 class="text-black font-play font-bold lg:text-5xl md:text-4xl text-3xl !leading-120 mb-2 text-center sm:text-start">Rebel
             Selection!</h2>
           <p
-            class="font-poppins text-black text-opacity-70 font-normal text-sm md:text-base max-w-[427px] !leadng-normal ">
+            class="font-poppins text-black text-opacity-70 font-normal text-sm md:text-base text-center sm:text-start sm:max-w-[427px] !leadng-normal ">
             Aliquet commodo in vulputate ac vitae nam egestas. Dui orci aliquet hendrerit auctor augue
             tellus.</p>
         </div>
-        <div class="flex gap-3 mt-5 sm:mt-0">
+        <div class="sm:flex gap-3 hidden">
           <button id="prevBtn"
-            class="h-[41.6px] w-[41.6px] bg-white border-[1.6px] border-solid border-black rounded-[68px] flex justify-center items-center">
+            class="h-[41.6px] w-[41.6px] bg-white border-[1.6px] hover:border-transparent hover:bg-yellow border-solid border-black rounded-[68px] flex justify-center items-center duration-300">
             <img src="./assets/images/homepage/svg/prev-arrow.svg" alt="arrow" class="w-[22px] h-[22px]">
           </button>
           <button id="nextBtn"
-            class="h-[41.6px] w-[41.6px] bg-white border-[1.6px] border-solid border-black rounded-[68px] flex justify-center items-center">
+            class="h-[41.6px] w-[41.6px] bg-white border-[1.6px] hover:border-transparent hover:bg-yellow border-solid border-black rounded-[68px] flex justify-center items-center duration-300">
             <img src="./assets/images/homepage/svg/next-arrow.svg" alt="arrow" class="w-[22px] h-[22px]">
           </button>
         </div>
       </div>
-      <div class="lg:mt-[48px] md:mt-[40px] mt-[30px]">
+      <div class="lg:mt-[48px] md:mt-[40px] sm:mt-[30px] mt-6">
         <div class="swiper firstSwiper">
-          <div class="swiper-wrapper py-[10px]">
+          <div class="swiper-wrapper pt-[10px] pb-[1px]">
             <div class="swiper-slide">
-              <div
-                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+              <div class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                 <div class="relative">
                   <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img" class="w-full">
                   <div
@@ -567,11 +565,11 @@
                   class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
                   Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
                 <p
-                  class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
+                  class="p-[8px_10px_8px_10px] bg-light-yellow group-hover:bg-blur-white duration-300 border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
                   IPA | 5,7| 12*33cl</p>
                 <div class="flex items-center justify-between">
                   <p
-                    class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
+                    class="font-poppins font-semibold text-yellow text-xl !leading-[320%] group-hover:text-black duration-300">
                     <span class="text-3xl">€</span>7.59
                   </p>
                   <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon" class="cursor-pointer">
@@ -579,8 +577,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div
-                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+              <div class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                 <div class="relative">
                   <img src="./assets/images/homepage/png/rabelcard2.png" alt="rabel-img" class="w-full">
                   <div
@@ -601,11 +598,11 @@
                   class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
                   Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
                 <p
-                  class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
+                  class="p-[8px_10px_8px_10px] bg-light-yellow group-hover:bg-blur-white duration-300 border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
                   IPA | 5,7| 12*33cl</p>
                 <div class="flex items-center justify-between">
                   <p
-                    class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
+                    class="font-poppins font-semibold text-yellow text-xl !leading-[320%] group-hover:text-black duration-300">
                     <span class="text-3xl">€</span>7.59
                   </p>
                   <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon" class="cursor-pointer">
@@ -613,8 +610,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div
-                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+              <div class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                 <div class="relative">
                   <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img" class="w-full">
                   <div
@@ -635,11 +631,11 @@
                   class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
                   Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
                 <p
-                  class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
+                  class="p-[8px_10px_8px_10px] bg-light-yellow group-hover:bg-blur-white duration-300 border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
                   IPA | 5,7| 12*33cl</p>
                 <div class="flex items-center justify-between">
                   <p
-                    class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
+                    class="font-poppins font-semibold text-yellow text-xl !leading-[320%] group-hover:text-black duration-300">
                     <span class="text-3xl">€</span>7.59
                   </p>
                   <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon" class="cursor-pointer">
@@ -647,8 +643,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div
-                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+              <div class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                 <div class="relative">
                   <img src="./assets/images/homepage/png/rabelcard2.png" alt="rabel-img" class="w-full">
                   <div
@@ -669,11 +664,11 @@
                   class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
                   Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
                 <p
-                  class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
+                  class="p-[8px_10px_8px_10px] bg-light-yellow group-hover:bg-blur-white duration-300 border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
                   IPA | 5,7| 12*33cl</p>
                 <div class="flex items-center justify-between">
                   <p
-                    class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
+                    class="font-poppins font-semibold text-yellow text-xl !leading-[320%] group-hover:text-black duration-300">
                     <span class="text-3xl">€</span>7.59
                   </p>
                   <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon" class="cursor-pointer">
@@ -681,8 +676,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div
-                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+              <div class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
                 <div class="relative">
                   <img src="./assets/images/homepage/png/rabelcard1.png" alt="rabel-img" class="w-full">
                   <div
@@ -703,11 +697,11 @@
                   class="md:text-base text-sm font-bold text-black font-play max-w-[240px] mb-[10.26px] mt-[11px] !leading-120">
                   Puhaste_ Faba_ bourbon BA (Silvers Series)</h4>
                 <p
-                  class="p-[8px_10px_8px_10px] bg-light-yellow border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
+                  class="p-[8px_10px_8px_10px] bg-light-yellow group-hover:bg-blur-white duration-300 border border-solid border-light-grey font-inter text-sm font-normal rounded-[5px] max-w-[133px] !leading-115 text-nowrap mb-[6px]">
                   IPA | 5,7| 12*33cl</p>
                 <div class="flex items-center justify-between">
                   <p
-                    class="font-poppins font-semibold text-yellow text-lg !leading-[320%] group-hover:text-black duration-300">
+                    class="font-poppins font-semibold text-yellow text-xl !leading-[320%] group-hover:text-black duration-300">
                     <span class="text-3xl">€</span>7.59
                   </p>
                   <img src="./assets/images/homepage/svg/plusicon.svg" alt="plusicon" class="cursor-pointer">
@@ -716,9 +710,18 @@
             </div>
           </div>
         </div>
+        <div class="flex justify-center items-center gap-3 mt-6 sm:hidden">
+          <button id="prevBtn"
+            class="h-[41.6px] w-[41.6px] bg-white border-[1.6px] hover:border-transparent hover:bg-yellow border-solid border-black rounded-[68px] flex justify-center items-center duration-300">
+            <img src="./assets/images/homepage/svg/prev-arrow.svg" alt="arrow" class="w-[22px] h-[22px]">
+          </button>
+          <button id="nextBtn"
+            class="h-[41.6px] w-[41.6px] bg-white border-[1.6px] hover:border-transparent hover:bg-yellow border-solid border-black rounded-[68px] flex justify-center items-center duration-300">
+            <img src="./assets/images/homepage/svg/next-arrow.svg" alt="arrow" class="w-[22px] h-[22px]">
+          </button>
+        </div>
       </div>
   </section>
-
   <!----------------------------- BLOGS BY REBEL ----------------------------->
   <section class="xl:pt-[89px] lg:pt-20 md:pt-16 sm:pt-14 pt-12 relative max-w-[1920px] mx-auto">
     <img src="./assets/images/homepage/webp/blogs_yellow_vector.webp" alt="blogs_yellow_vector"
@@ -1146,7 +1149,7 @@
         },
         768: {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 15,
         },
         1024: {
           slidesPerView: 4,
