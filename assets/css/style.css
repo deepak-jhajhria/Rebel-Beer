@@ -182,8 +182,11 @@ input:checked + label > span::after {
   stroke: #f4456a;
   fill: #f4456a;
 }
-
-/* =============================   CATEGORY AND PRODUCT CSS =========================================== */
+/* ======================================== new cart ========================= */
+#caart-tabs{
+ 
+}
+/* =============================   CATEGORY AND PRODUCT CSS ================== */
 .beer_list:hover .beer_names {
   color: #ffcc02;
 }
