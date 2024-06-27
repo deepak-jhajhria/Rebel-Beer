@@ -82,6 +82,7 @@
     <style>
         .tabcontent {
             display: none;
+            transition: all 0.3s linear;
         }
     </style>
 </head>
@@ -405,12 +406,75 @@
                             </div>
                         </div>
                         <div id="collection" class="tabcontent">
-                            <p class="font-bold leading-normal text-black uppercase font-play text-custom_3xl">
-                                Delivery Of Collection</p>
-                            <p class="mb-3 text-base font-bold font-play leading-115">Type of Order</p>
-                            <div onclick="openTab(event, 'overview')">
-                                <button onclick="moveProgressBar(2)"
-                                    class="text-poppins py-[14px] flex justify-center bg-yellow w-full max-w-[206px] mt-[62px] rounded-[5px]">Next</button>
+                            <div class="max-w-[594px] px-3 max-lg:pb-10">
+                                <h4 class=" text-2xl font-play font-bold leading-115 mb-[26px]">Delivery Of
+                                    Collection</h4>
+                                <div class="flex justify-between max-w-[594px] mb-[18px]">
+                                    <p class="text-base font-bold font-play leading-115">Options for Eastbound
+                                        169, Coetermeet</p>
+                                    <div class="flex items-center ">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 17L15 12L10 7" stroke="#FFCC02" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p class="text-base leading-115 text-yellow font-play">Change address
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center gap-[74px] p-3 border border-solid border-black rounded-[5px] max-w-[594px] mb-5 hover:bg-musturd duration-300">
+                                    <p class="text-sm font-normal text-black font-poppins leading-150">Free
+                                        delivery</p>
+                                    <p
+                                        class=" text-xs font-poppins text-black font-normal leading-150 text-opacity-60 pl-[6px]">
+                                        Starting tomorrow between 8.00 AM and 10.00 PM</p>
+                                    <p class="text-sm font-bold text-black font-poppins leading-150 text-end">
+                                        Free</p>
+                                </div>
+                                <div
+                                    class="flex items-center gap-14 p-3 border border-solid border-black rounded-[5px] max-w-[594px] mb-5 hover:bg-musturd duration-300">
+                                    <p class="text-sm font-normal text-black font-poppins leading-150">Evening
+                                        delivery</p>
+                                    <p class="text-xs font-normal text-black font-poppins leading-150 text-opacity-60">
+                                        On weekdays between 5:30 PM and 10:00 PM</p>
+                                    <p
+                                        class=" font-poppins text-sm leading-150 font-normal text-black text-opacity-70 pl-[34px]">
+                                        € 0,99</p>
+                                </div>
+                                <div
+                                    class="flex items-center gap-14 p-3 border border-solid border-black rounded-[5px] max-w-[594px] mb-5 hover:bg-musturd duration-300">
+                                    <p class=" text-sm font-poppins text-black font-normal leading-150 w-[29%]">
+                                        Rebel Beer store</p>
+                                    <div class="flex items-center justify-between w-full">
+                                        <p
+                                            class="text-xs font-normal text-black font-poppins leading-150 text-opacity-60">
+                                            Pick up immediately</p>
+                                        <p class="text-sm font-bold text-black font-poppins leading-150 text-end">
+                                            Free</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="p-3 border border-solid border-black rounded-[5px] max-w-[594px]  hover:bg-musturd duration-300 mb-[42px]">
+                                    <div class="flex items-center gap-3 mb-[6px]">
+                                        <p class=" text-sm font-poppins text-black font-normal leading-150 w-[40%]">
+                                            PostNL collection point</p>
+                                        <div class="flex items-center justify-between w-full">
+                                            <p
+                                                class="text-xs font-normal text-black font-poppins leading-150 text-opacity-60">
+                                                Pick up from tomorrow at 3 p.m</p>
+                                            <p class="text-sm font-bold text-black font-poppins leading-150 text-end">
+                                                Free</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs font-normal text-black leading-150 font-poppins text-opacity-70">
+                                        In the next step, choose a collection point near you.
+                                    </p>
+                                </div>
+                                <div onclick="openTab(event, 'overview')">
+                                    <button onclick="moveProgressBar(2)"
+                                        class="px-[85.5px] py-[14px] mb-3 bg-yellow text-black font-poppins font-normal sm:text-base text-sm rounded-[5px]">Next</button>
+                                </div>
                             </div>
                         </div>
                         <!-- overview -->
@@ -676,7 +740,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full bg-white-gray py-[18px]">
+            <div id="paysafely" class="w-full bg-white-gray py-[18px]">
                 <div class="container flex justify-between max-w-[1140px] mx-auto px-4">
                     <p class="text-xl font-normal text-black font-poppins leading-187">Pay safely with</p>
                     <div class="flex items-center gap-6">
@@ -823,6 +887,13 @@
             const svgParentSpan = svgElement[step - 1].parentElement;
             svgParentSpan.classList.add('bg-yellow');
             svgParentSpan.classList.add('border-black');
+
+            const paysafelyElement = document.getElementById("paysafely");
+            if (width > 0) {
+                paysafelyElement.classList.add('hidden')
+            } else {
+                paysafelyElement.classList.remove('hidden')
+            }
         }
         // ==================================STEPS ============================== 
         function openTab(evt, tabName) {
@@ -872,6 +943,7 @@
                 alert('Please select a type of order.');
             }
         }
+
     </script>
 </body>
 
