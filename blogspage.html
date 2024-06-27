@@ -179,7 +179,7 @@
                 </div>
             </div>
         </nav>
-        <div class="bg-cover bg-bottom bg-no-repeat flex justify-center items-center flex-col py-14 sm:py-16 md:pb-20 lg:pb-[105px] lg:pt-20 px-3 header_bg">
+        <div class="bg-cover bg-bottom bg-no-repeat flex justify-center items-center flex-col py-14 sm:py-16 md:pb-20 lg:pb-[105px] lg:pt-20 px-3 common_hero_bg">
             <div class="max-w-[1165px] mx-auto px-3"></div>
             <h2 class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black !leading-[115%] text-center">Blogs by Rebel</h2>
         </div>
@@ -192,7 +192,7 @@
         </div>
     </header>
     <!-- ============================REBEL BEER CANS========================= -->
-    <section class="relative z-[1] pt-[61px] overflow-x-clip max-w-[1920px] mx-auto">
+    <section class="relative z-[1] pt-12 sm:pt-[61px] overflow-x-clip max-w-[1920px] mx-auto">
         <div class="absolute -bottom-[4%] xl:bottom-[22%] xl:translate-y-1/2 -left-1 pointer-events-none rotate-[50deg] max-sm:hidden animate-circle"><img src="./assets/images/blogspage/svg/common_vector_black_semicirle.svg" alt="common_vector"></div>
         <div class="absolute top-8 right-[1px] z-[-1] animate-circle "><img class="pointer-events-none" src="./assets/images/blogspage/svg/common_vector_yellow_semicircle.svg" alt="common"></div>
         <div class="absolute top-[20%] sm:top-[27%] left-0 z-[-1]"><img class="pointer-events-none" src="./assets/images/blogspage/svg/common_vector.svg" alt="common"></div>
@@ -214,7 +214,7 @@
                 </div>
                 <div class="absolute pointer-events-none right-0 -bottom-[5%] xl:-right-[3%] xl:-bottom-[8%]"><img src="./assets/images/blogspage/svg/dots.svg" alt="dots"></div>
             </div>
-            <div class="flex max-sm:flex-wrap items-center max-[400px]:justify-between mt-[51.12px] gap-2 sm:gap-[31px]">
+            <div class="flex max-sm:flex-wrap items-center max-[400px]:justify-between mt-12 sm:mt-[51.12px] gap-2 sm:gap-[31px]">
                 <p class="flex items-center gap-2 font-play font-medium text-sm md:text-base text-black !leading-150 uppercase"><span><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.1797 21.1162V11.1162H21.1797V21.1162H13.1797ZM3.17969 13.1162V3.11621H11.1797V13.1162H3.17969ZM9.17969 11.1162V5.11621H5.17969V11.1162H9.17969ZM3.17969 21.1162V15.1162H11.1797V21.1162H3.17969ZM5.17969 19.1162H9.17969V17.1162H5.17969V19.1162ZM15.1797 19.1162H19.1797V13.1162H15.1797V19.1162ZM13.1797 3.11621H21.1797V9.11621H13.1797V3.11621ZM15.1797 5.11621V7.11621H19.1797V5.11621H15.1797Z" fill="black"/>
 </svg>
@@ -305,7 +305,7 @@
         </div>
     </section>
     <!-- =======================footer======================= -->
-    <footer class="footer_bg bg-center bg-cover bg-no-repeat pt-10 md:pt-[69.66px]">
+    <footer class="common_footer_bg bg-cover bg-no-repeat bg-center pt-10 md:pt-[69.66px]">
         <div class="container xl:max-w-[1178px] !px-4 mx-auto pb-10 md:pb-20 xl:pb-[104px]">
             <div class="flex flex-row flex-wrap">
                 <div class="lg:w-4/12">
@@ -438,15 +438,8 @@
 </button>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
-    <script>
-        // <!-- =============== NAVBAR JAVASCRIPT ============= -->
-        function openNav() {
-            document.getElementById("navbar").classList.toggle("left-0");
-            document.body.classList.toggle("overflow_hidden");
-            document.querySelector(".menu").classList.toggle("cross");
-        }
-    </script>
-    <!-- ===================================SWIPER SLIDER  -->
+
+    <!-- ===========================SWIPER SLIDER===============  -->
     <script>
         const swiper = new Swiper('.swiper', {
             direction: 'horizontal',
@@ -488,6 +481,12 @@
         });
     </script>
     <script>
+        // <!-- =============== NAVBAR JAVASCRIPT ============= -->
+        function openNav() {
+            document.getElementById("navbar").classList.toggle("left-0");
+            document.body.classList.toggle("overflow_hidden");
+            document.querySelector(".menu").classList.toggle("cross");
+        }
         // back to top
         function backtotop() {
             window.scroll(0, 0);
