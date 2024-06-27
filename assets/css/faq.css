@@ -7,12 +7,11 @@
 }
 
 .active-border {
-  box-shadow: 0px 6px 0px 0px #000000 inset;
-  border: 1px solid black !important;
+box-shadow: 0px 6px 0px 0px #000000 inset;
+border: 1px solid black !important;
 }
-
-.hero-bg {
-  background-image: url("../images/basement/webp/bg-header-img.webp");
+.hero-bg{
+  background-image: url('../images/basement/webp/bg-header-img.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
