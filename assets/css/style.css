@@ -123,21 +123,27 @@
     border: 1px solid black !important;
 }
 
-.hero-bg {
+.common_hero_bg {
     background-image: url('../images/basement/webp/bg-header-img.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.footerBg {
+.common_footer_bg {
     background-image: url("../images/basement/webp/bg-footer-img.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* ================================================ */
+/* ====================BLOGS , BEERPACKAGE AND CONTACT PAGE CSS============================ */
+
+.animate-spin {
+    animation: spin 7s linear infinite !important;
+}
+
+/* ============================================================================ */
 .slide_icons:hover path {
     fill: white;
 }
