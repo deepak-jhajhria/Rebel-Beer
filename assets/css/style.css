@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 
 /* =================== HOMEPAGE CSS ========================== */
+
 .tab-button {
     cursor: pointer;
     background-color: transparent;
@@ -69,30 +70,24 @@
     #green.tab-button.active {
         border: 1px solid black !important;
     }
-
     #green.tab-button.active div {
         background-color: black;
         border-color: black !important;
         width: 20px;
         height: 20px;
     }
-
     .tab-button.active div {
         background-color: black;
         border-color: black;
         width: 20px;
         height: 20px;
     }
-
     .tab-button.active {
         border: 1px solid black;
     }
-
-
     #blue.tab-button.active {
         border: 1px solid black !important;
     }
-
     #blue.tab-button.active div {
         background-color: black;
         border-color: black !important;
@@ -109,7 +104,9 @@
     animation-play-state: paused;
 }
 
+
 /* ========================FAQS AND PRIVACY CSS============================== */
+
 .faq_circle_animation {
     animation: faqblackcircle 6s linear infinite;
 }
@@ -137,13 +134,16 @@
     background-size: cover;
 }
 
+
 /* ====================BLOGS , BEERPACKAGE AND CONTACT PAGE CSS============================ */
 
 .animate-spin {
     animation: spin 7s linear infinite !important;
 }
 
+
 /* ============================================================================ */
+
 .slide_icons:hover path {
     fill: white;
 }
@@ -159,12 +159,10 @@
 
 /* =============================== NAVBAR CSS ======================================= */
 
-
 @media (max-width: 1023.9px) {
     .overflow_hidden {
         overflow: hidden !important;
     }
-
     .mobile-view {
         background-color: #F0F0EB;
         width: 100%;
@@ -176,42 +174,35 @@
         transition: 300ms linear;
         z-index: 3;
     }
-
     .menu span:nth-child(1) {
         height: 2px;
         width: 15px;
         display: block;
         border-radius: 20px;
     }
-
     .menu span:nth-child(2) {
         height: 2px;
         width: 22px;
         display: block;
         border-radius: 20px;
     }
-
     .menu span:nth-child(3) {
         height: 2px;
         width: 30px;
         display: block;
         border-radius: 20px;
     }
-
     .menu span {
         transition: 300ms linear;
     }
-
     .cross span:nth-child(1) {
         transform: rotate(42deg) translateY(13px);
         width: 30px;
     }
-
     .cross span:nth-child(2) {
         transform: translateX(-100%);
         opacity: 0;
     }
-
     .cross span:nth-child(3) {
         transform: rotate(-43deg) translateY(-13px);
         width: 30px;
