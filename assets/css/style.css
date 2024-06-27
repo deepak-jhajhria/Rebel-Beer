@@ -70,24 +70,29 @@
     #green.tab-button.active {
         border: 1px solid black !important;
     }
+
     #green.tab-button.active div {
         background-color: black;
         border-color: black !important;
         width: 20px;
         height: 20px;
     }
+
     .tab-button.active div {
         background-color: black;
         border-color: black;
         width: 20px;
         height: 20px;
     }
+
     .tab-button.active {
         border: 1px solid black;
     }
+
     #blue.tab-button.active {
         border: 1px solid black !important;
     }
+
     #blue.tab-button.active div {
         background-color: black;
         border-color: black !important;
@@ -287,6 +292,33 @@ input:checked+label>span::after {
     background-position: center;
 }
 
+/* =============================== ABOUT CSS ========================================= */
+.custom-container {
+    max-width: 1164px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.partnersslider_track {
+    @apply w-[calc(268px*_5)];
+}
+
+.partners_slider_track:hover {
+    animation-play-state: paused;
+}
+ .footer_bg{
+    background-image: url('../images/about/webp/footer-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-bg{
+    background-image: url('../images/about/png/about-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+
 /* ======================================================================== */
 
 .slide_icons:hover path {
@@ -308,6 +340,7 @@ input:checked+label>span::after {
     .overflow_hidden {
         overflow: hidden !important;
     }
+
     .mobile-view {
         background-color: #F0F0EB;
         width: 100%;
@@ -319,35 +352,42 @@ input:checked+label>span::after {
         transition: 300ms linear;
         z-index: 3;
     }
+
     .menu span:nth-child(1) {
         height: 2px;
         width: 15px;
         display: block;
         border-radius: 20px;
     }
+
     .menu span:nth-child(2) {
         height: 2px;
         width: 22px;
         display: block;
         border-radius: 20px;
     }
+
     .menu span:nth-child(3) {
         height: 2px;
         width: 30px;
         display: block;
         border-radius: 20px;
     }
+
     .menu span {
         transition: 300ms linear;
     }
+
     .cross span:nth-child(1) {
         transform: rotate(42deg) translateY(13px);
         width: 30px;
     }
+
     .cross span:nth-child(2) {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     .cross span:nth-child(3) {
         transform: rotate(-43deg) translateY(-13px);
         width: 30px;
