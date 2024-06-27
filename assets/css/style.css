@@ -124,11 +124,11 @@
 }
 
 .common_hero_bg {
-    background-image: url('../images/basement/webp/bg-header-img.webp');
+    background-image: url('../images/common/webp/bg-header-img.webp');
 }
 
 .common_footer_bg {
-    background-image: url("../images/basement/webp/bg-footer-img.webp");
+    background-image: url("../images/common/webp/bg-footer-img.webp");
 }
 
 /* ====================BLOGS , BEERPACKAGE AND CONTACT PAGE CSS============================ */
@@ -255,5 +255,8 @@ input:checked+label>span::after {
     .cross span:nth-child(3) {
         transform: rotate(-43deg) translateY(-13px);
         width: 30px;
+    }
+    .show{
+       left: 0;
     }
 }
