@@ -11,17 +11,17 @@
   border: 1px solid black !important;
 }
 
-.hero-bg {
-  background-image: url("../images/basement/webp/bg-header-img.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hero-bg{
+    background-image: url('../images/about/webp/hero-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
 }
-.footerBg {
-  background-image: url("../images/basement/webp/bg-footer-img.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.footerBg{
+    background-image: url('../images/about/webp/footer-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 1023.9px) {
