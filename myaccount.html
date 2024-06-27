@@ -12,6 +12,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- =============== TITLE ============= -->
     <title>My Account</title>
+     <!-- =============== META TAG ============== -->
+  <title>Rebel Beer</title>
+  <meta name="title" content="Welcome to Cans" />
+  <meta name="description"
+    content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://metatags.io/" />
+  <meta property="og:title" content="Welcome to 
+    Rebel Beer
+    Cans" />
+  <meta property="og:description"
+    content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+  <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://metatags.io/" />
+  <meta property="twitter:title" content="Welcome to  Rebel Beer Cans" />
+  <meta property="twitter:description"
+    content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+  <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+  <!-- Meta Tags Generated with https://metatags.io -->
+  <meta property="twitter:image" content="./meta-img.webp" />
     <!-- =============== TAILWIND CSS ============= -->
     <script>
         tailwind.config = {
@@ -55,7 +78,8 @@
 <body>
     <header>
         <!-- =============== NAVBAR TOP ============= -->
-        <div class="flex sm:-ms-10 justify-center gap-3 items-center py-[5px] bg-black relative z-[-1]">
+        <div class="bg-black">
+        <div class="flex sm:-ms-10 justify-center gap-3 items-center pt-[5.92px] pb-[8.08px] relative">
             <span>
                 <svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.625 13.4238H14.5V14.9863H3.625V13.4238ZM1.8125 9.51758H10.875V11.0801H1.8125V9.51758Z"
@@ -66,7 +90,7 @@
                 </svg></span>
             <p class="text-white-gray text-[14px] font-play font-normal">Free Shipping Over First Order</p>
         </div>
-        <div class="flex justify-center gap-3 items-center py-[5px] bg-black relative z-[-1]">
+        <div class="flex justify-center gap-3 items-center py-[5px] relative">
             <span><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M25.5695 9.65527H19.375V20.8825H29.5242V15.8291L28.3405 11.7382C27.9837 10.5046 26.8537 9.65527 25.5695 9.65527Z"
@@ -102,8 +126,9 @@
                 </svg></span>
             <p class="text-white-gray text-[14px] font-play font-normal">Free Shipping Over First Order</p>
         </div>
+    </div>
         <!-- =============== NAVBAR ============= -->
-        <nav class="flex items-center py-[10.52px] justify-between max-w-[1165px] mx-auto px-3">
+        <nav class="flex items-center py-[10px] justify-between max-w-[1165px] mx-auto px-3">
             <a href="#">
                 <img src="./assets/images/blogspage/svg/logo-blogs.svg" alt="headerlogo">
             </a>
@@ -226,14 +251,10 @@
             </div>
         </nav>
         <!-- =============== HERO SECTION ============= -->
-        <div
-            class="bg-cover bg-bottom flex justify-center items-center flex-col pb-14 md:pb-[108px] pt-[35px]  px-3 hero_bg">
+        <div class="bg-cover bg-bottom flex justify-center items-center flex-col pb-14 md:pb-[111px] pt-10  px-3 common_hero_bg max-h-[210px] h-full">
             <h2
                 class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-[115%] text-center">
                 My Account</h2>
-            <p
-                class="pt-2 text-sm font-normal text-center text-black font-poppins lg:text-base opacity-70 lg:pt-4 undefined">
-            </p>
         </div>
         <div class="bg-white-gray ">
             <div class="container max-w-[1165px] mx-auto px-3 py-[14.5px]">
@@ -253,8 +274,8 @@
 
     <!-- =============== TABS ============= -->
     <div class="relative">
-        <span class="absolute top-[1%] right-[3%] animate-spin z-[-1]">
-            <svg class="sm:w-[71px] w-[50px]" width="71" height="57" viewBox="0 0 71 57" fill="none"
+        <span class="absolute top-[-2%] sm:top-[1%] right-[3%] animate-spin z-[-1]">
+            <svg class="sm:w-[71px] w-[30px]" width="71" height="57" viewBox="0 0 71 57" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-inside-1_408_9141" fill="white">
                     <path
@@ -277,7 +298,7 @@
                     fill="black" stroke="black" stroke-width="10" mask="url(#path-1-inside-1_408_9137)" />
             </svg>
         </span>
-        <span class=" absolute bottom-[10%] right-0 z-[-1]">
+        <span class=" absolute bottom-[-1.5%] md:bottom-[10%] right-0 z-[-1]">
             <svg class="sm:w-[150px] w-[90px]" width="150" height="52" viewBox="0 0 150 52" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -291,7 +312,7 @@
                     stroke="black" stroke-width="2" stroke-miterlimit="10" />
             </svg>
         </span>
-        <div class="max-w-[1165px] mx-auto px-3 container pt-16 pb-[125px]">
+        <div class="max-w-[1165px] mx-auto px-3 container pt-10 sm:pt-16 pb-10 sm:pb-16 md:pb-[125px]">
             <div class="max-w-[652px] mx-auto">
                 <!-- =============== TAB BUTTON ============= -->
                 <div class="flex items-center justify-center gap-5">
@@ -390,8 +411,8 @@
     </div>
 
     <!-- =============== FOOTER ============= -->
-    <footer class="footer_bg bg-center bg-cover bg-no-repeat pt-[69.66px]">
-        <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[104.42px]">
+    <footer class="common_footer_bg bg-center bg-cover bg-no-repeat pt-[71.66px]">
+        <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[107.42px]">
             <div class="flex flex-row flex-wrap">
                 <div class="lg:w-4/12">
                     <a href="/">
