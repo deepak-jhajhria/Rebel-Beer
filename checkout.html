@@ -255,7 +255,7 @@
             </nav>
             <!-- =============== HERO SECTION ============= -->
             <div
-                class="bg-cover bg-bottom flex justify-center items-center flex-col pb-14 md:pb-[111px] pt-10  px-3 common_hero_bg max-h-[210px] h-full">
+                class="bg-cover bg-bottom flex justify-center items-center flex-col pb-14 md:pb-[111px] pt-[71px]  px-3 common_hero_bg max-h-[210px] h-full">
                 <h2
                     class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-[115%] text-center">
                     Check-Out</h2>
@@ -290,7 +290,7 @@
         <section>
             <div class="container max-w-[1140px] mx-auto px-4 mt-10">
                 <div id="progress-container"
-                    class="progress-container relative flex items-center justify-between max-w-[905px] w-full ml-12">
+                    class="progress-container relative flex items-center justify-between max-w-[905px] w-full mx-auto xl:ml-12">
                     <div class="flex flex-col items-center">
                         <p class="text-sm font-medium text-black font-poppins">Information</p>
                         <span
@@ -335,7 +335,7 @@
                             </svg>
                         </span>
                     </div>
-                    <div class="absolute w-[95%] top-[35px] left-8 -z-10">
+                    <div class="absolute w-[90%] sm:w-[93%] md:w-[95%] top-[35px] left-8 -z-10">
                         <div
                             class="relative after:absolute after:bg-gray after:w-full after:h-0.5 after:top-0 after:z-10">
                             <span id="myBar"
@@ -343,10 +343,10 @@
                         </div>
                     </div>
                 </div>
-                <div id="finalsubmit" class="grid grid-cols-2 pt-2 mt-20 mb-[108px]">
-                    <div class="col-span-1">
+                <div id="finalsubmit" class="grid grid-cols-1 lg:grid-cols-2 pt-2 my-10 sm:my-16 md:my-20 lg:mb-[108px]">
+                    <div class="order-2 col-span-1 lg:order-1">
                         <!-- ==================  STEP FIRST ===================== -->
-                        <div id="information" class="flex flex-col tabcontent">
+                        <div id="information" class="flex flex-col mt-7 sm:mt-10 tabcontent lg:mt-0">
                             <p class="font-bold leading-normal text-black uppercase font-play text-custom_3xl">
                                 Information</p>
                             <p class="mb-3 text-base font-bold font-play leading-115">Type of Order</p>
@@ -405,7 +405,7 @@
                                     class="text-poppins py-[14px] flex justify-center bg-yellow w-full max-w-[206px] mt-[62px] rounded-[5px]">Next</button>
                             </div>
                         </div>
-                        <div id="collection" class="tabcontent">
+                        <div id="collection" class="mt-10 tabcontent lg:mt-0">
                             <div class="max-w-[594px] px-3 max-lg:pb-10">
                                 <h4 class=" text-2xl font-play font-bold leading-115 mb-[26px]">Delivery Of
                                     Collection</h4>
@@ -478,7 +478,7 @@
                             </div>
                         </div>
                         <!-- overview -->
-                        <div id="overview" class="tabcontent">
+                        <div id="overview" class="mt-10 tabcontent lg:mt-0">
                             <div class="lg:w-[586px] w-[500px]">
                                 <h5 class="text-black uppercase font-play !leading-115 mb-8 font-bold text-2xl">
                                     Overview
@@ -602,7 +602,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="pay" class="tabcontent">
+                        <div id="pay" class="mt-10 tabcontent lg:mt-0">
                             <div class="max-w-[587px]">
                                 <h4 class="font-play uppercase mb-[42px] text-black !leading-115 font-bold text-2xl">Pay
                                     Information's</h4>
@@ -647,9 +647,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-end w-full col-span-1">
-                        <div
-                            class="p-[20.56px_24px_25px_21px] max-h-[460px] items-start w-full max-w-[413px] rounded-[5px] border-black border shadow-[0px_6px_0px_0px_#000000_inset]">
+                    <div class="flex order-1 w-full col-span-1 lg:justify-end lg:order-2">
+                        <div class="p-[20.56px_24px_25px_21px] lg:max-h-[460px] items-start w-full lg:max-w-[413px] rounded-[5px] border-black border shadow-[0px_6px_0px_0px_#000000_inset]">
                             <p class="mb-6 text-lg font-bold text-black font-poppins leading-150">Shopping Cart</p>
                             <div class="flex items-center pb-1 gap-[26px]">
                                 <img src="./assets/images/common/webp/silver-series.webp" alt="silver-series"
@@ -713,7 +712,7 @@
                 </div>
             </div>
             <div id="paysafely" class="w-full bg-white-gray py-[18px]">
-                <div class="container flex justify-between max-w-[1140px] mx-auto px-4">
+                <div class="container flex flex-col items-center sm:flex-row justify-center gap-4 sm:justify-between max-w-[1140px] mx-auto px-4">
                     <p class="text-xl font-normal text-black font-poppins leading-187">Pay safely with</p>
                     <div class="flex items-center gap-6">
                         <img src="./assets/images/check-out/png/discover.png" alt="logo">
@@ -844,6 +843,7 @@
     </main>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
+    <script src="./assets/js/app.js"></script>
     <script>
         // ======================= PROGRESS BAR =========================== 
         function moveProgressBar(step) {
