@@ -135,7 +135,9 @@
     animation: spin 7s linear infinite !important;
 }
 
+
 /* ================================ MY ACCOUNT CSS ============================================ */
+
 .animate-spin {
     animation: spin 7s linear infinite !important;
 }
@@ -168,7 +170,9 @@ input:checked+label>span::after {
     cursor: pointer;
 }
 
+
 /* ====================== BASEMENT CSS================================== */
+
 .heart svg {
     fill: none;
     stroke: black;
@@ -180,7 +184,9 @@ input:checked+label>span::after {
     fill: #F4456A;
 }
 
+
 /* =============================   CATEGORY AND PRODUCT CSS =========================================== */
+
 .beer_list:hover .beer_names {
     color: #ffcc02;
 }
@@ -193,14 +199,17 @@ input:checked+label>span::after {
     width: 6px !important;
 }
 
+
 /* Track */
+
 ::-webkit-scrollbar-track {
     background-color: #f0f0ea;
-
     border-radius: 21px;
 }
 
+
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: #ffcc02;
     border-radius: 10px;
@@ -250,14 +259,17 @@ input:checked+label>span::after {
     width: 6px;
 }
 
+
 /* Track */
+
 ::-webkit-scrollbar-track {
     background-color: #f0f0ea;
-
     border-radius: 21px;
 }
 
+
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: #ffcc02;
     border-radius: 10px;
@@ -286,6 +298,7 @@ input:checked+label>span::after {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 /* ======================================================================== */
 
