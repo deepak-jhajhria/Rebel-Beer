@@ -1,0 +1,2294 @@
+[33mcommit 94b5f342c8b0c868fb8392de4ea7f8ad2a6c988f[m[33m ([m[1;36mHEAD -> [m[1;32mproduct[m[33m, [m[1;31morigin/product[m[33m)[m
+Merge: 642b651 ab90903
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:48:18 2024 +0530
+
+    merge code
+
+[33mcommit 642b651896c2d8e228b7d21f8a245223e016b698[m
+Merge: 6a836f2 05bcb62
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:34:08 2024 +0530
+
+    Merge branch 'blogs' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 6a836f2eeeb60f9d83a6b101482539a2352753ab[m
+Merge: 64e7b11 5357e2a
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:33:41 2024 +0530
+
+    merge code
+
+[33mcommit ab909034cd2c5981610d67fba44766c7a4ca1aed[m
+Merge: 5357e2a 766352c
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 16:33:02 2024 +0530
+
+    merge
+
+[33mcommit 05bcb628c86ff2ec5597dbd9cd9947963b53b8e9[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Wed Jun 26 16:31:52 2024 +0530
+
+    change in images
+
+[33mcommit 64e7b11910e84443731c9ea1f0e5b41d426fcf8e[m
+Merge: 766352c c8fc2f9
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:26:27 2024 +0530
+
+    merge code
+
+[33mcommit 5357e2a566c9e80967893623ddce7961344a8f60[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 16:24:16 2024 +0530
+
+    merge
+
+[33mcommit 766352c295e5b3ee4e68d823f235fa1b7704c715[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:16:55 2024 +0530
+
+    merge code
+
+[33mcommit c9f34fb9f1168eb4b43041f21b0b2f32bb059fe2[m
+Merge: f775634 fd75a57
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:03:45 2024 +0530
+
+    Merge branch 'basement' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit f7756341459be7f1cef4b13bc1c0c8038d6254d1[m
+Merge: d85a820 2bfb294
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:03:04 2024 +0530
+
+    blogs
+
+[33mcommit d85a820b9824237e93c3db094988a1d8b1248036[m
+Merge: adadbee e9e82fb
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:56:30 2024 +0530
+
+    Merge branch 'glasses' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit adadbee5ff386fce7fe31468e6540982b37be5d6[m
+Merge: 5566215 d77e0d6
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:54:49 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit e9e82fbb57389f769c134e626b12ba531ac6a010[m[33m ([m[1;31morigin/glasses[m[33m)[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Wed Jun 26 15:54:29 2024 +0530
+
+    marge committed
+
+[33mcommit 5566215552f77219c0d8e67dccc66afb8306a15d[m
+Merge: 36f5e32 a9f3f55
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:54:02 2024 +0530
+
+    Merge branch 'glasses' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 36f5e32541a572c9457b81e0122747fdcf3e91c5[m
+Merge: 35f6931 4aab07a
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:52:29 2024 +0530
+
+    Merge branch 'privacy' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 35f6931d96e9511e64ea03d17686296f3387a474[m
+Merge: a4a5091 0bf0cf4
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:51:30 2024 +0530
+
+    Merge branch 'contact' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit a4a5091b97a5275b2875492098f4eb28d87a7ef1[m
+Merge: d374525 06e5d10
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:48:39 2024 +0530
+
+    merge code
+
+[33mcommit fd75a57206e63f25c8137fb3fe292ba9ffde8fb2[m[33m ([m[1;31morigin/basement[m[33m)[m
+Author: Your Name <you@example.com>
+Date:   Wed Jun 26 15:48:19 2024 +0530
+
+    add path from basement
+
+[33mcommit d77e0d63be698907b62b2daad46d043362b18a2c[m
+Merge: 33715b4 d374525
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 15:44:43 2024 +0530
+
+    merge
+
+[33mcommit 4aab07ae5e87aa23e971508f627594cb42d7235f[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 15:43:22 2024 +0530
+
+    updates
+
+[33mcommit 0bf0cf497e65327ba8e087190df8626f991fccc4[m[33m ([m[1;31morigin/contact[m[33m)[m
+Merge: 0128f16 d374525
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Wed Jun 26 15:36:37 2024 +0530
+
+    page
+
+[33mcommit c8fc2f9e626feaeea17c62d0e283e17c69538db0[m
+Merge: 8e3e07c d374525
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 15:30:26 2024 +0530
+
+    take pull origin product
+
+[33mcommit 2bfb2948b55eef7a0be77ae518dbb35fdd478d82[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Wed Jun 26 15:29:28 2024 +0530
+
+    change in blog cards
+
+[33mcommit 8e3e07ce9f0dba7aa7e990c820e9ac27f842ada9[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 15:28:41 2024 +0530
+
+    merge code
+
+[33mcommit a478452bc41c889094fa9221870eb68379093445[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 15:25:22 2024 +0530
+
+    merge code
+
+[33mcommit 3b4911f7752f2dc62c5273c29739271bdc65f738[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 15:23:17 2024 +0530
+
+    font-size chnge in responsive
+
+[33mcommit e81242a07b4f73f0334c9b59eb40240b01d7bcc6[m
+Merge: 83587ac d374525
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 15:20:21 2024 +0530
+
+    merge product
+
+[33mcommit 06e5d108bfe817a2be0f85edf86e421e79bfd539[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 15:18:47 2024 +0530
+
+    merge all homepage section
+
+[33mcommit 365cb52a0e956a1698fb0726c71960e1ffa3fa7b[m
+Merge: 922405a 8063fe8
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 15:16:59 2024 +0530
+
+    Merge branch 'selection' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit 5ec15816a568a19a2a01a24abbe87823d1f77952[m
+Merge: a9f3f55 d374525
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Wed Jun 26 15:16:42 2024 +0530
+
+    Merge branch 'product' of https://github.com/deepak-jhajhria/Rebel-Beer into glasses
+
+[33mcommit 922405aafc134d6b1d8cccbf947ba7c4de8d1195[m
+Merge: f84b1ea 33715b4
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 15:15:44 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit 33715b40cf47df2926ad419f40d3d3287c2e877f[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 15:14:54 2024 +0530
+
+    svg hover color
+
+[33mcommit f84b1eab941f339ee61307ec979908cdb79f7b39[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 15:14:46 2024 +0530
+
+    rebel selection padding
+
+[33mcommit 8063fe82735faebd9c63aa1e435578b0d99d4857[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Wed Jun 26 15:13:25 2024 +0530
+
+    spacing
+
+[33mcommit d374525f90550f94aa0514241b21c27c92d4a385[m[33m ([m[1;31morigin/myaccount[m[33m)[m
+Merge: 20e00e6 efb4f5a
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:13:08 2024 +0530
+
+    merge code
+
+[33mcommit a9f3f558517643b5333a3abf71147b78fd5e068b[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Wed Jun 26 14:57:08 2024 +0530
+
+    link
+
+[33mcommit 83587ac36ef79aa7531051c24ba2c4df5397db7a[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 14:54:13 2024 +0530
+
+    nav changes
+
+[33mcommit 7c1055926b976d4d23869669c96b4811840b1007[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 14:53:57 2024 +0530
+
+    rebel section update
+
+[33mcommit 20e00e6807ad4599be6dd943ed61667045c23823[m
+Merge: 7739574 c752851
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 14:53:55 2024 +0530
+
+    Merge branch 'glasses' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 7739574b2c1776a5b0238d4b4cfc90ab2ffccf88[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 14:52:55 2024 +0530
+
+    merge code
+
+[33mcommit efb4f5a88b272c30000dbe2b4e8da8b5c8d1ff4a[m
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 14:52:16 2024 +0530
+
+    merge code
+
+[33mcommit 6d195d07b7e7629d5ec7e3ed8a[33mcommit 94b5f342c8b0c868fb8392de4ea7f8ad2a6c988f[m[33m ([m[1;36mHEAD -> [m[1;32mproduct[m[33m, [m[1;31morigin/product[m[33m)[m
+Merge: 642b651 ab90903
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:48:18 2024 +0530
+
+    merge code
+
+[33mcommit 642b651896c2d8e228b7d21f8a245223e016b698[m
+Merge: 6a836f2 05bcb62
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:34:08 2024 +0530
+
+    Merge branch 'blogs' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 6a836f2eeeb60f9d83a6b101482539a2352753ab[m
+Merge: 64e7b11 5357e2a
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:33:41 2024 +0530
+
+    merge code
+
+[33mcommit ab909034cd2c5981610d67fba44766c7a4ca1aed[m
+Merge: 5357e2a 766352c
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 16:33:02 2024 +0530
+
+    merge
+
+[33mcommit 05bcb628c86ff2ec5597dbd9cd9947963b53b8e9[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Wed Jun 26 16:31:52 2024 +0530
+
+    change in images
+
+[33mcommit 64e7b11910e84443731c9ea1f0e5b41d426fcf8e[m
+Merge: 766352c c8fc2f9
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:26:27 2024 +0530
+
+    merge code
+
+[33mcommit 5357e2a566c9e80967893623ddce7961344a8f60[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 16:24:16 2024 +0530
+
+    merge
+
+[33mcommit 766352c295e5b3ee4e68d823f235fa1b7704c715[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:16:55 2024 +0530
+
+    merge code
+
+[33mcommit c9f34fb9f1168eb4b43041f21b0b2f32bb059fe2[m
+Merge: f775634 fd75a57
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:03:45 2024 +0530
+
+    Merge branch 'basement' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit f7756341459be7f1cef4b13bc1c0c8038d6254d1[m
+Merge: d85a820 2bfb294
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 16:03:04 2024 +0530
+
+    blogs
+
+[33mcommit d85a820b9824237e93c3db094988a1d8b1248036[m
+Merge: adadbee e9e82fb
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:56:30 2024 +0530
+
+    Merge branch 'glasses' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit adadbee5ff386fce7fe31468e6540982b37be5d6[m
+Merge: 5566215 d77e0d6
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:54:49 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit e9e82fbb57389f769c134e626b12ba531ac6a010[m[33m ([m[1;31morigin/glasses[m[33m)[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Wed Jun 26 15:54:29 2024 +0530
+
+    marge committed
+
+[33mcommit 5566215552f77219c0d8e67dccc66afb8306a15d[m
+Merge: 36f5e32 a9f3f55
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:54:02 2024 +0530
+
+    Merge branch 'glasses' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 36f5e32541a572c9457b81e0122747fdcf3e91c5[m
+Merge: 35f6931 4aab07a
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:52:29 2024 +0530
+
+    Merge branch 'privacy' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 35f6931d96e9511e64ea03d17686296f3387a474[m
+Merge: a4a5091 0bf0cf4
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:51:30 2024 +0530
+
+    Merge branch 'contact' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit a4a5091b97a5275b2875492098f4eb28d87a7ef1[m
+Merge: d374525 06e5d10
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:48:39 2024 +0530
+
+    merge code
+
+[33mcommit fd75a57206e63f25c8137fb3fe292ba9ffde8fb2[m[33m ([m[1;31morigin/basement[m[33m)[m
+Author: Your Name <you@example.com>
+Date:   Wed Jun 26 15:48:19 2024 +0530
+
+    add path from basement
+
+[33mcommit d77e0d63be698907b62b2daad46d043362b18a2c[m
+Merge: 33715b4 d374525
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 15:44:43 2024 +0530
+
+    merge
+
+[33mcommit 4aab07ae5e87aa23e971508f627594cb42d7235f[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 15:43:22 2024 +0530
+
+    updates
+
+[33mcommit 0bf0cf497e65327ba8e087190df8626f991fccc4[m[33m ([m[1;31morigin/contact[m[33m)[m
+Merge: 0128f16 d374525
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Wed Jun 26 15:36:37 2024 +0530
+
+    page
+
+[33mcommit c8fc2f9e626feaeea17c62d0e283e17c69538db0[m
+Merge: 8e3e07c d374525
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 15:30:26 2024 +0530
+
+    take pull origin product
+
+[33mcommit 2bfb2948b55eef7a0be77ae518dbb35fdd478d82[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Wed Jun 26 15:29:28 2024 +0530
+
+    change in blog cards
+
+[33mcommit 8e3e07ce9f0dba7aa7e990c820e9ac27f842ada9[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 15:28:41 2024 +0530
+
+    merge code
+
+[33mcommit a478452bc41c889094fa9221870eb68379093445[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 15:25:22 2024 +0530
+
+    merge code
+
+[33mcommit 3b4911f7752f2dc62c5273c29739271bdc65f738[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 15:23:17 2024 +0530
+
+    font-size chnge in responsive
+
+[33mcommit e81242a07b4f73f0334c9b59eb40240b01d7bcc6[m
+Merge: 83587ac d374525
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 15:20:21 2024 +0530
+
+    merge product
+
+[33mcommit 06e5d108bfe817a2be0f85edf86e421e79bfd539[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 15:18:47 2024 +0530
+
+    merge all homepage section
+
+[33mcommit 365cb52a0e956a1698fb0726c71960e1ffa3fa7b[m
+Merge: 922405a 8063fe8
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 15:16:59 2024 +0530
+
+    Merge branch 'selection' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit 5ec15816a568a19a2a01a24abbe87823d1f77952[m
+Merge: a9f3f55 d374525
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Wed Jun 26 15:16:42 2024 +0530
+
+    Merge branch 'product' of https://github.com/deepak-jhajhria/Rebel-Beer into glasses
+
+[33mcommit 922405aafc134d6b1d8cccbf947ba7c4de8d1195[m
+Merge: f84b1ea 33715b4
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 15:15:44 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit 33715b40cf47df2926ad419f40d3d3287c2e877f[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 15:14:54 2024 +0530
+
+    svg hover color
+
+[33mcommit f84b1eab941f339ee61307ec979908cdb79f7b39[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 15:14:46 2024 +0530
+
+    rebel selection padding
+
+[33mcommit 8063fe82735faebd9c63aa1e435578b0d99d4857[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Wed Jun 26 15:13:25 2024 +0530
+
+    spacing
+
+[33mcommit d374525f90550f94aa0514241b21c27c92d4a385[m[33m ([m[1;31morigin/myaccount[m[33m)[m
+Merge: 20e00e6 efb4f5a
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 15:13:08 2024 +0530
+
+    merge code
+
+[33mcommit a9f3f558517643b5333a3abf71147b78fd5e068b[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Wed Jun 26 14:57:08 2024 +0530
+
+    link
+
+[33mcommit 83587ac36ef79aa7531051c24ba2c4df5397db7a[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 14:54:13 2024 +0530
+
+    nav changes
+
+[33mcommit 7c1055926b976d4d23869669c96b4811840b1007[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 14:53:57 2024 +0530
+
+    rebel section update
+
+[33mcommit 20e00e6807ad4599be6dd943ed61667045c23823[m
+Merge: 7739574 c752851
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 14:53:55 2024 +0530
+
+    Merge branch 'glasses' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 7739574b2c1776a5b0238d4b4cfc90ab2ffccf88[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 14:52:55 2024 +0530
+
+    merge code
+
+[33mcommit efb4f5a88b272c30000dbe2b4e8da8b5c8d1ff4a[m
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 14:52:16 2024 +0530
+
+    merge code
+
+[33mcommit 6d195d07b7e7629d5ec7e3ed8a69b8a75f591030[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 14:47:17 2024 +0530
+
+    updates
+
+[33mcommit 4abb825babae347936da57ac5b755c7d1ca1b6b4[m
+Merge: 9163593 1e5f123
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 14:45:07 2024 +0530
+
+    footer
+
+[33mcommit cf00b588eac1a587beb8a419fdd72afc6a67430c[m
+Merge: 850496e 14dc66e
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 14:42:32 2024 +0530
+
+    Merge branch 'category' of https://github.com/deepak-jhajhria/Rebel-Beer into about
+
+[33mcommit 850496eb5f5a1bc3e1e6c6fb0809be041d24d9d6[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 14:41:41 2024 +0530
+
+    merge code
+
+[33mcommit 0128f1600ae28108552fd14c062397c8f0126057[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Wed Jun 26 14:41:04 2024 +0530
+
+    git push
+
+[33mcommit 3783ac72fb660607b59e825e93100e9629d80d6c[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Wed Jun 26 14:32:40 2024 +0530
+
+    changes
+
+[33mcommit a1dad663cbd54e1646f50a6567051076dca6019d[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Wed Jun 26 14:31:30 2024 +0530
+
+    changes
+
+[33mcommit 1e5f1234164d4496e9a96b1e07dd9ddfee20fc20[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Wed Jun 26 14:30:10 2024 +0530
+
+    change in footer
+
+[33mcommit eedbf3b8d62d580c075453a9fafbcb616d407302[m
+Merge: 068d779 c28cbc2
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 14:30:07 2024 +0530
+
+    Merge branch 'selection' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 6040d7b269b2d547e7ab455a4aa15f8efc5e55ec[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Wed Jun 26 14:24:05 2024 +0530
+
+    push
+
+[33mcommit 068d77944b190550d8476d2400dbdb3372df2b6b[m
+Merge: e5d856c 8718377
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 14:20:19 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit e5d856cb5406d60b38d66b50d8489f9a8ebd83f6[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 14:19:16 2024 +0530
+
+    merge code
+
+[33mcommit 91635936ead099f1576d70ca8eedf58ab60cabee[m
+Merge: b6b6c1f c182c0c
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 14:14:57 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit 86f05e767e8243c12d299d8098fc0b0284780889[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 14:14:44 2024 +0530
+
+    merge code
+
+[33mcommit b6b6c1f8b995ce4519a80851cb65934b02ca84ab[m
+Merge: 3846c50 7381e38
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 14:14:44 2024 +0530
+
+    header-spacing
+
+[33mcommit c182c0ccfb71df36512166ccce7e71442ba5371d[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 14:14:03 2024 +0530
+
+    hover
+
+[33mcommit 3e291dce03037b318e45bdd9cad5e4fab23049d9[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 14:13:23 2024 +0530
+
+    merge code
+
+[33mcommit 9124176129ee55b046f1abbd6abbd7e2b6af5a4d[m
+Merge: 271aa1e 14dc66e
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 14:03:40 2024 +0530
+
+    Merge branch 'category' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 3846c50c034e525c004158ae562701822a109723[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 14:02:51 2024 +0530
+
+    homepage done
+
+[33mcommit 271aa1e7510f394be0e1382135c5ebb4336ec368[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 14:02:15 2024 +0530
+
+    merge code
+
+[33mcommit 7381e38cd6512f1352ba914653b501679e220580[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 13:59:58 2024 +0530
+
+    header spacing
+
+[33mcommit 14dc66eddccd1215f1f223cc423ae5beadfa641e[m[33m ([m[1;31morigin/category[m[33m)[m
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Wed Jun 26 13:59:00 2024 +0530
+
+    header add
+
+[33mcommit 9431e9f2ac7f16b58acf2e564ca944e507d63b22[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Wed Jun 26 13:00:00 2024 +0530
+
+    page done
+
+[33mcommit 17c0d35e10b55ce9301bb53a32c9688a3720dd0c[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 12:45:22 2024 +0530
+
+    header spacing
+
+[33mcommit 66a68292a18848d64317ac11d781956a5084b597[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 12:43:53 2024 +0530
+
+    hompage done
+
+[33mcommit 869ee10821115636a0dfd43dd2b28a7aaaf9dc2d[m
+Merge: 6963bd3 fafd5fb
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 12:33:35 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit fafd5fbae7f72635b03b1b1e70930e0803803768[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 12:33:23 2024 +0530
+
+    header spacing
+
+[33mcommit f3da235d02fc8fc79d72f60b5ba050cf5e384160[m
+Merge: 5263da4 c28cbc2
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 12:31:05 2024 +0530
+
+    merge code
+
+[33mcommit 6963bd33548d64801a708c4e5d1c32c116479129[m
+Merge: 2ac9d4a 24a0de1
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 12:30:28 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit 24a0de197214e01c8ddb8ff15014e8322807b52a[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 12:29:20 2024 +0530
+
+    header spacing
+
+[33mcommit 3cf1408e9361d144c259513281f7b482cbafd4b5[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 12:14:56 2024 +0530
+
+    header spacing
+
+[33mcommit 2ac9d4ae450bad0f1aedcbd129b05732e2e40413[m
+Merge: a116cf4 8d5aa67
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 12:08:16 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit 8d5aa67d42436f63714ea6fccfde3ba2edfb8b07[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 12:07:22 2024 +0530
+
+    header spacing
+
+[33mcommit 6a012d7e54364c6f76e783d95fda64713c67b04a[m
+Author: Your Name <you@example.com>
+Date:   Wed Jun 26 12:07:06 2024 +0530
+
+    update page mistakes
+
+[33mcommit d02c96112a37bf3b7dee7b323cc896e5c0c7acab[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Wed Jun 26 12:00:04 2024 +0530
+
+    updates
+
+[33mcommit 68b1a506466c2266508461729e508346f0c13645[m
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 11:56:41 2024 +0530
+
+    navbar change2
+
+[33mcommit 671bcc33c47ee57e8ff280864ac72d7a98ee81da[m
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 11:54:45 2024 +0530
+
+    navbar change
+
+[33mcommit 093e88166490f56205dbdd4723e8586c3de6386a[m
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 11:53:13 2024 +0530
+
+    merge code
+
+[33mcommit c8fdf70bd425d033d0e2da42ae0154179bbb07be[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Wed Jun 26 11:53:07 2024 +0530
+
+    change in blogs card
+
+[33mcommit 5263da4925776195a2adc5fc9e9a758ff2808b07[m
+Merge: 4a0d381 03072ab
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 11:52:18 2024 +0530
+
+    merge code selection
+
+[33mcommit c28cbc26d9ea73535ac38d29612b27f9d2b29fad[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Wed Jun 26 11:50:01 2024 +0530
+
+    updates
+
+[33mcommit 03072ab2e9015143358fe47b9453fd6a240b6c35[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 11:47:34 2024 +0530
+
+    space
+
+[33mcommit 4a0d381fab66637f9b9088de343fd6c9ea1c9054[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 11:46:28 2024 +0530
+
+    take pull orogin privcy
+
+[33mcommit 5adc4c1b4b2fac79dccff3e1253210018650f514[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 11:45:02 2024 +0530
+
+    button
+
+[33mcommit d8d6b83feade0898d3cbb9d241223cf156b235a7[m
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 11:44:45 2024 +0530
+
+    merge code
+
+[33mcommit ec6206f1d285faed5c6961a8a12b611fcf8b3705[m
+Merge: 810f7d5 1895a50
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 11:43:57 2024 +0530
+
+    merge code
+
+[33mcommit a116cf4bb1b7dba8a28bcbec3cd2ef9f81e91918[m
+Merge: 49a6731 b8f4089
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 11:38:28 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit 49a6731f54b81e489bbb2ae544bf2a3e8e7aba30[m
+Merge: 4b88bb7 8718377
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 11:38:17 2024 +0530
+
+    merge
+
+[33mcommit 836dba3b16ef9eac9bc9f9a7518f65907d05cad7[m
+Merge: 0bf7a3c 854f639
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 11:38:03 2024 +0530
+
+    Merge branch 'category' of https://github.com/deepak-jhajhria/Rebel-Beer into about
+
+[33mcommit 0bf7a3cdebcfb6ca4f211499d03f3900fb309c4c[m
+Merge: 1895a50 006251a
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 11:37:37 2024 +0530
+
+    merge code product
+
+[33mcommit 4b88bb7f8dedeb276da40a92dfc6eb7b23c23713[m
+Merge: 4addbc3 3a1366d
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 11:37:20 2024 +0530
+
+    home page update
+
+[33mcommit b8f4089ac03f8fa134fa10db5d3be46306009b48[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Wed Jun 26 11:36:26 2024 +0530
+
+    file
+
+[33mcommit 854f639f620b54b9038d6019aa2d94ae7940dbcd[m
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Wed Jun 26 11:35:51 2024 +0530
+
+    header add
+
+[33mcommit 56347e2c0295941a84cc6b1935b45324acb19b7b[m
+Merge: 32cf32e 8718377
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Wed Jun 26 11:33:22 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into blogs
+
+[33mcommit 32cf32ec390883baefcc75c93ce7dba4afab10b4[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Wed Jun 26 11:33:03 2024 +0530
+
+    change in heading
+
+[33mcommit 006251ae3b0c9c0bb8c106b498711e0ddc626526[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 11:31:31 2024 +0530
+
+    merge code
+
+[33mcommit 3bc4a611197f841678241b531dffb0cb9165db10[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Wed Jun 26 11:29:15 2024 +0530
+
+    add back to top
+
+[33mcommit 1895a5025d385910b93d93dbc19ff0724840bf58[m
+Merge: 74c92f8 b9235ac
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 11:29:12 2024 +0530
+
+    merge code baswment
+
+[33mcommit 74c92f862be96b43a5d0fc284a71fa882c51ca6a[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 11:23:49 2024 +0530
+
+    merge code
+
+[33mcommit c6a859b897e6af2dc1c98f11ee5c0a82b76a52b4[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 11:20:01 2024 +0530
+
+    merge code
+
+[33mcommit 810f7d5ab6ce87b532f147259cd667ee8b4c895a[m
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 11:12:11 2024 +0530
+
+    update
+
+[33mcommit 1983e502376d27222cc6951b7873fdb5cebeb2b2[m
+Merge: dfbee7a 604a35f
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 11:11:18 2024 +0530
+
+    take pull privacy
+
+[33mcommit dfbee7ad33c71d2c6af3f36dd9a6900ff41253c5[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 11:02:22 2024 +0530
+
+    merge code
+
+[33mcommit 604a35f90144936bf14306438ab98a6bdd3ca017[m
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 10:59:38 2024 +0530
+
+    faq update2
+
+[33mcommit d3e51509e6cb40d9a981a89ff6071ec25a607808[m
+Merge: 21841b6 394f5d9
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 10:55:18 2024 +0530
+
+    Merge branch 'privacy' of https://github.com/deepak-jhajhria/Rebel-Beer into about
+
+[33mcommit 21841b6437c331fd5067fc64ceac5f8c09e75d8e[m
+Merge: 1430848 ed05f03
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 10:52:15 2024 +0530
+
+    merge contect
+
+[33mcommit 394f5d9b12a913c0d283186c0377081ff2a2f619[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 10:48:49 2024 +0530
+
+    merge code
+
+[33mcommit 143084821154b1fb42143c59e65f27a79f4aba5d[m
+Merge: 85ad94c a997178
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 10:42:51 2024 +0530
+
+    merge code
+
+[33mcommit c10eee8dde27d5f5e3a1c8dda72817238458b1d8[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 10:41:32 2024 +0530
+
+    merge code
+
+[33mcommit ed05f033af4c7cc44fdc5ee68067f38f2262c465[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 10:40:22 2024 +0530
+
+    faq changes
+
+[33mcommit a9971782a6993b3506eeab5e3b00f087f1d9e4bf[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Wed Jun 26 10:37:51 2024 +0530
+
+    push
+
+[33mcommit 86bfdb2a4007d97924e151d46f012be9435bbb89[m
+Merge: bf596cd 60fc81d
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 10:36:35 2024 +0530
+
+    merge code
+
+[33mcommit 85ad94c44e81769986b1e3970148d61939997f34[m
+Merge: df9bbfe 45ab861
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 10:34:12 2024 +0530
+
+    merge code
+
+[33mcommit df9bbfede8a9cc02f0ea8e13cdd02622d8c76083[m
+Merge: 0ee9c58 c752851
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 10:29:13 2024 +0530
+
+    Merge branch 'glasses' of https://github.com/deepak-jhajhria/Rebel-Beer into about
+
+[33mcommit 0ee9c58e494843b8114a4162e3f8a9246b51eee8[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Wed Jun 26 10:27:59 2024 +0530
+
+    merge code
+
+[33mcommit 82cdad2a3dcb1dd79b23ffff8bd684d0c9360dfa[m
+Author: Your Name <you@example.com>
+Date:   Wed Jun 26 10:20:14 2024 +0530
+
+    update basement
+
+[33mcommit bf596cdb781e46b7a86e69cc2391d3b75706c08e[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 10:19:50 2024 +0530
+
+    merge code
+
+[33mcommit e7cbcbd80aaa16817f4f26c905e7aac50c3bf1ef[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Wed Jun 26 10:17:25 2024 +0530
+
+    testing this code
+
+[33mcommit 4addbc3c66b71a0e4584715b75af982471f1ca5e[m
+Merge: 87f1d22 aa8e2d0
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Wed Jun 26 10:16:39 2024 +0530
+
+    Merge branch 'selection' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit 60fc81debfc3930245c2f141808bd67489f82dab[m
+Merge: b79f4c8 5585d3d
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 10:16:16 2024 +0530
+
+    faq update2
+
+[33mcommit cf05e7547c6afd9687f3244bf35bd2d36f1a761f[m
+Merge: 5b4d809 c6c0088
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 10:14:07 2024 +0530
+
+    Merge branch 'category' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 5b4d80992cce11a27a929ef546553b8b0d808fe0[m
+Merge: 7d2dcac 3b46156
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 10:13:54 2024 +0530
+
+    Merge branch 'category' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit c6c0088d8c1007fec7e81d3f2b37eb71b1cbe696[m
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Wed Jun 26 10:13:51 2024 +0530
+
+    cards
+
+[33mcommit 0fe826461e2f78acdc8e8584b9062476392766a6[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 10:10:00 2024 +0530
+
+    updates
+
+[33mcommit d436e425e41144686b9150caaa371055dddbe363[m
+Author: Your Name <you@example.com>
+Date:   Wed Jun 26 10:08:11 2024 +0530
+
+    add js in navbar
+
+[33mcommit 7d2dcac46bdfcab23264015dacfe0876a6804d31[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 10:07:16 2024 +0530
+
+    merge code
+
+[33mcommit 399ccb8d23234cbfc307f487b08ccc759a7d56e9[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 10:06:09 2024 +0530
+
+    code checking
+
+[33mcommit 3b46156e0963d3b40b993614e27fa12025ae023d[m
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Wed Jun 26 10:02:29 2024 +0530
+
+    scroll bar
+
+[33mcommit ecbb478b9030ef66cd2b7a971f46246330d23554[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 09:50:22 2024 +0530
+
+    merge faq from myaccount branch
+
+[33mcommit b544a4f40e202e782f307adef9a78322d294d04e[m
+Merge: a4df141 b79f4c8
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 09:43:21 2024 +0530
+
+    code recheck
+
+[33mcommit 798c6633dc644a14711582af9c7755334a9b1295[m
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Wed Jun 26 09:42:24 2024 +0530
+
+    done
+
+[33mcommit a4df141fb2056ff37b6eade60ea402267b95121a[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Wed Jun 26 09:40:03 2024 +0530
+
+    testing code
+
+[33mcommit f43fc6a8f14a933e929b234654bf578ae7c30020[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 09:39:21 2024 +0530
+
+    merge code
+
+[33mcommit b79f4c8826c258731952ff07d98d2524e972098c[m
+Author: naman-398 <you@example.com>
+Date:   Wed Jun 26 09:32:27 2024 +0530
+
+    faq update
+
+[33mcommit 6810fd4679976e6207029eb2bea7dabe9aa0d407[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Wed Jun 26 09:22:17 2024 +0530
+
+    merge cpde
+
+[33mcommit ddbc809979c93654a31c26de8e0d66195a55611a[m
+Merge: 45ab861 c1864cf
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Tue Jun 25 23:07:58 2024 +0530
+
+    beer page
+
+[33mcommit 062d990e819464a2fdfb9271a811cb30504c6609[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 22:46:36 2024 +0530
+
+    header
+
+[33mcommit 5d46ab5c20b76bdd4bf35a7cb4d6f327a597ff53[m
+Merge: c8d4a76 8718377
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 21:48:59 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into hero
+
+[33mcommit c8d4a76eb5e72014cf8c763b68240e79c632b413[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 21:47:38 2024 +0530
+
+    header
+
+[33mcommit 5585d3dcf026ff49ca6bbae460d79a38b050b6ed[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 21:18:50 2024 +0530
+
+    header
+
+[33mcommit 9e2c88836e9428923cae4570f472df106562ec99[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 21:08:44 2024 +0530
+
+    header
+
+[33mcommit 876e4fe42b85743839727cb3a63e60d197b372b5[m
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Tue Jun 25 16:56:30 2024 +0530
+
+    slides
+
+[33mcommit faa767ee66073a2f89652747805890e51824d8b9[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 16:53:15 2024 +0530
+
+    merge code
+
+[33mcommit 94daf204047ac001cddcaeb43c9266e6b995006e[m
+Merge: 747f60b 4ecf1bb
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 16:44:49 2024 +0530
+
+    Merge branch 'category' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 747f60bc409dd0127992f66ffeb3bf99bc74bef0[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 16:42:54 2024 +0530
+
+    merge code
+
+[33mcommit 4ecf1bb440fb0ab62af119128aa523b5e70c416e[m
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Tue Jun 25 16:41:47 2024 +0530
+
+    slidebar
+
+[33mcommit 8718377cb7e7bc54bc9423c5fcbf5ef300017197[m
+Merge: 8251ac1 3a1366d
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 16:29:31 2024 +0530
+
+    merge from blogs
+
+[33mcommit 8251ac1a7f1cdec39790c53ad2d0226378a5261a[m
+Merge: cceb97e a542930
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 16:28:11 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 5f86ca6ce62d950752586d8ca038de89117c0bf7[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Tue Jun 25 16:25:42 2024 +0530
+
+    font family add
+
+[33mcommit cceb97e1fdce5da3222203ad27cac92adaf39555[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 16:25:08 2024 +0530
+
+    update information
+
+[33mcommit a54293064edb78dda26ececfb972925a858c8c98[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 16:24:37 2024 +0530
+
+    header
+
+[33mcommit 3a1366dbd5dd26db1c34747b2489272a5f9de783[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 16:22:33 2024 +0530
+
+    change in footer
+
+[33mcommit 8452d29e272f38dfd2048585d6ae0eb40a7a531e[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Tue Jun 25 16:13:44 2024 +0530
+
+    code recheck
+
+[33mcommit 717db7bd8d34e96ffcb07620864935f6057fe52b[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Tue Jun 25 16:05:35 2024 +0530
+
+    updates code
+
+[33mcommit c7528512901bff80dac89471f1a017342f159a3a[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Tue Jun 25 16:04:02 2024 +0530
+
+    error solve
+
+[33mcommit 45a92e4a700b49399815d554cad24a50d9f7f51e[m
+Merge: 47cd9d6 7a1426d
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Tue Jun 25 15:54:39 2024 +0530
+
+    Merge branch 'product' of https://github.com/deepak-jhajhria/Rebel-Beer into category
+
+[33mcommit 7a1426d49b23ceb68c2f39592792a037304b3d73[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 15:53:34 2024 +0530
+
+    merge code
+
+[33mcommit b9235ac6798b7dea46e2cdfa49389a96663f1c65[m
+Author: Your Name <you@example.com>
+Date:   Tue Jun 25 15:50:57 2024 +0530
+
+    commmit update
+
+[33mcommit d32f7d300b52f6e52597f9664e60d85ff8ec16a2[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 15:47:28 2024 +0530
+
+    merge code
+
+[33mcommit 47cd9d65f9ac3dd92d26d330c2e6aace6fc59dd3[m
+Merge: acd8117 3c89690
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Tue Jun 25 15:45:25 2024 +0530
+
+    Merge branch 'product' of https://github.com/deepak-jhajhria/Rebel-Beer into category
+
+[33mcommit 3c89690b9cec11daa239c415c6aac5c05283f380[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 15:45:07 2024 +0530
+
+    merge code
+
+[33mcommit d8181584e20efd936cb823162b04dfc39deee9b3[m
+Merge: 202a777 6e2f644
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 15:41:03 2024 +0530
+
+    complte
+
+[33mcommit 202a777f1f29d7b7ae913ca04d2fc3daee4eb060[m
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 14:57:01 2024 +0530
+
+    navbar done
+
+[33mcommit 192a2312dbe5efdfb26e51ffdb896f0156003cab[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:53:42 2024 +0530
+
+    merge from hero
+
+[33mcommit 33effe7df62555d1a6a4a2cfa459926911d45cb7[m
+Merge: c1864cf 98e87eb
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:52:04 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 8c1e45ab5c8f82069e765f6a19fa601c3a40bdc5[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 14:52:03 2024 +0530
+
+    change in blogs vector img
+
+[33mcommit 45ab861a439877bbd81ae89ec9512e0494f0b2b2[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Tue Jun 25 14:51:43 2024 +0530
+
+    stictic
+
+[33mcommit 6e2f6446741531a9f2a452860aa5f5bc31dcfc6a[m
+Merge: f1130cd 9be41ef
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Tue Jun 25 14:51:26 2024 +0530
+
+    faq update
+
+[33mcommit ad779f4dcf05c93af8a1f76f6bf9abec99ff7493[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 14:46:15 2024 +0530
+
+    no change
+
+[33mcommit c1864cfaa1c8e1e2e6136f07897a7a6390a78dd1[m
+Merge: aca4ec5 87f1d22
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:44:19 2024 +0530
+
+    Merge branch 'beerpackage' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 87f1d223d3e63c7dfd073f6b52145c4a3662784f[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Tue Jun 25 14:43:52 2024 +0530
+
+    complete 3 section
+
+[33mcommit aca4ec535df788a9e9455ab5ee3a58f03282e856[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:43:47 2024 +0530
+
+    merge from blogs
+
+[33mcommit 98e87ebb7b0fb21aadc4f66b696a566f80929cda[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 14:43:14 2024 +0530
+
+    header
+
+[33mcommit 6eb46ba53ddc124e4f444048aa3436befd311a1a[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 14:42:50 2024 +0530
+
+    change in slider card
+
+[33mcommit 55a0352348afe3891491b7c6fd30f25bc3e60dd2[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Tue Jun 25 14:31:17 2024 +0530
+
+    navsection
+
+[33mcommit 98c0d60e5f49271b8b47a9180873e9d10ca338cc[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Tue Jun 25 14:28:48 2024 +0530
+
+    navbar
+
+[33mcommit c97593886cec219b2280b7644fd6e60accdb11df[m
+Merge: 4f0fc60 9be41ef
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 14:27:33 2024 +0530
+
+    merge code
+
+[33mcommit 4f0fc6047f93a5893bd2f3123003509a92112cdd[m
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 14:21:59 2024 +0530
+
+    navbar done
+
+[33mcommit f1130cd90c895ce97ab65920c52fbeb1d4251938[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Tue Jun 25 14:21:28 2024 +0530
+
+    update nav
+
+[33mcommit 9be41ef2d0b264b457e23d5ebf60e6b6ce8d4eac[m
+Merge: 20e78db ba39ed2
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:18:06 2024 +0530
+
+    Merge branch 'myaccount' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit ba39ed267e0074593c7c1691ff1305b8cbf00a64[m
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 14:16:19 2024 +0530
+
+    done
+
+[33mcommit 74f8a7135b0478f41a528d43505341485fbb28ca[m
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 14:15:27 2024 +0530
+
+    done
+
+[33mcommit 24427cbd542904ac5be7fd6a6da9daab744a209b[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Tue Jun 25 14:15:03 2024 +0530
+
+    merge code
+
+[33mcommit c8f22a9e177a05c28cf9c37e4c9a725630e22812[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Tue Jun 25 14:13:06 2024 +0530
+
+    push take pull
+
+[33mcommit 20e78db49c758f412dd361a2a8df9f34d89c8803[m
+Merge: bcc5278 7f11d0a
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:10:54 2024 +0530
+
+    Merge branch 'about' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit bcc52780b80515193755eac3199e9c202902e15c[m
+Merge: 4eb4390 dd035ef
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:10:14 2024 +0530
+
+    merge from privacy
+
+[33mcommit dd035ef1b2732db0985d6aa81c72c8dac7c909d2[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Tue Jun 25 14:08:23 2024 +0530
+
+    testing
+
+[33mcommit 4eb43909810aaab863d4727bf89c852650c57ffd[m
+Merge: 1cd7c41 aa8e2d0
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:08:03 2024 +0530
+
+    Merge branch 'selection' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 1cd7c419ff89046226fe2fb1b21cf16beb3ea50b[m
+Merge: 4ca55d2 0a0bf3c
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:05:35 2024 +0530
+
+    Merge branch 'glasses' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 4ca55d28753e7e1cd6a48e6ee6ac37b38adaa0dd[m
+Merge: 425193c 1272b2f
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:05:15 2024 +0530
+
+    Merge branch 'product' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 425193cd31dae38134bb97f29cdec5bcd9296b1c[m
+Merge: 0a19fcd a02a6a4
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:04:58 2024 +0530
+
+    Merge branch 'Offers' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 0a19fcddd902d7eea32fb5a15797b81cb8fcd3ce[m
+Merge: 11b7a26 62e1125
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:04:03 2024 +0530
+
+    merge from blogs
+
+[33mcommit 11b7a261f49470e4295f95df968e155bd91f4f46[m
+Merge: b2bc37b 3d2c400
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:00:59 2024 +0530
+
+    Merge branch 'basement' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit b2bc37ba6c5e1f6b134153f8bca65b7a22d5de6a[m
+Merge: ebf19eb acd8117
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:00:46 2024 +0530
+
+    Merge branch 'category' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit ebf19eb8a8d18f05865c25e445a4f963bd801b2c[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 14:00:02 2024 +0530
+
+    update information
+
+[33mcommit 3d2c400c8c8af94733eec161b1756fb3788ce593[m
+Author: Your Name <you@example.com>
+Date:   Tue Jun 25 13:57:51 2024 +0530
+
+    page update
+
+[33mcommit da4eb79b85626598b7e8c18c7b9a052b6927abd0[m
+Merge: 20373d4 f3bb1f6
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 13:56:10 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into hero
+
+[33mcommit 20373d4b8802ad45831f1a158fc273ed0ada496c[m
+Merge: bc0e374 c6eb713
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 13:56:02 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into hero
+
+[33mcommit acd8117b8ddc8a61afb3c4254fdb6ef1b9120b7c[m
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Tue Jun 25 13:54:56 2024 +0530
+
+    cards
+
+[33mcommit a02a6a4a8f587e8b101242a4d031d1f70f15c2c6[m
+Author: prince-372 <pmor18314@gmail.com>
+Date:   Tue Jun 25 13:54:21 2024 +0530
+
+    push code
+
+[33mcommit f3bb1f6c4c62a0f211ee88aec6f16dafb493cc9f[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 13:54:08 2024 +0530
+
+    remove footer
+
+[33mcommit 1272b2fc2536e636b66cd7037641c4790a1b2bee[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 13:53:47 2024 +0530
+
+    merge code
+
+[33mcommit 0a0bf3c3be56e2f834fe1266e9637af09fa4e611[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Tue Jun 25 13:50:10 2024 +0530
+
+    footer add
+
+[33mcommit bc0e37482119269d4bd947e472372d4602aa0354[m
+Merge: c6ab8a7 b5b9804
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 13:00:32 2024 +0530
+
+    form
+
+[33mcommit c6eb7138e1ffa98de0dae426369de2b3b47937a5[m
+Merge: b5b9804 c6ab8a7
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 12:59:25 2024 +0530
+
+    merge from hero
+
+[33mcommit aa8e2d0e5de0281decd1398bd0aada7e12d3fe5f[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Tue Jun 25 12:59:15 2024 +0530
+
+    add max-width to section
+
+[33mcommit 62e11251b50be21641dc27e8e21363386b723d17[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 12:54:22 2024 +0530
+
+    change height in blogs card
+
+[33mcommit 8c846259b10729078caef82be50fe6bf31970515[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Tue Jun 25 12:54:12 2024 +0530
+
+    changes
+
+[33mcommit 70e05ba3f81ab08b6176482c068a4e42c18d9a92[m
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 12:53:25 2024 +0530
+
+    navbar done
+
+[33mcommit c6ab8a748d5dd7dfb5f0b00fa0e48fce92338370[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 12:53:25 2024 +0530
+
+    info
+
+[33mcommit ae957522e0808aad3f117c112d603d91204a08a4[m
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 12:52:45 2024 +0530
+
+    navbar done
+
+[33mcommit 344ed055dc6a9d36ae72361342df88ad97108632[m
+Author: prince-372 <pmor18314@gmail.com>
+Date:   Tue Jun 25 12:52:13 2024 +0530
+
+    add dropdown
+
+[33mcommit e7e5b372bfe51d502d889ea3e4808e69bf8ced5c[m
+Author: Your Name <you@example.com>
+Date:   Tue Jun 25 12:48:06 2024 +0530
+
+    basement page done
+
+[33mcommit b5b9804ce77f6541db54b8bd552c257cc2c5e43c[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 12:46:25 2024 +0530
+
+    update hero
+
+[33mcommit dd4942095ef82fb57ef0068d5929379a48b497dc[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 12:32:59 2024 +0530
+
+    merge code
+
+[33mcommit d43b86020fea65f3a2115351059beb4a2e16381c[m
+Merge: ada7ed0 eb6b0d9
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 12:23:44 2024 +0530
+
+    Merge branch 'category' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit ada7ed0e84f7071fff9b1eef1f1728af99f11b62[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 12:18:06 2024 +0530
+
+    merge code
+
+[33mcommit eb6b0d9b3b3d5b321bac6f895f34cd559c2e3d3d[m
+Author: kulvinder02 <kulvinderjangra02@gmail.com>
+Date:   Tue Jun 25 12:17:17 2024 +0530
+
+    cards
+
+[33mcommit a4e2b31a6d1427d260b2c36ee8e8b10e315b33b5[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Tue Jun 25 12:06:56 2024 +0530
+
+    testing
+
+[33mcommit c55fb68beea08914cd89a9f9f5c3ad64a2043b40[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Tue Jun 25 11:45:09 2024 +0530
+
+    testing
+
+[33mcommit 8ed3cd9d172c66155eedaa7ca7e4c2caa1d307f1[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 11:42:59 2024 +0530
+
+    change in vector img
+
+[33mcommit 40adfe38ca9913cebd3384bef0afb62825691acb[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 11:30:39 2024 +0530
+
+    update information file
+
+[33mcommit 8a38073aa6ca4886bdd704a19ea949c58a02733f[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Tue Jun 25 11:23:20 2024 +0530
+
+    image slider
+
+[33mcommit af24a4871d4c3f9d15bcb9978f01cc8d8854807d[m
+Merge: 88b8d44 6d7445f
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Tue Jun 25 11:03:56 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into privacy
+
+[33mcommit 88b8d449cf4146e8b3cda8fb331328012aab21a0[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Tue Jun 25 11:03:35 2024 +0530
+
+    nav update
+
+[33mcommit 97f5ae1cb75243a32f45138b0ac87b8723664737[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 10:58:00 2024 +0530
+
+    add vector
+
+[33mcommit 3520d456156dcf30ab7ae0dfc1f376befc648a04[m
+Merge: d2d5c6b 6d7445f
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Tue Jun 25 10:51:01 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit f6765136067a393245e04b0facb23cc4a53d9edd[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Tue Jun 25 10:43:23 2024 +0530
+
+    btn modified
+
+[33mcommit 6d7445f3d2114aeecfdd5ab288c473cd8a916265[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 10:41:00 2024 +0530
+
+    demi slider
+
+[33mcommit 6ae4c6ab2690f3b29df6455444bb6a6170526cb7[m
+Merge: b06dad6 498bdaf
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 10:28:46 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 498bdafc9c44480f81b1a9d0fffafbeac10ebf8e[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 10:21:34 2024 +0530
+
+    slide
+
+[33mcommit 6acf95b4d2a2b54ad1da9ba8197b5d2044d650cf[m
+Merge: 7f11d0a b06dad6
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Tue Jun 25 10:20:02 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into about
+
+[33mcommit 7626bc4d0136512892911dbb07d65092a22d0be4[m
+Author: prince-372 <pmor18314@gmail.com>
+Date:   Tue Jun 25 10:17:40 2024 +0530
+
+    add font
+
+[33mcommit b06dad67cc068fe182ed219879d64883c6007977[m
+Merge: 2257720 fe3a409
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 10:13:05 2024 +0530
+
+    Merge branch 'glasses' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 4b9df91c26f7f2e3c976668bb61155f1e32a74b1[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Tue Jun 25 10:10:54 2024 +0530
+
+    font-family
+
+[33mcommit 7f11d0a38f894cc998acc50201a487430fb74152[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Tue Jun 25 10:10:44 2024 +0530
+
+    merge code
+
+[33mcommit 225772002bfd8d64376df957a1eeba86a2761109[m
+Merge: 488aeec b97272c
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 10:10:24 2024 +0530
+
+    Merge branch 'Offers' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 488aeec6202e3c4c1e1fc0f3ef41bf779a8c6013[m
+Merge: 4bddbc0 f841ef6
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 10:09:59 2024 +0530
+
+    Merge branch 'contact' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit b22eb5899a963f50ff4d86cd5cd0d2c889df3321[m
+Merge: fe3a409 4bddbc0
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Tue Jun 25 10:09:21 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into glasses
+
+[33mcommit 7cfc9fe5ecb7d9cacbc5ffe2e1a7bd4d52420a00[m
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 10:08:56 2024 +0530
+
+    complte
+
+[33mcommit fe3a4096dc21700927735a6ceb0b2e701ea15425[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Tue Jun 25 10:08:47 2024 +0530
+
+    updated
+
+[33mcommit 4bddbc058aae57aad89e68f729df5dd951357b6e[m
+Merge: bd8c6d1 c5cfaf8
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 10:08:11 2024 +0530
+
+    Merge branch 'privacy' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 85118982d9a0e0dbf49b0e2ee7740a82a71882c6[m
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 10:07:56 2024 +0530
+
+    complte
+
+[33mcommit bd8c6d12279e6f30f4b8ed727b922518986a0473[m
+Merge: 97d0f2e b7c0521
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 10:07:50 2024 +0530
+
+    merge from myaccount
+
+[33mcommit 97d0f2eb5e0781f4c12b186afa47382cd870ff59[m
+Merge: 2f047ef a7c66cb
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 10:06:42 2024 +0530
+
+    Merge branch 'selection' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 2f047ef9981d8d1e159538c50a0b5a156786579a[m
+Merge: e72d957 186458a
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 10:06:11 2024 +0530
+
+    Merge branch 'basement' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit d2d5c6b6f081f5fbc783603b4faadae33e2ef9e1[m
+Merge: ab55606 b87f7ce
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Tue Jun 25 10:06:05 2024 +0530
+
+    Merge branch 'blogs' of https://github.com/deepak-jhajhria/Rebel-Beer into beerpackage
+
+[33mcommit fba3643b61beee6368b660323dd626da9db5288e[m
+Merge: 1cbbb81 dc8ac17
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 10:05:56 2024 +0530
+
+    Merge branch 'init' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit b7c05211131f036ce9dadabc4980ccff35250727[m
+Merge: 16885c9 862d080
+Author: naman-398 <you@example.com>
+Date:   Tue Jun 25 10:05:45 2024 +0530
+
+    complte
+
+[33mcommit a7c66cbcd6e8bdb96107ae64d926ec4803e8ea34[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Tue Jun 25 10:05:27 2024 +0530
+
+    svg change
+
+[33mcommit 186458a2f65e157470892c133b2f5a782c6a04d7[m
+Author: Your Name <you@example.com>
+Date:   Tue Jun 25 10:05:04 2024 +0530
+
+    page ui create
+
+[33mcommit b97272cac16057e7cc018d61df9b68b80c57b139[m
+Merge: 92cabd8 e72d957
+Author: prince-372 <pmor18314@gmail.com>
+Date:   Tue Jun 25 10:04:56 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into Offers
+
+[33mcommit c5cfaf8ebd5735ddce81979d46ae17190792fa7f[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Tue Jun 25 10:04:51 2024 +0530
+
+    add faq
+
+[33mcommit 92cabd8f39ff0e8b155b16690b6e1d1bc9a4ee7b[m
+Author: prince-372 <pmor18314@gmail.com>
+Date:   Tue Jun 25 10:04:36 2024 +0530
+
+    take pull
+
+[33mcommit 1cbbb819e45d1a58197f08f9e65e633889156712[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 10:04:08 2024 +0530
+
+    merge code
+
+[33mcommit e72d957c6bc5d4513d7aeb78bf6d47b067cb450f[m
+Merge: d6863a4 b87f7ce
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 10:03:34 2024 +0530
+
+    merge from hero
+
+[33mcommit b87f7ce087c18f97db62261a43cf5a676702aecf[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 09:49:56 2024 +0530
+
+    change in slider
+
+[33mcommit d6863a41e4a004295863272167982b876dac0a02[m
+Merge: 47a5280 ba624d4
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 09:47:01 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit f841ef6e8fb62c8cdac67834d86b26e132a5b4fd[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Tue Jun 25 09:45:25 2024 +0530
+
+    blogspage
+
+[33mcommit f82e335f4e79d99933913778ff7ddeaa521eed2b[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Tue Jun 25 09:45:17 2024 +0530
+
+    update
+
+[33mcommit ba624d4752636fe1d04cf35274e4a37572daf1ac[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 09:45:14 2024 +0530
+
+    slider
+
+[33mcommit 47a5280c9c92dbb94dabb5880af7c0e4fc78c327[m
+Merge: f30f5ae 894e04f
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 09:43:58 2024 +0530
+
+    merge from product
+
+[33mcommit f30f5ae59f3f8664085fcef671534f677feba5b1[m
+Merge: eeb3e2e 3b1f9c8
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 09:42:28 2024 +0530
+
+    merge from blogs
+
+[33mcommit ee3a3b29567757e8485151b3de97f01888ba1931[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 09:42:06 2024 +0530
+
+    change in blogs padding
+
+[33mcommit eeb3e2e6adfac20012f05d19fc6f7d5de3cb5560[m
+Merge: 2e15f3b f8b35a3
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 09:40:21 2024 +0530
+
+    Merge branch 'hero' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 3b1f9c8a846f5233e9174cd16a1f537c4dda0f11[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Tue Jun 25 09:40:02 2024 +0530
+
+    contact us
+
+[33mcommit 2e15f3b50d42ebad7f4c29aad268fbbcfc06174e[m
+Merge: d3b0f7b 523c123
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 09:40:00 2024 +0530
+
+    Merge branch 'blogs' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit d3b0f7bfc5258cd4409cbc2d728e11f075c55838[m
+Merge: 878027e 47d56c3
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 09:38:52 2024 +0530
+
+    merge from Offers
+
+[33mcommit dd770de068cf6e487f0531813cad1a1dc024bac6[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Tue Jun 25 09:38:30 2024 +0530
+
+    merge code
+
+[33mcommit 878027ec0efb42115b644ae17f530d1a36875ae4[m
+Merge: 8980bde 3668db4
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Tue Jun 25 09:37:28 2024 +0530
+
+    Merge branch 'glasses' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit 894e04f22d8960522c985d66baacb9e5366bdb1c[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Tue Jun 25 09:36:31 2024 +0530
+
+    add code
+
+[33mcommit 523c123ebe9cdf5d59a862ed59dbfb6d374de1ea[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 09:36:24 2024 +0530
+
+    change in slider
+
+[33mcommit 47d56c3ca0ee8f51fe7ccee07b577d0a05d515b9[m
+Author: prince-372 <pmor18314@gmail.com>
+Date:   Tue Jun 25 09:36:17 2024 +0530
+
+    code push
+
+[33mcommit 3668db41c007db98b885e0432730411dce7b4e05[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Tue Jun 25 09:36:07 2024 +0530
+
+    page updated
+
+[33mcommit f8b35a317a2d1e43d5e1d2bb2adee0201f322806[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Tue Jun 25 09:33:36 2024 +0530
+
+    slider
+
+[33mcommit e97f0b4bb010ad8403bd5e40cb5b5cad98003d41[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Tue Jun 25 07:12:55 2024 +0530
+
+    change in slider
+
+[33mcommit 02357777aaf3aa37032682bd9ec3d703dba0ef8c[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Mon Jun 24 22:10:50 2024 +0530
+
+    merge code
+
+[33mcommit cf689bccf8b1e3f10d226da8dade5b0a986483f5[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Mon Jun 24 20:47:55 2024 +0530
+
+    add swiper
+
+[33mcommit 8980bdec75162ea324a9078cdd62e91050913d1b[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Mon Jun 24 16:58:29 2024 +0530
+
+    merge from beer
+
+[33mcommit bb9f5e7293b99eabc3fd8c1dba1f7dc5c97e367c[m
+Merge: dc8ac17 ab55606
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Mon Jun 24 16:57:34 2024 +0530
+
+    Merge branch 'beerpackage' of https://github.com/deepak-jhajhria/Rebel-Beer
+
+[33mcommit dc8ac175cca50e22c7137efa358b9e4ec94c453c[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Mon Jun 24 16:53:57 2024 +0530
+
+    update information file
+
+[33mcommit 5337c703e313d99057c6d967a864b74bd7b39d70[m
+Author: prince-372 <pmor18314@gmail.com>
+Date:   Mon Jun 24 16:53:01 2024 +0530
+
+    make cards
+
+[33mcommit 260c32a884cd0a227c27fc8eb25b74ded08e9d1d[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Mon Jun 24 16:50:14 2024 +0530
+
+    first commit
+
+[33mcommit 89448c9c2eb65999aabb171a9a0af2f18b647c94[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Mon Jun 24 16:48:45 2024 +0530
+
+    merge code
+
+[33mcommit ab556067304e608d614cfaa20d51bae1c1038ffd[m
+Author: Priyanka-390 <psr82220@gmail.com>
+Date:   Mon Jun 24 16:47:01 2024 +0530
+
+    offer section of homepage done
+
+[33mcommit cf94851843d9daa8c806e0750fab324fa753a342[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Mon Jun 24 16:27:03 2024 +0530
+
+    card modified
+
+[33mcommit e0c26d4d358c8e13daf60e172d188f55e29cf504[m
+Author: alkachhirang <alkachhirang3@gmail.com>
+Date:   Mon Jun 24 16:04:44 2024 +0530
+
+    merge code
+
+[33mcommit 21c49a3dab03865c63afe1b69f1040f7d5b7c401[m
+Merge: 04debd9 862d080
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Mon Jun 24 12:09:30 2024 +0530
+
+    Merge branch 'init' of https://github.com/deepak-jhajhria/Rebel-Beer into hero
+
+[33mcommit 04debd93c5b97e743c4b431f04840a3c03f362dc[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Mon Jun 24 12:09:02 2024 +0530
+
+    homepage
+
+[33mcommit c979ddd5e6f8ac7f3e54fd9d8dbadec9b085949e[m
+Merge: 09c71cc 862d080
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Mon Jun 24 11:19:20 2024 +0530
+
+    Merge branch 'init' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit 9d767c7e9b10436b8a857291c985f82128a639a4[m
+Merge: 36b0b25 862d080
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Mon Jun 24 11:13:56 2024 +0530
+
+    Merge branch 'init' of https://github.com/deepak-jhajhria/Rebel-Beer into glasses
+
+[33mcommit 61cfbb70327e74e2e85d84653b9bf3407c7053c1[m
+Merge: 2e1fea9 862d080
+Author: prince-372 <pmor18314@gmail.com>
+Date:   Mon Jun 24 11:13:40 2024 +0530
+
+    Merge branch 'init' of https://github.com/deepak-jhajhria/Rebel-Beer into Offers
+
+[33mcommit 21454d5d912eed6696ab116b43ab980e23bfe960[m
+Merge: 6838319 862d080
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Mon Jun 24 11:13:25 2024 +0530
+
+    Merge branch 'init' of https://github.com/deepak-jhajhria/Rebel-Beer into contact
+
+[33mcommit ce09915e839163bee28dbf8b38be8f05cd7b5a97[m
+Merge: 1e12b90 ae35a6a
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Mon Jun 24 11:13:05 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into hero
+
+[33mcommit 1e12b906f10448d7d2c9eb02fa54404c87fc6360[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Mon Jun 24 11:12:50 2024 +0530
+
+    homepage
+
+[33mcommit 68383197a0f7f417d84b0964c0125102d405d1ae[m
+Merge: 036e1c0 ae35a6a
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Mon Jun 24 11:12:42 2024 +0530
+
+    take pull
+
+[33mcommit 50fc025c7f065092f60556a85a422d3bafd8160b[m
+Author: tarunmalik330 <maliktarun2005@gmail.com>
+Date:   Mon Jun 24 11:11:57 2024 +0530
+
+    add blogs html
+
+[33mcommit 6e35d7857e217c165628b0bbea5e4c30397ee024[m
+Merge: 2da260f 862d080
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Mon Jun 24 11:11:55 2024 +0530
+
+    Merge branch 'init' of https://github.com/deepak-jhajhria/Rebel-Beer into about
+
+[33mcommit 6232a719fb88cdde8034197e1fbef5ad83df98f3[m
+Merge: d8360fe 647618e
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Mon Jun 24 11:11:51 2024 +0530
+
+    Merge branch 'init' of https://github.com/deepak-jhajhria/Rebel-Beer into privacy
+
+[33mcommit 16885c966a874a475b0ad221ee3f2c78095650c4[m
+Author: naman-398 <you@example.com>
+Date:   Mon Jun 24 11:11:42 2024 +0530
+
+    start
+
+[33mcommit 862d080720b41a0fc057a904c0b44c77d00e9182[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Mon Jun 24 11:11:37 2024 +0530
+
+    added font family
+
+[33mcommit d8360fec9923fc28cbd0306eff9cda3b5dc6292b[m
+Author: vishnubishnoi0371 <vishnukhicher49@gmail.com>
+Date:   Mon Jun 24 11:11:26 2024 +0530
+
+    create branch
+
+[33mcommit 6f27f7d3841bda447b959dc27e1fceee79abafd6[m
+Author: Shreya-454 <bshreya932@GMAIL.COM>
+Date:   Mon Jun 24 11:10:54 2024 +0530
+
+    hero
+
+[33mcommit 647618eb081933f71ce365add5380a08a140766a[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Mon Jun 24 11:10:21 2024 +0530
+
+    added tailwind config
+
+[33mcommit 09c71cc89a8d411803a0dfbfaed9dcd3cf65ee72[m
+Merge: aa6be76 ae35a6a
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Mon Jun 24 11:06:37 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into product
+
+[33mcommit aa6be76cedd5cb6a9503a825749b24920ccfab75[m
+Author: mayankpcp7 <jariwalmayank123@gmail.com>
+Date:   Mon Jun 24 11:04:30 2024 +0530
+
+    root pull
+
+[33mcommit 2e1fea950122ec54a1c904204b5a96d4ce043227[m
+Merge: 82454f2 ae35a6a
+Author: prince-372 <pmor18314@gmail.com>
+Date:   Mon Jun 24 11:03:03 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into Offers
+
+[33mcommit 2da260fbe5ca8d53fd2d2b4501ca674535072f1c[m
+Merge: 4fe12d0 ae35a6a
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Mon Jun 24 11:01:23 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into about
+
+[33mcommit 36b0b251345b3878cfde867401c8cf969585ff3a[m
+Merge: 69f29a0 ae35a6a
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Mon Jun 24 11:00:59 2024 +0530
+
+    Merge branch 'main' of https://github.com/deepak-jhajhria/Rebel-Beer into glasses
+
+[33mcommit 82454f20a5e48e851d204922f3e4e5cfcf4986db[m
+Author: prince-372 <pmor18314@gmail.com>
+Date:   Mon Jun 24 11:00:56 2024 +0530
+
+    first commit
+
+[33mcommit 69f29a0652559bbd85688b41f8c3b8a4d6673917[m
+Author: sanjuverma373 <sv0240866@gmail.com>
+Date:   Mon Jun 24 11:00:40 2024 +0530
+
+    start
+
+[33mcommit 036e1c0d7bde881f244bc107d24038ae13651017[m
+Author: SunilVerma0358 <sunilverma93060@gmail.com>
+Date:   Mon Jun 24 10:59:49 2024 +0530
+
+    blogs section
+
+[33mcommit ae35a6a5a41207104530bbca07eaefc3bc946c17[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Mon Jun 24 10:58:36 2024 +0530
+
+    added root
+
+[33mcommit c08f1401b3327f25b2cc8d016823fffe402d2543[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Mon Jun 24 10:48:04 2024 +0530
+
+    added meta tag and root
+
+[33mcommit 4fe12d0da5e394d7dc78c5938a8fa5ac9bb539d9[m
+Author: sachin-niyana <sachinjakhar100@gmail.com>
+Date:   Mon Jun 24 10:43:31 2024 +0530
+
+    merge code
+
+[33mcommit 9d38e17621d47855e6dc144801b37cb305e7385e[m[33m ([m[1;32mmain[m[33m)[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Mon Jun 24 09:57:00 2024 +0530
+
+    first commit
+
+[33mcommit eeeae681a52c26531471513e9b3d5dab47aa2afb[m
+Author: Deepak jaat <deepakjhajhria4657@gmail.com>
+Date:   Mon Jun 24 09:55:25 2024 +0530
+
+    first commit
