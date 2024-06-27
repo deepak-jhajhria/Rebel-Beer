@@ -141,7 +141,10 @@
 .animate-spin {
     animation: spin 7s linear infinite !important;
 }
-
+.active_tab {
+    background-color: #ffcc02;
+    border: 1px solid transparent !important;
+  }
 input:checked+label>span {
     background-color: #ffcc02;
     /* Your preferred color */
