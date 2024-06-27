@@ -94,7 +94,7 @@
     </div>
     <!----- navbar ------>
     <nav class="flex items-center py-[10.52px] justify-between max-w-[1165px] mx-auto px-3">
-        <a href="#">
+        <a href="/">
             <img src="/assets/images/basement/svg/header-logo.svg" alt="headerlogo" class="w-[48.97px] h-[48.98px]">
         </a>
         <div class="flex items-center">
@@ -222,7 +222,7 @@
             Basement Beer</h2>
     </div>
     <div class="bg-[#F0F0EA] undefined">
-        <div class="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto xl:px-0 px-4 py-[14.5px]">
+        <div class="max-w-[1164px] mx-auto xl:px-0 px-4 py-[14.5px]">
             <h3 class="font-poppins font-normal lg:text-base text-sm text-black flex items-center gap-1">
                 <a class="opacity-70 hover:opacity-100 duration-200 font-poppins font-normal text-sm lg:text-base"
                     href="/">Home</a>
@@ -238,7 +238,7 @@
         </div>
     </div>
 
-    <div class="max-w-[1140px] mx-auto px-3 sm:pt-[65.09px] pt-5">
+    <div class="max-w-[1164px] mx-auto px-3 sm:pt-[65.09px] pt-5">
         <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-[11px]">
                 <img src="./assets/images/basement/svg/bxs-offer.svg" alt="bxs-offer">
@@ -282,10 +282,10 @@
         </div>
     </div>
     <section
-        class=" mt-[95px] min-[420px]:mt-[0px] min-[420px]:pt-[65px]  xl:pb-[275px] lg:pb-[150px] md:pb-24 sm:pb-20 pb-16 max-[1162px]:px-3 relative z-1">
-        <div class=" max-w-[1140px] mx-auto px-4 flex  justify-center">
+        class=" mt-[95px] min-[420px]:mt-[0px] min-[420px]:pt-[65px]  xl:pb-[275px] lg:pb-[150px] md:pb-24 sm:pb-20 max-[1162px]:px-3 relative z-1">
+        <div class=" max-w-[1140px] mx-auto flex  justify-center">
             <div
-                class=" grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-7 justify-center items-center -mx-4 ">
+                class=" grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-7 justify-center items-center">
                 <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
@@ -1213,6 +1213,7 @@
                 n.addEventListener("click", () => {
                     navBar.classList.remove("show");
                     menu.classList.remove("cross");
+                    body.classList.remove("overflow-hidden")
                 });
             });
         })
