@@ -306,6 +306,18 @@ input:checked+label>span::after {
 .partners_slider_track:hover {
     animation-play-state: paused;
 }
+ .footer_bg{
+    background-image: url('../images/about/webp/footer-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-bg{
+    background-image: url('../images/about/png/about-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+}
 
 /* ======================================================================== */
 
