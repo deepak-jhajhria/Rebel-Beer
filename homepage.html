@@ -109,7 +109,7 @@
     </div>
     <nav class="flex container items-center py-[10.52px] justify-between max-w-[1165px] mx-auto px-3">
       <a href="#">
-        <img src="./assets/images/myaccount/svg/header_logo.svg" alt="headerlogo">
+        <img src="./assets/images/myaccount/svg/navbar_logo.svg" alt="headerlogo">
       </a>
       <div class="flex items-center">
         <ul
@@ -169,9 +169,13 @@
               </svg>
             </a>
           </li>
+          <button
+            class="px-4 max-lg:border-black  border-solid  py-3 rounded-[5px] hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal !bg-transparent text-sm sm:text-base leading-150 text-black ms-2 sm:hidden">
+            Contact Us
+          </button>
         </ul>
         <div class="flex items-center gap-[17px]">
-          <div class=" hidden sm:flex gap-[9px] items-center">
+          <div class="hidden sm:flex gap-[9px] items-center">
             <a href="#" class="duration-300 ease-in-out group">
               <svg class="duration-300 ease-in-out group-hover:fill-black" width="36" height="36" viewBox="0 0 36 36"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +210,7 @@
             </a>
           </div>
           <button
-            class="px-4 navbtn max-lg:border-black  border-solid  py-3 rounded-[5px] yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
+            class="px-4 navbtn max-lg:border-black  border-solid  py-3 rounded-[5px] yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2 sm:flex hidden">
             Contact Us
           </button>
           <div onclick="openNav()" class="menu d-block d-lg-none z-[5]">
@@ -222,7 +226,7 @@
         <div class="flex flex-row flex-wrap -mx-3 ">
           <div class="lg:w-1/2 w-full px-3 lg:pt-[86px] pt-10">
             <h1
-              class="mb-3 text-6xl font-bold text-center font-play xl:text-custom_9xl lg:text-custom_8xl md:text-7xl leading-100 lg:text-start">
+              class="mb-3 text-[44px] font-bold text-center font-play xl:text-custom_9xl lg:text-custom_8xl md:text-7xl leading-100 lg:text-start">
               Welcome to
               <span class="text-transparent text_outline md:block ">Rebel Beer</span>
               <span class=" md:block">Cans</span>
@@ -391,24 +395,24 @@
   <!-- ======== REBELBEER CANS ========== -->
   <section class="bg-rebelcans_bg bg-cover relative z-[1] px-4  lg:py-20 md:py-16 sm:py-14 py-12">
     <img src="./assets/images/homepage/svg/triangle-ellipse.svg" alt="triangle-ellipse"
-      class="absolute bottom-[5%] right-[4%] z-[-1]" />
+      class="absolute min-[390px]:bottom-[4%] md:bottom-[5%] bottom-[3%] right-[4%] z-[-1]" />
     <img src="./assets/images/homepage/svg/wave-ellipse.svg" alt="wave-ellipse"
       class="absolute z-[-1] top-[16%] left-0" />
     <div class="container max-w-[1164px] xl:py-3 px-3 mx-auto">
-      <div class="flex flex-row flex-wrap items-center -mx-3">
+      <div class="flex flex-row flex-wrap items-center justify-center -mx-3">
         <div class="relative z-0 w-full lg:w-1/2 max-lg:mb-5">
           <div class="relative z-0">
             <img src="./assets/images/homepage/webp/rebelbeer-cans.webp" alt="rebel-beer-cans"
               class="md:w-[557px] lg:translate-x-[-23.2px] max-lg:mx-auto rounded-[5px] md:h-[631px] w-[400px] h-[360px] shadow-[0px_-14px_0px_0px_#000000]" />
             <img src="./assets/images/homepage/svg/dots-ellipse.svg" alt="dots-ellipse"
-              class="absolute z-[1] xl:right-[5%] lg:right-[-3%] sm:right-[16%] sm:block hidden right-[2%] bottom-[-3%] md:bottom-[-5%]" />
+              class="absolute z-[1] xl:right-[5%] lg:right-[-3%] sm:right-[16%] sm:block hidden right-[2%] bottom-[-3%] lg:bottom-[-5%]" />
             <img src="./assets/images/homepage/svg/yellow-ellipse.svg" alt="yellow-ellipse"
               class="pointer-events-none absolute z-[-1] top-[-6%] lg:left-[0%] left-[24%]" />
           </div>
         </div>
-        <div class="w-full mb-2 lg:w-1/2 md:px-3">
+        <div class="w-full mb-2 md:w-10/12 lg:w-1/2 md:px-3">
           <h2
-            class="font-play lg:text-5xl max-lg:text-center md:text-4xl text-3xl md:mb-5 mb-2 !leading-120 text-black font-bold">
+            class="font-play lg:text-5xl md:text-4xl text-3xl max-lg:text-center md:mb-5 mb-2 !leading-120 text-black font-bold">
             Rebelbeer cans, the specialty beer web shop that is worth a look
           </h2>
           <p
@@ -433,7 +437,7 @@
             class="font-bold sm:text-base text-sm text-black max-lg:text-center !leading-150 md:pb-4 pb-2 font-poppins">
             Follow Rebelbeercans
           </h3>
-          <div class="flex max-md:justify-center gap-[15px]">
+          <div class="flex max-lg:justify-center gap-[15px]">
             <a rel="noopener noreffer" target="_blank" href="https://www.instagram.com/accounts/login/">
               <div
                 class="border-[0.8px] group duration-300 hover:bg-black h-[43.8px] w-[43.8px] rounded-[3.19px] border-black flex justify-center items-center">
@@ -722,7 +726,7 @@
     <img src="./assets/images/homepage/webp/blog_black_vector.webp" alt="blog_black_vector"
       class="absolute w-[74.44px] h-[74.44px] right-[15px] top-[68%] xl:block hidden pointer-events-none">
     <div class="container xl:max-w-[1168px] px-4 mx-auto relative z-10">
-      <h2 class="text-3xl font-bold text-center text-black font-play lg:text-5xl md:text-4xl leading-120">
+      <h2 class="font-bold text-center text-black font-play lg:text-5xl md:text-4xl text-3xl leading-120">
         Blogs by Rebel</h2>
       <p
         class="font-poppins mt-[16px] text-center lg:max-w-[557px] mx-auto md:text-base text-sm !leading-normal font-normal opacity-70 text-black md:mb-14 sm:mb-12 mb-9">
@@ -844,7 +848,10 @@
       </div>
     </div>
   </section>
-  <section class="xl:pt-[92.92px] lg:pt-20 md:pt-16 sm:pt-14 pt-12 max-w-[1920px] mx-auto">
+  <!------------------------------ PARTNERS SLIDER ------------------------------>
+  <section class="xl:pt-[92.92px] lg:pt-20 md:pt-16 sm:pt-14 pt-12 max-w-[1920px] mx-auto relative">
+    <img src="./assets/images/homepage/webp/slider_blackdots.webp" alt="slider_blackdots"
+      class="w-full max-w-[78.6px] absolute xl:top-[17%] lg:top-[14%] top-[9%] md:block hidden">
     <div class="relative overflow-hidden partners_slider whitespace-nowrap">
       <div class="flex partners_slider_track animate-scroll">
         <div
