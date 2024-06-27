@@ -389,6 +389,44 @@
                         </div>
                     </div>
                 </div>
+                <div class="flex flex-col items-center justify-center gap-10 mt-20">
+                    <button id="loginTab" class="sm:py-4 py-2 px-8 max-w-[223px] w-full border border-solid hover:shadow-[0px_68px_0px_0px_0px_#FFCC02_inset] duration-300 ease-linear border-black rounded-[5px] max-h-[68px] font-poppins font-medium text-lg sm:text-xl leading-150 text-black flex justify-center" onclick="showTab('login')">Login</button>
+                    <button id="registerTab" class="sm:py-4 py-2 px-8 max-w-[223px] w-full border border-solid hover:shadow-[0px_68px_0px_0px_0px_#FFCC02_inset] duration-300 ease-linear border-black rounded-[5px] max-h-[68px] font-poppins font-medium text-lg sm:text-xl leading-150 text-black flex justify-center active_tab" onclick="showTab('register')">Register</button>
+                </div>
+                <div class="mt-5 sm:mt-7 md:mt-10 py-4 sm:py-6 px-3 sm:px-[18px] border border-border-solid border-black shadow-[0px_6px_0px_0px_0px_#FFCC02_inset] rounded-[5px] relative z-[1] bg-white">
+                    <!-- =============== TAB BUTTON ============= -->\
+                    <div class="flex justify-center items-center gap-2 sm:gap-[13px] flex-col relative">
+                        <p class="text-sm font-normal text-black sm:text-base leading-150 font-poppins">User name or e-mail address *</p>
+                        <input id="email" type="text" class="border border-solid border-black opacity-40 p-3 rounded-[5px] w-full text-black font-poppins text-sm sm:text-base font-normal outline-none max-h-[48px]"/>
+                        <ul id="emailSuggestions" class="absolute z-10 hidden w-full mt-1 overflow-y-auto bg-white border border-gray-300 rounded-lg suggestions max-h-40"></ul>
+                    </div>
+                    <!-- =============== LOGINTAB ============= -->\
+                    <div id="loginContent" class="hidden tab-content">
+                        <div class="flex gap-2 sm:gap-[13px] flex-col relative">
+                            <p class="text-sm font-normal text-black sm:text-base leading-150 font-poppins">User name or e-mail address *</p>
+                            <input type="text" id="email" class="border border-solid border-black opacity-40 p-3 rounded-[5px] w-full text-black font-poppins text-sm sm:text-base font-normal outline-none max-h-[48px]"/>
+                            <ul id="emailSuggestions" class="absolute z-10 hidden w-full mt-1 overflow-y-auto bg-white border border-gray-300 rounded-lg suggestions max-h-40"></ul>
+                            <span id="togglePassword" class="absolute right-3 top-[55px] cursor-pointer hidden"><!-- SVG for closed eye --></span>
+                            <span id="eyeOpen" class="hidden"><!-- SVG for open eye --></span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2 sm:gap-[13px] flex-col mt-3 sm:mt-6 relative">
+                            <p class="text-sm font-normal text-black sm:text-base leading-150 font-poppins">Password *</p>
+                            <input type="password" id="password" class="border type:hidden" />
+                            <ul id="passwordSuggestions" class="absolute z-10 hidden w-full mt-1 overflow-y-auto bg-white border border-gray-300 rounded-lg suggestions max-h-40"></ul>
+                            <span id="togglePassword" class="absolute right-3 top-[55px] cursor-pointer hidden"><!-- SVG for closed eye --></span>
+                            <span id="eyeOpen" class="hidden"><!-- SVG for open eye --></span>
+                        </div>
+                        <div class="flex items-center justify-center gap-2 sm:gap-[13px] flex-col mt-3 sm:mt-6 relative">
+                            <input id="custom-checkbox" type="checkbox" class="hidden"/>
+                            <label for="custom-checkbox" class="flex items-center cursor-pointer"><!-- SVG id="eyeClosed" class="visible" xmlns="http://www.3org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 0 16" /></label>
+                    </div>
+                    </div>
+                    <!-- =============== REGISTERTAB ============= -->\
+                    <div id="registerContent" class="hidden tab-content">
+                        <!-- =============== REGISTER FORM ============= -->\
+                        <div id="registerForm" class="w-full p-3 text-sm font-normal text-black bg-yellow font-poppins sm:text-base leading-150 rounded-1px"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
