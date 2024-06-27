@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =============== FAVICON ============= -->
+    <link rel="shortcut icon" href="./assets/images/common/webp/favicon.webp" type="image/x-icon">
+    <!-- =============== CSS LINK ============= -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- =============== TAILWIND LINK ============= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ======================== SWIPER CDN ========================== -->
+    <link href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css " rel="stylesheet">
+    <!-- =============== META TAG ============== -->
+    <title>Rebel Beer</title>
+    <meta name="title" content="Welcome to Cans" />
+    <meta name="description"
+        content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Welcome to 
+    Rebel Beer
+    Cans" />
+    <meta property="og:description"
+        content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Welcome to  Rebel Beer Cans" />
+    <meta property="twitter:description"
+        content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <meta property="twitter:image" content="./meta-img.webp" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: '#FFCC02',
+                        'light-green': ' #A7E45F',
+                        'dark-gray': '#EBEBEB',
+                        gray: '#CCCCCC',
+                        'light-blue': '#BEDCFE',
+                        green: ' #76BD3D',
+                        'white-gray': '#F0F0EA',
+                        "sea-blue": "#EAF5E2",
+                        "light-pink": "#FFF5CC",
+                    },
+                    fontSize: {
+                        'custom_2xl': '28px',
+                        'custom_3xl': '32px',
+                        'custom_5xl': "40px",
+                        'custom_9xl': '94px',
+                    },
+                    lineHeight: {
+                        '100': '100%',
+                        '110': '110%',
+                        '115': "115%",
+                        '120': '120%',
+                        '130': '130%',
+                        '140': '140%',
+                        '150': '150%',
+                        '187': '187%',
+                    }
+                },
+                fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'roboto': ['Roboto', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif'],
+                    'play': ['Play', 'sans-serif'],
+
+                }
+            }
+        }
+    </script>
+    <style>
+        .tabcontent {
+            display: none;
+            transition: all 0.3s linear;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="relative z-[100] min-[2570px]:max-w-[1440px] mx-auto">
+                <div class="flex justify-center gap-3 items-center py-[5px] bg-black"><span><svg width="30" height="30"
+                            viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.5695 9.65527H19.375V20.8825H29.5242V15.8291L28.3405 11.7382C27.9837 10.5046 26.8537 9.65527 25.5695 9.65527Z"
+                                fill="#FFB700"></path>
+                            <path
+                                d="M28.0427 15.7776L26.9878 12.131C26.8059 11.5041 26.2228 11.0654 25.5698 11.0654H20.7852V15.7776H28.0427Z"
+                                fill="#84DBFF"></path>
+                            <path d="M28.0464 15.7756H20.7852V11.0635L28.0464 15.7756Z" fill="#CDD6E0"></path>
+                            <path
+                                d="M28.0427 15.7776L26.9878 12.131C26.8059 11.5041 26.2228 11.0654 25.5698 11.0654H20.7852L28.0427 15.7776Z"
+                                fill="#F2F2F2"></path>
+                            <path
+                                d="M1.87484 4.01904H17.501C18.5359 4.01904 19.3759 4.85833 19.3759 5.89389V20.882H0V5.89389C0 4.85839 0.839285 4.01904 1.87484 4.01904Z"
+                                fill="#FFD15C"></path>
+                            <path
+                                d="M12.6976 4.02197V8.97589L11.9726 8.25097L11.2127 9.01093L10.4534 8.25097L9.69412 9.01093L8.93352 8.25097L8.16425 9.01093L7.40552 8.25097L6.67188 8.98468V4.02197H12.6976Z"
+                                fill="#F2F2F2"></path>
+                            <path
+                                d="M30.0014 20.8815V23H0.00390625V20.8815H3.13489C3.86608 19.5691 5.27221 18.6816 6.88458 18.6816C8.49067 18.6816 9.89681 19.5691 10.6343 20.8815H20.7084C21.4396 19.5691 22.8389 18.6816 24.4513 18.6816C26.0636 18.6816 27.4635 19.5691 28.201 20.8815H30.0014Z"
+                                fill="#334A5E"></path>
+                            <path
+                                d="M27.444 22.9868C27.444 24.6404 26.1035 25.9809 24.4499 25.9809C22.7963 25.9809 21.457 24.6404 21.457 22.9868C21.457 21.3332 22.7969 19.9927 24.4499 19.9927C26.1042 19.9927 27.444 21.3332 27.444 22.9868Z"
+                                fill="#40596B"></path>
+                            <path
+                                d="M25.6522 22.9866C25.6522 23.6509 25.1134 24.189 24.4497 24.189C23.7854 24.189 23.2461 23.6509 23.2461 22.9866C23.2461 22.3223 23.7848 21.7842 24.4497 21.7842C25.1134 21.7836 25.6522 22.3223 25.6522 22.9866Z"
+                                fill="#ACB3BA"></path>
+                            <path
+                                d="M9.87497 22.9868C9.87497 24.6404 8.53381 25.9809 6.88084 25.9809C5.22723 25.9809 3.88672 24.6404 3.88672 22.9868C3.88672 21.3332 5.22723 19.9927 6.88084 19.9927C8.53381 19.9927 9.87497 21.3332 9.87497 22.9868Z"
+                                fill="#40596B"></path>
+                            <path
+                                d="M8.0812 22.9866C8.0812 23.6509 7.54312 24.189 6.87879 24.189C6.21445 24.189 5.67578 23.6509 5.67578 22.9866C5.67578 22.3223 6.21451 21.7842 6.87879 21.7842C7.54307 21.7842 8.0812 22.3223 8.0812 22.9866Z"
+                                fill="#ACB3BA"></path>
+                        </svg></span>
+                    <p class="text-white-gray text-[14px] font-play font-normal">Free Shipping Over First Order</p>
+                </div>
+            </div>
+            <!-- =============== NAVBAR ============= -->
+            <nav class="flex items-center py-[10px] justify-between max-w-[1165px] mx-auto px-3">
+                <a href="#">
+                    <img src="./assets/images/blogspage/svg/logo-blogs.svg" alt="headerlogo">
+                </a>
+                <div class="flex items-center">
+                    <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:h-screen max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center"
+                        id="navbar">
+                        <li>
+                            <a href="#" onclick="openNav()"
+                                class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">All
+                                Beers</a>
+                        </li>
+                        <li>
+                            <a href="about.html" onclick="openNav()"
+                                class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a href="mycart.html" onclick="openNav()"
+                                class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">Beer
+                                Shop</a>
+                        </li>
+                        <li>
+                            <a href="beerpackagepage.html" onclick="openNav()"
+                                class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">Beer
+                                packages</a>
+                        </li>
+                        <li class="flex flex-row gap-2 sm:hidden">
+                            <a href="#" class="duration-300 ease-in-out group">
+                                <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                                    viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
+                                        stroke-opacity="0.2" />
+                                    <g clip-path="url(#clip0_527_448)">
+                                        <path class="group-hover:fill-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16.8745 10.5C15.8579 10.5001 14.8561 10.7433 13.9527 11.2093C13.0492 11.6753 12.2703 12.3506 11.6809 13.1788C11.0915 14.0071 10.7087 14.9643 10.5645 15.9705C10.4203 16.9768 10.5188 18.003 10.8518 18.9634C11.1848 19.9239 11.7427 20.7908 12.4789 21.4918C13.2151 22.1928 14.1082 22.7076 15.0838 22.9932C16.0594 23.2788 17.0892 23.327 18.0872 23.1337C19.0852 22.9404 20.0225 22.5112 20.821 21.882L23.56 24.621C23.7014 24.7576 23.8909 24.8332 24.0875 24.8315C24.2842 24.8298 24.4723 24.7509 24.6113 24.6119C24.7504 24.4728 24.8293 24.2847 24.831 24.0881C24.8327 23.8914 24.7571 23.702 24.6205 23.5605L21.8815 20.8215C22.6225 19.8815 23.0838 18.7518 23.2128 17.5618C23.3417 16.3718 23.1331 15.1695 22.6106 14.0926C22.0882 13.0156 21.2731 12.1075 20.2587 11.4722C19.2442 10.8368 18.0714 10.4999 16.8745 10.5ZM11.9995 16.875C11.9995 15.5821 12.5131 14.3421 13.4273 13.4279C14.3416 12.5136 15.5815 12 16.8745 12C18.1674 12 19.4074 12.5136 20.3216 13.4279C21.2358 14.3421 21.7495 15.5821 21.7495 16.875C21.7495 18.1679 21.2358 19.4079 20.3216 20.3221C19.4074 21.2364 18.1674 21.75 16.8745 21.75C15.5815 21.75 14.3416 21.2364 13.4273 20.3221C12.5131 19.4079 11.9995 18.1679 11.9995 16.875Z"
+                                            fill="black" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="#" class="duration-500 ease-in-out group">
+                                <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                                    viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
+                                        stroke-opacity="0.2" />
+                                    <path class="duration-500 ease-in-out group-hover:stroke-yellow"
+                                        d="M12 22.5C12 21.7044 12.3161 20.9413 12.8787 20.3787C13.4413 19.8161 14.2044 19.5 15 19.5H21C21.7956 19.5 22.5587 19.8161 23.1213 20.3787C23.6839 20.9413 24 21.7044 24 22.5C24 22.8978 23.842 23.2794 23.5607 23.5607C23.2794 23.842 22.8978 24 22.5 24H13.5C13.1022 24 12.7206 23.842 12.4393 23.5607C12.158 23.2794 12 22.8978 12 22.5Z"
+                                        stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                                    <path class="duration-500 ease-in-out group-hover:stroke-yellow"
+                                        d="M18 16.5C19.2426 16.5 20.25 15.4926 20.25 14.25C20.25 13.0074 19.2426 12 18 12C16.7574 12 15.75 13.0074 15.75 14.25C15.75 15.4926 16.7574 16.5 18 16.5Z"
+                                        stroke="black" stroke-width="1.5" />
+                                </svg>
+                            </a>
+                            <a href="#" class="duration-300 ease-in-out group">
+                                <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                                    viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
+                                        stroke-opacity="0.2" />
+                                    <path class="duration-500 ease-in-out group-hover:fill-yellow" fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M17.9988 11.0625C17.5513 11.0625 17.122 11.2403 16.8056 11.5568C16.4891 11.8732 16.3113 12.3024 16.3113 12.75V12.945C16.7291 12.9375 17.1873 12.9375 17.6913 12.9375H18.3071C18.8096 12.9375 19.2686 12.9375 19.6871 12.945V12.75C19.6871 12.5283 19.6434 12.3088 19.5585 12.104C19.4737 11.8993 19.3493 11.7132 19.1925 11.5565C19.0358 11.3998 18.8496 11.2755 18.6448 11.1907C18.44 11.106 18.2205 11.0624 17.9988 11.0625ZM20.8113 12.996V12.75C20.8113 12.0041 20.515 11.2887 19.9875 10.7613C19.4601 10.2338 18.7447 9.9375 17.9988 9.9375C17.2529 9.9375 16.5375 10.2338 16.0101 10.7613C15.4826 11.2887 15.1863 12.0041 15.1863 12.75V12.996C15.0791 13.005 14.9763 13.0155 14.8758 13.0282C14.1183 13.122 13.4943 13.3185 12.9633 13.7587C12.4331 14.199 12.1248 14.7765 11.8931 15.504C11.6681 16.209 11.4986 17.1143 11.2856 18.2535L11.2698 18.336C10.9683 19.9432 10.7313 21.21 10.6871 22.2083C10.6421 23.232 10.7951 24.0795 11.3726 24.7748C11.9501 25.4708 12.7548 25.7768 13.7688 25.9215C14.7588 26.0625 16.0466 26.0625 17.6823 26.0625H18.3161C19.9511 26.0625 21.2396 26.0625 22.2288 25.9215C23.2428 25.7768 24.0483 25.4708 24.6258 24.7748C25.2033 24.0795 25.3548 23.232 25.3106 22.2083C25.2671 21.21 25.0293 19.9432 24.7278 18.336L24.7128 18.2535C24.4991 17.1143 24.3288 16.2083 24.1053 15.504C23.8728 14.7765 23.5653 14.199 23.0343 13.7587C22.5041 13.3185 21.8793 13.1212 21.1218 13.0282C21.0185 13.0156 20.915 13.0048 20.8113 12.996ZM15.0138 14.145C14.3726 14.2238 13.9848 14.373 13.6818 14.625C13.3796 14.8755 13.1613 15.2287 12.9648 15.8453C12.7646 16.4752 12.6063 17.3137 12.3843 18.498C12.0723 20.1607 11.8511 21.348 11.8113 22.2577C11.7723 23.1503 11.9163 23.6678 12.2381 24.057C12.5606 24.4447 13.0428 24.681 13.9278 24.807C14.8278 24.936 16.0368 24.9375 17.7281 24.9375H18.2696C19.9608 24.9375 21.1691 24.936 22.0698 24.8077C22.9548 24.681 23.4371 24.4447 23.7596 24.057C24.0821 23.6685 24.2253 23.151 24.1871 22.257C24.1466 21.3488 23.9253 20.1607 23.6133 18.498C23.3913 17.313 23.2338 16.476 23.0328 15.8453C22.8363 15.2287 22.6188 14.8755 22.3158 14.6242C22.0128 14.373 21.6258 14.2238 20.9838 14.1442C20.3268 14.0633 19.4741 14.0625 18.2688 14.0625H17.7288C16.5236 14.0625 15.6708 14.0633 15.0138 14.145Z"
+                                        fill="black" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center gap-[17px]">
+                        <div class="hidden sm:flex gap-[9px] items-center">
+                            <a href="#" class="duration-300 ease-in-out group">
+                                <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                                    viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
+                                        stroke-opacity="0.2" />
+                                    <g clip-path="url(#clip0_527_448)">
+                                        <path class="group-hover:fill-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16.8745 10.5C15.8579 10.5001 14.8561 10.7433 13.9527 11.2093C13.0492 11.6753 12.2703 12.3506 11.6809 13.1788C11.0915 14.0071 10.7087 14.9643 10.5645 15.9705C10.4203 16.9768 10.5188 18.003 10.8518 18.9634C11.1848 19.9239 11.7427 20.7908 12.4789 21.4918C13.2151 22.1928 14.1082 22.7076 15.0838 22.9932C16.0594 23.2788 17.0892 23.327 18.0872 23.1337C19.0852 22.9404 20.0225 22.5112 20.821 21.882L23.56 24.621C23.7014 24.7576 23.8909 24.8332 24.0875 24.8315C24.2842 24.8298 24.4723 24.7509 24.6113 24.6119C24.7504 24.4728 24.8293 24.2847 24.831 24.0881C24.8327 23.8914 24.7571 23.702 24.6205 23.5605L21.8815 20.8215C22.6225 19.8815 23.0838 18.7518 23.2128 17.5618C23.3417 16.3718 23.1331 15.1695 22.6106 14.0926C22.0882 13.0156 21.2731 12.1075 20.2587 11.4722C19.2442 10.8368 18.0714 10.4999 16.8745 10.5ZM11.9995 16.875C11.9995 15.5821 12.5131 14.3421 13.4273 13.4279C14.3416 12.5136 15.5815 12 16.8745 12C18.1674 12 19.4074 12.5136 20.3216 13.4279C21.2358 14.3421 21.7495 15.5821 21.7495 16.875C21.7495 18.1679 21.2358 19.4079 20.3216 20.3221C19.4074 21.2364 18.1674 21.75 16.8745 21.75C15.5815 21.75 14.3416 21.2364 13.4273 20.3221C12.5131 19.4079 11.9995 18.1679 11.9995 16.875Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_527_448">
+                                            <rect width="18" height="18" fill="white" transform="translate(9 9)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#" class="duration-500 ease-in-out group">
+                                <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                                    viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
+                                        stroke-opacity="0.2" />
+                                    <path class="duration-500 ease-in-out group-hover:stroke-yellow"
+                                        d="M12 22.5C12 21.7044 12.3161 20.9413 12.8787 20.3787C13.4413 19.8161 14.2044 19.5 15 19.5H21C21.7956 19.5 22.5587 19.8161 23.1213 20.3787C23.6839 20.9413 24 21.7044 24 22.5C24 22.8978 23.842 23.2794 23.5607 23.5607C23.2794 23.842 22.8978 24 22.5 24H13.5C13.1022 24 12.7206 23.842 12.4393 23.5607C12.158 23.2794 12 22.8978 12 22.5Z"
+                                        stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                                    <path class="duration-500 ease-in-out group-hover:stroke-yellow"
+                                        d="M18 16.5C19.2426 16.5 20.25 15.4926 20.25 14.25C20.25 13.0074 19.2426 12 18 12C16.7574 12 15.75 13.0074 15.75 14.25C15.75 15.4926 16.7574 16.5 18 16.5Z"
+                                        stroke="black" stroke-width="1.5" />
+                                </svg>
+                            </a>
+                            <a href="#" class="duration-300 ease-in-out group">
+                                <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                                    viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
+                                        stroke-opacity="0.2" />
+                                    <path class="duration-500 ease-in-out group-hover:fill-yellow" fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M17.9988 11.0625C17.5513 11.0625 17.122 11.2403 16.8056 11.5568C16.4891 11.8732 16.3113 12.3024 16.3113 12.75V12.945C16.7291 12.9375 17.1873 12.9375 17.6913 12.9375H18.3071C18.8096 12.9375 19.2686 12.9375 19.6871 12.945V12.75C19.6871 12.5283 19.6434 12.3088 19.5585 12.104C19.4737 11.8993 19.3493 11.7132 19.1925 11.5565C19.0358 11.3998 18.8496 11.2755 18.6448 11.1907C18.44 11.106 18.2205 11.0624 17.9988 11.0625ZM20.8113 12.996V12.75C20.8113 12.0041 20.515 11.2887 19.9875 10.7613C19.4601 10.2338 18.7447 9.9375 17.9988 9.9375C17.2529 9.9375 16.5375 10.2338 16.0101 10.7613C15.4826 11.2887 15.1863 12.0041 15.1863 12.75V12.996C15.0791 13.005 14.9763 13.0155 14.8758 13.0282C14.1183 13.122 13.4943 13.3185 12.9633 13.7587C12.4331 14.199 12.1248 14.7765 11.8931 15.504C11.6681 16.209 11.4986 17.1143 11.2856 18.2535L11.2698 18.336C10.9683 19.9432 10.7313 21.21 10.6871 22.2083C10.6421 23.232 10.7951 24.0795 11.3726 24.7748C11.9501 25.4708 12.7548 25.7768 13.7688 25.9215C14.7588 26.0625 16.0466 26.0625 17.6823 26.0625H18.3161C19.9511 26.0625 21.2396 26.0625 22.2288 25.9215C23.2428 25.7768 24.0483 25.4708 24.6258 24.7748C25.2033 24.0795 25.3548 23.232 25.3106 22.2083C25.2671 21.21 25.0293 19.9432 24.7278 18.336L24.7128 18.2535C24.4991 17.1143 24.3288 16.2083 24.1053 15.504C23.8728 14.7765 23.5653 14.199 23.0343 13.7587C22.5041 13.3185 21.8793 13.1212 21.1218 13.0282C21.0185 13.0156 20.915 13.0048 20.8113 12.996ZM15.0138 14.145C14.3726 14.2238 13.9848 14.373 13.6818 14.625C13.3796 14.8755 13.1613 15.2287 12.9648 15.8453C12.7646 16.4752 12.6063 17.3137 12.3843 18.498C12.0723 20.1607 11.8511 21.348 11.8113 22.2577C11.7723 23.1503 11.9163 23.6678 12.2381 24.057C12.5606 24.4447 13.0428 24.681 13.9278 24.807C14.8278 24.936 16.0368 24.9375 17.7281 24.9375H18.2696C19.9608 24.9375 21.1691 24.936 22.0698 24.8077C22.9548 24.681 23.4371 24.4447 23.7596 24.057C24.0821 23.6685 24.2253 23.151 24.1871 22.257C24.1466 21.3488 23.9253 20.1607 23.6133 18.498C23.3913 17.313 23.2338 16.476 23.0328 15.8453C22.8363 15.2287 22.6188 14.8755 22.3158 14.6242C22.0128 14.373 21.6258 14.2238 20.9838 14.1442C20.3268 14.0633 19.4741 14.0625 18.2688 14.0625H17.7288C16.5236 14.0625 15.6708 14.0633 15.0138 14.145Z"
+                                        fill="black" />
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="contactpage.html">
+                            <button
+                                class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
+                                Contact Us
+                            </button>
+                        </a>
+                        <div onclick="openNav()" class="menu d-block d-lg-none z-[5]">
+                            <span class="duration-300 ease-in-out bg-black"></span>
+                            <span class="my-2 duration-300 ease-in-out bg-black"></span>
+                            <span class="duration-300 ease-in-out bg-black"></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- =============== HERO SECTION ============= -->
+            <div
+                class="bg-cover bg-bottom flex justify-center items-center flex-col pb-14 md:pb-[111px] pt-[71px]  px-3 common_hero_bg max-h-[210px] h-full">
+                <h2
+                    class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-[115%] text-center">
+                    Check-Out</h2>
+            </div>
+            <div class="bg-white-gray ">
+                <div class="container max-w-[1165px] mx-auto px-3 py-[14.5px]">
+                    <h3 class="flex items-center gap-1 text-sm font-normal text-black font-poppins lg:text-base"><a
+                            class="text-sm font-normal duration-200 opacity-70 hover:opacity-100 font-poppins lg:text-base"
+                            href="/">Home</a><span><svg width="7" height="9" viewBox="0 0 7 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.504 0.98H2.344L6.216 4.644L2.344 8.324H0.504L4.376 4.644L0.504 0.98Z"
+                                    fill="black"></path>
+                            </svg></span><span
+                            class="duration-200 font-poppins font-normal text-sm lg:text-base !cursor-pointer !opacity-100">Information</span>
+                        <span><svg width="7" height="9" viewBox="0 0 7 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.504 0.98H2.344L6.216 4.644L2.344 8.324H0.504L4.376 4.644L0.504 0.98Z"
+                                    fill="black"></path>
+                            </svg></span>
+                        <span class="text-sm font-normal opacity-70 font-poppins lg:text-base "> Payment</span>
+                        <span><svg width="7" height="9" viewBox="0 0 7 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.504 0.98H2.344L6.216 4.644L2.344 8.324H0.504L4.376 4.644L0.504 0.98Z"
+                                    fill="black"></path>
+                            </svg></span>
+                        <span class="text-sm font-normal opacity-70 font-poppins lg:text-base undefined">Delivery</span>
+                    </h3>
+                </div>
+            </div>
+        </header>
+        <!-- ============================ INFORMATION SECTION START =============================== -->
+        <section>
+            <div class="container max-w-[1140px] mx-auto px-4 mt-10">
+                <div id="progress-container"
+                    class="progress-container relative flex items-center justify-between max-w-[905px] w-full mx-auto xl:ml-12">
+                    <div class="flex flex-col items-center">
+                        <p class="text-sm font-medium text-black font-poppins">Information</p>
+                        <span
+                            class="flex rounded-full duration-300 svgIcon border border-gray bg-white p-0.5 mt-1.5 items-center justify-center">
+                            <svg class="duration-300 fill-transparent" id="mySvg" width="15" height="15"
+                                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.3897 5.31248L7.07169 10.7115L3.67969 7.88448L4.31969 7.11648L6.92769 9.28948L10.6097 4.68848L11.3897 5.31248Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-sm font-medium text-black font-poppins">Delivery</p>
+                        <span
+                            class="flex rounded-full duration-300 svgIcon border bg-white border-gray p-0.5 mt-1.5 items-center justify-center">
+                            <svg class="duration-300 fill-transparent" id="mySvg" width="15" height="15"
+                                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.3897 5.31248L7.07169 10.7115L3.67969 7.88448L4.31969 7.11648L6.92769 9.28948L10.6097 4.68848L11.3897 5.31248Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-sm font-medium text-black font-poppins">Overview</p>
+                        <span
+                            class="flex rounded-full duration-300 svgIcon border bg-white border-gray p-0.5 mt-1.5 items-center justify-center">
+                            <svg class="duration-300 fill-transparent" id="mySvg" width="15" height="15"
+                                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.3897 5.31248L7.07169 10.7115L3.67969 7.88448L4.31969 7.11648L6.92769 9.28948L10.6097 4.68848L11.3897 5.31248Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-sm font-medium text-black font-poppins">Pay</p>
+                        <span
+                            class="flex rounded-full duration-300 svgIcon border bg-white border-gray p-0.5 mt-1.5 items-center justify-center">
+                            <svg class="duration-300 fill-transparent" id="mySvg" width="15" height="15"
+                                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.3897 5.31248L7.07169 10.7115L3.67969 7.88448L4.31969 7.11648L6.92769 9.28948L10.6097 4.68848L11.3897 5.31248Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="absolute w-[90%] sm:w-[93%] md:w-[95%] top-[35px] left-8 -z-10">
+                        <div
+                            class="relative after:absolute after:bg-gray after:w-full after:h-0.5 after:top-0 after:z-10">
+                            <span id="myBar"
+                                class="bg-yellow flex h-1.5 w-0 duration-300 progress-line absolute -top-0.5 z-20"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="finalsubmit" class="grid grid-cols-1 lg:grid-cols-2 pt-2 my-10 sm:my-16 md:my-20 lg:mb-[108px]">
+                    <div class="order-2 col-span-1 lg:order-1">
+                        <!-- ==================  STEP FIRST ===================== -->
+                        <div id="information" class="flex flex-col mt-7 sm:mt-10 tabcontent lg:mt-0">
+                            <p class="font-bold leading-normal text-black uppercase font-play text-custom_3xl">
+                                Information</p>
+                            <p class="mb-3 text-base font-bold font-play leading-115">Type of Order</p>
+                            <div class="flex gap-3 mb-4 sm:mb-[26px]">
+                                <button id="particular"
+                                    class=" text-base duration-300 hover:border-transparent hover:bg-yellow font-poppins font-normal text-black py-3 px-9 rounded-[5px] border border-solid border-black">Particular</button>
+                                <button id="business"
+                                    class=" text-base duration-300 hover:border-transparent hover:bg-yellow font-poppins font-normal text-black py-3 px-10 rounded-[5px] border border-solid border-black">Business</button>
+                            </div>
+                            <p class="mb-2 text-base font-bold sm:mb-3 font-play leading-115">Delivery Address</p>
+                            <div class="flex gap-3 mb-1 sm:mb-2">
+                                <input type="text"
+                                    class="sm:max-w-[472px] border border-solid border-black rounded-[5px] w-full min-h-[46px] focus:outline-none p-2 text-base font-poppins font-normal text-black">
+                                <button class="px-4 py-[5px] border border-solid border-black rounded-[5px]"><svg
+                                        width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.7622 7.91418H7.49527V13.2553H5.39345V7.91418H0.151273V6.01018H5.39345V0.644363H7.49527V6.01018H12.7622V7.91418Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="flex mb-4 sm:mb-[26px] items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L15 12L10 7" stroke="#FFCC02" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="text-base font-normal text-yellow font-poppins">
+                                    Change or add a delivery address
+                                </p>
+                            </div>
+                            <p class="mb-2 text-base font-bold sm:mb-3 font-play leading-115">
+                                Billing Address
+                            </p>
+                            <textarea name="text"
+                                class="sm:max-w-[536px] w-full min-h-[105px] border border-solid border-black rounded-[5px] focus:outline-none p-2 text-base font-poppins font-normal text-black"
+                                id=""></textarea>
+                            <div class="flex mb-4 sm:mb-[26px] items-center mt-2 sm:mt-3">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 17L15 12L10 7" stroke="#FFCC02" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="text-base font-normal text-yellow font-poppins">
+                                    Choose a different billing address
+                                </p>
+                            </div>
+                            <p class="mb-2 text-base font-bold sm:mb-3 font-play leading-115">Contact Details</p>
+                            <div class="flex gap-3 mb-1 sm:mb-2">
+                                <input type="text" placeholder="Phone number"
+                                    class="border border-solid border-black rounded-[5px] w-full min-h-[46px] focus:outline-none p-2 text-base font-poppins font-normal text-black placeholder:text-gray sm:max-w-[239px]">
+                            </div>
+                            <div onclick="openTab(event, 'collection')">
+                                <button onclick="moveProgressBar(1)"
+                                    class="text-poppins py-[14px] flex justify-center bg-yellow w-full max-w-[206px] mt-6 sm:mt-10 lg:mt-[62px] rounded-[5px]">Next</button>
+                            </div>
+                        </div>
+                        <div id="collection" class="mt-7 sm:mt-10 tabcontent lg:mt-0 lg:mb-[70px]">
+                            <div class="lg:max-w-[594px]">
+                                <h4 class=" text-2xl font-play font-bold leading-115 mb-[26px]">Delivery Of
+                                    Collection</h4>
+                                <div class="flex justify-between lg:max-w-[594px] mb-[18px]">
+                                    <p class="text-base font-bold font-play leading-115">Options for Eastbound
+                                        169, Coetermeet</p>
+                                    <div class="flex items-center ">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 17L15 12L10 7" stroke="#FFCC02" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p class="text-base leading-115 text-yellow font-play">Change address
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-[74px] p-3 border border-solid border-black rounded-[5px] lg:max-w-[594px] mb-5 hover:bg-musturd duration-300">
+                                    <p class="text-sm font-normal text-black font-poppins leading-150">Free
+                                        delivery</p>
+                                    <p
+                                        class=" text-xs font-poppins text-black font-normal leading-150 text-opacity-60 pl-[6px]">
+                                        Starting tomorrow between 8.00 AM and 10.00 PM</p>
+                                    <p class="text-sm font-bold text-black font-poppins leading-150 text-end">
+                                        Free</p>
+                                </div>
+                                <div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-14 p-3 border border-solid border-black rounded-[5px] lg:max-w-[594px] mb-5 hover:bg-musturd duration-300">
+                                    <p class="text-sm font-normal text-black font-poppins leading-150">Evening
+                                        delivery</p>
+                                    <p class="text-xs font-normal text-black font-poppins leading-150 text-opacity-60">
+                                        On weekdays between 5:30 PM and 10:00 PM</p>
+                                    <p
+                                        class=" font-poppins text-sm leading-150 font-normal text-black text-opacity-70 sm:pl-[34px]">
+                                        € 0,99</p>
+                                </div>
+                                <div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-14 p-3 border border-solid border-black rounded-[5px] lg:max-w-[594px] mb-5 hover:bg-musturd duration-300">
+                                    <p class=" text-sm font-poppins max-sm:text-center text-black font-normal leading-150 w-[29%]">
+                                        Rebel Beer store</p>
+                                    <div class="flex flex-col items-center justify-between w-full sm:flex-row">
+                                        <p
+                                            class="text-xs font-normal text-black font-poppins leading-150 text-opacity-60">
+                                            Pick up immediately</p>
+                                        <p class="text-sm font-bold text-black font-poppins leading-150 text-end">
+                                            Free</p>
+                                    </div>
+                                </div>
+                                <div class="p-3 flex-col sm:flex-row border border-solid border-black rounded-[5px] lg:max-w-[594px]  hover:bg-musturd duration-300 mb-[42px]">
+                                    <div class="flex flex-col sm:flex-row items-center max-sm:justify-center gap-3 mb-[6px]">
+                                        <p class=" text-sm font-poppins text-black max-sm:text-center font-normal leading-150 w-[40%]">
+                                            PostNL collection point</p>
+                                        <div class="flex flex-col items-center justify-between w-full sm:flex-row">
+                                            <p
+                                                class="text-xs font-normal text-black font-poppins leading-150 text-opacity-60">
+                                                Pick up from tomorrow at 3 p.m</p>
+                                            <p class="text-sm font-bold text-black font-poppins leading-150 text-end">
+                                                Free</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-xs font-normal text-center text-black leading-150 font-poppins text-opacity-70">
+                                        In the next step, choose a collection point near you.
+                                    </p>
+                                </div>
+                                <div onclick="openTab(event, 'overview')">
+                                    <button onclick="moveProgressBar(2)"
+                                        class="px-[85.5px] py-[14px] bg-yellow text-black font-poppins font-normal sm:text-base text-sm rounded-[5px]">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- overview -->
+                        <div id="overview" class="mt-7 sm:mt-10 tabcontent lg:mt-0">
+                            <div class="lg:w-[586px] w-full">
+                                <h5 class="text-black uppercase font-play !leading-115 mb-8 font-bold text-2xl">
+                                    Overview
+                                </h5>
+                                <p class="font-play mb-2 font-bold sm:text-base text-sm text-black !leading-120">
+                                    Are your details correct?
+                                </p>
+                                <div class="flex pb-[9px] flex-row flex-wrap -mx-3">
+                                    <div class="w-1/2 px-3">
+                                        <p
+                                            class="font-poppins font-medium text-black !leading-130 mb-1.5 sm:text-base text-sm">
+                                            Billing Address
+                                        </p>
+                                        <p
+                                            class="max-w-[123px] font-poppins font-normal sm:text-base text-sm text-black opacity-70 !leading-130">
+                                            1901 Thornridge Cir. Shiloh, Hawaii 81063
+                                        </p>
+                                    </div>
+                                    <div class="w-1/2 px-3">
+                                        <p
+                                            class="font-poppins font-medium text-black !leading-130 mb-1.5 sm:text-base text-sm">
+                                            Contactgegnens
+                                        </p>
+                                        <p
+                                            class="max-w-[152px] font-poppins font-normal sm:text-base text-sm text-black opacity-70 !leading-130">
+                                            rebel.beer@gmail.com 98380-656556
+                                        </p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="text-yellow font-poppins mb-[18px] font-normal sm:text-base text-sm flex items-center gap-2">
+                                    <span><svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 11L6 6L1 1" stroke="#FFCC02" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg> </span>Change Data
+                                </p>
+                                <div class="max-w-[586px] h-[1px] bg-black opacity-20 mb-3"></div>
+                                <p class="text-black font-poppins font-normal sm:text-sm text-xs mb-1.5">
+                                    Pick-up time
+                                </p>
+                                <p class="text-xs font-normal text-black font-poppins sm:text-sm text-opacity-70">
+                                    From tomorrow 3 p.m
+                                </p>
+                                <div class="max-w-[586px] h-[1px] bg-black opacity-20 my-[18px]"></div>
+                                <p class="text-black font-poppins font-normal sm:text-sm text-xs mb-1.5">
+                                    Pick-up point
+                                </p>
+                                <p
+                                    class="font-poppins font-normal sm:text-sm text-xs text-black mb-1.5 text-opacity-70">
+                                    1901 Thornridge Cir. Shiloh, Hawaii 81063
+                                </p>
+                                <p
+                                    class="text-yellow font-poppins mb-1.5 font-normal sm:text-base text-sm flex items-center gap-2">
+                                    <span><svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 11L6 6L1 1" stroke="#FFCC02" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg> </span>Change pick-up point
+                                </p>
+                                <p
+                                    class="flex items-center gap-2 text-sm font-normal text-yellow font-poppins sm:text-base">
+                                    <span><svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 11L6 6L1 1" stroke="#FFCC02" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg> </span>Change delivery method
+                                </p>
+                                <div class="max-w-[586px] h-[1px] bg-black opacity-20 my-[18px]"></div>
+                                <p class="font-poppins font-normal sm:text-sm text-xs text-black mb-1.5 !leading-150">
+                                    Almost Finished! How would you like to pay?
+                                </p>
+                                <p class="text-yellow font-poppins sm:text-sm text-xs font-normal !leading-150 mb-2.5">
+                                    Redeem a gift card
+                                </p>
+                                <p
+                                    class="font-poppins font-normal sm:text-sm text-xs !leading-150 mb-[11px] text-black">
+                                    Select a <span class="font-bold">free</span> payment method
+                                </p>
+                                <div
+                                    class="w-full p-[13px] border-black mb-2 flex items-center gap-[46px] border h-[45px] bg-transparent hover:bg-light-pink duration-300 rounded-[5px]">
+                                    <img src="./assets/images/common/svg/ideal.svg" alt="ideal" />
+                                    <p
+                                        class="text-xs font-normal text-black font-poppins sm:text-sm opacity-70 leading-150">
+                                        IDEAL
+                                    </p>
+                                </div>
+                                <div
+                                    class="w-full p-[13px] border-black mb-2 flex items-center gap-[32px] border h-[45px] bg-transparent hover:bg-light-pink duration-300 rounded-[5px]">
+                                    <img src="./assets/images/common/svg/apple-pay.svg" alt="ideal" />
+                                    <p
+                                        class="text-xs font-normal text-black font-poppins sm:text-sm opacity-70 leading-150">
+                                        Apple Pay
+                                    </p>
+                                </div>
+                                <div
+                                    class="w-full p-[13px] border-black mb-2 flex items-center gap-[48px] border h-[45px] bg-transparent hover:bg-light-pink duration-300 rounded-[5px]">
+                                    <img src="./assets/images/common/svg/master-card.svg" alt="master-card" />
+                                    <p
+                                        class="text-xs font-normal text-black font-poppins sm:text-sm opacity-70 leading-150">
+                                        Mastercard
+                                    </p>
+                                </div>
+                                <div
+                                    class="w-full p-[13px] border-black mb-[15px] flex items-center gap-[32px] border h-[45px] bg-transparent hover:bg-light-pink duration-300 rounded-[5px]">
+                                    <img src="./assets/images/common/svg/visa.svg" alt="visa" />
+                                    <p
+                                        class="text-xs font-normal text-black font-poppins sm:text-sm opacity-70 leading-150">
+                                        Creditcard
+                                    </p>
+                                </div>
+                                <p
+                                    class="mb-3 text-xs font-normal text-black font-poppins sm:text-sm md:mb-7 leading-150">
+                                    By continuing you agree to our
+                                    <a href="" class="duration-300 text-yellow hover:text-black">terms and
+                                        conditions.</span></a>
+                                </p>
+                                <div onclick="openTab(event, 'pay')">
+                                    <button onclick="moveProgressBar(3)"
+                                        class="px-[85.5px] py-[14px] mb-3 bg-yellow text-black font-poppins font-normal sm:text-base text-sm rounded-[5px]">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pay" class="mt-7 sm:mt-10 tabcontent lg:mt-0">
+                            <div class="w-full lg:max-w-[587px]">
+                                <h4 class="font-play uppercase mb-6 lg:mb-[42px] text-black !leading-115 font-bold text-2xl">Pay
+                                    Information's</h4>
+                                <form>
+                                    <label class="mb-2 text-base font-normal text-black font-poppins opacity-70">Card
+                                        Holder Name</label>
+                                    <input type="text"
+                                        class="w-full border border-black rounded-[5px] opacity-50 outline-none focus:opacity-100 p-2 h-[47px]">
+                                    <div class="flex flex-wrap gap-[7px] mt-[22px]">
+                                        <div class="flex flex-col gap-2 max-sm:w-full">
+                                            <label for="cardnumber"
+                                                class="text-base font-normal text-black font-poppins text-opacity-70">Card
+                                                Number</label>
+                                            <input type="text"
+                                                class="w-full sm:max-w-[289px] border focus:opacity-100 border-black border-solid  opacity-50 p-2 rounded-[5px] font-poppins text-base font-normal text-black text-opacity-70 h-[47px]">
+                                        </div>
+                                        <div class="flex flex-col gap-2 ">
+                                            <label for="cardnumber"
+                                                class="text-base font-normal text-black font-poppins text-opacity-70">Date</label>
+                                            <input type="text"
+                                                class=" max-w-[142px] border focus:opacity-100 border-black border-solid  opacity-50 p-2 rounded-[5px] font-poppins text-base font-normal text-black text-opacity-70 h-[47px]">
+                                        </div>
+                                        <div class="flex flex-col gap-2 ">
+                                            <label for="cardnumber"
+                                                class="text-base font-normal text-black font-poppins text-opacity-70">CCV</label>
+                                            <input type="text"
+                                                class=" max-w-[142px] border focus:opacity-100 border-black border-solid  opacity-50 p-2 rounded-[5px] font-poppins text-base font-normal text-black text-opacity-70 h-[47px]">
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-[33px] items-center gap-5">
+                                        <input type="checkbox" id="save">
+                                        <label for="save"
+                                            class="text-base font-normal text-black font-play leading-150">Save my
+                                            payment destails for future purchase</label>
+                                    </div>
+                                </form>
+                                <div onclick="toggleContent('successfull', 'finalsubmit')">
+                                    <button onclick="moveProgressBar(4)"
+                                        class="px-[85.5px] py-[14px] mb-3 bg-yellow text-black font-poppins font-normal sm:text-base text-sm rounded-[5px]">Place
+                                        Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex order-1 w-full col-span-1 lg:justify-end lg:order-2">
+                        <div class="p-[20.56px_24px_25px_21px] lg:max-h-[460px] items-start w-full lg:max-w-[413px] rounded-[5px] border-black border shadow-[0px_6px_0px_0px_#000000_inset]">
+                            <p class="mb-6 text-lg font-bold text-black font-poppins leading-150">Shopping Cart</p>
+                            <div class="flex items-center pb-1 gap-[26px]">
+                                <img src="./assets/images/common/webp/silver-series.webp" alt="silver-series"
+                                    class="w-[40px]">
+                                <p class="text-black  text-base font-play max-w-[240px] !leading-120 font-bold">Puhaste_
+                                    Faba_ bourbon BA (Silvers Series)</p>
+                            </div>
+                            <div class="w-full bg-black my-3.5 h-[1px] opacity-20"></div>
+                            <div class="flex items-center pb-1 gap-[26px]">
+                                <img src="./assets/images/common/webp/silver-series.webp" alt="silver-series"
+                                    class="w-[40px]">
+                                <p class="text-black  text-base font-play max-w-[240px] !leading-120 font-bold">Puhaste_
+                                    Faba_ bourbon BA (Silvers Series)</p>
+                            </div>
+                            <div class="w-full bg-black my-3.5 h-[1px] opacity-20"></div>
+                            <div class="flex justify-between pt-1 pb-4">
+                                <p class="font-play text-black font-bold text-lg !leading-100">Delivery</p>
+                                <p class="text-black font-play text-lg font-normal !leading-100">Free</p>
+                            </div>
+                            <div class="flex pb-2.5 justify-between">
+                                <div class="mb-0">
+                                    <p class="font-play pb-1.5 font-bold text-lg text-black !leading-115">Total Amount
+                                    </p>
+                                    <p class="font-poppins font-normal text-sm !leading-130 text-black opacity-70">
+                                        Including VAT and private copying tax</p>
+                                </div>
+                                <p class="font-semibold font-poppins text-custom_2xxl text-yellow">€<span
+                                        class="text-xl align-middle">25.59</span></p>
+                            </div>
+                            <p class="flex items-center text-base font-normal align-middle font-poppins text-yellow">
+                                <span class="align-middle"><svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 11L6 6L1 1" stroke="#FFCC02" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span><span class="ps-2">Change Shopping Cart</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="successfull" class="pt-5 my-36 tabcontent">
+                    <div class="container max-w-[1440px] mx-auto px-3">
+                        <div class="flex justify-center">
+                            <div
+                                class="w-[104px] h-[104px] flex justify-center items-center rounded-full bg-green border-sea-blue border-[14px] border-solid">
+                                <span><svg width="61" height="60" viewBox="0 0 61 60" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M53 17.4996L23 47.4996L9.25 33.7496L12.775 30.2246L23 40.4246L49.475 13.9746L53 17.4996Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <h2 class="font-play mb-2.5 text-custom_5xl mt-11 font-bold text-center leading-115 text-black">
+                            Order Successful</h2>
+                        <p
+                            class="text-base font-normal text-center text-black font-poppins mb-11 opacity-60 leading-150">
+                            Thank you so much for your order.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="paysafely" class="w-full bg-white-gray py-[18px]">
+                <div class="container flex flex-col items-center sm:flex-row justify-center gap-4 sm:justify-between max-w-[1140px] mx-auto px-4">
+                    <p class="text-xl font-normal text-black font-poppins leading-187">Pay safely with</p>
+                    <div class="flex items-center gap-6">
+                        <img src="./assets/images/check-out/png/discover.png" alt="logo">
+                        <img src="./assets/images/check-out/png/mastercard.png" alt="logo">
+                        <img src="./assets/images/check-out/png/visa.png" alt="logo">
+                        <img src="./assets/images/check-out/png/apple.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================Footer======================= -->
+        <footer
+            class="common_footer_bg bg-center min-[2570px]:max-w-[1440px] mx-auto bg-cover bg-no-repeat pt-10 md:pt-[69.66px]">
+            <div class="container xl:max-w-[1178px] px-4 mx-auto pb-10 sm:pb-20 md:pb-[104.42px]">
+                <div class="flex flex-row flex-wrap">
+                    <div class="lg:w-4/12">
+                        <a href="/">
+                            <img src="./assets/images/basement/svg/footer-logo.svg" alt="footer_logo">
+                        </a>
+                        <div class="flex gap-[15px] pt-[25.58px]">
+                            <a class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                                href="https://www.instagram.com/" target="_blank">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="transition-all duration-300 ease-linear group-hover:fill-white"
+                                        d="M13.134 2.65846C13.8638 2.65566 14.5935 2.66299 15.323 2.68046L15.517 2.68746C15.741 2.69546 15.962 2.70546 16.229 2.71746C17.293 2.76746 18.019 2.93546 18.656 3.18246C19.316 3.43646 19.872 3.78046 20.428 4.33646C20.9364 4.83606 21.3299 5.4404 21.581 6.10746C21.828 6.74446 21.996 7.47146 22.046 8.53546C22.058 8.80146 22.068 9.02346 22.076 9.24746L22.082 9.44146C22.0998 10.1706 22.1075 10.9001 22.105 11.6295L22.106 12.3755V13.6855C22.1085 14.4152 22.1008 15.1449 22.083 15.8745L22.077 16.0685C22.069 16.2925 22.059 16.5135 22.047 16.7805C21.997 17.8445 21.827 18.5705 21.581 19.2075C21.3307 19.8752 20.9371 20.4801 20.428 20.9795C19.928 21.4878 19.3234 21.8812 18.656 22.1325C18.019 22.3795 17.293 22.5475 16.229 22.5975C15.962 22.6095 15.741 22.6195 15.517 22.6275L15.323 22.6335C14.5935 22.6512 13.8638 22.6589 13.134 22.6565L12.388 22.6575H11.079C10.3493 22.6599 9.61957 22.6523 8.89005 22.6345L8.69605 22.6285C8.45866 22.6199 8.22132 22.6099 7.98405 22.5985C6.92005 22.5485 6.19405 22.3785 5.55605 22.1325C4.88873 21.8818 4.28428 21.4883 3.78505 20.9795C3.27609 20.4797 2.88227 19.875 2.63105 19.2075C2.38405 18.5705 2.21605 17.8445 2.16605 16.7805C2.15491 16.5432 2.14491 16.3058 2.13605 16.0685L2.13105 15.8745C2.11261 15.1449 2.10428 14.4152 2.10605 13.6855V11.6295C2.10325 10.9001 2.11059 10.1707 2.12805 9.44146L2.13505 9.24746C2.14305 9.02346 2.15305 8.80146 2.16505 8.53546C2.21505 7.47046 2.38305 6.74546 2.63005 6.10746C2.88142 5.44008 3.27601 4.8359 3.78605 4.33746C4.28494 3.82821 4.88901 3.43403 5.55605 3.18246C6.19405 2.93546 6.91905 2.76746 7.98405 2.71746L8.69605 2.68746L8.89005 2.68246C9.61923 2.66403 10.3486 2.6557 11.078 2.65746L13.134 2.65846ZM12.106 7.65846C11.4436 7.64909 10.7858 7.77148 10.171 8.01852C9.55624 8.26557 8.99669 8.63234 8.52489 9.09751C8.05309 9.56269 7.67845 10.117 7.42273 10.7282C7.16702 11.3394 7.03534 11.9954 7.03534 12.658C7.03534 13.3205 7.16702 13.9765 7.42273 14.5877C7.67845 15.1989 8.05309 15.7532 8.52489 16.2184C8.99669 16.6836 9.55624 17.0503 10.171 17.2974C10.7858 17.5444 11.4436 17.6668 12.106 17.6575C13.4321 17.6575 14.7039 17.1307 15.6416 16.193C16.5793 15.2553 17.106 13.9835 17.106 12.6575C17.106 11.3314 16.5793 10.0596 15.6416 9.12192C14.7039 8.18424 13.4321 7.65846 12.106 7.65846ZM12.106 9.65846C12.5046 9.65111 12.9005 9.72325 13.2708 9.87066C13.6412 10.0181 13.9784 10.2378 14.2628 10.517C14.5473 10.7962 14.7732 11.1293 14.9275 11.4968C15.0818 11.8643 15.1612 12.2589 15.1613 12.6574C15.1614 13.056 15.082 13.4506 14.9279 13.8182C14.7737 14.1857 14.5479 14.5189 14.2635 14.7982C13.9792 15.0775 13.642 15.2973 13.2718 15.4449C12.9015 15.5924 12.5056 15.6647 12.107 15.6575C11.3114 15.6575 10.5483 15.3414 9.98573 14.7788C9.42312 14.2162 9.10705 13.4531 9.10705 12.6575C9.10705 11.8618 9.42312 11.0987 9.98573 10.5361C10.5483 9.97353 11.3114 9.65746 12.107 9.65746L12.106 9.65846ZM17.356 6.15846C17.0334 6.17137 16.7283 6.30861 16.5047 6.54143C16.281 6.77425 16.156 7.08459 16.156 7.40746C16.156 7.73032 16.281 8.04066 16.5047 8.27349C16.7283 8.50631 17.0334 8.64354 17.356 8.65646C17.6876 8.65646 18.0055 8.52476 18.2399 8.29034C18.4744 8.05592 18.606 7.73798 18.606 7.40646C18.606 7.07494 18.4744 6.75699 18.2399 6.52257C18.0055 6.28815 17.6876 6.15646 17.356 6.15646V6.15846Z"
+                                        fill="#FFCC02" />
+                                </svg>
+
+                            </a>
+                            <a class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                                href="https://www.facebook.com/" target="_blank">
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="transition-all duration-300 ease-linear group-hover:fill-white"
+                                        d="M17.0573 16.4069H19.974L21.1406 11.7402H17.0573V9.4069C17.0573 8.20523 17.0573 7.07357 19.3906 7.07357H21.1406V3.15357C20.7603 3.1034 19.3241 2.99023 17.8075 2.99023C14.64 2.99023 12.3906 4.9234 12.3906 8.47357V11.7402H8.89062V16.4069H12.3906V26.3236H17.0573V16.4069Z"
+                                        fill="#FFCC02" />
+                                </svg>
+
+                            </a>
+                            <a class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-[43.8px] h-[43.8px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                                href="https://web.telegram.org/a/" target="_blank">
+                                <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="transition-all duration-300 ease-linear group-hover:fill-white"
+                                        fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.5659 21.637V21.6348L19.5846 21.5882L22.7086 5.2082V5.1562C22.7086 4.74779 22.5628 4.39137 22.2482 4.17795C21.9721 3.99054 21.6544 3.97754 21.4315 3.99487C21.224 4.01439 21.0193 4.05799 20.8211 4.12487C20.7366 4.1532 20.6532 4.18501 20.5711 4.2202L20.5575 4.22562L3.14088 11.3312L3.13567 11.3334C3.08272 11.3522 3.03089 11.3742 2.98046 11.3995C2.8566 11.4573 2.73775 11.5262 2.62525 11.6053C2.4013 11.7656 1.97525 12.1426 2.04713 12.7406C2.1065 13.2368 2.43463 13.551 2.6565 13.7145C2.78747 13.81 2.92827 13.8899 3.0763 13.9529L3.10963 13.968L3.12005 13.9713L3.12734 13.9745L6.17525 15.0416C6.16484 15.2399 6.18359 15.4425 6.23463 15.6429L7.76067 21.6651C7.84404 21.9934 8.02418 22.2863 8.2758 22.5026C8.52742 22.7189 8.83787 22.8479 9.16356 22.8713C9.48925 22.8947 9.81382 22.8115 10.0917 22.6332C10.3695 22.455 10.5867 22.1907 10.7128 21.8775L13.0961 19.2276L17.1888 22.4906L17.2471 22.5166C17.619 22.6856 17.9659 22.7387 18.2836 22.6943C18.6013 22.6488 18.8534 22.5101 19.043 22.353C19.2622 22.1681 19.437 21.9326 19.5534 21.6651L19.5617 21.6467L19.5648 21.6402L19.5659 21.637ZM7.74505 15.229C7.72815 15.1622 7.73216 15.0915 7.75651 15.0272C7.78086 14.963 7.82428 14.9084 7.88046 14.8715L18.2148 8.04654C18.2148 8.04654 18.8232 7.66195 18.8013 8.04654C18.8013 8.04654 18.9096 8.1137 18.5836 8.42895C18.2753 8.72904 11.218 15.8151 10.5034 16.5323C10.4636 16.5724 10.4358 16.6235 10.4232 16.6796L9.27109 21.2513L7.74505 15.228V15.229Z"
+                                        fill="#FFCC02" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-8 lg:w-8/12 lg:pt-0">
+                        <div class="flex flex-row flex-wrap justify-between">
+                            <div class="md:w-3/12 min-[520px]:w-6/12 w-full">
+                                <div class="flex flex-col gap-2 sm:gap-4">
+                                    <a href="./contactpage.html"
+                                        class="mb-1 text-lg font-bold text-white capitalize cursor-pointer font-play leading-110">
+                                        Contact</a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white capitalize transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Rebelbeercans</a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white capitalize transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Achterberghstraat
+                                        23</a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white transition-opacity duration-300 ease-linear font-poppins opacity-70 leading-110 hover:opacity-100">5281
+                                        AB Boxtel</a>
+                                    <a class="text-sm font-normal text-white transition-opacity duration-300 ease-linear font-poppins opacity-70 leading-110 hover:opacity-100"
+                                        href="https://mail.google.com/" target="_blank">Contac @rebelbeercans.nl
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7">
+                                <div class="flex flex-col gap-2 sm:gap-4">
+                                    <a href="#"
+                                        class="mb-1 text-lg font-bold text-white capitalize cursor-pointer font-play leading-110">
+                                        Information</a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white capitalize transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Returns</a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white transition-opacity duration-300 ease-linear font-poppins opacity-70 leading-110 hover:opacity-100">Payment
+                                        options</a>
+                                    <a href="./myaccount.html"
+                                        class="text-sm font-normal text-white capitalize transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">My
+                                        Account</a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Responsible
+                                        alcohol consumption
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7">
+                                <div class="flex flex-col gap-2 sm:gap-4">
+                                    <a href="#"
+                                        class="mb-1 text-lg font-bold text-white capitalize cursor-pointer font-play leading-110">
+                                        Conditions(nl)</a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Remove
+                                        cookies</a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Cookies
+                                        statement rebelbeercans</a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Disclaimer
+                                        rebelbeercan</a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">General
+                                        terms and conditions rebelbeercans
+                                    </a>
+                                    <a href="#"
+                                        class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Privacy
+                                        policy rebelbeercans
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full border border-white border-solid opacity-20"></div>
+            <p
+                class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-4 sm:py-[23.5px] md:leading-110 leading-normal text-center">
+                <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
+            </p>
+            <script>  const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>
+        </footer>
+    </main>
+    <!-- ============================== SWIPER JS LINK ========================= -->
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        // ======================= PROGRESS BAR =========================== 
+        function moveProgressBar(step) {
+            const progressContainer = document.getElementById("progress-container");
+            const progressBar = document.getElementById("myBar");
+            const width = Math.min(100, step * 34.5);
+            progressBar.style.width = width + '%';
+
+            const svgElement = document.querySelectorAll("#mySvg");
+            const currentSvg = svgElement[step - 1];
+            currentSvg.style.fill = 'black';
+            // Add the background black class to the svgElement parent span
+            const svgParentSpan = svgElement[step - 1].parentElement;
+            svgParentSpan.classList.add('bg-yellow');
+            svgParentSpan.classList.add('border-black');
+
+            const paysafelyElement = document.getElementById("paysafely");
+            if (width > 0) {
+                paysafelyElement.classList.add('hidden')
+            } else {
+                paysafelyElement.classList.remove('hidden')
+            }
+        }
+        // ==================================STEPS ============================== 
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        function toggleContent(section1, section2) {
+            const section1Element = document.getElementById(section1);
+            const section2Element = document.getElementById(section2);
+
+            if (section1Element.style.display === 'block' && section2Element.style.display === 'none') {
+                section1Element.style.display = 'none';
+                section2Element.style.display = 'block';
+            } else {
+                section1Element.style.display = 'block';
+                section2Element.style.display = 'none';
+            }
+        }
+        // ================================VALIDATION ============================= 
+        var btnParticular = document.getElementById('particular');
+        var btnBusiness = document.getElementById('business');
+        function deselectButtons() {
+            btnParticular.classList.remove('selected');
+            btnBusiness.classList.remove('selected');
+        }
+        btnParticular.onclick = function () {
+            deselectButtons();
+            this.classList.add('selected');
+        };
+        btnBusiness.onclick = function () {
+            deselectButtons();
+            this.classList.add('selected');
+        };
+        function validateSelection() {
+            if (btnParticular.classList.contains('selected') || btnBusiness.classList.contains('selected')) {
+                alert('A selection has been made. Proceeding...');
+            } else {
+                alert('Please select a type of order.');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
