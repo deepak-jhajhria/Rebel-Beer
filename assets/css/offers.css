@@ -5,13 +5,13 @@
     scroll-behavior: smooth;
 }
 .hero-bg{
-    background-image: url('/assets/images/offers/webp/hero-bg.png');
+    background-image: url('/assets/images/offers/webp/hero-bg.webp');
     background-position: center;
     background-repeat: no-repeat;
      background-size: cover;
 }
 .footerBg{
-    background-image: url('/assets/images/offers/webp/footer-bg.png');
+    background-image: url('/assets/images/offers/webp/footer-bg.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

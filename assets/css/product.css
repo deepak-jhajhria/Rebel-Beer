@@ -4,7 +4,9 @@
 ::-webkit-scrollbar {
   width: 6px;
 }
-
+#cart-tabs::-webkit-scrollbar {
+  width: 6px !important;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   background-color: #f0f0ea;
@@ -37,4 +39,11 @@ input:checked + label > span::after {
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.footer_bg {
+  background-image: url(../images/myaccount/footer_bg.png);
+}
+.hero_bg {
+  background-image: url(../images/myaccount/header_bg.png);
 }
