@@ -65,7 +65,20 @@
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
 }
-
+@media (max-width:640px) {
+  #green.tab-button.active div {
+    width: 10px;
+    height: 10px;
+  }
+  #blue.tab-button.active div {
+    width: 10px;
+    height: 10px;
+  }
+  .tab-button.active div {
+    width: 10px;
+    height: 10px;
+  }
+}
 @media (max-width: 1024px) {
   #green.tab-button.active {
     border: 1px solid black !important;
@@ -74,15 +87,12 @@
   #green.tab-button.active div {
     background-color: black;
     border-color: black !important;
-    width: 20px;
-    height: 20px;
   }
 
   .tab-button.active div {
     background-color: black;
     border-color: black;
-    width: 20px;
-    height: 20px;
+
   }
 
   .tab-button.active {
@@ -96,8 +106,6 @@
   #blue.tab-button.active div {
     background-color: black;
     border-color: black !important;
-    width: 20px;
-    height: 20px;
   }
 }
 
