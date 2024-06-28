@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,6 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- =============== TAILWIND LINK ============= -->
   <script src="https://cdn.tailwindcss.com"></script>
-
   <!-- =============== META TAG ============== -->
   <title>Rebel Beer</title>
   <meta name="title" content="Welcome to Cans" />
@@ -30,7 +30,47 @@
     content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
   <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
   <meta property="twitter:image" content="./meta-img.webp" />
- </head>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yellow: '#FFCC02',
+            'light-green': '#A7E45F',
+            'dark-gray': '#EBEBEB',
+            'gray-primary': '#4d4d4d',  //
+            gray: '#CCCCCC',
+            'light-blue': '#BEDCFE',
+            green: '#76BD3D',
+            'white-gray': '#F0F0EA',
+          },
+          fontSize: {
+            'custom_2xl': '28px',
+            'custom_3xl': '32px',
+            'custom_4xl': '32px',
+            'custom_9xl': '94px',
+          },
+          lineHeight: {
+            '100': '100%',
+            '110': '110%',
+            '120': '120%',
+            '130': '130%',
+            '140': '140%',
+            '150': '150%',
+          }
+        },
+        fontFamily: {
+          'poppins': ['Poppins', 'sans-serif'],
+          'roboto': ['Roboto', 'sans-serif'],
+          'inter': ['Inter', 'sans-serif'],
+          'play': ['Play', 'sans-serif'],
+
+        }
+      }
+    }
+  </script>
+
+</head>
 
 <body>
   <div class="relative">
@@ -106,7 +146,9 @@
     </div>
      <!-- =============== NAVBAR ============= -->
      <nav class="flex items-center py-[10px] justify-between max-w-[1165px] mx-auto px-3">
-          <img class="cursor-pointer" src="./assets/images/blogspage/svg/logo-blogs.svg" alt="headerlogo">
+      <a href="#">
+          <img src="./assets/images/blogspage/svg/logo-blogs.svg" alt="headerlogo">
+      </a>
       <div class="flex items-center">
           <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:h-screen max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center"
               id="navbar">
@@ -235,7 +277,7 @@
       <div class="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto xl:px-0 px-3 py-[14.5px]">
         <h3 class="flex items-center gap-1 text-sm font-normal text-black font-poppins lg:text-base"><a
             class="text-sm font-normal duration-200 opacity-70 hover:opacity-100 font-poppins lg:text-base"
-            href="/" aria-label="home_path">Home</a><span><svg width="7" height="9" viewBox="0 0 7 9" fill="none"
+            href="/">Home</a><span><svg width="7" height="9" viewBox="0 0 7 9" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M0.504 0.98H2.344L6.216 4.644L2.344 8.324H0.504L4.376 4.644L0.504 0.98Z" fill="black"></path>
             </svg></span><span
@@ -372,9 +414,8 @@
       </div>
     </div>
     
-  
   <!-- =============== FOOTER ============= -->
-  <footer class="bg-center common_footer_bg z-30 relative bg-cover min-[2570px]:max-w-[1440px] mx-auto bg-no-repeat pt-12 md:pt-16 lg:pt-[69.66px]">
+  <footer class="bg-center common_footer_bg z-30 relative min-[2570px]:max-w-[1440px] mx-auto bg-cover bg-no-repeat pt-12 md:pt-16 lg:pt-[69.66px]">
     <div class="container xl:max-w-[1178px] !px-4 mx-auto pb-8 md:pb-16 xl:pb-[104px]">
         <div class="flex flex-row flex-wrap">
             <div class="lg:w-3/12 xl:w-4/12">
@@ -470,7 +511,10 @@
     <p class="px-4 font-poppins font-normal text-sm sm:text-sm text-white opacity-40 py-2 sm:py-3 md:py-4 lg:py-[23.5px] !leading-110 text-center">
         <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
     </p>
-  
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
+    </script>
 </footer>
     <!-- ===============================BACK TO TOP=============================== -->
     <button id="backtotop" onclick="window.scroll(0,0)" class="hidden fixed bottom-2.5 right-2.5 border border-white bg-yellow rounded-full transition-all duration-300 hover:bg-black ease-linear z-40">
@@ -489,46 +533,10 @@
       </span>
   </button>
 </div>
-  <script src="./assets/js/faq.js"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            yellow: '#FFCC02',
-            'light-green': '#A7E45F',
-            'dark-gray': '#EBEBEB',
-            'gray-primary': '#4d4d4d',  //
-            gray: '#CCCCCC',
-            'light-blue': '#BEDCFE',
-            green: '#76BD3D',
-            'white-gray': '#F0F0EA',
-          },
-          fontSize: {
-            'custom_2xl': '28px',
-            'custom_3xl': '32px',
-            'custom_4xl': '32px',
-            'custom_9xl': '94px',
-          },
-          lineHeight: {
-            '100': '100%',
-            '110': '110%',
-            '120': '120%',
-            '130': '130%',
-            '140': '140%',
-            '150': '150%',
-          }
-        },
-        fontFamily: {
-          'poppins': ['Poppins', 'sans-serif'],
-          'roboto': ['Roboto', 'sans-serif'],
-          'inter': ['Inter', 'sans-serif'],
-          'play': ['Play', 'sans-serif'],
+  <script src="./assets/js/faq.js">
 
-        }
-      }
-    }
   </script>
+
 </body>
 
 </html>
