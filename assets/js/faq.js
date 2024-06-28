@@ -35,9 +35,7 @@ function toggleAccordion(element) {
     element.querySelector(".minus-icon").classList.remove("hidden");
   }
 }
-// year function
-const currentYear = new Date().getFullYear();
-        document.getElementById('currentYear').textContent = currentYear;
+
   // back to top
   function backtotop() {
     window.scroll(0, 0);
