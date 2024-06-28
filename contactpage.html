@@ -232,7 +232,7 @@
                             <p class="font-medium text-red-400" id="errorEmail"></p>
                             <div class="flex flex-col mt-4 sm:mt-6"> <label for="message" class="font-poppins font-normal text-sm sm:text-base !leading-normal">Message</label>
                                 <textarea id="message" name="message" placeholder="Type your message..." class=":placeholder:font-poppins :placeholder:font-normal w-full border border-black rounded-[5px] outline-none px-3 sm:px-4 py-2 sm:py-[11px] opacity-40 mt-2 :placeholder:text-black min-h-[100px] sm:min-h-[130px] lg:min-h-[180px]"></textarea></div>
-                            <p class="font-medium text-red-400" id="errorMessage"></p> <button type="submit" class="p-[10px_12px] sm:p-[14px_16px] bg-yellow rounded-[5px] font-poppins font-normal text-sm sm:text-base !leading-normal hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out mt-4 sm:mt-6">Submit</button>
+                            <button type="submit" class="p-[10px_12px] sm:p-[14px_16px] bg-yellow rounded-[5px] font-poppins font-normal text-sm sm:text-base !leading-normal hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out mt-4 sm:mt-6">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -544,7 +544,7 @@
         let Email = document.getElementById("email");
         let errorEmail = document.getElementById("errorEmail");
         let Message = document.getElementById("message");
-        let errorMessage = document.getElementById("errorMessage");
+
 
         const regex = {
             name: /^[a-zA-Z\s]+$/,
@@ -567,17 +567,11 @@
                 errorEmail.innerHTML = "";
             }
 
-            if (Message.value.length < 10) {
-                errorMessage.innerHTML = "Message must be at least 10 characters long.";
 
-            } else {
-                errorMessage.innerHTML = "";
-            }
 
-            if (Name.value !== "" && Email.value !== "" && Message.value !== "") {
+            if (Name.value !== "" && Email.value !== "") {
                 console.log(Name.value);
                 console.log(Email.value);
-                console.log(Message.value);
                 alert("Form submitted successfully!");
                 this.reset();
             }
