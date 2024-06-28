@@ -460,17 +460,6 @@ input:checked + label > span::after {
     opacity: 0;
   }
 
-<<<<<<< HEAD
-=======
-    .cross span:nth-child(3) {
-        transform: rotate(-43deg) translateY(-13px);
-        width: 30px;
-    }
-
-    .show {
-        left: 0;
-    }
->>>>>>> 979002dd34561d94e0d18fcdda481e53b03ddcff
   .cross span:nth-child(3) {
     transform: rotate(-43deg) translateY(-13px);
   }
