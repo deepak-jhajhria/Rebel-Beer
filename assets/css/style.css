@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 
 /* =================== HOMEPAGE CSS ========================== */
-
+*{
+  scroll-behavior: smooth !important;
+}
 .tab-button {
   cursor: pointer;
   background-color: transparent;
@@ -65,7 +67,20 @@
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
 }
-
+@media (max-width:640px) {
+  #green.tab-button.active div {
+    width: 10px;
+    height: 10px;
+  }
+  #blue.tab-button.active div {
+    width: 10px;
+    height: 10px;
+  }
+  .tab-button.active div {
+    width: 10px;
+    height: 10px;
+  }
+}
 @media (max-width: 1024px) {
   #green.tab-button.active {
     border: 1px solid black !important;
@@ -74,15 +89,12 @@
   #green.tab-button.active div {
     background-color: black;
     border-color: black !important;
-    width: 20px;
-    height: 20px;
   }
 
   .tab-button.active div {
     background-color: black;
     border-color: black;
-    width: 20px;
-    height: 20px;
+
   }
 
   .tab-button.active {
@@ -96,8 +108,6 @@
   #blue.tab-button.active div {
     background-color: black;
     border-color: black !important;
-    width: 20px;
-    height: 20px;
   }
 }
 
@@ -138,7 +148,9 @@
   animation: spin 7s linear infinite !important;
 }
 
+
 /* ================================ MY ACCOUNT CSS ============================================ */
+
 .animate-spin {
   animation: spin 7s linear infinite !important;
 }
@@ -146,6 +158,9 @@
 .active_tab {
   background-color: #ffcc02;
   border: 1px solid transparent !important;
+}
+.active_tab:hover {
+  box-shadow: 0px 5px 10px 0 #ffcc02;
 }
 
 input:checked + label > span {
@@ -171,11 +186,13 @@ input:checked + label > span::after {
   cursor: pointer;
 }
 
+
 /* ====================== BASEMENT CSS================================== */
-.heart svg {
-  fill: none;
-  stroke: black;
-  transition: stroke 0.3s ease;
+
+heart label svg {
+    fill: none !important;
+    stroke: black !important;
+    transition: stroke 0.3s ease !important;
 }
 
 .heart input:checked + label svg path {
@@ -183,9 +200,7 @@ input:checked + label > span::after {
   fill: #f4456a;
 }
 /* ======================================== new cart ========================= */
-#caart-tabs{
- 
-}
+
 /* =============================   CATEGORY AND PRODUCT CSS ================== */
 .beer_list:hover .beer_names {
   color: #ffcc02;
@@ -199,14 +214,18 @@ input:checked + label > span::after {
   width: 6px !important;
 }
 
+
 /* Track */
+
 ::-webkit-scrollbar-track {
   background-color: #f0f0ea;
 
   border-radius: 21px;
 }
 
+
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #ffcc02;
   border-radius: 10px;
@@ -256,14 +275,18 @@ input:checked + label > span::after {
   width: 6px;
 }
 
+
 /* Track */
+
 ::-webkit-scrollbar-track {
   background-color: #f0f0ea;
 
   border-radius: 21px;
 }
 
+
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #ffcc02;
   border-radius: 10px;
@@ -343,6 +366,7 @@ input:checked + label > span::after {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 /* ======================================================================== */
 
@@ -444,4 +468,7 @@ input:checked + label > span::after {
     .show {
         left: 0;
     }
+  .cross span:nth-child(3) {
+    transform: rotate(-43deg) translateY(-13px);
+  }
 }
