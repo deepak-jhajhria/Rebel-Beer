@@ -1051,6 +1051,7 @@
 
 
 
+
   <!-- ============================== SWIPER JS LINK ========================= -->
   <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
   <!-- =========hero-section========== -->
@@ -1059,22 +1060,18 @@
       const tabButtons = document.querySelectorAll('.tab-button');
       const mainContent = document.getElementById('main-content');
       // const navButtons = document.querySelectorAll('.navbtn');
-
       tabButtons.forEach(button => {
         button.addEventListener('click', () => {
           // Remove active class from all tab buttons
           tabButtons.forEach(btn => btn.classList.remove('active'));
-
           // Add active class to the clicked tab button
           button.classList.add('active');
-
           // Change background image
           const bgImage = button.getAttribute('data-bg');
           mainContent.style.backgroundImage = `url('./assets/images/homepage/webp/${bgImage}')`;
           // Change can image
           const canImage = button.getAttribute('data-can');
           document.querySelector('.can-img').src = `./assets/images/homepage/webp/${canImage}`;
-
           const truckImage = button.getAttribute('data-truck');
           document.querySelector('.truck-img').src = `./assets/images/homepage/svg/${truckImage}`;
 
@@ -1086,12 +1083,10 @@
     document.addEventListener('DOMContentLoaded', () => {
       const tabButtons = document.querySelectorAll('.tab-button');
       const navbtn = document.querySelector('.navbtn');
-
       tabButtons.forEach(button => {
         button.addEventListener('click', () => {
           tabButtons.forEach(btn => btn.classList.remove('active'));
           button.classList.add('active');
-
           // Update navbtn background color
           if (button.id === 'yellow') {
             navbtn.classList.add('yellow');
@@ -1103,12 +1098,12 @@
             navbtn.classList.remove('yellow', 'blue');
             navbtn.classList.add('green');
           }
-
         });
       });
     });
   </script>
-  <script>    // <!-- =============== NAVBAR JAVASCRIPT ============= -->
+  <script>    
+  // <!-- =============== NAVBAR JAVASCRIPT ============= -->
     function openNav() {
       document.getElementById("navbar").classList.toggle("left-0");
       document.body.classList.toggle("overflow_hidden");
