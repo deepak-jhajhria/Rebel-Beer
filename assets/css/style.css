@@ -207,13 +207,13 @@ input:checked + label > span::after {
 .beer_list:hover .beer_names {
   color: #ffcc02;
 }
-
-::-webkit-scrollbar {
-  width: 6px;
+.series-tabs:hover,
+.series-tabs.active {
+  box-shadow: 0px 6px 0px 0px #000000 inset !important;
 }
 
-#cart-tabs::-webkit-scrollbar {
-  width: 6px !important;
+#caart-tabs::-webkit-scrollbar {
+  display: none !important;
 }
 
 
@@ -320,25 +320,23 @@ input:checked + label > span::after {
 
 /* Example Tailwind CSS classes, adjust as per your setup */
 .tab-button {
-    cursor: pointer;
-    transition: opacity 0.3s ease;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 .tab-button.active {
-    opacity: 100;
+  opacity: 100;
 }
 
 .tab-button.active-tab {
-    opacity: 100;
+  opacity: 100;
 }
 
 .tab-button.active-tab:before,
 .tab-button:hover:before {
-    width: 100%;
-    opacity: 100;
+  width: 100%;
+  opacity: 100;
 }
-
-
 
 /* =============================== ABOUT CSS ========================================= */
 .custom-container {
