@@ -445,7 +445,7 @@ input:checked + label > span::after {
       width: 25px;
     }
 
-    .menu span:nth-child(2) {
+  .menu span:nth-child(2) {
       height: 2px;
       width: 25px;
     }
