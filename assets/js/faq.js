@@ -42,7 +42,7 @@ function toggleAccordion(element) {
 }
 window.addEventListener("scroll", function() {
     let backtotop = document.getElementById("backtotop");
-    if (window.scrollY > 250) {
+    if (window.scrollY > 150) {
         backtotop.style.display = "block";
     } else {
         backtotop.style.display = "none";
