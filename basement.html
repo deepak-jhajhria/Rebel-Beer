@@ -94,7 +94,7 @@
     </div>
     <!----- navbar ------>
     <nav class="flex items-center py-[10.52px] justify-between max-w-[1165px] mx-auto px-3">
-        <a href="/homepage.html" aria-label="logo">
+        <a href="/" aria-label="logo">
             <img src="./assets/images/blogspage/svg/logo-blogs.svg" alt="headerlogo">
         </a>
         <div class="flex items-center">
@@ -287,27 +287,28 @@
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-1" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                    class="bg-yellow cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-1"
+                                        class="text-black group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 10%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-green-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart">
-                                        <input type="checkbox" id="heart-checkbox-2" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-2">
+                                            for="toggle-heart-1">
                                             <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                                    stroke-width="2px" class="fill-none stroke-black" />
+                                                    stroke-width="2px" class="!stroke-black  !fill-none" />
                                             </svg>
                                         </label>
                                     </div>
@@ -343,27 +344,29 @@
                         </div>
                     </div>
                 </div>
-                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
+                <div
+                    class=" w-full bg-white max-sm:max-w-[365px]  group group-2 rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-2" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 20%</p>
+                                    class="bg-black cursor-pointer group-hover:bg-black bg-black-2 duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-2"
+                                        class="text-white group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 20%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart heart-11">
-                                        <input type="checkbox" id="heart-checkbox-3" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-3">
+                                            for="toggle-heart-2">
                                             <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -410,27 +413,28 @@
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-3" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                    class="bg-yellow cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-3"
+                                        class="text-black group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 10%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-white-green-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart">
-                                        <input type="checkbox" id="heart-checkbox-4" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-4">
+                                            for="toggle-heart-3">
                                             <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                                    stroke-width="2px" class="fill-none stroke-black" />
+                                                    stroke-width="2px" class="!stroke-black  !fill-none" />
                                             </svg>
                                         </label>
                                     </div>
@@ -472,27 +476,28 @@
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-4" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 5%</p>
+                                    class="bg-yellow cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-4"
+                                        class="text-black group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 5%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart">
-                                        <input type="checkbox" id="heart-checkbox-5" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-5">
+                                            for="toggle-heart-4">
                                             <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                                    stroke-width="2px" class="fill-none stroke-black" />
+                                                    stroke-width="2px" class="!stroke-black  !fill-none" />
                                             </svg>
                                         </label>
                                     </div>
@@ -534,27 +539,28 @@
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-5" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                    class="bg-yellow cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-5"
+                                        class="text-black group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 10%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-green-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart">
-                                        <input type="checkbox" id="heart-checkbox-6" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-6">
+                                            for="toggle-heart-5">
                                             <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                                    stroke-width="2px" class="fill-none stroke-black" />
+                                                    stroke-width="2px" class="!stroke-black  !fill-none" />
                                             </svg>
                                         </label>
                                     </div>
@@ -591,27 +597,29 @@
                         </div>
                     </div>
                 </div>
-                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
+                <div
+                    class=" w-full bg-white max-sm:max-w-[365px]  group group-2 rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-6" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 20%</p>
+                                    class="bg-black bg-black-2 cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-6"
+                                        class="text-white group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 20%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart heart-11">
-                                        <input type="checkbox" id="heart-checkbox-7" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-7">
+                                            for="toggle-heart-6">
                                             <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -658,89 +666,28 @@
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-7" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
-                                </div>
-                                <img src="./assets/images/basement/webp/basement-white-green-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
-                                <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart">
-                                        <input type="checkbox" id="heart-checkbox-8" class=" hidden" />
-                                        <label
-                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-8">
-                                            <svg width="15" height="14" viewBox="0 0 16 15"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                                    stroke-width="2px" class="fill-none stroke-black" />
-                                            </svg>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
-                                Puhaste_
-                                Faba_
-                                bourbon
-                                BA
-                                (Silvers Series)</p>
-                            <div
-                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-500 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
-                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
-                                    12*33cl
-                                </p>
-                            </div>
-                        </div>
-                        <div class=" flex justify-between items-center">
-                            <p
-                                class=" group-hover:text-black font-poppins duration-500 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
-                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
-                            </p>
-                            <div
-                                class=" border border-black w-[22px] h-[22px] cursor-pointer rounded flex items-center justify-center">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
-                                        fill="black" />
-                                </svg>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
-                    <div
-                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
-                        <div class=" flex-col flex">
-                            <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
-                                <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 5%</p>
+                                    class="bg-yellow cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-7"
+                                        class="text-black group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 10%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart">
-                                        <input type="checkbox" id="heart-checkbox-9" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-9">
+                                            for="toggle-heart-7">
                                             <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                                    stroke-width="2px" class="fill-none stroke-black" />
+                                                    stroke-width="2px" class="!stroke-black  !fill-none" />
                                             </svg>
                                         </label>
                                     </div>
@@ -782,27 +729,91 @@
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-8" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                    class="bg-yellow cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-8"
+                                        class="text-black group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 5%
+                                    </label>
+                                </div>
+                                <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
+                                <div
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
+                                        <label
+                                            class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
+                                            for="toggle-heart-8">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
+                                                    stroke-width="2px" class="!stroke-black  !fill-none" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class=" text-black font-play font-bold text-sm sm:text-base !leading-120 mt-3">
+                                Puhaste_
+                                Faba_
+                                bourbon
+                                BA
+                                (Silvers Series)</p>
+                            <div
+                                class="border border-white-creem   group-hover:border-black group-hover:border-opacity-10 w-[133px] py-2 px-[10px] group-hover:bg-light-yellow duration-500 bg-white-light-creem rounded-[5px] mt-[11.36px] mb-1">
+                                <p class="text-nowrap font-normal font-inter text-sm leading-[16px]">IPA | 5,7|
+                                    12*33cl
+                                </p>
+                            </div>
+                        </div>
+                        <div class=" flex justify-between items-center">
+                            <p
+                                class=" group-hover:text-black font-poppins duration-500 font-semibold !leading-130 text-base sm:text-lg lg:text-xl text-yellow">
+                                <span class="text-xl sm:text-2xl !leading-150 lg:text-3xl">€</span>7.59
+                            </p>
+                            <div
+                                class=" border border-black w-[22px] h-[22px] cursor-pointer rounded flex items-center justify-center">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
+                                        fill="black" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
+                    <div
+                        class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
+                        <div class=" flex-col flex">
+                            <div
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-9" class="hidden" />
+                                <div
+                                    class="bg-yellow cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-9"
+                                        class="text-black group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 10%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-green-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart">
-                                        <input type="checkbox" id="heart-checkbox-10" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-10">
+                                            for="toggle-heart-9">
                                             <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                                    stroke-width="2px" class="fill-none stroke-black" />
+                                                    stroke-width="2px" class="!stroke-black  !fill-none" />
                                             </svg>
                                         </label>
                                     </div>
@@ -834,37 +845,38 @@
                                         d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
                                         fill="black" />
                                 </svg>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class=" w-full bg-white max-sm:max-w-[365px]  group rounded-[5px] shadow-[0px_-6px_0px_black]">
+                <div
+                    class=" w-full bg-white max-sm:max-w-[365px]  group group-2 rounded-[5px] shadow-[0px_-6px_0px_black]">
                     <div
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-10" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 20%</p>
+                                    class="bg-black bg-black-2 cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-10"
+                                        class="text-white group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 20%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-choco-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart heart-11">
-                                        <input type="checkbox" id="heart-checkbox-11" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-11">
+                                            for="toggle-heart-10">
                                             <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                                    stroke-width="2px" class="stroke-[#F4456A] fill-[#F4456A]" />
+                                                    stroke-width="2px" class="!stroke-[#F4456A]  !fill-[#F4456A]" />
                                             </svg>
                                         </label>
                                     </div>
@@ -906,27 +918,28 @@
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-11" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 10%</p>
+                                    class="bg-yellow cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-11"
+                                        class="text-black group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 10%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-white-green-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart">
-                                        <input type="checkbox" id="heart-checkbox-12" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-12">
+                                            for="toggle-heart-11">
                                             <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                                    stroke-width="2px" class="fill-none stroke-black" />
+                                                    stroke-width="2px" class="!stroke-black  !fill-none" />
                                             </svg>
                                         </label>
                                     </div>
@@ -958,7 +971,6 @@
                                         d="M4.94531 4.80908V0.809082H6.27865V4.80908H10.2786V6.14242H6.27865V10.1424H4.94531V6.14242H0.945312V4.80908H4.94531Z"
                                         fill="black" />
                                 </svg>
-
                             </div>
                         </div>
                     </div>
@@ -968,27 +980,28 @@
                         class="rounded-[5px] border p-[11.52px_14px_12.34px_14px] border-solid border-black border-t-0 duration-500 group-hover:shadow-yellow-shadow flex flex-col justify-between">
                         <div class=" flex-col flex">
                             <div
-                                class=" bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                class="bg-dark-gray relative flex items-center justify-center w-full h-[257px] mx-auto">
+                                <input type="checkbox" id="toggle-heart-12" class="hidden" />
                                 <div
-                                    class=" bg-yellow group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] absolute top-0 left-0">
-                                    <p
-                                        class=" text-black group-hover:text-white duration-500  font-poppins text-sm font-medium leading-150">
-                                        Save 5%</p>
+                                    class="bg-yellow cursor-pointer group-hover:bg-black duration-500 p-[5px] rounded-[0px_4px_4px_0px] flex absolute top-0 left-0">
+                                    <label for="toggle-heart-12"
+                                        class="text-black group-hover:text-white duration-500 font-poppins text-sm font-medium leading-150">
+                                        Save 5%
+                                    </label>
                                 </div>
                                 <img src="./assets/images/basement/webp/basement-redcap-beer.webp" alt="Beer"
-                                    class=" w-100 max-w-[83px] mix-blend-multiply">
+                                    class="w-100 max-w-[83px] mix-blend-multiply">
                                 <div
-                                    class=" absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
-                                    <div class="heart">
-                                        <input type="checkbox" id="heart-checkbox-13" class=" hidden" />
+                                    class="absolute top-2 right-2 bg-white w-6 h-6 flex items-center justify-center rounded-full">
+                                    <div class="heart heart-1">
                                         <label
                                             class="flex absolute justify-center h-full top-0 right-0 w-full items-center cursor-pointer"
-                                            for="heart-checkbox-13">
-                                            <svg width="14" height="15" viewBox="0 0 15 14"
+                                            for="toggle-heart-12">
+                                            <svg width="15" height="14" viewBox="0 0 16 15"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                                                    stroke-width="2px" class="fill-none stroke-black" />
+                                                    stroke-width="2px" class="!stroke-black  !fill-none" />
                                             </svg>
                                         </label>
                                     </div>
@@ -1025,7 +1038,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="flex justify-center md:pt-[73.5px] sm:pt-10 pt-6 gap-3 self-center">

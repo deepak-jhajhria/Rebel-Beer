@@ -175,24 +175,71 @@ input:checked+label>span::after {
 
 /* ====================== BASEMENT CSS================================== */
 
-heart label svg {
-    fill: none !important;
+/* Styles for each heart when checked */
+#toggle-heart-1:checked~.absolute .heart svg path,
+#toggle-heart-3:checked~.absolute .heart svg path,
+#toggle-heart-4:checked~.absolute .heart svg path,
+#toggle-heart-5:checked~.absolute .heart svg path,
+#toggle-heart-7:checked~.absolute .heart svg path,
+#toggle-heart-8:checked~.absolute .heart svg path,
+#toggle-heart-9:checked~.absolute .heart svg path,
+#toggle-heart-11:checked~.absolute .heart svg path,
+#toggle-heart-12:checked~.absolute .heart svg path {
+    stroke: #F4456A !important;
+    fill: #F4456A !important;
+}
+
+#toggle-heart-2:checked~.absolute .heart svg path,
+#toggle-heart-6:checked~.absolute .heart svg path,
+#toggle-heart-10:checked~.absolute .heart svg path {
     stroke: black !important;
-    transition: stroke 0.3s ease !important;
-}
-
-.heart input:checked+label svg path {
-    stroke: #F4456A;
-    fill: #F4456A;
-}
-
-.heart-11 input:checked+label svg path {
-    stroke: #000000 !important;
     fill: none !important;
 }
 
 
+#toggle-heart-1:checked~.bg-yellow,
+#toggle-heart-3:checked~.bg-yellow,
+#toggle-heart-4:checked~.bg-yellow,
+#toggle-heart-5:checked~.bg-yellow,
+#toggle-heart-7:checked~.bg-yellow,
+#toggle-heart-8:checked~.bg-yellow,
+#toggle-heart-9:checked~.bg-yellow,
+#toggle-heart-11:checked~.bg-yellow,
+#toggle-heart-12:checked~.bg-yellow {
+    background-color: black;
+}
 
+#toggle-heart-2:checked~.bg-black,
+#toggle-heart-6:checked~.bg-black,
+#toggle-heart-10:checked~.bg-black {
+    background-color: #FFCC02;
+}
+
+#toggle-heart-1:checked~.bg-yellow label,
+#toggle-heart-3:checked~.bg-yellow label,
+#toggle-heart-4:checked~.bg-yellow label,
+#toggle-heart-5:checked~.bg-yellow label,
+#toggle-heart-7:checked~.bg-yellow label,
+#toggle-heart-8:checked~.bg-yellow label,
+#toggle-heart-9:checked~.bg-yellow label,
+#toggle-heart-11:checked~.bg-yellow label,
+#toggle-heart-12:checked~.bg-yellow label {
+    color: #fff;
+}
+
+#toggle-heart-2:checked~.bg-black label,
+#toggle-heart-6:checked~.bg-black label,
+#toggle-heart-10:checked~.bg-black label {
+    color: black;
+}
+
+.group-2:hover .bg-black-2 {
+    background-color: #000000 !important;
+}
+
+.group-2:hover .bg-black-2 label {
+    color: white !important;
+}
 /* =============================   CATEGORY AND PRODUCT CSS =========================================== */
 .beer_list:hover .beer_names {
     color: #ffcc02;
