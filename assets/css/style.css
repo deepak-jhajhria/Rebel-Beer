@@ -154,7 +154,9 @@
 .animate-spin {
   animation: spin 7s linear infinite !important;
 }
-
+.account_hero_bg{
+  background-image: url('../images/myaccount/header_bg.webp');
+}
 .active_tab {
   background-color: #ffcc02;
   border: 1px solid transparent !important;
