@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- =============== TAILWIND LINK ============= -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- ======================== SWIPER CDN ========================== -->
-    <link href=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.css " rel="stylesheet">
     <!-- =============== META TAG ============== -->
     <title>Rebel Beer</title>
     <meta name="title" content="Welcome to Cans" />
@@ -36,50 +33,10 @@
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
     <!-- Meta Tags Generated with https://metatags.io -->
     <meta property="twitter:image" content="./meta-img.webp" />
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        yellow: '#FFCC02',
-                        'light-green': ' #A7E45F',
-                        'dark-gray': '#EBEBEB',
-                        gray: '#CCCCCC',
-                        'light-blue': '#BEDCFE',
-                        green: ' #76BD3D',
-                        'white-gray': '#F0F0EA',
-                        'white-primary': '#FFFAE6',
-                    },
-                    fontSize: {
-                        'custom_2xl': '28px',
-                        'custom_3xl': '32px',
-                        'custom_4xl': '32px',
-                        'custom_9xl': '94px',
-                    },
-                    lineHeight: {
-                        '100': '100%',
-                        '110': '110%',
-                        '115': '115%', 
-                        '120': '120%',
-                        '130': '130%',
-                        '140': '140%',
-                        '150': '150%',
-                    }
-                },
-                fontFamily: {
-                    'poppins': ['Poppins', 'sans-serif'],
-                    'roboto': ['Roboto', 'sans-serif'],
-                    'inter': ['Inter', 'sans-serif'],
-                    'play': ['Play', 'sans-serif'],
-
-                }
-            }
-        }
-    </script>
+   
 </head>
 
 <body>
-    <header>
         <div class="relative">
              <!-- ============================ellipse===================================== -->
              <span class="absolute left-[10px] top-[14%]  z-0 rotate-[-53deg] hidden xl:block "><svg width="60"
@@ -195,9 +152,7 @@
                 </div>
                <!-- =============== NAVBAR ============= -->
      <nav class="flex items-center py-[10px] justify-between max-w-[1165px] mx-auto px-3">
-        <a href="#">
-            <img src="./assets/images/blogspage/svg/logo-blogs.svg" alt="headerlogo">
-        </a>
+            <img class="cursor-pointer" src="./assets/images/blogspage/svg/logo-blogs.svg" alt="headerlogo">
         <div class="flex items-center">
             <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:h-screen max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center"
                 id="navbar">
@@ -329,7 +284,7 @@
                 <div class="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto xl:px-0 px-4 py-[14.5px]">
                     <h3 class="flex items-center gap-1 text-sm font-normal text-black font-poppins sm:text-base"><a
                             class="text-sm font-normal duration-200 opacity-70 hover:opacity-100 font-poppins sm:text-base"
-                            href="/" aria-label="Home">Home</a><span><svg width="7" height="9" viewBox="0 0 7 9" fill="none"
+                            href="/" aria-label="Home_path">Home</a><span><svg width="7" height="9" viewBox="0 0 7 9" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.504 0.98H2.344L6.216 4.644L2.344 8.324H0.504L4.376 4.644L0.504 0.98Z"
                                     fill="black"></path>
@@ -360,6 +315,7 @@
                     </li>
                     <li class="list-disc">
                         <a target="_blank"
+                        
                             class="mb-0 text-sm font-normal text-black font-poppins sm:text-base leading-150"
                             href="www.rebelbeercans.nl" aria-label="www.mail">www.www.rebelbeercans.nl</a>
                     </li>
@@ -515,7 +471,7 @@
                             class=" font-poppins font-normal text-sm sm:text-base leading-150 text-black mb-0 mt-2 max-w-[1098px] pe-2">
                             See our cookie policy
                             <span class="font-semibold ">:</span>
-                            <a class="font-semibold after:content-[''] after:absolute relative after:w-full after:h-[1px] after:bg-black after:left-0 after:bottom-[3px] ms-1 "
+                            <a aria-label="cookies" class="font-semibold after:content-[''] after:absolute relative after:w-full after:h-[1px] after:bg-black after:left-0 after:bottom-[3px] ms-1 "
                                 href="https://www.rebelbeercans.nl/cookie-statement-rebelbeercans-nl/"
                                 target="_blank">cookie statement rebelbeercans</a>
                         </p>
@@ -685,10 +641,47 @@
         </span>
     </button>
  </div>
-</header>
 
-    <script src="./assets/js/privacy.js">
+    <script src="./assets/js/privacy.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: '#FFCC02',
+                        'light-green': ' #A7E45F',
+                        'dark-gray': '#EBEBEB',
+                        gray: '#CCCCCC',
+                        'light-blue': '#BEDCFE',
+                        green: ' #76BD3D',
+                        'white-gray': '#F0F0EA',
+                        'white-primary': '#FFFAE6',
+                    },
+                    fontSize: {
+                        'custom_2xl': '28px',
+                        'custom_3xl': '32px',
+                        'custom_4xl': '32px',
+                        'custom_9xl': '94px',
+                    },
+                    lineHeight: {
+                        '100': '100%',
+                        '110': '110%',
+                        '115': '115%', 
+                        '120': '120%',
+                        '130': '130%',
+                        '140': '140%',
+                        '150': '150%',
+                    }
+                },
+                fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'roboto': ['Roboto', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif'],
+                    'play': ['Play', 'sans-serif'],
 
+                }
+            }
+        }
     </script>
 
 </body>
