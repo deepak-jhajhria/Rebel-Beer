@@ -348,7 +348,7 @@ input:checked + label > span::after {
 }
 
 .partnersslider_track {
-  @apply w-[calc(268px*_5)];
+  @apply w-[calc(288px*_5)];
 }
 
 .partners_slider_track:hover {
