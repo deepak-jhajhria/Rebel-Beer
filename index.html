@@ -172,7 +172,7 @@
           </li>
           <a href="https://rebelbeer.netlify.app/contactpage.html" target="_blank" rel="noopener noreffer">
               <button
-                class="px-4 sm:hidden max-lg:border-black  border-solid  h-[48px] py-3 rounded-[5px] hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal !bg-transparent after:z-[-1] after:absolute relative after:top-0 after: text-sm sm:text-base leading-150 text-black ms-2 ">
+                class="px-4 sm:hidden max-lg:border-black  border-solid  h-[48px] py-3 rounded-[5px] hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black transition-all duration-500 ease-in-out font-poppins font-normal !bg-transparent after:z-[-1] after:absolute relative after:top-0 after: text-sm sm:text-base leading-150 text-black ms-2 ">
                 Contact Us
               </button>
           </a>
@@ -214,7 +214,7 @@
             </a>
           </div>
           <a href="https://rebelbeer.netlify.app/contactpage.html" target="_blank" rel="noopener noreffer">
-            <button class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border max-lg:border-black navbtn max-sm:hidden border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base !leading-normal text-black ms-2">
+            <button class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border max-lg:border-black navbtn max-sm:hidden border-transparent hover:border-black transition-all duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base !leading-normal text-black ms-2">
               Contact Us
           </button>
           </a>
@@ -360,7 +360,6 @@
       </div>
     </div>
   </section>
-
   <!-- =========OFFER-SECTION ========== -->
   <section class="relative z-0 pt-12 md:pt-16 sm:pt-14 xl:mt-3">
     <img src="./assets/images/homepage/svg/yellow-wave.svg" alt="yellow-wave"
@@ -402,7 +401,6 @@
       </div>
     </div>
   </section>
-
   <!-- ======== REBELBEER CANS ========== -->
   <section class="bg-rebelcans_bg bg-cover relative z-[1] px-4 max-lg:mt-4 lg:py-20 md:py-16 sm:py-14 py-12">
     <img src="./assets/images/homepage/svg/triangle-ellipse.svg" alt="triangle-ellipse"
@@ -504,7 +502,6 @@
       </div>
     </div>
   </section>
-
 <!--======== Fast-delivery ==========-->
 <section class="xl:mt-[111px] lg:mt-20 md:mt-16 sm:mt-14 mt-12 relative max-w-[1920px] mx-auto">
   <img src="./assets/images/homepage/webp/delivery-halfcircle.webp" alt="half-circle"
@@ -768,7 +765,6 @@
       </div>
     </div>
 </section>
-
   <!----------------------------- BLOGS BY REBEL ----------------------------->
   <section class="xl:pt-[89px] lg:pt-20 md:pt-16 sm:pt-14 pt-12 relative max-w-[1920px] mx-auto">
     <img src="./assets/images/homepage/webp/blogs_yellow_vector.webp" alt="blogs_yellow_vector"
@@ -1096,10 +1092,22 @@
     <script>
       const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>
   </footer>
-
-
-
-
+  <!-- back to top -->
+  <button id="backtotop" onclick="window.scroll(0,0)" class="hidden fixed bottom-8 sm:bottom-2.5 right-2.5 border border-white bg-yellow rounded-full transition-all duration-300 bg-opacity-80 hover:bg-black ease-linear z-20">
+    <span class="flex items-center justify-center mb-0 cursor-pointer w-7 sm:w-10 h-7 sm:h-10">
+            <svg
+      class="max-sm:max-w-4 max-sm:max-h-4"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="white"
+      viewBox="0 0 16 16"
+    >
+      <path d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+      <path d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+    </svg>
+    </span>
+</button>
   <!-- ============================== SWIPER JS LINK ========================= -->
   <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
   <!-- =========hero-section========== -->
@@ -1158,6 +1166,18 @@
       document.getElementById("line1").classList.remove("mb-[-1px]");
       document.querySelector(".menu").classList.toggle("cross");
     }
+    // back to top
+    function backtotop() {
+            window.scroll(0, 0);
+        }
+        window.addEventListener("scroll", function() {
+            let backtotop = document.getElementById("backtotop");
+            if (window.scrollY > 250) {
+                backtotop.style.display = "block";
+            } else {
+                backtotop.style.display = "none";
+            }
+        });
   </script>
  <!------------------swiper-slider------------------->
  <script>
@@ -1182,7 +1202,7 @@
       prevEl: '#prevBtn',
     },
     breakpoints: {
-      360: {
+      320: {
         slidesPerView: 1,
         spaceBetween: 20,
       },
