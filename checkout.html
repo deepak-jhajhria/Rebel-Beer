@@ -402,14 +402,14 @@
                             </div>
                             <div onclick="openTab(event, 'collection')">
                                 <button onclick="moveProgressBar(1)"
-                                    class="text-poppins py-[14px] flex justify-center bg-yellow w-full max-w-[206px] mt-6 sm:mt-10 md:mt-[62px] rounded-[5px]">Next</button>
+                                    class="text-poppins py-[14px] flex justify-center bg-yellow w-full max-w-[206px] mt-6 sm:mt-10 lg:mt-[62px] rounded-[5px]">Next</button>
                             </div>
                         </div>
-                        <div id="collection" class="mt-10 tabcontent lg:mt-0">
-                            <div class="max-w-[594px] px-3 max-lg:pb-10">
+                        <div id="collection" class="mt-7 sm:mt-10 tabcontent lg:mt-0 lg:mb-[70px]">
+                            <div class="lg:max-w-[594px]">
                                 <h4 class=" text-2xl font-play font-bold leading-115 mb-[26px]">Delivery Of
                                     Collection</h4>
-                                <div class="flex justify-between max-w-[594px] mb-[18px]">
+                                <div class="flex justify-between lg:max-w-[594px] mb-[18px]">
                                     <p class="text-base font-bold font-play leading-115">Options for Eastbound
                                         169, Coetermeet</p>
                                     <div class="flex items-center ">
@@ -422,8 +422,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div
-                                    class="flex items-center gap-[74px] p-3 border border-solid border-black rounded-[5px] max-w-[594px] mb-5 hover:bg-musturd duration-300">
+                                <div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-[74px] p-3 border border-solid border-black rounded-[5px] lg:max-w-[594px] mb-5 hover:bg-musturd duration-300">
                                     <p class="text-sm font-normal text-black font-poppins leading-150">Free
                                         delivery</p>
                                     <p
@@ -432,21 +431,19 @@
                                     <p class="text-sm font-bold text-black font-poppins leading-150 text-end">
                                         Free</p>
                                 </div>
-                                <div
-                                    class="flex items-center gap-14 p-3 border border-solid border-black rounded-[5px] max-w-[594px] mb-5 hover:bg-musturd duration-300">
+                                <div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-14 p-3 border border-solid border-black rounded-[5px] lg:max-w-[594px] mb-5 hover:bg-musturd duration-300">
                                     <p class="text-sm font-normal text-black font-poppins leading-150">Evening
                                         delivery</p>
                                     <p class="text-xs font-normal text-black font-poppins leading-150 text-opacity-60">
                                         On weekdays between 5:30 PM and 10:00 PM</p>
                                     <p
-                                        class=" font-poppins text-sm leading-150 font-normal text-black text-opacity-70 pl-[34px]">
+                                        class=" font-poppins text-sm leading-150 font-normal text-black text-opacity-70 sm:pl-[34px]">
                                         € 0,99</p>
                                 </div>
-                                <div
-                                    class="flex items-center gap-14 p-3 border border-solid border-black rounded-[5px] max-w-[594px] mb-5 hover:bg-musturd duration-300">
-                                    <p class=" text-sm font-poppins text-black font-normal leading-150 w-[29%]">
+                                <div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-14 p-3 border border-solid border-black rounded-[5px] lg:max-w-[594px] mb-5 hover:bg-musturd duration-300">
+                                    <p class=" text-sm font-poppins max-sm:text-center text-black font-normal leading-150 w-[29%]">
                                         Rebel Beer store</p>
-                                    <div class="flex items-center justify-between w-full">
+                                    <div class="flex flex-col items-center justify-between w-full sm:flex-row">
                                         <p
                                             class="text-xs font-normal text-black font-poppins leading-150 text-opacity-60">
                                             Pick up immediately</p>
@@ -454,12 +451,11 @@
                                             Free</p>
                                     </div>
                                 </div>
-                                <div
-                                    class="p-3 border border-solid border-black rounded-[5px] max-w-[594px]  hover:bg-musturd duration-300 mb-[42px]">
-                                    <div class="flex items-center gap-3 mb-[6px]">
-                                        <p class=" text-sm font-poppins text-black font-normal leading-150 w-[40%]">
+                                <div class="p-3 flex-col sm:flex-row border border-solid border-black rounded-[5px] lg:max-w-[594px]  hover:bg-musturd duration-300 mb-[42px]">
+                                    <div class="flex flex-col sm:flex-row items-center max-sm:justify-center gap-3 mb-[6px]">
+                                        <p class=" text-sm font-poppins text-black max-sm:text-center font-normal leading-150 w-[40%]">
                                             PostNL collection point</p>
-                                        <div class="flex items-center justify-between w-full">
+                                        <div class="flex flex-col items-center justify-between w-full sm:flex-row">
                                             <p
                                                 class="text-xs font-normal text-black font-poppins leading-150 text-opacity-60">
                                                 Pick up from tomorrow at 3 p.m</p>
@@ -467,19 +463,19 @@
                                                 Free</p>
                                         </div>
                                     </div>
-                                    <p class="text-xs font-normal text-black leading-150 font-poppins text-opacity-70">
+                                    <p class="text-xs font-normal text-center text-black leading-150 font-poppins text-opacity-70">
                                         In the next step, choose a collection point near you.
                                     </p>
                                 </div>
                                 <div onclick="openTab(event, 'overview')">
                                     <button onclick="moveProgressBar(2)"
-                                        class="px-[85.5px] py-[14px] mb-3 bg-yellow text-black font-poppins font-normal sm:text-base text-sm rounded-[5px]">Next</button>
+                                        class="px-[85.5px] py-[14px] bg-yellow text-black font-poppins font-normal sm:text-base text-sm rounded-[5px]">Next</button>
                                 </div>
                             </div>
                         </div>
                         <!-- overview -->
-                        <div id="overview" class="mt-10 tabcontent lg:mt-0">
-                            <div class="lg:w-[586px] w-[500px]">
+                        <div id="overview" class="mt-7 sm:mt-10 tabcontent lg:mt-0">
+                            <div class="lg:w-[586px] w-full">
                                 <h5 class="text-black uppercase font-play !leading-115 mb-8 font-bold text-2xl">
                                     Overview
                                 </h5>
@@ -602,22 +598,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="pay" class="mt-10 tabcontent lg:mt-0">
-                            <div class="max-w-[587px]">
-                                <h4 class="font-play uppercase mb-[42px] text-black !leading-115 font-bold text-2xl">Pay
+                        <div id="pay" class="mt-7 sm:mt-10 tabcontent lg:mt-0">
+                            <div class="w-full lg:max-w-[587px]">
+                                <h4 class="font-play uppercase mb-6 lg:mb-[42px] text-black !leading-115 font-bold text-2xl">Pay
                                     Information's</h4>
                                 <form>
                                     <label class="mb-2 text-base font-normal text-black font-poppins opacity-70">Card
                                         Holder Name</label>
                                     <input type="text"
                                         class="w-full border border-black rounded-[5px] opacity-50 outline-none focus:opacity-100 p-2 h-[47px]">
-                                    <div class=" flex  gap-[7px] mt-[22px]">
-                                        <div class="flex flex-col gap-2 ">
+                                    <div class="flex flex-wrap gap-[7px] mt-[22px]">
+                                        <div class="flex flex-col gap-2 max-sm:w-full">
                                             <label for="cardnumber"
                                                 class="text-base font-normal text-black font-poppins text-opacity-70">Card
                                                 Number</label>
                                             <input type="text"
-                                                class=" max-w-[289px] border focus:opacity-100 border-black border-solid  opacity-50 p-2 rounded-[5px] font-poppins text-base font-normal text-black text-opacity-70 h-[47px]">
+                                                class="w-full sm:max-w-[289px] border focus:opacity-100 border-black border-solid  opacity-50 p-2 rounded-[5px] font-poppins text-base font-normal text-black text-opacity-70 h-[47px]">
                                         </div>
                                         <div class="flex flex-col gap-2 ">
                                             <label for="cardnumber"
