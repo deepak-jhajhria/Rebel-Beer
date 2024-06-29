@@ -4,7 +4,6 @@ function openNav() {
   document.querySelector(".menu").classList.toggle("cross");
 }
 document.addEventListener("DOMContentLoaded", function () {
-  // Open the first accordion by default
   const firstAccordion = document.querySelector(".container .border");
   firstAccordion.classList.add("active-border");
   firstAccordion.querySelector(".accordion-content").style.maxHeight = "300px";
@@ -36,6 +35,7 @@ function toggleAccordion(element) {
     element.querySelector(".minus-icon").classList.remove("hidden");
   }
 }
+
   // back to top
   function backtotop() {
     window.scroll(0, 0);
