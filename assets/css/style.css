@@ -189,41 +189,70 @@ input:checked+label>span::after {
 
 
 /* ====================== BASEMENT CSS================================== */
-
-.heart svg {
-  fill: none;
-  stroke: black;
-  transition: stroke 0.3s ease;
+#toggle-heart-1:checked~.absolute .heart svg path,
+#toggle-heart-3:checked~.absolute .heart svg path,
+#toggle-heart-4:checked~.absolute .heart svg path,
+#toggle-heart-5:checked~.absolute .heart svg path,
+#toggle-heart-7:checked~.absolute .heart svg path,
+#toggle-heart-8:checked~.absolute .heart svg path,
+#toggle-heart-9:checked~.absolute .heart svg path,
+#toggle-heart-11:checked~.absolute .heart svg path,
+#toggle-heart-12:checked~.absolute .heart svg path {
+  stroke: #F4456A !important;
+  fill: #F4456A !important;
 }
 
-.heart input:checked+label svg path {
-  stroke: #f4456a;
-  fill: #f4456a;
+#toggle-heart-2:checked~.absolute .heart svg path,
+#toggle-heart-6:checked~.absolute .heart svg path,
+#toggle-heart-10:checked~.absolute .heart svg path {
+  stroke: black !important;
+  fill: none !important;
 }
 
-.beer_list:hover .beer_names {
-  color: #ffcc02;
+
+#toggle-heart-1:checked~.bg-yellow,
+#toggle-heart-3:checked~.bg-yellow,
+#toggle-heart-4:checked~.bg-yellow,
+#toggle-heart-5:checked~.bg-yellow,
+#toggle-heart-7:checked~.bg-yellow,
+#toggle-heart-8:checked~.bg-yellow,
+#toggle-heart-9:checked~.bg-yellow,
+#toggle-heart-11:checked~.bg-yellow,
+#toggle-heart-12:checked~.bg-yellow {
+  background-color: black;
 }
 
-.series-tabs:hover,
-.series-tabs.active {
-  box-shadow: 0px 6px 0px 0px #000000 inset !important;
+#toggle-heart-2:checked~.bg-black,
+#toggle-heart-6:checked~.bg-black,
+#toggle-heart-10:checked~.bg-black {
+  background-color: #FFCC02;
 }
 
-#caart-tabs::-webkit-scrollbar {
-  display: none !important;
+#toggle-heart-1:checked~.bg-yellow label,
+#toggle-heart-3:checked~.bg-yellow label,
+#toggle-heart-4:checked~.bg-yellow label,
+#toggle-heart-5:checked~.bg-yellow label,
+#toggle-heart-7:checked~.bg-yellow label,
+#toggle-heart-8:checked~.bg-yellow label,
+#toggle-heart-9:checked~.bg-yellow label,
+#toggle-heart-11:checked~.bg-yellow label,
+#toggle-heart-12:checked~.bg-yellow label {
+  color: #fff;
 }
 
-::-webkit-scrollbar-track {
-  background-color: #f0f0ea;
-
-  border-radius: 21px;
+#toggle-heart-2:checked~.bg-black label,
+#toggle-heart-6:checked~.bg-black label,
+#toggle-heart-10:checked~.bg-black label {
+  color: black;
 }
 
-#cart-tabs::-webkit-scrollbar {
-  width: 6px !important;
+.group-2:hover .bg-black-2 {
+  background-color: #000000 !important;
 }
 
+.group-2:hover .bg-black-2 label {
+  color: white !important;
+}
 
 /* Track */
 
