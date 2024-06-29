@@ -35,6 +35,7 @@ function toggleAccordion(element) {
     element.querySelector(".minus-icon").classList.remove("hidden");
   }
 }
+
   // back to top
   function backtotop() {
     window.scroll(0, 0);
