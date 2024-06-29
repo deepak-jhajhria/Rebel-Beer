@@ -174,13 +174,6 @@
               </svg>
             </a>
           </li>
-          <li>
-            <a aria-label="contact" href="https://rebelbeer.netlify.app/contactpage.html" target="_blank"
-              rel="noopener noreffer"
-              class="px-4 sm:hidden max-lg:border-black  border-solid  h-[48px] py-3 rounded-[5px] hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black transition-all duration-500 ease-in-out font-poppins font-normal !bg-transparent after:z-[-1] after:absolute relative after:top-0 after: text-sm sm:text-base leading-150 text-black ms-2 ">
-              Contact Us
-            </a>
-          </li>
         </ul>
         <div class="flex items-center gap-[17px]">
           <div class="hidden sm:flex gap-[9px] items-center">
@@ -220,14 +213,12 @@
               </svg>
             </a>
           </div>
-          <a aria-label="contact" href="https://rebelbeer.netlify.app/contactpage.html" target="_blank"
-            rel="noopener noreffer"
-            class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border max-lg:border-black navbtn max-sm:hidden border-transparent hover:border-black transition-all duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base !leading-normal text-black ms-2">
-            Contact Us
-          </a>
+            <a aria-label="contact" href="https://rebelbeer.netlify.app/contactpage.html" target="_blank" rel="noopener noreffer" class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border max-lg:border-black navbtn border-transparent hover:border-black transition-all duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base !leading-normal text-black ms-2">
+              Contact Us
+            </a>
           <div onclick="openNav()" class="menu block lg:hidden z-[5]">
-            <span id="line1" class="duration-300 ease-in-out bg-black mb-[-1px]"></span>
-            <span class="my-[7px] duration-300 ease-in-out bg-black"></span>
+            <span class="duration-300 ease-in-out bg-black"></span>
+            <span class="my-1.5 sm:my-2 duration-300 ease-in-out bg-black"></span>
             <span class="duration-300 ease-in-out bg-black"></span>
           </div>
         </div>
@@ -1140,8 +1131,7 @@
     // <!-- =============== NAVBAR JAVASCRIPT ============= -->
     function openNav() {
       document.getElementById("navbar").classList.toggle("left-0");
-      document.body.classList.toggle("overflow_hidden");
-      document.getElementById("line1").classList.remove("mb-[-1px]");
+      document.body.classList.toggle("overflow_hidden");      
       document.querySelector(".menu").classList.toggle("cross");
     }
     // back to top

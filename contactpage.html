@@ -17,9 +17,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="Welcome to 
-    Rebel Beer
-    Cans">
+    <meta property="og:title" content="Welcome to Rebel Beer Cans">
     <meta property="og:description" content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa.">
     <meta property="og:image" content="https://metatags.io/images/meta-tags.png">
     <!-- Twitter -->
@@ -100,11 +98,11 @@
         </div>
         <!-- =============== NAVBAR ============= -->
         <nav class="flex items-center py-[10.52px] justify-between max-w-[1165px] mx-auto px-3">
-            <a href="/homepage.html" aria-label="logo">
+            <a href="/" aria-label="logo">
                 <img src="./assets/images/blogspage/svg/logo-blogs.svg" alt="headerlogo">
             </a>
             <div class="flex items-center">
-                <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:h-screen max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center" id="navbar">
+                <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:min-h-lvh max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center" id="navbar">
                     <li>
                         <a href="/beerpackagepage.html" aria-label="all-beer" onclick="openNav()" class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">All Beers</a>
                     </li>
@@ -194,15 +192,15 @@
         </div>
     </header>
     <!-- ===================CONTACT US MAP======================= -->
-    <div class="max-h-[416px]"> <iframe class="w-full h-[416px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509431!2d144.96328031531644!3d-37.81421797975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f1b7e13690bb!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1617753476514!5m2!1sen!2sau"
+    <div class="max-h-[416px]"> <iframe title="map" class="w-full h-[416px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509431!2d144.96328031531644!3d-37.81421797975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f1b7e13690bb!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1617753476514!5m2!1sen!2sau"
             allowfullscreen="" loading="lazy"></iframe></div>
     <!--====================CONTACT US ======================= -->
     <section class="py-12 sm:py-16 md:py-20 lg:py-24 xl:pt-[106px] xl:pb-[102px] overflow-x-clip relative z-[1] 2xl:max-w-[1920px] 2xl:mx-auto">
-        <div class="absolute bottom-[10%] sm:top-2 lg:top-[11%] right-2 pointer-events-none z-[-1]">
-            <img class="max-sm:max-w-12" src="./assets/images/blogspage/svg/common_vector_yellow_semicircle.svg" alt="semicirle">
+        <div class="absolute bottom-[10%] sm:top-2 lg:top-[11%] right-2 pointer-events-none z-[-1] max-w-[74px]">
+            <img class="max-sm:max-w-12" width="74" height="74" src="./assets/images/blogspage/svg/common_vector_yellow_semicircle.svg" alt="semicirle">
         </div>
-        <div class="absolute max-sm:hidden top-[50%] lg:top-[50%] xl:top-[38%] left-[-1%] rotate-[70deg] pointer-events-none animate-circle z-[-1]">
-            <img class="max-md:max-w-12 max-lg:max-w-14 " src="./assets/images/blogspage/svg/semicircle_black_vector.svg" alt="semicirle">
+        <div class="absolute max-sm:hidden top-[50%] lg:top-[50%] xl:top-[38%] left-[-1%] rotate-[70deg] pointer-events-none animate-circle z-[-1] max-w-[74px]">
+            <img class="max-md:max-w-12 max-lg:max-w-14 " width="74" height="74" src="./assets/images/blogspage/svg/semicircle_black_vector.svg" alt="semicirle">
         </div>
         <div class="container max-w-[1164px] mx-auto px-3">
             <div class="flex flex-col-reverse flex-wrap -mx-3 md:flex-row">
@@ -234,7 +232,7 @@
                             <p class="font-medium text-red-400" id="errorEmail"></p>
                             <div class="flex flex-col mt-4 sm:mt-6"> <label for="message" class="font-poppins font-normal text-sm sm:text-base !leading-normal">Message</label>
                                 <textarea id="message" name="message" placeholder="Type your message..." class=":placeholder:font-poppins :placeholder:font-normal w-full border border-black rounded-[5px] outline-none px-3 sm:px-4 py-2 sm:py-[11px] opacity-40 mt-2 :placeholder:text-black min-h-[100px] sm:min-h-[130px] lg:min-h-[180px]"></textarea></div>
-                            <p class="font-medium text-red-400" id="errorMessage"></p> <button type="submit" class="p-[10px_12px] sm:p-[14px_16px] bg-yellow rounded-[5px] font-poppins font-normal text-sm sm:text-base !leading-normal hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out mt-4 sm:mt-6">Submit</button>
+                            <button type="submit" class="p-[10px_12px] sm:p-[14px_16px] bg-yellow rounded-[5px] font-poppins font-normal text-sm sm:text-base !leading-normal hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out mt-4 sm:mt-6">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -546,7 +544,7 @@
         let Email = document.getElementById("email");
         let errorEmail = document.getElementById("errorEmail");
         let Message = document.getElementById("message");
-        let errorMessage = document.getElementById("errorMessage");
+
 
         const regex = {
             name: /^[a-zA-Z\s]+$/,
@@ -569,17 +567,11 @@
                 errorEmail.innerHTML = "";
             }
 
-            if (Message.value.length < 10) {
-                errorMessage.innerHTML = "Message must be at least 10 characters long.";
 
-            } else {
-                errorMessage.innerHTML = "";
-            }
 
-            if (Name.value !== "" && Email.value !== "" && Message.value !== "") {
+            if (Name.value !== "" && Email.value !== "") {
                 console.log(Name.value);
                 console.log(Email.value);
-                console.log(Message.value);
                 alert("Form submitted successfully!");
                 this.reset();
             }
