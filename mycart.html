@@ -29,14 +29,14 @@
     Cans" />
     <meta property="og:description"
         content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
-    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="og:image" content="https://postimg.cc/qz0YDYq1" />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://metatags.io/" />
     <meta property="twitter:title" content="Welcome to  Rebel Beer Cans" />
     <meta property="twitter:description"
         content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
-    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="twitter:image" content="https://postimg.cc/qz0YDYq1" />
     <!-- Meta Tags Generated with https://metatags.io -->
     <meta property="twitter:image" content="./meta-img.webp" />
     <script>
@@ -317,9 +317,9 @@
                             <img class="cursor-pointer" src="./assets/images/newcart/svg/add.svg" alt="add">
                             <img class="cursor-pointer" src="./assets/images/newcart/svg/share.svg" alt="">
                         </div>
-                        <img class="absolute start-0 top-[50%] translate-y-[-50%]"
+                        <img class="absolute left-arrow cursor-pointer start-0 top-[50%] translate-y-[-50%]"
                             src="./assets/images/newcart/svg/left_arrow.svg" alt="arrow">
-                        <img class="absolute end-0 top-[50%] translate-y-[-50%]"
+                        <img class="absolute right-arrow cursor-pointer end-0 top-[50%] translate-y-[-50%]"
                             src="./assets/images/newcart/svg/right_arrow.svg" alt="arrow">
                         <div
                             class="flex items-center bg-yellow rounded-tr-sm rounded-br-sm absolute top-[20px] start-0 w-[84px] h-[39px] justify-center">
@@ -972,22 +972,44 @@
             document.querySelector(".menu").classList.toggle("cross");
         }
     </script>
-    <!-- ================== series tabs ================ -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const tabs = document.querySelectorAll('.series-tabs');
-            const mainImage = document.getElementById('mainImage');
+<!-- ----------------- series tabs -------------------- -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabs = document.querySelectorAll('.series-tabs');
+        const mainImage = document.getElementById('mainImage');
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+        let currentTabIndex = Array.from(tabs).findIndex(tab => tab.classList.contains('active'));
 
-            tabs.forEach(tab => {
-                tab.addEventListener('click', function () {
-                    tabs.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    const thumbnail = this.querySelector('.thumbnail');
-                    mainImage.src = thumbnail.src;
-                });
+        function updateMainImage(index) {
+            tabs.forEach(t => t.classList.remove('active'));
+            tabs[index].classList.add('active');
+            const thumbnail = tabs[index].querySelector('.thumbnail');
+            mainImage.src = thumbnail.src;
+        }
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', function () {
+                currentTabIndex = index;
+                updateMainImage(currentTabIndex);
             });
         });
-    </script>
+
+        leftArrow.addEventListener('click', function () {
+            currentTabIndex = (currentTabIndex > 0) ? currentTabIndex - 1 : tabs.length - 1;
+            updateMainImage(currentTabIndex);
+        });
+
+        rightArrow.addEventListener('click', function () {
+            currentTabIndex = (currentTabIndex < tabs.length - 1) ? currentTabIndex + 1 : 0;
+            updateMainImage(currentTabIndex);
+        });
+
+        // Initialize the first tab as active
+        if (currentTabIndex === -1) currentTabIndex = 0;
+        updateMainImage(currentTabIndex);
+    });
+</script>
 
     <script>
         const quantityElement = document.getElementById('quantity');
