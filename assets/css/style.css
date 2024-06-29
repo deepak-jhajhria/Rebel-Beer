@@ -6,16 +6,6 @@
   scroll-behavior: smooth !important;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 .tab-button {
   cursor: pointer;
   background-color: transparent;
@@ -53,14 +43,85 @@ input[type=number] {
 
 #blue.tab-button.active {
   border: 1px solid #bedcfe !important;
+}
 
-  .partnersslider_track {
-    @apply w-[calc(268px*_5)];
+#blue.tab-button.active div {
+  background-color: #bedcfe;
+  border-color: #bedcfe !important;
+  width: 20px;
+  height: 20px;
+}
+
+#green.tab-button.active {
+  border: 1px solid #a7e45f !important;
+}
+
+#green.tab-button.active div {
+  background-color: #a7e45f;
+  border-color: #a7e45f !important;
+  width: 20px;
+  height: 20px;
+}
+
+.text_outline {
+  -webkit-text-stroke: solid;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+@media (max-width:640px) {
+  #green.tab-button.active div {
+    width: 10px;
+    height: 10px;
   }
 
-  .partners_slider_track:hover {
-    animation-play-state: paused;
+  #blue.tab-button.active div {
+    width: 10px;
+    height: 10px;
   }
+
+  .tab-button.active div {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #green.tab-button.active {
+    border: 1px solid black !important;
+  }
+
+  #green.tab-button.active div {
+    background-color: black;
+    border-color: black !important;
+  }
+
+  .tab-button.active div {
+    background-color: black;
+    border-color: black;
+
+  }
+
+  .tab-button.active {
+    border: 1px solid black;
+  }
+
+  #blue.tab-button.active {
+    border: 1px solid black !important;
+  }
+
+  #blue.tab-button.active div {
+    background-color: black;
+    border-color: black !important;
+  }
+}
+
+.partnersslider_track {
+  @apply w-[calc(268px*_5)];
+}
+
+.partners_slider_track:hover {
+  animation-play-state: paused;
 }
 
 /* ========================FAQS AND PRIVACY CSS============================== */
@@ -91,7 +152,6 @@ input[type=number] {
 .animate-spin {
   animation: spin 7s linear infinite !important;
 }
-
 
 /* ================================ MY ACCOUNT CSS ============================================ */
 
