@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="./assets/images/common/webp/favicon.webp" type="image/x-icon">
     <!-- =============== CSS LINK ============= -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/myaccount.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
     <!-- =============== TAILWIND LINK ============= -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -60,11 +63,8 @@
                         'light-grey': '#E5C130',
                         'off-grey': '#E7E4D7',
                         'numbers-grey': '#DFE3E8',
-                        'light-red': '#F4456A',
-                        'light-yellow': '#FFCC021A',
-                        'light-grey': '#0000001A',
-                        'off-white': '#FFFFFFA8',
-                        'red': '#F4456A',
+                        'light-red': '#F4456A'
+
 
                     },
                     fontSize: {
@@ -137,12 +137,13 @@
                         d="M8.0812 22.9866C8.0812 23.6509 7.54312 24.189 6.87879 24.189C6.21445 24.189 5.67578 23.6509 5.67578 22.9866C5.67578 22.3223 6.21451 21.7842 6.87879 21.7842C7.54307 21.7842 8.0812 22.3223 8.0812 22.9866Z"
                         fill="#ACB3BA"></path>
                 </svg></span>
+
             <p class="text-[#F0F0EA] text-[14px] font-play font-normal">Free Shipping Over First Order</p>
         </div>
         <!-- =============== NAVBAR ============= -->
         <nav class="flex items-center py-[10.52px] justify-between max-w-[1165px] relative z-50 mx-auto px-3">
-            <a href="#">
-                <img src="./assets/images/myaccount/svg/header_logo.svg" alt="headerlogo">
+            <a href="/">
+                <img src="./assets/images/glasses/svg/navBarLogo.svg" alt="headerlogo">
             </a>
             <div class="flex items-center">
                 <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:h-screen max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center"
@@ -169,7 +170,7 @@
                     </li>
                     <div class="flex flex-row gap-2 sm:hidden">
                         <a href="#" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                            <svg class="duration-500 ease-in-out  group-hover:fill-black" width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
@@ -186,24 +187,24 @@
                             </svg>
                         </a>
                         <a href="#" class="duration-500 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                            <svg class="duration-500 ease-in-out  group-hover:fill-black" width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
-                                <path class="duration-500 ease-in-out group-hover:stroke-yellow"
+                                <path class="duration-500 ease-in-out  group-hover:stroke-yellow"
                                     d="M12 22.5C12 21.7044 12.3161 20.9413 12.8787 20.3787C13.4413 19.8161 14.2044 19.5 15 19.5H21C21.7956 19.5 22.5587 19.8161 23.1213 20.3787C23.6839 20.9413 24 21.7044 24 22.5C24 22.8978 23.842 23.2794 23.5607 23.5607C23.2794 23.842 22.8978 24 22.5 24H13.5C13.1022 24 12.7206 23.842 12.4393 23.5607C12.158 23.2794 12 22.8978 12 22.5Z"
                                     stroke="black" stroke-width="1.5" stroke-linejoin="round" />
-                                <path class="duration-500 ease-in-out group-hover:stroke-yellow"
+                                <path class="duration-500 ease-in-out  group-hover:stroke-yellow"
                                     d="M18 16.5C19.2426 16.5 20.25 15.4926 20.25 14.25C20.25 13.0074 19.2426 12 18 12C16.7574 12 15.75 13.0074 15.75 14.25C15.75 15.4926 16.7574 16.5 18 16.5Z"
                                     stroke="black" stroke-width="1.5" />
                             </svg>
                         </a>
                         <a href="#" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                            <svg class="duration-500 ease-in-out  group-hover:fill-black" width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
-                                <path class="duration-500 ease-in-out group-hover:fill-yellow" fill-rule="evenodd"
+                                <path class="duration-500 ease-in-out  group-hover:fill-yellow" fill-rule="evenodd"
                                     clip-rule="evenodd"
                                     d="M17.9988 11.0625C17.5513 11.0625 17.122 11.2403 16.8056 11.5568C16.4891 11.8732 16.3113 12.3024 16.3113 12.75V12.945C16.7291 12.9375 17.1873 12.9375 17.6913 12.9375H18.3071C18.8096 12.9375 19.2686 12.9375 19.6871 12.945V12.75C19.6871 12.5283 19.6434 12.3088 19.5585 12.104C19.4737 11.8993 19.3493 11.7132 19.1925 11.5565C19.0358 11.3998 18.8496 11.2755 18.6448 11.1907C18.44 11.106 18.2205 11.0624 17.9988 11.0625ZM20.8113 12.996V12.75C20.8113 12.0041 20.515 11.2887 19.9875 10.7613C19.4601 10.2338 18.7447 9.9375 17.9988 9.9375C17.2529 9.9375 16.5375 10.2338 16.0101 10.7613C15.4826 11.2887 15.1863 12.0041 15.1863 12.75V12.996C15.0791 13.005 14.9763 13.0155 14.8758 13.0282C14.1183 13.122 13.4943 13.3185 12.9633 13.7587C12.4331 14.199 12.1248 14.7765 11.8931 15.504C11.6681 16.209 11.4986 17.1143 11.2856 18.2535L11.2698 18.336C10.9683 19.9432 10.7313 21.21 10.6871 22.2083C10.6421 23.232 10.7951 24.0795 11.3726 24.7748C11.9501 25.4708 12.7548 25.7768 13.7688 25.9215C14.7588 26.0625 16.0466 26.0625 17.6823 26.0625H18.3161C19.9511 26.0625 21.2396 26.0625 22.2288 25.9215C23.2428 25.7768 24.0483 25.4708 24.6258 24.7748C25.2033 24.0795 25.3548 23.232 25.3106 22.2083C25.2671 21.21 25.0293 19.9432 24.7278 18.336L24.7128 18.2535C24.4991 17.1143 24.3288 16.2083 24.1053 15.504C23.8728 14.7765 23.5653 14.199 23.0343 13.7587C22.5041 13.3185 21.8793 13.1212 21.1218 13.0282C21.0185 13.0156 20.915 13.0048 20.8113 12.996ZM15.0138 14.145C14.3726 14.2238 13.9848 14.373 13.6818 14.625C13.3796 14.8755 13.1613 15.2287 12.9648 15.8453C12.7646 16.4752 12.6063 17.3137 12.3843 18.498C12.0723 20.1607 11.8511 21.348 11.8113 22.2577C11.7723 23.1503 11.9163 23.6678 12.2381 24.057C12.5606 24.4447 13.0428 24.681 13.9278 24.807C14.8278 24.936 16.0368 24.9375 17.7281 24.9375H18.2696C19.9608 24.9375 21.1691 24.936 22.0698 24.8077C22.9548 24.681 23.4371 24.4447 23.7596 24.057C24.0821 23.6685 24.2253 23.151 24.1871 22.257C24.1466 21.3488 23.9253 20.1607 23.6133 18.498C23.3913 17.313 23.2338 16.476 23.0328 15.8453C22.8363 15.2287 22.6188 14.8755 22.3158 14.6242C22.0128 14.373 21.6258 14.2238 20.9838 14.1442C20.3268 14.0633 19.4741 14.0625 18.2688 14.0625H17.7288C16.5236 14.0625 15.6708 14.0633 15.0138 14.145Z"
                                     fill="black" />
@@ -214,7 +215,7 @@
                 <div class="flex items-center gap-[17px]">
                     <div class=" hidden sm:flex gap-[9px] items-center">
                         <a href="#" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                            <svg class="duration-500 ease-in-out  group-hover:fill-black" width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
@@ -231,24 +232,24 @@
                             </svg>
                         </a>
                         <a href="#" class="duration-500 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                            <svg class="duration-500 ease-in-out  group-hover:fill-black" width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
-                                <path class="duration-500 ease-in-out group-hover:stroke-yellow"
+                                <path class="duration-500 ease-in-out  group-hover:stroke-yellow"
                                     d="M12 22.5C12 21.7044 12.3161 20.9413 12.8787 20.3787C13.4413 19.8161 14.2044 19.5 15 19.5H21C21.7956 19.5 22.5587 19.8161 23.1213 20.3787C23.6839 20.9413 24 21.7044 24 22.5C24 22.8978 23.842 23.2794 23.5607 23.5607C23.2794 23.842 22.8978 24 22.5 24H13.5C13.1022 24 12.7206 23.842 12.4393 23.5607C12.158 23.2794 12 22.8978 12 22.5Z"
                                     stroke="black" stroke-width="1.5" stroke-linejoin="round" />
-                                <path class="duration-500 ease-in-out group-hover:stroke-yellow"
+                                <path class="duration-500 ease-in-out  group-hover:stroke-yellow"
                                     d="M18 16.5C19.2426 16.5 20.25 15.4926 20.25 14.25C20.25 13.0074 19.2426 12 18 12C16.7574 12 15.75 13.0074 15.75 14.25C15.75 15.4926 16.7574 16.5 18 16.5Z"
                                     stroke="black" stroke-width="1.5" />
                             </svg>
                         </a>
                         <a href="#" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
+                            <svg class="duration-500 ease-in-out  group-hover:fill-black" width="36" height="36"
                                 viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
                                     stroke-opacity="0.2" />
-                                <path class="duration-500 ease-in-out group-hover:fill-yellow" fill-rule="evenodd"
+                                <path class="duration-500 ease-in-out  group-hover:fill-yellow" fill-rule="evenodd"
                                     clip-rule="evenodd"
                                     d="M17.9988 11.0625C17.5513 11.0625 17.122 11.2403 16.8056 11.5568C16.4891 11.8732 16.3113 12.3024 16.3113 12.75V12.945C16.7291 12.9375 17.1873 12.9375 17.6913 12.9375H18.3071C18.8096 12.9375 19.2686 12.9375 19.6871 12.945V12.75C19.6871 12.5283 19.6434 12.3088 19.5585 12.104C19.4737 11.8993 19.3493 11.7132 19.1925 11.5565C19.0358 11.3998 18.8496 11.2755 18.6448 11.1907C18.44 11.106 18.2205 11.0624 17.9988 11.0625ZM20.8113 12.996V12.75C20.8113 12.0041 20.515 11.2887 19.9875 10.7613C19.4601 10.2338 18.7447 9.9375 17.9988 9.9375C17.2529 9.9375 16.5375 10.2338 16.0101 10.7613C15.4826 11.2887 15.1863 12.0041 15.1863 12.75V12.996C15.0791 13.005 14.9763 13.0155 14.8758 13.0282C14.1183 13.122 13.4943 13.3185 12.9633 13.7587C12.4331 14.199 12.1248 14.7765 11.8931 15.504C11.6681 16.209 11.4986 17.1143 11.2856 18.2535L11.2698 18.336C10.9683 19.9432 10.7313 21.21 10.6871 22.2083C10.6421 23.232 10.7951 24.0795 11.3726 24.7748C11.9501 25.4708 12.7548 25.7768 13.7688 25.9215C14.7588 26.0625 16.0466 26.0625 17.6823 26.0625H18.3161C19.9511 26.0625 21.2396 26.0625 22.2288 25.9215C23.2428 25.7768 24.0483 25.4708 24.6258 24.7748C25.2033 24.0795 25.3548 23.232 25.3106 22.2083C25.2671 21.21 25.0293 19.9432 24.7278 18.336L24.7128 18.2535C24.4991 17.1143 24.3288 16.2083 24.1053 15.504C23.8728 14.7765 23.5653 14.199 23.0343 13.7587C22.5041 13.3185 21.8793 13.1212 21.1218 13.0282C21.0185 13.0156 20.915 13.0048 20.8113 12.996ZM15.0138 14.145C14.3726 14.2238 13.9848 14.373 13.6818 14.625C13.3796 14.8755 13.1613 15.2287 12.9648 15.8453C12.7646 16.4752 12.6063 17.3137 12.3843 18.498C12.0723 20.1607 11.8511 21.348 11.8113 22.2577C11.7723 23.1503 11.9163 23.6678 12.2381 24.057C12.5606 24.4447 13.0428 24.681 13.9278 24.807C14.8278 24.936 16.0368 24.9375 17.7281 24.9375H18.2696C19.9608 24.9375 21.1691 24.936 22.0698 24.8077C22.9548 24.681 23.4371 24.4447 23.7596 24.057C24.0821 23.6685 24.2253 23.151 24.1871 22.257C24.1466 21.3488 23.9253 20.1607 23.6133 18.498C23.3913 17.313 23.2338 16.476 23.0328 15.8453C22.8363 15.2287 22.6188 14.8755 22.3158 14.6242C22.0128 14.373 21.6258 14.2238 20.9838 14.1442C20.3268 14.0633 19.4741 14.0625 18.2688 14.0625H17.7288C16.5236 14.0625 15.6708 14.0633 15.0138 14.145Z"
                                     fill="black" />
@@ -270,11 +271,12 @@
         </nav>
 
         <div
-            class="bg-cover bg-bottom flex justify-center items-center flex-col pt-12 pb-14 sm:pt-[80px] sm:pb-[100px]  px-3 hero_bg">
-
+            class="bg-cover bg-bottom flex justify-center items-center flex-col py-14 md:pb-[108px]   px-3 common_hero_bg ">
+            <div class="max-w-[1165px] mx-auto px-3"></div>
             <h2
-                class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-[115%] text-center">
+                class="font-play font-bold text-2xl md:pt-11 sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-[115%] text-center">
                 New Beer</h2>
+
         </div>
         <div class="bg-[#F0F0EA] undefined">
             <div class="container max-w-[1165px] mx-auto px-3 py-[14.5px]">
@@ -292,7 +294,7 @@
             </div>
         </div>
     </header>
-    <section class="bg-white xl:pb-[144px] lg:pb-24 md:pb-20 sm:pb-16 pb-12 pt-[64px] relative">
+    <section class="bg-white xl:pb-[144px] overflow-hidden lg:pb-24 md:pb-20 sm:pb-16 pb-12 pt-[64px] relative">
 
         <span class="absolute right-0 pointer-events-none top-2">
             <svg width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -335,8 +337,8 @@
             <div class="flex flex-col justify-between gap-3 pb-1 lg:flex-row lg:gap-0">
                 <div class="flex items-center justify-between w-full mb-1 lg:justify-start">
 
-                    <div class="flex items-center justify-between w-full">
-                        <div class="flex items-center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <div class="flex items-center justify-center w-full sm:justify-between">
+                        <div class="flex items-center "><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12.2637 0.55957L15.1667 4.87336L20.2697 3.87578L19.2721 8.97883L23.5859 11.8818L19.2721 14.7848L20.2697 19.8879L15.1667 18.8903L12.2637 23.2041L9.36067 18.8903L4.25762 19.8879L5.2552 14.7848L0.941406 11.8818L5.2552 8.97883L4.25762 3.87578L9.36067 4.87336L12.2637 0.55957Z"
@@ -383,72 +385,77 @@
                         <div class="flex gap-6 mt-4 sm:mt-0 sm:gap-0">
                             <div
                                 class="relative bg-white border flex sm:min-w-[181px] h-[44px] border-black rounded-[5px]">
-                                <button
+                                <button id="custom-select-button-17"
                                     class="h-[44px] w-full px-[10px] pb-1 flex sm:min-w-[190px] justify-between font-poppins items-center font-semibold text-sm sm:text-base"
-                                    onclick="toggleDropdown('dropdown-menu-17')">
+                                    onclick="handleDropdown('dropdown-menu-17', 'custom-select-button-17')">
                                     Standard sorting
                                     <svg class="sm:me-2 ms-1" width="12" height="8" viewBox="0 0 12 8" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-
-
                                 </button>
                                 <ul id="dropdown-menu-17"
-                                    class="absolute right-0 z-10 hidden w-full bg-white border rounded-md shadow-lg top-full">
-                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                    class="absolute right-0 z-10 hidden w-full bg-white border rounded-md shadow-lg custom-dropdown-menu top-full">
+                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                        <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-17')"
+                                            class="font-bold text-black font-play hover:bg-yellow whitespace-nowrap hover:text-white options">Standard
+                                            1</a>
                                     </li>
-                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                        <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-17')"
+                                            class="font-bold text-black font-play hover:bg-yellow whitespace-nowrap hover:text-white options">Standard
+                                            2</a>
                                     </li>
-                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                        <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-17')"
+                                            class="font-bold text-black font-play hover:bg-yellow whitespace-nowrap hover:text-white options">Standard
+                                            3</a>
                                     </li>
-                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                        <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-17')"
+                                            class="font-bold text-black font-play hover:bg-yellow whitespace-nowrap hover:text-white options">Standard
+                                            4</a>
                                     </li>
                                 </ul>
                             </div>
                             <div
                                 class="relative sm:ms-3 lg:ms-8 bg-yellow border flex sm:min-w-[181px] h-[44px] border-yellow rounded-[5px]">
-                                <button
-                                    class="h-[44px] ps-4 pe-3 pb-1 flex sm:min-w-[181px] justify-center gap-6 items-center font-bold text-sm"
-                                    onclick="toggleDropdown('dropdown-menu-16')">
+                                <button id="custom-select-button-16"
+                                    class="h-[44px] ps-4 pe-3 pb-1 flex sm:min-w-[181px] justify-center gap-6 items-center font-bold text-base"
+                                    onclick="handleDropdown('dropdown-menu-16', 'custom-select-button-16')">
                                     Category
                                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-
-
                                 </button>
                                 <ul id="dropdown-menu-16"
-                                    class="absolute right-0 z-10 hidden w-full bg-white border rounded-md shadow-lg top-full">
+                                    class="absolute right-0 z-10 hidden w-full bg-white border rounded-md shadow-lg custom-dropdown-menu top-full">
                                     <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                            onclick="handleOptionSelect(event, 'custom-select-button-16')"
+                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options">category
+                                            1</a>
                                     </li>
                                     <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                            onclick="handleOptionSelect(event, 'custom-select-button-16')"
+                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options">category
+                                            2</a>
                                     </li>
                                     <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                            onclick="handleOptionSelect(event, 'custom-select-button-16')"
+                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options">category
+                                            3</a>
                                     </li>
                                     <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                            onclick="handleOptionSelect(event, 'custom-select-button-16')"
+                                            class="font-bold text-black font-play hover:bg-yellow hover:text-white options">category
+                                            4</a>
                                     </li>
                                 </ul>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -474,36 +481,38 @@
                             </div>
                         </div>
                         <div
-                            class="relative mt-4 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
-                            <button
+                            class="relative mt-12 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
+                            <button id="custom-select-button-1"
                                 class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-1')">
+                                onclick="handleDropdown('dropdown-menu-1', 'custom-select-button-1')">
                                 Sort Beers
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
                             </button>
                             <ul id="dropdown-menu-1"
-                                class="absolute right-0 z-10 hidden w-full border rounded-md shadow-lg top-full bg-cream">
+                                class="absolute right-0 z-10 hidden w-full border rounded-md shadow-lg custom-dropdown-menu top-full bg-cream">
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-1')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">
+                                        Sort Beers 1</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-1')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">
+                                        Sort Beers 2</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-1')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">
+                                        Sort Beers 3</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-1')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">
+                                        Sort Beers 4</a>
                                 </li>
                             </ul>
                         </div>
@@ -612,36 +621,38 @@
                             </div>
                         </div>
                         <div
-                            class="relative mt-4 bg-cream w-full border flex items-center min-w-[229px] h-[44px] border-black rounded-[5px]">
-                            <button
+                            class="relative mt-12 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
+                            <button id="custom-select-button-2"
                                 class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-2')">
+                                onclick="handleDropdown('dropdown-menu-2', 'custom-select-button-2')">
                                 Can Mark
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
                             </button>
                             <ul id="dropdown-menu-2"
-                                class="absolute right-0 z-10 hidden w-full border rounded-md shadow-lg top-full bg-cream">
+                                class="absolute right-0 z-10 hidden w-full border rounded-md shadow-lg custom-dropdown-menu top-full bg-cream">
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-2')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">
+                                        Can Mark 1</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-2')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">
+                                        Can Mark 2</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-2')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">
+                                        Can Mark 3</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-2')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">
+                                        Can Mark 4</a>
                                 </li>
                             </ul>
                         </div>
@@ -664,36 +675,38 @@
                             </div>
                         </div>
                         <div
-                            class="relative mt-4 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
-                            <button
+                            class="relative mt-12 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
+                            <button id="custom-select-button-3"
                                 class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-3')">
+                                onclick="handleDropdown('dropdown-menu-3', 'custom-select-button-3')">
                                 Land
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
                             </button>
                             <ul id="dropdown-menu-3"
-                                class="absolute right-0 z-10 hidden w-full border rounded-md shadow-lg top-full bg-cream">
+                                class="absolute right-0 z-10 hidden w-full border rounded-md shadow-lg custom-dropdown-menu top-full bg-cream">
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-3')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">Land
+                                        1</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-3')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">Land
+                                        2</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-3')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">Land
+                                        3</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-3')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">Land
+                                        4</a>
                                 </li>
                             </ul>
                         </div>
@@ -945,35 +958,37 @@
                         </div>
                         <div
                             class="relative mt-12 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
-                            <button
+                            <button id="custom-select-button-4"
                                 class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-5')">
+                                onclick="handleDropdown('dropdown-menu-4', 'custom-select-button-4')">
                                 Breweries
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
                             </button>
-                            <ul id="dropdown-menu-5"
-                                class="absolute right-0 z-10 hidden w-full border rounded-md shadow-lg top-full bg-cream">
-                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                            <ul id="dropdown-menu-4"
+                                class="absolute right-0 z-10 hidden w-full border rounded-md shadow-lg custom-dropdown-menu top-full bg-cream">
+                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                    <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-4')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">Breweries
+                                        1</a>
                                 </li>
-                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                    <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-4')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">Breweries
+                                        2</a>
                                 </li>
-                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                    <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-4')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">Breweries
+                                        3</a>
                                 </li>
-                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                    <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-4')"
+                                        class="font-bold text-black font-play hover:bg-yellow hover:text-white options">Breweries
+                                        4</a>
                                 </li>
                             </ul>
                         </div>
@@ -1103,13 +1118,8 @@
                                 class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
-<<<<<<< HEAD
-                                    <<<<<<< HEAD <span
-                                        class="absolute bg-white flex justify-center items-center w-6 h-6 rounded-full top-2 right-2">
-=======
                                     <span
                                         class="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full top-2 right-2">
->>>>>>> 7970081a87a8264fa691087748ee5dff45389a06
                                         <svg width="15" class="mt-[2px]" height="15" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1117,23 +1127,12 @@
                                                 d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
                                                 fill="#ffffff" stroke="#000000"></path>
                                         </svg>
-                                        =======
-                                        <span
-                                            class="absolute bg-white flex justify-center items-center w-6 h-6 rounded-full top-2 right-2">
-                                            <svg width="15" class="mt-[2px]" height="15" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    class="group-hover:fill-light-red group-hover:stroke-light-red duration-300"
-                                                    d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
-                                                    fill="#ffffff" stroke="#000000"></path>
-                                            </svg>
-                                            >>>>>>> d374525f90550f94aa0514241b21c27c92d4a385
-                                        </span>
-                                        <p
-                                            class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
-                                            Save 10%</p>
-                                        <img src="./assets/images/category/webp/category-cane1.png" alt="beer cane"
-                                            class="max-w-[121.59px] h-[210px]">
+                                    </span>
+                                    <p
+                                        class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
+                                        Save 10%</p>
+                                    <img src="./assets/images/category/webp/category-cane1.png" alt="beer cane"
+                                        class="max-w-[121.59px] h-[210px]">
                                 </div>
                                 <h4 class="mb-3 text-base font-bold text-black font-play leading-112">Puhaste_ Faba_
                                     bourbon
@@ -1167,13 +1166,8 @@
                                 class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
-<<<<<<< HEAD
-                                    <<<<<<< HEAD <span
-                                        class="absolute bg-white flex justify-center items-center w-6 h-6 rounded-full top-2 right-2">
-=======
                                     <span
                                         class="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full top-2 right-2">
->>>>>>> 7970081a87a8264fa691087748ee5dff45389a06
                                         <svg width="15" class="mt-[2px]" height="15" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1181,23 +1175,12 @@
                                                 d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
                                                 fill="#ffffff" stroke="#000000"></path>
                                         </svg>
-                                        =======
-                                        <span
-                                            class="absolute bg-white flex justify-center items-center w-6 h-6 rounded-full top-2 right-2">
-                                            <svg width="15" class="mt-[2px]" height="15" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    class="group-hover:fill-light-red group-hover:stroke-light-red duration-300"
-                                                    d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
-                                                    fill="#ffffff" stroke="#000000"></path>
-                                            </svg>
-                                            >>>>>>> d374525f90550f94aa0514241b21c27c92d4a385
-                                        </span>
-                                        <p
-                                            class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
-                                            Save 10%</p>
-                                        <img src="./assets/images/category/webp/category-cane2.png" alt="beer cane"
-                                            class="max-w-[121.59px] h-[210px]">
+                                    </span>
+                                    <p
+                                        class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
+                                        Save 10%</p>
+                                    <img src="./assets/images/category/webp/category-cane2.png" alt="beer cane"
+                                        class="max-w-[121.59px] h-[210px]">
                                 </div>
                                 <h4 class="mb-3 text-base font-bold text-black font-play leading-112">Puhaste_ Faba_
                                     bourbon
@@ -1231,13 +1214,8 @@
                                 class="max-w-[270px] bg-white category_card rounded-[5px] shadow-latestblogssidershadow group hover:bg-yellow transition-all duration-300 border max-h-[426px] border-black px-4">
                                 <div
                                     class="bg-dark-gray my-3 max-h-[257px] relative flex justify-center items-center py-4 xl:py-8 xl:px-14">
-<<<<<<< HEAD
-                                    <<<<<<< HEAD <span
-                                        class="absolute bg-white flex justify-center items-center w-6 h-6 rounded-full top-2 right-2">
-=======
                                     <span
                                         class="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full top-2 right-2">
->>>>>>> 7970081a87a8264fa691087748ee5dff45389a06
                                         <svg width="15" class="mt-[2px]" height="15" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1245,23 +1223,12 @@
                                                 d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
                                                 fill="#ffffff" stroke="#000000"></path>
                                         </svg>
-                                        =======
-                                        <span
-                                            class="absolute bg-white flex justify-center items-center w-6 h-6 rounded-full top-2 right-2">
-                                            <svg width="15" class="mt-[2px]" height="15" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    class="group-hover:fill-light-red group-hover:stroke-light-red duration-300"
-                                                    d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
-                                                    fill="#ffffff" stroke="#000000"></path>
-                                            </svg>
-                                            >>>>>>> d374525f90550f94aa0514241b21c27c92d4a385
-                                        </span>
-                                        <p
-                                            class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
-                                            Save 10%</p>
-                                        <img src="./assets/images/category/webp/category-cane3.png" alt="beer cane"
-                                            class="max-w-[121.59px] h-[210px]">
+                                    </span>
+                                    <p
+                                        class="font-medium text-sm text-black font-poppins group-hover:bg-black group-hover:text-white transition-all duration-300  p-[5px] max-w-[74px] h-[31px] leading-150 absolute left-0 top-0 rounded-br-[4px]  rounded-tr-[4px] bg-yellow">
+                                        Save 10%</p>
+                                    <img src="./assets/images/category/webp/category-cane3.png" alt="beer cane"
+                                        class="max-w-[121.59px] h-[210px]">
                                 </div>
                                 <h4 class="mb-3 text-base font-bold text-black font-play leading-112">Puhaste_ Faba_
                                     bourbon
@@ -1874,51 +1841,51 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="flex items-center justify-center w-full gap-3 pt-10 md:pt-14 xl:pt-24 sm:gap-4">
+                            <svg class="rotate-[-180deg] duration-300 transition-all slide_icons" width="40" height="40"
+                                viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="transition-all duration-300" x="0.729422" y="0.620047" width="38.4429"
+                                    height="38.4429" rx="4.34033" fill="white" />
+                                <rect class="transition-all duration-300" x="0.729422" y="0.620047" width="38.4429"
+                                    height="38.4429" rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
+                                <path class="duaration-300"
+                                    d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
+                                    fill="#C4CDD5" />
+                            </svg>
+                            <div
+                                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                                1</div>
+                            <div
+                                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                                2</div>
+                            <div
+                                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                                ...</div>
+                            <div
+                                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                                9</div>
+                            <div
+                                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                                26</div>
+                            <svg class="transition-all duration-300 slide_icons" width="40" height="40"
+                                viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="transition-all duration-300" x="0.729422" y="0.620047" width="38.4429"
+                                    height="38.4429" rx="4.34033" fill="white" />
+                                <rect class="transition-all duration-300" x="0.729422" y="0.620047" width="38.4429"
+                                    height="38.4429" rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
+                                <path class="duartion-300"
+                                    d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
+                                    fill="#C4CDD5" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="flex items-center justify-center gap-3 pt-10 md:pt-14 xl:pt-24 sm:gap-4">
-                <svg class="rotate-[-180deg] duration-300 transition-all slide_icons" width="40" height="40"
-                    viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="transition-all duration-300" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-                        rx="4.34033" fill="white" />
-                    <rect class="transition-all duration-300" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-                        rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
-                    <path class="duaration-300"
-                        d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
-                        fill="#C4CDD5" />
-                </svg>
-                <div
-                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-                    1</div>
-                <div
-                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-                    2</div>
-                <div
-                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-                    ...</div>
-                <div
-                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-                    9</div>
-                <div
-                    class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-                    26</div>
-                <svg class="transition-all duration-300 slide_icons" width="40" height="40" viewBox="0 0 40 40"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="transition-all duration-300" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-                        rx="4.34033" fill="white" />
-                    <rect class="transition-all duration-300" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-                        rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
-                    <path class="duartion-300"
-                        d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
-                        fill="#C4CDD5" />
-                </svg>
-            </div>
+
         </div>
 
     </section>
-    <footer class="footer_bg bg-center bg-cover bg-no-repeat pt-[69.66px]">
+    <footer class="common_footer_bg bg-center bg-cover bg-no-repeat pt-[69.66px]">
         <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[104.42px]">
             <div class="flex flex-row flex-wrap">
                 <div class="lg:w-4/12">
@@ -1963,9 +1930,9 @@
                     <div class="flex flex-row flex-wrap justify-between">
                         <div class="md:w-3/12 min-[520px]:w-6/12 w-full">
                             <div class="flex flex-col gap-2 sm:gap-4">
-                                <a href="./contactpage.html"
+                                <p
                                     class="mb-1 text-lg font-bold text-white capitalize cursor-pointer font-play leading-110">
-                                    Contact</a>
+                                    Contact</p>
                                 <a href="#"
                                     class="text-sm font-normal text-white capitalize transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Rebelbeercans</a>
                                 <a href=""
@@ -1982,9 +1949,9 @@
                         </div>
                         <div class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7">
                             <div class="flex flex-col gap-2 sm:gap-4">
-                                <a href=""
+                                <p
                                     class="mb-1 text-lg font-bold text-white capitalize cursor-pointer font-play leading-110">
-                                    Information</a>
+                                    Information</p>
                                 <a href=""
                                     class="text-sm font-normal text-white capitalize transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Returns</a>
                                 <a href=""
@@ -2001,9 +1968,9 @@
                         </div>
                         <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7">
                             <div class="flex flex-col gap-2 sm:gap-4">
-                                <a href=""
+                                <p
                                     class="mb-1 text-lg font-bold text-white capitalize cursor-pointer font-play leading-110">
-                                    Conditions(nl)</a>
+                                    Conditions(nl)</p>
                                 <a href=""
                                     class="text-sm font-normal text-white transition-opacity duration-300 ease-linear cursor-pointer font-poppins opacity-70 leading-110 hover:opacity-100">Remove
                                     cookies</a>
@@ -2034,24 +2001,64 @@
         </p>
         <script>  const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>
     </footer>
+    <!-- ===============================BACK TO TOP=============================== -->
+    <button id="backtotop" onclick="window.scroll(0,0)"
+        class="hidden fixed bottom-8 sm:bottom-2.5 right-2.5 border border-white bg-yellow rounded-full transition-all duration-300 bg-opacity-80 hover:bg-black ease-linear z-20">
+        <span class="flex items-center justify-center mb-0 cursor-pointer w-7 sm:w-10 h-7 sm:h-10">
+            <svg class="max-sm:max-w-4 max-sm:max-h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="white" viewBox="0 0 16 16">
+                <path
+                    d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+                <path
+                    d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+            </svg>
+        </span>
+    </button>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
     <!-- ----------------------------- sort beers dropdown --------------------- -->
     <script>
-        function toggleDropdown(menuId) {
+        function handleDropdown(menuId, buttonId) {
             const dropdownMenu = document.getElementById(menuId);
             dropdownMenu.classList.toggle('hidden');
 
-            // Close dropdown when clicking on an option
-            const dropdownOptions = dropdownMenu.querySelectorAll('.dropdown-option');
-            dropdownOptions.forEach(option => {
-                option.addEventListener('click', () => {
-                    dropdownMenu.classList.add('hidden');
-                });
+            // Hide other dropdowns if they are open
+            document.querySelectorAll('.custom-dropdown-menu').forEach(menu => {
+                if (menu.id !== menuId) {
+                    menu.classList.add('hidden');
+                }
             });
         }
-    </script>
 
+        function handleOptionSelect(event, buttonId) {
+            event.preventDefault();
+            const selectedText = event.target.textContent.trim();
+            const button = document.getElementById(buttonId);
+            button.childNodes[0].textContent = selectedText;
+
+            // Hide the corresponding dropdown menu
+            const menuId = buttonId.replace('custom-select-button-', 'dropdown-menu-');
+            const dropdownMenu = document.getElementById(menuId);
+            dropdownMenu.classList.add('hidden');
+        }
+
+        // Attach event listeners to dropdown options
+        document.querySelectorAll('.custom-dropdown-menu .dropdown-option a').forEach(option => {
+            option.addEventListener('click', function (event) {
+                const menuId = option.closest('ul').id;
+                const buttonId = menuId.replace('dropdown-menu-', 'custom-select-button-');
+                handleOptionSelect(event, buttonId);
+            });
+        });
+    </script>
+    <!-- =============== NAVBAR JAVASCRIPT ============= -->
+    <script>
+        function openNav() {
+            document.getElementById("navbar").classList.toggle("left-0");
+            document.body.classList.toggle("overflow_hidden");
+            document.querySelector(".menu").classList.toggle("cross");
+        }
+    </script>
 
     <script>
         const mainContent = document.getElementById('main');
@@ -2060,6 +2067,18 @@
             mainContent.classList.toggle('start-0');
         }
     </script>
+    <!-- back to top -->
+    <script> function backtotop() {
+            window.scroll(0, 0);
+        }
+        window.addEventListener("scroll", function () {
+            let backtotop = document.getElementById("backtotop");
+            if (window.scrollY > 250) {
+                backtotop.style.display = "block";
+            } else {
+                backtotop.style.display = "none";
+            }
+        });</script>
     <!-- =============== JAVASCRIPT ============= -->
     <script src="./assets/js/myaccount.js"></script>
 </body>
