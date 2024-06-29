@@ -138,7 +138,9 @@
   animation: spin 7s linear infinite !important;
 }
 
+
 /* ================================ MY ACCOUNT CSS ============================================ */
+
 .animate-spin {
   animation: spin 7s linear infinite !important;
 }
@@ -171,7 +173,9 @@ input:checked + label > span::after {
   cursor: pointer;
 }
 
+
 /* ====================== BASEMENT CSS================================== */
+
 .heart svg {
   fill: none;
   stroke: black;
@@ -183,7 +187,13 @@ input:checked + label > span::after {
   fill: #f4456a;
 }
 
+<<<<<<< HEAD
 /* =============================   CATEGORY AND PRODUCT CSS ================== */
+=======
+
+/* =============================   CATEGORY AND PRODUCT CSS =========================================== */
+
+>>>>>>> 0334f547b408e5079a253c619cf573ed09cdb6ec
 .beer_list:hover .beer_names {
   color: #ffcc02;
 }
@@ -196,12 +206,30 @@ input:checked + label > span::after {
   display: none !important;
 }
 
+<<<<<<< HEAD
 ::-webkit-scrollbar-track {
   background-color: #f0f0ea;
 
   border-radius: 21px;
 }
 
+=======
+#cart-tabs::-webkit-scrollbar {
+    width: 6px !important;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background-color: #f0f0ea;
+    border-radius: 21px;
+}
+
+
+/* Handle */
+
+>>>>>>> 0334f547b408e5079a253c619cf573ed09cdb6ec
 ::-webkit-scrollbar-thumb {
   background: #ffcc02;
   border-radius: 10px;
@@ -251,14 +279,23 @@ input:checked + label > span::after {
   width: 6px;
 }
 
+
 /* Track */
+
 ::-webkit-scrollbar-track {
+<<<<<<< HEAD
   background-color: #f0f0ea;
 
   border-radius: 21px;
+=======
+    background-color: #f0f0ea;
+    border-radius: 21px;
+>>>>>>> 0334f547b408e5079a253c619cf573ed09cdb6ec
 }
 
+
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #ffcc02;
   border-radius: 10px;
@@ -322,6 +359,7 @@ input:checked + label > span::after {
 .partners_slider_track:hover {
   animation-play-state: paused;
 }
+
 
 /* ======================================================================== */
 
