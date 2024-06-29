@@ -137,12 +137,12 @@
                         d="M8.0812 22.9866C8.0812 23.6509 7.54312 24.189 6.87879 24.189C6.21445 24.189 5.67578 23.6509 5.67578 22.9866C5.67578 22.3223 6.21451 21.7842 6.87879 21.7842C7.54307 21.7842 8.0812 22.3223 8.0812 22.9866Z"
                         fill="#ACB3BA"></path>
                 </svg></span>
-    
+
             <p class="text-[#F0F0EA] text-[14px] font-play font-normal">Free Shipping Over First Order</p>
         </div>
         <!-- =============== NAVBAR ============= -->
         <nav class="flex items-center py-[10.52px] justify-between max-w-[1165px] relative z-50 mx-auto px-3">
-            <a href="#">
+            <a href="/">
                 <img src="./assets/images/glasses/svg/navBarLogo.svg" alt="headerlogo">
             </a>
             <div class="flex items-center">
@@ -271,7 +271,7 @@
         </nav>
 
         <div
-            class="bg-cover bg-bottom flex justify-center items-center flex-col pb-14 md:pb-[108px] pt-[35px]  px-3 common_hero_bg ">
+            class="bg-cover bg-bottom flex justify-center items-center flex-col py-14 md:pb-[108px]   px-3 common_hero_bg ">
             <div class="max-w-[1165px] mx-auto px-3"></div>
             <h2
                 class="font-play font-bold text-2xl md:pt-11 sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-[115%] text-center">
@@ -333,13 +333,14 @@
             </svg>
 
         </span>
-        <span><img class="absolute top-[50%] end-[-5%] sm:end-0 pointer-events-none -z-0" src="./assets/images/product/svg/black-semi-vector.svg" alt="vector"></span>
+        <span><img class="absolute top-[50%] end-[-5%] sm:end-0 pointer-events-none -z-0"
+                src="./assets/images/product/svg/black-semi-vector.svg" alt="vector"></span>
         <div class="max-w-[1172px] px-4 mx-auto relative z-10">
             <div class="flex lg:flex-row flex-col gap-3 lg:gap-0 justify-between pb-1">
                 <div class="flex justify-between w-full  lg:justify-start  items-center mb-1">
 
-                    <div class="flex items-center w-full justify-between">
-                        <div class="flex items-center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <div class="flex items-center w-full justify-center sm:justify-between">
+                        <div class="flex items-center "><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12.2637 0.55957L15.1667 4.87336L20.2697 3.87578L19.2721 8.97883L23.5859 11.8818L19.2721 14.7848L20.2697 19.8879L15.1667 18.8903L12.2637 23.2041L9.36067 18.8903L4.25762 19.8879L5.2552 14.7848L0.941406 11.8818L5.2552 8.97883L4.25762 3.87578L9.36067 4.87336L12.2637 0.55957Z"
@@ -386,72 +387,77 @@
                         <div class="flex gap-6 mt-4 sm:mt-0 sm:gap-0">
                             <div
                                 class="relative bg-white border flex sm:min-w-[181px] h-[44px] border-black rounded-[5px]">
-                                <button
+                                <button id="custom-select-button-17"
                                     class="h-[44px] w-full px-[10px] pb-1 flex sm:min-w-[190px] justify-between font-poppins items-center font-semibold text-sm sm:text-base"
-                                    onclick="toggleDropdown('dropdown-menu-17')">
+                                    onclick="handleDropdown('dropdown-menu-17', 'custom-select-button-17')">
                                     Standard sorting
                                     <svg class="sm:me-2 ms-1" width="12" height="8" viewBox="0 0 12 8" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-
-
                                 </button>
                                 <ul id="dropdown-menu-17"
-                                    class="absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
-                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                    class="custom-dropdown-menu absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
+                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                        <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-17')"
+                                            class="text-black font-play font-bold hover:bg-yellow whitespace-nowrap hover:text-white options">Standard
+                                            1</a>
                                     </li>
-                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                        <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-17')"
+                                            class="text-black font-play font-bold hover:bg-yellow whitespace-nowrap hover:text-white options">Standard
+                                            2</a>
                                     </li>
-                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                        <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-17')"
+                                            class="text-black font-play font-bold hover:bg-yellow whitespace-nowrap hover:text-white options">Standard
+                                            3</a>
                                     </li>
-                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                    <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                        <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-17')"
+                                            class="text-black font-play font-bold hover:bg-yellow whitespace-nowrap hover:text-white options">Standard
+                                            4</a>
                                     </li>
                                 </ul>
                             </div>
                             <div
                                 class="relative sm:ms-3 lg:ms-8 bg-yellow border flex sm:min-w-[181px] h-[44px] border-yellow rounded-[5px]">
-                                <button
+                                <button id="custom-select-button-16"
                                     class="h-[44px] ps-4 pe-3 pb-1 flex sm:min-w-[181px] justify-center gap-6 items-center font-bold text-base"
-                                    onclick="toggleDropdown('dropdown-menu-16')">
+                                    onclick="handleDropdown('dropdown-menu-16', 'custom-select-button-16')">
                                     Category
                                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-
-
                                 </button>
                                 <ul id="dropdown-menu-16"
-                                    class="absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
+                                    class="custom-dropdown-menu absolute hidden w-full top-full right-0 bg-white border rounded-md shadow-lg z-10">
                                     <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                            onclick="handleOptionSelect(event, 'custom-select-button-16')"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options">category
+                                            1</a>
                                     </li>
                                     <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                            onclick="handleOptionSelect(event, 'custom-select-button-16')"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options">category
+                                            2</a>
                                     </li>
                                     <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                            onclick="handleOptionSelect(event, 'custom-select-button-16')"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options">category
+                                            3</a>
                                     </li>
                                     <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                            beer</a>
+                                            onclick="handleOptionSelect(event, 'custom-select-button-16')"
+                                            class="text-black font-play font-bold hover:bg-yellow hover:text-white options">category
+                                            4</a>
                                     </li>
                                 </ul>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -477,36 +483,38 @@
                             </div>
                         </div>
                         <div
-                            class="relative mt-4 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
-                            <button
+                            class="relative mt-12 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
+                            <button id="custom-select-button-1"
                                 class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-1')">
+                                onclick="handleDropdown('dropdown-menu-1', 'custom-select-button-1')">
                                 Sort Beers
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
                             </button>
                             <ul id="dropdown-menu-1"
-                                class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
+                                class="custom-dropdown-menu absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-1')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">
+                                        Sort Beers 1</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-1')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">
+                                        Sort Beers 2</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-1')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">
+                                        Sort Beers 3</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-1')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">
+                                        Sort Beers 4</a>
                                 </li>
                             </ul>
                         </div>
@@ -615,36 +623,38 @@
                             </div>
                         </div>
                         <div
-                            class="relative mt-4 bg-cream w-full border flex items-center min-w-[229px] h-[44px] border-black rounded-[5px]">
-                            <button
+                            class="relative mt-12 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
+                            <button id="custom-select-button-2"
                                 class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-2')">
+                                onclick="handleDropdown('dropdown-menu-2', 'custom-select-button-2')">
                                 Can Mark
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
                             </button>
                             <ul id="dropdown-menu-2"
-                                class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
+                                class="custom-dropdown-menu absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-2')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">
+                                        Can Mark 1</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-2')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">
+                                        Can Mark 2</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-2')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">
+                                        Can Mark 3</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-2')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">
+                                        Can Mark 4</a>
                                 </li>
                             </ul>
                         </div>
@@ -667,36 +677,38 @@
                             </div>
                         </div>
                         <div
-                            class="relative mt-4 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
-                            <button
+                            class="relative mt-12 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
+                            <button id="custom-select-button-3"
                                 class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-3')">
+                                onclick="handleDropdown('dropdown-menu-3', 'custom-select-button-3')">
                                 Land
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
                             </button>
                             <ul id="dropdown-menu-3"
-                                class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
+                                class="custom-dropdown-menu absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-3')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">Land
+                                        1</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-3')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">Land
+                                        2</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-3')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">Land
+                                        3</a>
                                 </li>
                                 <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                        onclick="handleOptionSelect(event, 'custom-select-button-3')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">Land
+                                        4</a>
                                 </li>
                             </ul>
                         </div>
@@ -948,35 +960,37 @@
                         </div>
                         <div
                             class="relative mt-12 bg-cream w-full border flex min-w-[229px] h-[44px] border-black rounded-[5px]">
-                            <button
+                            <button id="custom-select-button-4"
                                 class="h-[44px] ps-4 pe-3 flex min-w-[229px] justify-between items-center font-bold text-xl"
-                                onclick="toggleDropdown('dropdown-menu-5')">
+                                onclick="handleDropdown('dropdown-menu-4', 'custom-select-button-4')">
                                 Breweries
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11 1.70117L6 6.70117L1 1.70117" stroke="black" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-
-
                             </button>
-                            <ul id="dropdown-menu-5"
-                                class="absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
-                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                            <ul id="dropdown-menu-4"
+                                class="custom-dropdown-menu absolute hidden w-full top-full right-0 bg-cream border rounded-md shadow-lg z-10">
+                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                    <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-4')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">Breweries
+                                        1</a>
                                 </li>
-                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                    <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-4')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">Breweries
+                                        2</a>
                                 </li>
-                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                    <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-4')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">Breweries
+                                        3</a>
                                 </li>
-                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2"><a href="#"
-                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options ">random
-                                        beer</a>
+                                <li class="dropdown-option hover:bg-yellow duration-300 py-[6px] ps-2">
+                                    <a href="#" onclick="handleOptionSelect(event, 'custom-select-button-4')"
+                                        class="text-black font-play font-bold hover:bg-yellow hover:text-white options">Breweries
+                                        4</a>
                                 </li>
                             </ul>
                         </div>
@@ -1829,47 +1843,47 @@
                                 </div>
                             </div>
                         </div>
-<div class="flex justify-center pt-10 md:pt-14 xl:pt-24 items-center w-full gap-3 sm:gap-4">
-    <svg class="rotate-[-180deg] duration-300 transition-all slide_icons" width="40" height="40" viewBox="0 0 40 40"
-        fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-            rx="4.34033" fill="white" />
-        <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-            rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
-        <path class="duaration-300"
-            d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
-            fill="#C4CDD5" />
-    </svg>
-    <div
-        class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-        1</div>
-    <div
-        class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-        2</div>
-    <div
-        class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-        ...</div>
-    <div
-        class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-        9</div>
-    <div
-        class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
-        26</div>
-    <svg class="slide_icons duration-300 transition-all" width="40" height="40" viewBox="0 0 40 40" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-            rx="4.34033" fill="white" />
-        <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429" height="38.4429"
-            rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
-        <path class="duartion-300"
-            d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
-            fill="#C4CDD5" />
-    </svg>
-</div>
+                        <div class="flex justify-center pt-10 md:pt-14 xl:pt-24 items-center w-full gap-3 sm:gap-4">
+                            <svg class="rotate-[-180deg] duration-300 transition-all slide_icons" width="40" height="40"
+                                viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429"
+                                    height="38.4429" rx="4.34033" fill="white" />
+                                <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429"
+                                    height="38.4429" rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
+                                <path class="duaration-300"
+                                    d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
+                                    fill="#C4CDD5" />
+                            </svg>
+                            <div
+                                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                                1</div>
+                            <div
+                                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                                2</div>
+                            <div
+                                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                                ...</div>
+                            <div
+                                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                                9</div>
+                            <div
+                                class="border rounded-[4.96px] duration-300 cursor-pointer hover:border-yellow hover:text-yellow transition-all border-numbers-grey font-poppins font-bold text-black text-md w-[39px] h-[39px] flex items-center justify-center">
+                                26</div>
+                            <svg class="slide_icons duration-300 transition-all" width="40" height="40"
+                                viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429"
+                                    height="38.4429" rx="4.34033" fill="white" />
+                                <rect class="duration-300 transition-all" x="0.729422" y="0.620047" width="38.4429"
+                                    height="38.4429" rx="4.34033" stroke="#E7E4D7" stroke-width="1.24009" />
+                                <path class="duartion-300"
+                                    d="M16.0312 14.1489L21.7109 19.841L16.0312 25.533L17.7798 27.2815L25.2203 19.841L17.7798 12.4004L16.0312 14.1489Z"
+                                    fill="#C4CDD5" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
-           
+
         </div>
 
     </section>
@@ -1937,7 +1951,7 @@
                         </div>
                         <div class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7">
                             <div class="flex flex-col gap-2 sm:gap-4">
-                                <p 
+                                <p
                                     class="capitalize cursor-pointer text-white font-play font-bold text-lg leading-110 mb-1">
                                     Information</p>
                                 <a href=""
@@ -1956,7 +1970,7 @@
                         </div>
                         <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7">
                             <div class="flex flex-col gap-2 sm:gap-4">
-                                <p 
+                                <p
                                     class="capitalize cursor-pointer text-white font-play font-bold text-lg leading-110 mb-1">
                                     Conditions(nl)</p>
                                 <a href=""
@@ -1989,24 +2003,64 @@
         </p>
         <script>  const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>
     </footer>
+    <!-- ===============================BACK TO TOP=============================== -->
+    <button id="backtotop" onclick="window.scroll(0,0)"
+        class="hidden fixed bottom-8 sm:bottom-2.5 right-2.5 border border-white bg-yellow rounded-full transition-all duration-300 bg-opacity-80 hover:bg-black ease-linear z-20">
+        <span class="flex items-center justify-center mb-0 cursor-pointer w-7 sm:w-10 h-7 sm:h-10">
+            <svg class="max-sm:max-w-4 max-sm:max-h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="white" viewBox="0 0 16 16">
+                <path
+                    d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+                <path
+                    d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+            </svg>
+        </span>
+    </button>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
     <!-- ----------------------------- sort beers dropdown --------------------- -->
     <script>
-        function toggleDropdown(menuId) {
+        function handleDropdown(menuId, buttonId) {
             const dropdownMenu = document.getElementById(menuId);
             dropdownMenu.classList.toggle('hidden');
 
-            // Close dropdown when clicking on an option
-            const dropdownOptions = dropdownMenu.querySelectorAll('.dropdown-option');
-            dropdownOptions.forEach(option => {
-                option.addEventListener('click', () => {
-                    dropdownMenu.classList.add('hidden');
-                });
+            // Hide other dropdowns if they are open
+            document.querySelectorAll('.custom-dropdown-menu').forEach(menu => {
+                if (menu.id !== menuId) {
+                    menu.classList.add('hidden');
+                }
             });
         }
-    </script>
 
+        function handleOptionSelect(event, buttonId) {
+            event.preventDefault();
+            const selectedText = event.target.textContent.trim();
+            const button = document.getElementById(buttonId);
+            button.childNodes[0].textContent = selectedText;
+
+            // Hide the corresponding dropdown menu
+            const menuId = buttonId.replace('custom-select-button-', 'dropdown-menu-');
+            const dropdownMenu = document.getElementById(menuId);
+            dropdownMenu.classList.add('hidden');
+        }
+
+        // Attach event listeners to dropdown options
+        document.querySelectorAll('.custom-dropdown-menu .dropdown-option a').forEach(option => {
+            option.addEventListener('click', function (event) {
+                const menuId = option.closest('ul').id;
+                const buttonId = menuId.replace('dropdown-menu-', 'custom-select-button-');
+                handleOptionSelect(event, buttonId);
+            });
+        });
+    </script>
+    <!-- =============== NAVBAR JAVASCRIPT ============= -->
+    <script>
+        function openNav() {
+            document.getElementById("navbar").classList.toggle("left-0");
+            document.body.classList.toggle("overflow_hidden");
+            document.querySelector(".menu").classList.toggle("cross");
+        }
+    </script>
 
     <script>
         const mainContent = document.getElementById('main');
@@ -2014,6 +2068,19 @@
         function showSidebar() {
             mainContent.classList.toggle('start-0');
         }
+    </script>
+    <script>
+         function backtotop() {
+                window.scroll(0, 0);
+            }
+            window.addEventListener("scroll", function () {
+                let backtotop = document.getElementById("backtotop");
+                if (window.scrollY > 250) {
+                    backtotop.style.display = "block";
+                } else {
+                    backtotop.style.display = "none";
+                }
+            });
     </script>
     <!-- =============== JAVASCRIPT ============= -->
     <script src="./assets/js/myaccount.js"></script>
