@@ -566,7 +566,7 @@ input:checked+label>span::after {
 
   /* ====================== BASEMENT CSS================================== */
 
-  .heart label svg {
+  .heart  svg {
     fill: none !important;
     stroke: black !important;
     transition: stroke 0.3s ease !important;
