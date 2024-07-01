@@ -174,60 +174,60 @@ input:checked+label>span::after {
 }
 
 /* ====================== BASEMENT CSS================================== */
-#toggle-svgheart-1:checked~.absolute .svgheart svg path,
-#toggle-svgheart-3:checked~.absolute .svgheart svg path,
-#toggle-svgheart-4:checked~.absolute .svgheart svg path,
-#toggle-svgheart-5:checked~.absolute .svgheart svg path,
-#toggle-svgheart-7:checked~.absolute .svgheart svg path,
-#toggle-svgheart-8:checked~.absolute .svgheart svg path,
-#toggle-svgheart-9:checked~.absolute .svgheart svg path,
-#toggle-svgheart-11:checked~.absolute .svgheart svg path,
-#toggle-svgheart-12:checked~.absolute .svgheart svg path {
+#toggle-heart-1:checked~.absolute .heart svg path,
+#toggle-heart-3:checked~.absolute .heart svg path,
+#toggle-heart-4:checked~.absolute .heart svg path,
+#toggle-heart-5:checked~.absolute .heart svg path,
+#toggle-heart-7:checked~.absolute .heart svg path,
+#toggle-heart-8:checked~.absolute .heart svg path,
+#toggle-heart-9:checked~.absolute .heart svg path,
+#toggle-heart-11:checked~.absolute .heart svg path,
+#toggle-heart-12:checked~.absolute .heart svg path {
     stroke: #F4456A !important;
     fill: #F4456A !important;
 }
 
-#toggle-svgheart-2:checked~.absolute .svgheart svg path,
-#toggle-svgheart-6:checked~.absolute .svgheart svg path,
-#toggle-svgheart-10:checked~.absolute .svgheart svg path {
+#toggle-heart-2:checked~.absolute .heart svg path,
+#toggle-heart-6:checked~.absolute .heart svg path,
+#toggle-heart-10:checked~.absolute .heart svg path {
     stroke: black !important;
     fill: none !important;
 }
 
 
-#toggle-svgheart-1:checked~.bg-yellow,
-#toggle-svgheart-3:checked~.bg-yellow,
-#toggle-svgheart-4:checked~.bg-yellow,
-#toggle-svgheart-5:checked~.bg-yellow,
-#toggle-svgheart-7:checked~.bg-yellow,
-#toggle-svgheart-8:checked~.bg-yellow,
-#toggle-svgheart-9:checked~.bg-yellow,
-#toggle-svgheart-11:checked~.bg-yellow,
-#toggle-svgheart-12:checked~.bg-yellow {
+#toggle-heart-1:checked~.bg-yellow,
+#toggle-heart-3:checked~.bg-yellow,
+#toggle-heart-4:checked~.bg-yellow,
+#toggle-heart-5:checked~.bg-yellow,
+#toggle-heart-7:checked~.bg-yellow,
+#toggle-heart-8:checked~.bg-yellow,
+#toggle-heart-9:checked~.bg-yellow,
+#toggle-heart-11:checked~.bg-yellow,
+#toggle-heart-12:checked~.bg-yellow {
     background-color: black;
 }
 
-#toggle-svgheart-2:checked~.bg-black,
-#toggle-svgheart-6:checked~.bg-black,
-#toggle-svgheart-10:checked~.bg-black {
+#toggle-heart-2:checked~.bg-black,
+#toggle-heart-6:checked~.bg-black,
+#toggle-heart-10:checked~.bg-black {
     background-color: #FFCC02;
 }
 
-#toggle-svgheart-1:checked~.bg-yellow label,
-#toggle-svgheart-3:checked~.bg-yellow label,
-#toggle-svgheart-4:checked~.bg-yellow label,
-#toggle-svgheart-5:checked~.bg-yellow label,
-#toggle-svgheart-7:checked~.bg-yellow label,
-#toggle-svgheart-8:checked~.bg-yellow label,
-#toggle-svgheart-9:checked~.bg-yellow label,
-#toggle-svgheart-11:checked~.bg-yellow label,
-#toggle-svgheart-12:checked~.bg-yellow label {
+#toggle-heart-1:checked~.bg-yellow label,
+#toggle-heart-3:checked~.bg-yellow label,
+#toggle-heart-4:checked~.bg-yellow label,
+#toggle-heart-5:checked~.bg-yellow label,
+#toggle-heart-7:checked~.bg-yellow label,
+#toggle-heart-8:checked~.bg-yellow label,
+#toggle-heart-9:checked~.bg-yellow label,
+#toggle-heart-11:checked~.bg-yellow label,
+#toggle-heart-12:checked~.bg-yellow label {
     color: #fff;
 }
 
-#toggle-svgheart-2:checked~.bg-black label,
-#toggle-svgheart-6:checked~.bg-black label,
-#toggle-svgheart-10:checked~.bg-black label {
+#toggle-heart-2:checked~.bg-black label,
+#toggle-heart-6:checked~.bg-black label,
+#toggle-heart-10:checked~.bg-black label {
     color: black;
 }
 
