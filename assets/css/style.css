@@ -5,6 +5,11 @@
 * {
   scroll-behavior: smooth !important;
 }
+/* ===== checkout ===== */
+.tabcontent {
+  display: none;
+  transition: all 0.3s linear;
+}
 
 .tab-button {
   cursor: pointer;
@@ -69,7 +74,7 @@
   -webkit-text-stroke-color: black;
 }
 
-@media (max-width:640px) {
+@media (max-width: 640px) {
   #green.tab-button.active div {
     width: 10px;
     height: 10px;
@@ -99,7 +104,6 @@
   .tab-button.active div {
     background-color: black;
     border-color: black;
-
   }
 
   .tab-button.active {
@@ -164,11 +168,11 @@
   border: 1px solid transparent !important;
 }
 
-input:checked+label>span {
+input:checked + label > span {
   background-color: #ffcc02;
 }
 
-input:checked+label>span::after {
+input:checked + label > span::after {
   content: "";
   display: block;
   width: 100%;
@@ -187,62 +191,60 @@ input:checked+label>span::after {
   cursor: pointer;
 }
 
-
 /* ====================== BASEMENT CSS================================== */
-#toggle-heart-1:checked~.absolute .heart svg path,
-#toggle-heart-3:checked~.absolute .heart svg path,
-#toggle-heart-4:checked~.absolute .heart svg path,
-#toggle-heart-5:checked~.absolute .heart svg path,
-#toggle-heart-7:checked~.absolute .heart svg path,
-#toggle-heart-8:checked~.absolute .heart svg path,
-#toggle-heart-9:checked~.absolute .heart svg path,
-#toggle-heart-11:checked~.absolute .heart svg path,
-#toggle-heart-12:checked~.absolute .heart svg path {
-  stroke: #F4456A !important;
-  fill: #F4456A !important;
+#toggle-heart-1:checked ~ .absolute .heart svg path,
+#toggle-heart-3:checked ~ .absolute .heart svg path,
+#toggle-heart-4:checked ~ .absolute .heart svg path,
+#toggle-heart-5:checked ~ .absolute .heart svg path,
+#toggle-heart-7:checked ~ .absolute .heart svg path,
+#toggle-heart-8:checked ~ .absolute .heart svg path,
+#toggle-heart-9:checked ~ .absolute .heart svg path,
+#toggle-heart-11:checked ~ .absolute .heart svg path,
+#toggle-heart-12:checked ~ .absolute .heart svg path {
+  stroke: #f4456a !important;
+  fill: #f4456a !important;
 }
 
-#toggle-heart-2:checked~.absolute .heart svg path,
-#toggle-heart-6:checked~.absolute .heart svg path,
-#toggle-heart-10:checked~.absolute .heart svg path {
+#toggle-heart-2:checked ~ .absolute .heart svg path,
+#toggle-heart-6:checked ~ .absolute .heart svg path,
+#toggle-heart-10:checked ~ .absolute .heart svg path {
   stroke: black !important;
   fill: none !important;
 }
 
-
-#toggle-heart-1:checked~.bg-yellow,
-#toggle-heart-3:checked~.bg-yellow,
-#toggle-heart-4:checked~.bg-yellow,
-#toggle-heart-5:checked~.bg-yellow,
-#toggle-heart-7:checked~.bg-yellow,
-#toggle-heart-8:checked~.bg-yellow,
-#toggle-heart-9:checked~.bg-yellow,
-#toggle-heart-11:checked~.bg-yellow,
-#toggle-heart-12:checked~.bg-yellow {
+#toggle-heart-1:checked ~ .bg-yellow,
+#toggle-heart-3:checked ~ .bg-yellow,
+#toggle-heart-4:checked ~ .bg-yellow,
+#toggle-heart-5:checked ~ .bg-yellow,
+#toggle-heart-7:checked ~ .bg-yellow,
+#toggle-heart-8:checked ~ .bg-yellow,
+#toggle-heart-9:checked ~ .bg-yellow,
+#toggle-heart-11:checked ~ .bg-yellow,
+#toggle-heart-12:checked ~ .bg-yellow {
   background-color: black;
 }
 
-#toggle-heart-2:checked~.bg-black,
-#toggle-heart-6:checked~.bg-black,
-#toggle-heart-10:checked~.bg-black {
-  background-color: #FFCC02;
+#toggle-heart-2:checked ~ .bg-black,
+#toggle-heart-6:checked ~ .bg-black,
+#toggle-heart-10:checked ~ .bg-black {
+  background-color: #ffcc02;
 }
 
-#toggle-heart-1:checked~.bg-yellow label,
-#toggle-heart-3:checked~.bg-yellow label,
-#toggle-heart-4:checked~.bg-yellow label,
-#toggle-heart-5:checked~.bg-yellow label,
-#toggle-heart-7:checked~.bg-yellow label,
-#toggle-heart-8:checked~.bg-yellow label,
-#toggle-heart-9:checked~.bg-yellow label,
-#toggle-heart-11:checked~.bg-yellow label,
-#toggle-heart-12:checked~.bg-yellow label {
+#toggle-heart-1:checked ~ .bg-yellow label,
+#toggle-heart-3:checked ~ .bg-yellow label,
+#toggle-heart-4:checked ~ .bg-yellow label,
+#toggle-heart-5:checked ~ .bg-yellow label,
+#toggle-heart-7:checked ~ .bg-yellow label,
+#toggle-heart-8:checked ~ .bg-yellow label,
+#toggle-heart-9:checked ~ .bg-yellow label,
+#toggle-heart-11:checked ~ .bg-yellow label,
+#toggle-heart-12:checked ~ .bg-yellow label {
   color: #fff;
 }
 
-#toggle-heart-2:checked~.bg-black label,
-#toggle-heart-6:checked~.bg-black label,
-#toggle-heart-10:checked~.bg-black label {
+#toggle-heart-2:checked ~ .bg-black label,
+#toggle-heart-6:checked ~ .bg-black label,
+#toggle-heart-10:checked ~ .bg-black label {
   color: black;
 }
 
@@ -261,7 +263,6 @@ input:checked+label>span::after {
   border-radius: 21px;
 }
 
-
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
@@ -277,12 +278,12 @@ li:hover .options {
   color: white;
 }
 
-input:checked+label>span {
+input:checked + label > span {
   background-color: #ffcc02;
   border-radius: 4.1px;
 }
 
-input:checked+label>span::after {
+input:checked + label > span::after {
   content: "";
   display: block;
   width: 100%;
@@ -313,7 +314,6 @@ input:checked+label>span::after {
   width: 6px;
 }
 
-
 /* Track */
 
 ::-webkit-scrollbar-track {
@@ -322,7 +322,6 @@ input:checked+label>span::after {
   background-color: #f0f0ea;
   border-radius: 21px;
 }
-
 
 /* Handle */
 
@@ -339,12 +338,12 @@ li:hover .options {
   color: white;
 }
 
-input:checked+label>span {
+input:checked + label > span {
   background-color: #ffcc02;
   border-radius: 4.1px;
 }
 
-input:checked+label>span::after {
+input:checked + label > span::after {
   content: "";
   display: block;
   width: 100%;
@@ -389,7 +388,6 @@ input:checked+label>span::after {
 .partners_slider_track:hover {
   animation-play-state: paused;
 }
-
 
 /* ======================================================================== */
 
@@ -436,7 +434,7 @@ input:checked+label>span::after {
     -webkit-text-stroke-color: black;
   }
 
-  @media (max-width:640px) {
+  @media (max-width: 640px) {
     #green.tab-button.active div {
       width: 10px;
       height: 10px;
@@ -466,7 +464,6 @@ input:checked+label>span::after {
     .tab-button.active div {
       background-color: black;
       border-color: black;
-
     }
 
     .tab-button.active {
@@ -520,7 +517,6 @@ input:checked+label>span::after {
     animation: spin 7s linear infinite !important;
   }
 
-
   /* ================================ MY ACCOUNT CSS ============================================ */
 
   .animate-spin {
@@ -540,11 +536,11 @@ input:checked+label>span::after {
     box-shadow: 0px 5px 10px 0 #ffcc02;
   }
 
-  input:checked+label>span {
+  input:checked + label > span {
     background-color: #ffcc02;
   }
 
-  input:checked+label>span::after {
+  input:checked + label > span::after {
     content: "";
     display: block;
     width: 100%;
@@ -563,7 +559,6 @@ input:checked+label>span::after {
     cursor: pointer;
   }
 
-
   /* ====================== BASEMENT CSS================================== */
 
   .heart label svg {
@@ -572,7 +567,7 @@ input:checked+label>span::after {
     transition: stroke 0.3s ease !important;
   }
 
-  .heart input:checked+label svg path {
+  .heart input:checked + label svg path {
     stroke: #f4456a;
     fill: #f4456a;
   }
@@ -581,60 +576,59 @@ input:checked+label>span::after {
 
   /* =============================   CATEGORY AND PRODUCT CSS ================== */
   /* Styles for each heart when checked */
-  #toggle-heart-1:checked~.absolute .heart svg path,
-  #toggle-heart-3:checked~.absolute .heart svg path,
-  #toggle-heart-4:checked~.absolute .heart svg path,
-  #toggle-heart-5:checked~.absolute .heart svg path,
-  #toggle-heart-7:checked~.absolute .heart svg path,
-  #toggle-heart-8:checked~.absolute .heart svg path,
-  #toggle-heart-9:checked~.absolute .heart svg path,
-  #toggle-heart-11:checked~.absolute .heart svg path,
-  #toggle-heart-12:checked~.absolute .heart svg path {
-    stroke: #F4456A !important;
-    fill: #F4456A !important;
+  #toggle-heart-1:checked ~ .absolute .heart svg path,
+  #toggle-heart-3:checked ~ .absolute .heart svg path,
+  #toggle-heart-4:checked ~ .absolute .heart svg path,
+  #toggle-heart-5:checked ~ .absolute .heart svg path,
+  #toggle-heart-7:checked ~ .absolute .heart svg path,
+  #toggle-heart-8:checked ~ .absolute .heart svg path,
+  #toggle-heart-9:checked ~ .absolute .heart svg path,
+  #toggle-heart-11:checked ~ .absolute .heart svg path,
+  #toggle-heart-12:checked ~ .absolute .heart svg path {
+    stroke: #f4456a !important;
+    fill: #f4456a !important;
   }
 
-  #toggle-heart-2:checked~.absolute .heart svg path,
-  #toggle-heart-6:checked~.absolute .heart svg path,
-  #toggle-heart-10:checked~.absolute .heart svg path {
+  #toggle-heart-2:checked ~ .absolute .heart svg path,
+  #toggle-heart-6:checked ~ .absolute .heart svg path,
+  #toggle-heart-10:checked ~ .absolute .heart svg path {
     stroke: black !important;
     fill: none !important;
   }
 
-
-  #toggle-heart-1:checked~.bg-yellow,
-  #toggle-heart-3:checked~.bg-yellow,
-  #toggle-heart-4:checked~.bg-yellow,
-  #toggle-heart-5:checked~.bg-yellow,
-  #toggle-heart-7:checked~.bg-yellow,
-  #toggle-heart-8:checked~.bg-yellow,
-  #toggle-heart-9:checked~.bg-yellow,
-  #toggle-heart-11:checked~.bg-yellow,
-  #toggle-heart-12:checked~.bg-yellow {
+  #toggle-heart-1:checked ~ .bg-yellow,
+  #toggle-heart-3:checked ~ .bg-yellow,
+  #toggle-heart-4:checked ~ .bg-yellow,
+  #toggle-heart-5:checked ~ .bg-yellow,
+  #toggle-heart-7:checked ~ .bg-yellow,
+  #toggle-heart-8:checked ~ .bg-yellow,
+  #toggle-heart-9:checked ~ .bg-yellow,
+  #toggle-heart-11:checked ~ .bg-yellow,
+  #toggle-heart-12:checked ~ .bg-yellow {
     background-color: black;
   }
 
-  #toggle-heart-2:checked~.bg-black,
-  #toggle-heart-6:checked~.bg-black,
-  #toggle-heart-10:checked~.bg-black {
-    background-color: #FFCC02;
+  #toggle-heart-2:checked ~ .bg-black,
+  #toggle-heart-6:checked ~ .bg-black,
+  #toggle-heart-10:checked ~ .bg-black {
+    background-color: #ffcc02;
   }
 
-  #toggle-heart-1:checked~.bg-yellow label,
-  #toggle-heart-3:checked~.bg-yellow label,
-  #toggle-heart-4:checked~.bg-yellow label,
-  #toggle-heart-5:checked~.bg-yellow label,
-  #toggle-heart-7:checked~.bg-yellow label,
-  #toggle-heart-8:checked~.bg-yellow label,
-  #toggle-heart-9:checked~.bg-yellow label,
-  #toggle-heart-11:checked~.bg-yellow label,
-  #toggle-heart-12:checked~.bg-yellow label {
+  #toggle-heart-1:checked ~ .bg-yellow label,
+  #toggle-heart-3:checked ~ .bg-yellow label,
+  #toggle-heart-4:checked ~ .bg-yellow label,
+  #toggle-heart-5:checked ~ .bg-yellow label,
+  #toggle-heart-7:checked ~ .bg-yellow label,
+  #toggle-heart-8:checked ~ .bg-yellow label,
+  #toggle-heart-9:checked ~ .bg-yellow label,
+  #toggle-heart-11:checked ~ .bg-yellow label,
+  #toggle-heart-12:checked ~ .bg-yellow label {
     color: #fff;
   }
 
-  #toggle-heart-2:checked~.bg-black label,
-  #toggle-heart-6:checked~.bg-black label,
-  #toggle-heart-10:checked~.bg-black label {
+  #toggle-heart-2:checked ~ .bg-black label,
+  #toggle-heart-6:checked ~ .bg-black label,
+  #toggle-heart-10:checked ~ .bg-black label {
     color: black;
   }
 
@@ -660,7 +654,6 @@ input:checked+label>span::after {
     display: none !important;
   }
 
-
   /* Track */
 
   ::-webkit-scrollbar-track {
@@ -668,7 +661,6 @@ input:checked+label>span::after {
 
     border-radius: 21px;
   }
-
 
   /* Handle */
 
@@ -685,12 +677,12 @@ input:checked+label>span::after {
     color: white;
   }
 
-  input:checked+label>span {
+  input:checked + label > span {
     background-color: #ffcc02;
     border-radius: 4.1px;
   }
 
-  input:checked+label>span::after {
+  input:checked + label > span::after {
     content: "";
     display: block;
     width: 100%;
@@ -722,14 +714,12 @@ input:checked+label>span::after {
   }
 }
 
-
 /* Track */
 
 ::-webkit-scrollbar-track {
   background-color: #f0f0ea;
   border-radius: 21px;
 }
-
 
 /* Handle */
 
@@ -746,12 +736,12 @@ li:hover .options {
   color: white;
 }
 
-input:checked+label>span {
+input:checked + label > span {
   background-color: #ffcc02;
   border-radius: 4.1px;
 }
 
-input:checked+label>span::after {
+input:checked + label > span::after {
   content: "";
   display: block;
   width: 100%;
@@ -798,19 +788,18 @@ input:checked+label>span::after {
 }
 
 .footer_bg {
-  background-image: url('../images/about/webp/footer-bg.webp');
+  background-image: url("../images/about/webp/footer-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .hero-bg {
-  background-image: url('../images/about/png/about-bg.png');
+  background-image: url("../images/about/png/about-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 /* ======================================================================== */
 
