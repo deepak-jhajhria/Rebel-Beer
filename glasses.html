@@ -66,6 +66,7 @@
               "white-gray": "#F0F0EA",
               "light-gray": "#D6D6D0",
               "light-white": "#E1E6EA",
+              "pink":"#F4456A",
             },
             backgroundImage: {
               footer_bg: "url(./assets/images/myaccount/footer_bg.webp)",
@@ -99,7 +100,7 @@
             blogssectionyellowshadow: "13px 0px 0px 0px #FFCC02 inset",
             latestblogssidershadow: " 0px -6px 0px 0px #000000",
             formShadow: "0px 6px 0px 0px #000000 inset",
-            nextbtn: "0px 68px 0px 0px #ffffff inset",
+            navBtn: "0px 68px 0px 0px #ffffff inset",
             cardinnershadow: "0px 460px 0px 0px #FFCC02 inset",
           },
         },
@@ -129,7 +130,7 @@
         </a>
         <div class="flex items-center">
           <ul
-            class="flex items-center gap-5 mr-20 mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:h-screen max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center"
+            class="flex items-center gap-5 mr-20 mobile-view flex-col lg:flex-row absolute lg:relative max-custom_lg:h-screen max-custom_lg:w-full duration-300 ease-in-out lg:justify-start justify-center"
             id="navbar">
             <li>
               <a href="/path" aria-label="home"
@@ -230,7 +231,7 @@
             </div>
             <a aria-label="contact" href="https://rebelbeer.netlify.app/contactpage.html" target="_blank"
               rel="noopener noreffer"
-              class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-heroSectionCardShadow border max-lg:border-black navbtn border-transparent hover:border-black transition-all duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base !leading-normal text-black ms-2">
+              class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-navBtn border max-lg:border-black navbtn border-transparent hover:border-black transition-all duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base !leading-normal text-black ms-2">
               Contact Us
             </a>
             <div onclick="openNav()" class="menu block lg:hidden z-[5]">
@@ -377,18 +378,12 @@
                         class="absolute top-0 right-0 flex items-center justify-center w-full h-full cursor-pointer"
                         for="heart-checkbox-1"
                       >
-                        <svg
-                          width="16"
-                          height="15"
-                          class="group-hover:fill-red-600"
-                          viewBox="0 0 16 15"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                            stroke-width="2px"
-                          />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="duration-300 group-hover:fill-pink group-hover:stroke-pink"
+                                                d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                                fill="#ffffff" stroke="#000000" />
+                                        </svg>
                       </label>
                     </div>
                   </div>
@@ -472,18 +467,12 @@
                         class="absolute top-0 right-0 flex items-center justify-center w-full h-full cursor-pointer"
                         for="heart-checkbox-2"
                       >
-                        <svg
-                          width="16"
-                          height="15"
-                          class="group-hover:fill-red-600"
-                          viewBox="0 0 16 15"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                            stroke-width="2px"
-                          />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="duration-300 group-hover:fill-pink group-hover:stroke-pink"
+                                                d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                                fill="#ffffff" stroke="#000000" />
+                                        </svg>
                       </label>
                     </div>
                   </div>
@@ -567,18 +556,12 @@
                         class="absolute top-0 right-0 flex items-center justify-center w-full h-full cursor-pointer"
                         for="heart-checkbox-3"
                       >
-                        <svg
-                          width="16"
-                          height="15"
-                          class="group-hover:fill-red-600"
-                          viewBox="0 0 16 15"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                            stroke-width="2px"
-                          />
-                        </svg>
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="duration-300 group-hover:fill-pink group-hover:stroke-pink"
+                                                d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                                fill="#ffffff" stroke="#000000" />
+                                        </svg>
                       </label>
                     </div>
                   </div>
@@ -662,18 +645,12 @@
                         class="absolute top-0 right-0 flex items-center justify-center w-full h-full cursor-pointer"
                         for="heart-checkbox-4"
                       >
-                        <svg
-                          width="16"
-                          height="15"
-                          class="group-hover:fill-red-600"
-                          viewBox="0 0 16 15"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                            stroke-width="2px"
-                          />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="duration-300 group-hover:fill-pink group-hover:stroke-pink"
+                                                d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                                fill="#ffffff" stroke="#000000" />
+                                        </svg>
                       </label>
                     </div>
                   </div>
@@ -757,18 +734,12 @@
                         class="absolute top-0 right-0 flex items-center justify-center w-full h-full cursor-pointer"
                         for="heart-checkbox-5"
                       >
-                        <svg
-                          width="16"
-                          height="15"
-                          class="group-hover:fill-red-600"
-                          viewBox="0 0 16 15"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                            stroke-width="2px"
-                          />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="duration-300 group-hover:fill-pink group-hover:stroke-pink"
+                                                d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                                fill="#ffffff" stroke="#000000" />
+                                        </svg>
                       </label>
                     </div>
                   </div>
@@ -852,18 +823,12 @@
                         class="absolute top-0 right-0 flex items-center justify-center w-full h-full cursor-pointer"
                         for="heart-checkbox-6"
                       >
-                        <svg
-                          width="16"
-                          height="15"
-                          class="group-hover:fill-red-600"
-                          viewBox="0 0 16 15"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                            stroke-width="2px"
-                          />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="duration-300 group-hover:fill-pink group-hover:stroke-pink"
+                                                d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                                fill="#ffffff" stroke="#000000" />
+                                        </svg>
                       </label>
                     </div>
                   </div>
@@ -947,18 +912,12 @@
                         class="absolute top-0 right-0 flex items-center justify-center w-full h-full cursor-pointer"
                         for="heart-checkbox-7"
                       >
-                        <svg
-                          width="16"
-                          height="15"
-                          class="group-hover:fill-red-600"
-                          viewBox="0 0 16 15"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                            stroke-width="2px"
-                          />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="duration-300 group-hover:fill-pink group-hover:stroke-pink"
+                                                d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                                fill="#ffffff" stroke="#000000" />
+                                        </svg>
                       </label>
                     </div>
                   </div>
@@ -1042,18 +1001,12 @@
                         class="absolute top-0 right-0 flex items-center justify-center w-full h-full cursor-pointer"
                         for="heart-checkbox-8"
                       >
-                        <svg
-                          width="16"
-                          height="15"
-                          class="group-hover:fill-red-600"
-                          viewBox="0 0 16 15"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.5878 2.8306C8.3019 2.19135 9.23373 1.8499 10.1918 1.8764C11.1499 1.9029 12.0614 2.29535 12.739 2.9731C13.4161 3.6501 13.8086 4.56044 13.836 5.51753C13.8635 6.47462 13.5238 7.40595 12.8865 8.1206L7.58655 13.4281L2.2878 8.1206C1.64983 7.40558 1.3098 6.47345 1.33751 5.51559C1.36522 4.55773 1.75856 3.64682 2.43679 2.96987C3.11503 2.29292 4.02668 1.90129 4.98459 1.87539C5.9425 1.8495 6.87398 2.19129 7.5878 2.8306Z"
-                            stroke-width="2px"
-                          />
-                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="duration-300 group-hover:fill-pink group-hover:stroke-pink"
+                                                d="M8.02765 3.31341L8.36115 3.6121L8.69472 3.31349C9.31358 2.75951 10.1211 2.46359 10.9514 2.48656C11.7817 2.50953 12.5716 2.84963 13.1589 3.43699L13.159 3.43703C13.7458 4.02376 14.0859 4.81273 14.1097 5.64221C14.1333 6.46714 13.8423 7.27 13.2958 7.88802L8.36003 12.8308L3.42534 7.88797C2.87823 7.26962 2.58685 6.46604 2.61074 5.6404C2.63475 4.81026 2.97565 4.0208 3.56345 3.43411C4.15125 2.84742 4.94135 2.50801 5.77154 2.48556C6.60173 2.46312 7.40901 2.75934 8.02765 3.31341Z"
+                                                fill="#ffffff" stroke="#000000" />
+                                        </svg>
                       </label>
                     </div>
                   </div>
