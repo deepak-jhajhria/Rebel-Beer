@@ -17,24 +17,27 @@
     <title>Blogs-Rebel</title>
     <meta name="title" content="Welcome to Cans">
     <meta name="description" content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa.">
-    <!-- Open Graph / Facebook -->
+    <!-- ==================FACEBOOK================== -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metatags.io/">
     <meta property="og:title" content="Welcome to Rebel Beer Cans">
     <meta property="og:description" content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa.">
     <meta property="og:image" content="https://thumbs2.imgbox.com/79/c3/MQlghlh1_t.png">
-    <!-- Twitter -->
+    <!-- =====================TWITTER===================== -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
     <meta property="twitter:title" content="Welcome to  Rebel Beer Cans">
     <meta property="twitter:description" content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa.">
     <meta property="twitter:image" content="https://thumbs2.imgbox.com/79/c3/MQlghlh1_t.png">
-    <!-- Meta Tags Generated with https://metatags.io -->
+    <!-- META TAGS GENERATED WITH  https://metatags.io -->
     <meta property="twitter:image" content="./meta-img.webp">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    screens: {
+                        "custom-xm": "520px",
+                    },
                     colors: {
                         yellow: '#FFCC02',
                         'light-green': ' #A7E45F',
@@ -43,7 +46,7 @@
                         'light-blue': '#BEDCFE',
                         green: ' #76BD3D',
                         'white-gray': '#F0F0EA',
-                        "light-gray": "#D6D6D0" //contact
+                        "light-gray": "#D6D6D0"
                     },
                     fontSize: {
                         'custom_2xl': '28px',
@@ -54,11 +57,11 @@
                     lineHeight: {
                         '100': '100%',
                         '110': '110%',
-                        "115": "115%", //contact
+                        "115": "115%",
                         '120': '120%',
                         '130': '130%',
                         '140': '140%',
-                        "143": "143%", //contact
+                        "143": "143%",
                         '150': '150%',
                     }
                 },
@@ -68,8 +71,9 @@
                     'inter': ['Inter', 'sans-serif'],
                     'play': ['Play', 'sans-serif'],
                 },
-                // ===================contact=============
+                // ===================CONTACT=============
                 boxShadow: {
+                    "heroSectionCardShadow": "0px 68px 0px 0px #ffffff inset",
                     "blogssectionyellowshadow": "13px 0px 0px 0px #FFCC02 inset",
                     "latestblogssidershadow": " 0px -6px 0px 0px #000000",
                     "formShadow": "0px 6px 0px 0px #000000 inset"
@@ -106,7 +110,7 @@
                 <img class="w-12" width="48" height="48" src="./assets/images/blogspage/svg/logo-blogs.svg" alt="headerlogo">
             </a>
             <div class="flex items-center">
-                <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:min-h-lvh max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center" id="navbar">
+                <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative duration-300 ease-in-out lg:justify-start justify-center" id="navbar">
                     <li>
                         <a href="/beerpackage.html" onclick="openNav()" aria-label="all-beer" class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-1px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out after:rounded-sm">All Beers</a>
                     </li>
@@ -197,7 +201,7 @@
                             </svg>
                         </span>
                     </div>
-                    <a href="/contactpage.html" aria-label="contact" target="blank" class="px-3 sm:px-4 py-[11px] sm:py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
+                    <a href="/contactpage.html" aria-label="contact" target="blank" class="px-3 sm:px-4 py-[11px] sm:py-3 rounded-[5px] bg-yellow hover:shadow-heroSectionCardShadow border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
                     Contact Us
                 </a>
                     <div onclick="openNav()" class="menu d-block d-lg-none z-[5] cursor-pointer">
@@ -212,11 +216,11 @@
             <div class="max-w-[1165px] mx-auto px-3"></div>
             <h2 class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black !leading-[115%] text-center">Blogs by Rebel</h2>
         </div>
-        <div class="bg-[#F0F0EA] undefined">
+        <div class="bg-white-gray">
             <div class="container max-w-[1165px] mx-auto px-3 py-[14.5px]">
                 <h3 class="flex items-center gap-1 text-sm font-normal text-black font-poppins lg:text-base"><a class="opacity-70 hover:opacity-100 duration-200 font-poppins font-normal text-sm lg:text-base !leading-150" href="/">Home</a><span><svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.504 0.98H2.344L6.216 4.644L2.344 8.324H0.504L4.376 4.644L0.504 0.98Z" fill="black"></path></svg></span><span class="duration-200 font-poppins font-normal text-sm lg:text-base !cursor-pointer !opacity-100">Blogs</span>
-                    <span class="text-sm font-normal opacity-70 font-poppins lg:text-base "> </span><span class="text-sm font-normal opacity-70 font-poppins lg:text-base undefined"></span></h3>
+                    <span class="text-sm font-normal opacity-70 font-poppins lg:text-base"> </span><span class="text-sm font-normal opacity-70 font-poppins lg:text-base undefined"></span></h3>
             </div>
         </div>
     </header>
@@ -274,7 +278,7 @@
         <div class="absolute right-0 translate-y-1/2 top-1/2 pointer-events-none -z-[1] max-w-[152px]"><img width="152" height="48" class="max-sm:max-w-12" src="./assets/images/blogspage/svg/common_vector.svg" alt="common_vector"></div>
         <div class="absolute top-[27%] -left-5 pointer-events-none -z-[1] animate-circle"><img width="74" height="74" class="max-sm:max-w-12" src="./assets/images/blogspage/svg/semicircle_yellow_vector.svg" alt="blank "></div>
         <div class="absolute bottom-2 sm:bottom-[9%] -right-5 pointer-events-none -z-[1]"><img width="74" height="74" class="max-sm:max-w-12" src="./assets/images/blogspage/svg/semicircle_black_vector.svg" alt="blank "></div>
-        <div class="container max-w-[1164px] px-3 mx-auto ">
+        <div class="container max-w-[1164px] px-3 mx-auto">
             <div class="flex items-center justify-between">
                 <h2 class="font-play font-bold text-4xl sm:text-custom_4xl lg:text-5xl !leading-120">Latest Blogs</h2>
                 <div class="flex items-center gap-2 sm:gap-3">
@@ -332,7 +336,7 @@
             </div>
         </div>
     </section>
-    <!-- =======================footer======================= -->
+    <!-- =======================FOOTER======================= -->
     <footer class="common_footer_bg bg-cover bg-no-repeat bg-center pt-12 md:pt-16 lg:pt-[69.66px]">
         <div class="container xl:max-w-[1178px] !px-4 mx-auto pb-8 md:pb-20 xl:pb-[104px]">
             <div class="flex flex-row flex-wrap">
@@ -376,7 +380,7 @@
                             </svg>
                     </a>
                     <div class="flex gap-2.5 sm:gap-[15px] pt-4 sm:pt-[25.58px]">
-                        <a aria-label="instagram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group " href="https://www.instagram.com/
+                        <a aria-label="instagram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group" href="https://www.instagram.com/
                                     " target="blank ">
                             <svg class="max-sm:w-5 max-sm:h-5" width="25 " height="25 " viewBox="0 0 25 25 " fill="none ">
                                 <path class="transition-all duration-300 ease-linear group-hover:fill-white "
@@ -398,7 +402,7 @@
                                     fill="#FFCC02 " />
                             </svg>
                         </a>
-                        <a aria-label="facebook" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group " href="https://www.facebook.com/
+                        <a aria-label="facebook" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group" href="https://www.facebook.com/
                                     " target="blank ">
                             <svg class="max-sm:w-5 max-sm:h-5" width="29 " height="29 " viewBox="0 0 29 29 " fill="none">
                                 <path class="transition-all duration-300 ease-linear group-hover:fill-white "
@@ -406,7 +410,7 @@
                                     fill="#FFCC02 " />
                             </svg>
                         </a>
-                        <a aria-label="telegram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group " href="https://web.telegram.org/a/
+                        <a aria-label="telegram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group" href="https://web.telegram.org/a/
                                     " target="blank">
                             <svg class="max-sm:w-5 max-sm:h-5" width="26 " height="27 " viewBox="0 0 26 27 " fill="none">
                                 <path class="transition-all duration-300 ease-linear group-hover:fill-white "
@@ -423,9 +427,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="pt-8 lg:w-9/12 xl:w-8/12 lg:pt-0 ">
+                <div class="pt-8 lg:w-9/12 xl:w-8/12 lg:pt-0">
                     <div class="flex flex-row flex-wrap justify-between">
-                        <div class="md:w-3/12 min-[520px]:w-6/12 w-full">
+                        <div class="md:w-3/12 custom-xm:w-6/12 w-full">
                             <div class="flex flex-col gap-2 sm:gap-4">
                                 <p class="mb-1 text-lg font-bold text-white capitalize font-play leading-110">
                                     Contact</p>
@@ -436,7 +440,7 @@
 
                             </div>
                         </div>
-                        <div class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7">
+                        <div class="md:w-4/12 custom-xm:w-6/12 w-full custom-xm:pt-0 pt-7">
                             <div class="flex flex-col gap-2 sm:gap-4">
                                 <p class="mb-1 text-lg font-bold text-white capitalize font-play leading-110">
                                     Information</p>
@@ -447,7 +451,7 @@
 
                             </div>
                         </div>
-                        <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7">
+                        <div class="md:w-4/12 custom-xm:w-6/12 w-full md:pt-0 pt-7">
                             <div class="flex flex-col gap-2 sm:gap-4">
                                 <p class="mb-1 text-lg font-bold text-white capitalize font-play leading-110">
                                     Conditions(NI)</p>
@@ -463,13 +467,9 @@
             </div>
         </div>
         <div class="w-full border border-white border-solid opacity-20"></div>
-        <p class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-4 sm:py-[23.5px] !leading-150 md:!leading-110  text-center">
+        <p class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-4 sm:py-[23.5px] !leading-150 md:!leading-110 text-center">
             <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
         </p>
-        <script>
-            const currentYear = new Date().getFullYear();
-            document.getElementById('currentYear').textContent = currentYear;
-        </script>
     </footer>
     <!-- -==========================BACK TO TOP-========================== -->
     <button id="backtotop" onclick="window.scroll(0,0)" class="hidden fixed bottom-8 sm:bottom-2.5 right-2.5 border border-white bg-yellow rounded-full transition-all duration-300 bg-opacity-80 hover:bg-black ease-linear z-20">
@@ -487,9 +487,10 @@
     </svg>
     </span>
 </button>
+    <!-- =================================SCRIPT TAG================================= -->
+    <script src="./assets/js/app.js"></script>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
-
     <!-- ===========================SWIPER SLIDER===============  -->
     <script>
         const swiper = new Swiper('.swiper', {
@@ -531,26 +532,7 @@
             },
         });
     </script>
-    <script>
-        // <!-- =============== NAVBAR JAVASCRIPT ============= -->
-        function openNav() {
-            document.getElementById("navbar").classList.toggle("left-0");
-            document.body.classList.toggle("overflow_hidden");
-            document.querySelector(".menu").classList.toggle("cross");
-        }
-        // back to top
-        function backtotop() {
-            window.scroll(0, 0);
-        }
-        window.addEventListener("scroll", function() {
-            let backtotop = document.getElementById("backtotop");
-            if (window.scrollY > 250) {
-                backtotop.style.display = "block";
-            } else {
-                backtotop.style.display = "none";
-            }
-        });
-    </script>
+
 </body>
 
 </html>

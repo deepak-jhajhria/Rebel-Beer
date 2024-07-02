@@ -14,24 +14,26 @@
     <title>Contact-Beer</title>
     <meta name="title" content="Welcome to Cans">
     <meta name="description" content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa.">
-    <!-- Open Graph / Facebook -->
+    <!-- ==================FACEBOOK================ -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metatags.io/">
     <meta property="og:title" content="Welcome to Rebel Beer Cans">
     <meta property="og:description" content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa.">
     <meta property="og:image" content="https://thumbs2.imgbox.com/1c/39/cfdR7tqw_t.png">
-    <!-- Twitter -->
+    <!-- ================TWITTER=============== -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
     <meta property="twitter:title" content="Welcome to  Rebel Beer Cans">
     <meta property="twitter:description" content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa.">
     <meta property="twitter:image" content="https://thumbs2.imgbox.com/1c/39/cfdR7tqw_t.png">
-    <!-- Meta Tags Generated with https://metatags.io -->
     <meta property="twitter:image" content="./meta-img.webp">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    screens: {
+                        "custom-xm": "520px",
+                    },
                     colors: {
                         yellow: '#FFCC02',
                         'light-green': ' #A7E45F',
@@ -44,7 +46,7 @@
                     fontSize: {
                         'custom_2xl': '28px',
                         'custom_3xl': '32px',
-                        'custom_4xl': '40px', //contact
+                        'custom_4xl': '40px',
                         'custom_9xl': '94px',
                     },
                     lineHeight: {
@@ -53,7 +55,7 @@
                         '120': '120%',
                         '130': '130%',
                         '140': '140%',
-                        "143": "143%", //contact
+                        "143": "143%",
                         '150': '150%',
                     }
                 },
@@ -67,7 +69,8 @@
                 boxShadow: {
                     "blogssectionyellowshadow": "13px 0px 0px 0px #FFCC02 inset",
                     "latestblogssidershadow": " 0px -6px 0px 0px #000000",
-                    "formShadow": "0px 6px 0px 0px #000000 inset"
+                    "formShadow": "0px 6px 0px 0px #000000 inset",
+                    "heroSectionCardShadow": "0px 68px 0px 0px #ffffff inset",
                 },
                 animation: {
                     circle: 'circle 5s ease-in-out infinite',
@@ -193,7 +196,7 @@
                             </svg>
                         </span>
                     </div>
-                    <a href="/contactpage.html" aria-label="contact" class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
+                    <a href="/contactpage.html" aria-label="contact" class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-heroSectionCardShadow border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
                     Contact Us
                 </a>
                     <div onclick="openNav()" class="menu d-block d-lg-none z-[5] cursor-pointer">
@@ -257,7 +260,7 @@
                             <p class="font-medium text-red-400" id="errorEmail"></p>
                             <div class="flex flex-col mt-4 sm:mt-6"> <label for="message" class="font-poppins font-normal text-sm sm:text-base !leading-normal">Message</label>
                                 <textarea id="message" name="message" placeholder="Type your message..." class=":placeholder:font-poppins :placeholder:font-normal w-full border border-black rounded-[5px] outline-none px-3 sm:px-4 py-2 sm:py-[11px] opacity-40 mt-2 :placeholder:text-black min-h-[100px] sm:min-h-[130px] lg:min-h-[180px]"></textarea></div>
-                            <button type="submit" class="p-[10px_12px] sm:p-[14px_16px] bg-yellow rounded-[5px] font-poppins font-normal text-sm sm:text-base !leading-normal hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out mt-4 sm:mt-6">Submit</button>
+                            <button type="submit" class="p-[10px_12px] sm:p-[14px_16px] bg-yellow rounded-[5px] font-poppins font-normal text-sm sm:text-base !leading-normal hover:shadow- border border-transparent hover:border-black duration-500 ease-in-out mt-4 sm:mt-6">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -265,7 +268,7 @@
         </div>
     </section>
     <!--========================== YELLOW CARD========================== -->
-    <div class="relative z-[1] pb-12 md:pb-[55px] overflow-x-clip 2xl:max-w-[1920px] 2xl:mx-auto ">
+    <div class="relative z-[1] pb-12 md:pb-[55px] overflow-x-clip 2xl:max-w-[1920px] 2xl:mx-auto">
         <div class="absolute bottom-1 lg:top-[45%] left-0 pointer-events-none z-[-1]"><svg class="max-lg:max-w-24 max-lg:max-h-8" width="152" height="51" viewBox="0 0 152 51" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M151.781 49.9046C141.203 49.9046 141.203 38.8262 130.624 38.8262C120.045 38.8262 119.932 49.9046 109.466 49.9046C99.0008 49.9046 98.8878 38.8262 88.3091 38.8262C77.7304 38.8262 77.753 49.9046 67.1743 49.9046C56.5956 49.9046 56.5956 38.8262 46.0169 38.8262C35.4382 38.8262 35.4382 49.9046 24.8595 49.9046C14.2808 49.9046 14.2808 38.8262 3.70211 38.8262C-6.87659 38.8262 -6.89918 49.9046 -17.4779 49.9046C-28.0566 49.9046 -28.0565 38.8262 -38.6352 38.8262" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
 <path d="M151.781 31.1504C141.203 31.1504 141.203 20.1816 130.624 20.1816C120.045 20.1816 120.045 31.1504 109.466 31.1504C98.8878 31.1504 98.8878 20.1816 88.3091 20.1816C77.7304 20.1816 77.753 31.1504 67.1743 31.1504C56.5956 31.1504 56.5956 20.1816 46.0169 20.1816C35.4382 20.1816 35.4382 31.1504 24.8595 31.1504C14.2808 31.1504 14.2808 20.1816 3.70211 20.1816C-6.87659 20.1816 -6.89918 31.1504 -17.4779 31.1504C-28.0566 31.1504 -28.0565 20.1816 -38.6352 20.1816" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
@@ -430,7 +433,7 @@
                             </svg>
                     </a>
                     <div class="flex gap-2.5 sm:gap-[15px] pt-4 sm:pt-[25.58px]">
-                        <a aria-label="instagram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group " href="https://www.instagram.com/
+                        <a aria-label="instagram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group" href="https://www.instagram.com/
                                     " target="blank ">
                             <svg class="max-sm:w-5 max-sm:h-5" width="25 " height="25 " viewBox="0 0 25 25 " fill="none ">
                                 <path class="transition-all duration-300 ease-linear group-hover:fill-white "
@@ -452,7 +455,7 @@
                                     fill="#FFCC02 " />
                             </svg>
                         </a>
-                        <a aria-label="facebook" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group " href="https://www.facebook.com/
+                        <a aria-label="facebook" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group" href="https://www.facebook.com/
                                     " target="blank ">
                             <svg class="max-sm:w-5 max-sm:h-5" width="29 " height="29 " viewBox="0 0 29 29 " fill="none">
                                 <path class="transition-all duration-300 ease-linear group-hover:fill-white "
@@ -460,7 +463,7 @@
                                     fill="#FFCC02 " />
                             </svg>
                         </a>
-                        <a aria-label="telegram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group " href="https://web.telegram.org/a/
+                        <a aria-label="telegram" class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group" href="https://web.telegram.org/a/
                                     " target="blank">
                             <svg class="max-sm:w-5 max-sm:h-5" width="26 " height="27 " viewBox="0 0 26 27 " fill="none">
                                 <path class="transition-all duration-300 ease-linear group-hover:fill-white "
@@ -479,7 +482,7 @@
                 </div>
                 <div class="pt-8 lg:w-9/12 xl:w-8/12 lg:pt-0 ">
                     <div class="flex flex-row flex-wrap justify-between ">
-                        <div class="md:w-3/12 min-[520px]:w-6/12 w-full ">
+                        <div class="md:w-3/12 custom-xm:w-6/12 w-full ">
                             <div class="flex flex-col gap-2 sm:gap-4">
                                 <p class="mb-1 text-lg font-bold text-white capitalize font-play leading-110 ">
                                     Contact</p>
@@ -490,7 +493,7 @@
 
                             </div>
                         </div>
-                        <div class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7 ">
+                        <div class="md:w-4/12 custom-xm:w-6/12 w-full custom-xm:pt-0 pt-7 ">
                             <div class="flex flex-col gap-2 sm:gap-4">
                                 <p class="mb-1 text-lg font-bold text-white capitalize font-play leading-110 ">
                                     Information</p>
@@ -501,7 +504,7 @@
 
                             </div>
                         </div>
-                        <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7 ">
+                        <div class="md:w-4/12 custom-xm:w-6/12 w-full md:pt-0 pt-7 ">
                             <div class="flex flex-col gap-2 sm:gap-4">
                                 <p class="mb-1 text-lg font-bold text-white capitalize font-play leading-110 ">
                                     Conditions(NI)</p>
@@ -541,41 +544,18 @@
     </svg>
     </span>
 </button>
-    <!-- script -->
-
-    <script>
-        // <!-- =============== NAVBAR JAVASCRIPT ============= -->
-        function openNav() {
-            document.getElementById("navbar").classList.toggle("left-0");
-            document.body.classList.toggle("overflow_hidden");
-            document.querySelector(".menu").classList.toggle("cross");
-        }
-        // back to top
-        function backtotop() {
-            window.scroll(0, 0);
-        }
-        window.addEventListener("scroll", function() {
-            let backtotop = document.getElementById("backtotop");
-            if (window.scrollY > 250) {
-                backtotop.style.display = "block";
-            } else {
-                backtotop.style.display = "none";
-            }
-        });
-    </script>
+    <!-- =====================SCRIPT===================== -->
+    <script src="./assets/js/app.js"></script>
     <script>
         let Name = document.getElementById("name");
         let errorName = document.getElementById("errorName");
         let Email = document.getElementById("email");
         let errorEmail = document.getElementById("errorEmail");
         let Message = document.getElementById("message");
-
-
         const regex = {
             name: /^[a-zA-Z\s]+$/,
             email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/,
         };
-
         document.getElementById("form").addEventListener("submit", function(e) {
             e.preventDefault();
             if (!regex.name.test(Name.value)) {
@@ -591,8 +571,6 @@
             } else {
                 errorEmail.innerHTML = "";
             }
-
-
 
             if (Name.value !== "" && Email.value !== "") {
                 console.log(Name.value);
