@@ -48,15 +48,15 @@
                         'light-blue': '#BEDCFE',
                         green: ' #76BD3D',
                         'white-gray': '#F0F0EA',
-                        'light-red': '#F4456A', //EXTAND BASEMENT
-                        'white-light-creem': '#FFFAE6', //EXTAND BASEMENT
-                        'white-creem': '#E5E1CF', //EXTAND BASEMENT
-                        'light-yellow': '#FFD635', //EXTAND BASEMENT
-                        'dark-gray3': '#DFE3E8', //EXTAND BASEMENT
-                        'dark-gray2': '#C8CED5', //EXTAND BASEMENT
-                        'light-brown': '#E7E4D7', //EXTAND BASEMENT
-                        'light-gray': '#E1E6EA', //EXTAND BASEMENT
-                        'dark-blue': '#212B36', //EXTAND BASEMENT
+                        'light-red': '#F4456A',
+                        'white-light-creem': '#FFFAE6',
+                        'white-creem': '#E5E1CF',
+                        'light-yellow': '#FFD635',
+                        'dark-gray3': '#DFE3E8',
+                        'dark-gray2': '#C8CED5',
+                        'light-brown': '#E7E4D7',
+                        'light-gray': '#E1E6EA',
+                        'dark-blue': '#212B36',
                     },
                     fontSize: {
                         'custom_2xl': '28px',
@@ -1163,26 +1163,18 @@
         <p
             class="px-4 font-poppins font-normal text-sm sm:text-sm text-white opacity-40 py-2 sm:py-3 md:py-4 lg:py-[23.5px] !leading-110 text-center">
             <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
-        </p>
+        </p>    
         <script>
             const currentYear = new Date().getFullYear();
             document.getElementById('currentYear').textContent = currentYear;
         </script>
     </footer>
     <script>
-
-        // ====================NAVBAR JS=====================
-        function openNav() {
-            document.getElementById("navbar").classList.toggle("left-0");
-            document.body.classList.toggle("overflow_hidden");
-            document.querySelector(".menu").classList.toggle("cross");
-        }
         // ======================SELECTER JS====================
         function changeText(buttonId, selectElement) {
             var button = document.getElementById(buttonId);
             button.innerHTML = selectElement.value + ' <img src="/assets/images/basement/svg/dropdown-svg.svg" alt="arrowIcon">';
         }
-
     </script>
 </body>
 

@@ -923,30 +923,18 @@
         }
     </script>
     <script>  document.addEventListener("DOMContentLoaded", function () {
-            // Get all tab buttons
             const tabButtons = document.querySelectorAll(".tab-button");
-
-            // Get all tab contents
             const tabContents = document.querySelectorAll(".tab-content");
-
-            // Add click event listeners to each tab button
             tabButtons.forEach(button => {
                 button.addEventListener("click", function () {
                     const tab = this.getAttribute("data-tab");
 
-                    // Toggle active tab button
                     tabButtons.forEach(btn => btn.classList.remove("active-tab"));
                     this.classList.add("active-tab");
-
-                    // Hide all tab contents
                     tabContents.forEach(content => content.classList.add("hidden"));
-
-                    // Display the selected tab content
                     document.getElementById(`${tab}-tab-content`).classList.remove("hidden");
                 });
             });
-
-            // Set the initial tab as active (Description tab in this case)
             document.querySelector(".tab-button[data-tab='description']").classList.add("active-tab");
             document.getElementById("description-tab-content").classList.remove("hidden");
         });</script>

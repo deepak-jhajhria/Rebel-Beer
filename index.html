@@ -885,6 +885,7 @@
     </span>
   </button>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/nav.js"></script>
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
     <!-- ============================HERO SECTION============================= -->
@@ -991,6 +992,21 @@
             document.getElementById('prevBtn').classList.remove('bg-yellow', 'border-transparent');
         });
     </script>
+    <!-- =================== BACK TO TOP =========================== -->
+     <script>
+        function backToTop() {
+            window.scroll(0, 0);
+        }
+        window.addEventListener("scroll", function () {
+            let backToTopButton = document.getElementById("backtotop");
+            if (window.scrollY > 250) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+    </script>
+
 </body>
 
 </html>
