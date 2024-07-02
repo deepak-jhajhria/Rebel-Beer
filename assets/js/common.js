@@ -1,4 +1,12 @@
- // BACK TO TOP
+ // ====================NAVBAR JS=====================
+function openNav() {
+  document.getElementById("navbar").classList.toggle("left-0");
+  document.body.classList.toggle("overflow_hidden");
+  document.querySelector(".menu").classList.toggle("cross");
+}
+
+
+// BACK TO TOP
  function backtotop() {
     window.scroll(0, 0);
 }
