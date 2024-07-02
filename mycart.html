@@ -21,7 +21,7 @@
     <meta name="title" content="Welcome to Cans" />
     <meta name="description"
         content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
-    <!-- Open Graph / Facebook -->
+    <!-- OPEN GRAPH / FACEBOOK -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://metatags.io/" />
     <meta property="og:title" content="Welcome to 
@@ -30,7 +30,7 @@
     <meta property="og:description"
         content="Mi posuere maecenas sed morbi non feugiat eget euismod potenti. Enim amet adipiscing at hac nisl massa." />
     <meta property="og:image" content="https://postimg.cc/qz0YDYq1" />
-    <!-- Twitter -->
+    <!-- TWITTER -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://metatags.io/" />
     <meta property="twitter:title" content="Welcome to  Rebel Beer Cans" />
@@ -43,6 +43,17 @@
         tailwind.config = {
             theme: {
                 extend: {
+                 boxShadow: {
+              "nextbtn": "0px 68px 0px 0px #ffffff inset",
+            },
+            backgroundImage: {
+              footer_bg: "url(./assets/images/myaccount/footer_bg.webp)",
+              hero_bg: "url(./assets/images/common/webp/bg-header-img.webp)"
+            },
+            screens: {
+              custom_lg: "1023.9px",
+              'xs': '500px',
+            },
                     colors: {
                         yellow: '#FFCC02',
                         'skin-yellow': ' #FFFAE6',
@@ -69,7 +80,7 @@
                         'blue': "#316AA3",
                         'green': '#A7E45F',
                         'red': '#C33529',
-
+                        "light-white":"#F0F0EA"
                     },
                     fontSize: {
                         'custom_2xl': '28px',
@@ -88,6 +99,7 @@
                         '150': '150%',
                     }
                 },
+              
                 fontFamily: {
                     'poppins': ['Poppins', 'sans-serif'],
                     'roboto': ['Roboto', 'sans-serif'],
@@ -98,11 +110,6 @@
                     "latestblogssidershadow": " 0px -6px 0px 0px #000000",
                     "series": " 0px 6px 0px 0px #000000 inset",
                 },
-
-                screen: {
-                    'xs': '500px',
-
-                }
             }
         }
     </script>
@@ -148,143 +155,282 @@
             <p class="text-[#F0F0EA] text-[14px] font-play font-normal">Free Shipping Over First Order</p>
         </div>
         <!-- =============== NAVBAR ============= -->
-        <nav class="flex items-center py-[10.52px] justify-between max-w-[1165px] relative z-50 mx-auto px-3">
-            <a href="/">
-                <img src="./assets/images/glasses/svg/navBarLogo.svg" alt="headerlogo">
-            </a>
-            <div class="flex items-center">
-                <ul class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-[1023.9px]:h-screen max-[1023.9px]:w-full duration-300 ease-in-out lg:justify-start justify-center"
-                    id="navbar">
-                    <li>
-                        <a href="./product.html" onclick="openNav()"
-                            class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out">All
-                            Beers</a>
-                    </li>
-                    <li>
-                        <a href="./about.html" onclick="openNav()"
-                            class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out">About
-                            Us</a>
-                    </li>
-                    <li>
-                        <a href="" onclick="openNav()"
-                            class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out">Beer
-                            Shop</a>
-                    </li>
-                    <li>
-                        <a href="./beerpackage.html" onclick="openNav()"
-                            class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out">Beer
-                            packages</a>
-                    </li>
-                    <div class="flex flex-row gap-2 sm:hidden">
-                        <a href="#" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
-                                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
-                                    stroke-opacity="0.2" />
-                                <g clip-path="url(#clip0_527_448)">
-                                    <path class=" group-hover:fill-yellow" fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M16.8745 10.5C15.8579 10.5001 14.8561 10.7433 13.9527 11.2093C13.0492 11.6753 12.2703 12.3506 11.6809 13.1788C11.0915 14.0071 10.7087 14.9643 10.5645 15.9705C10.4203 16.9768 10.5188 18.003 10.8518 18.9634C11.1848 19.9239 11.7427 20.7908 12.4789 21.4918C13.2151 22.1928 14.1082 22.7076 15.0838 22.9932C16.0594 23.2788 17.0892 23.327 18.0872 23.1337C19.0852 22.9404 20.0225 22.5112 20.821 21.882L23.56 24.621C23.7014 24.7576 23.8909 24.8332 24.0875 24.8315C24.2842 24.8298 24.4723 24.7509 24.6113 24.6119C24.7504 24.4728 24.8293 24.2847 24.831 24.0881C24.8327 23.8914 24.7571 23.702 24.6205 23.5605L21.8815 20.8215C22.6225 19.8815 23.0838 18.7518 23.2128 17.5618C23.3417 16.3718 23.1331 15.1695 22.6106 14.0926C22.0882 13.0156 21.2731 12.1075 20.2587 11.4722C19.2442 10.8368 18.0714 10.4999 16.8745 10.5ZM11.9995 16.875C11.9995 15.5821 12.5131 14.3421 13.4273 13.4279C14.3416 12.5136 15.5815 12 16.8745 12C18.1674 12 19.4074 12.5136 20.3216 13.4279C21.2358 14.3421 21.7495 15.5821 21.7495 16.875C21.7495 18.1679 21.2358 19.4079 20.3216 20.3221C19.4074 21.2364 18.1674 21.75 16.8745 21.75C15.5815 21.75 14.3416 21.2364 13.4273 20.3221C12.5131 19.4079 11.9995 18.1679 11.9995 16.875Z"
-                                        fill="black" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_527_448">
-                                        <rect width="18" height="18" fill="white" transform="translate(9 9)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                        <a href="#" class="duration-500 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
-                                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
-                                    stroke-opacity="0.2" />
-                                <path class="duration-500 ease-in-out group-hover:stroke-yellow"
-                                    d="M12 22.5C12 21.7044 12.3161 20.9413 12.8787 20.3787C13.4413 19.8161 14.2044 19.5 15 19.5H21C21.7956 19.5 22.5587 19.8161 23.1213 20.3787C23.6839 20.9413 24 21.7044 24 22.5C24 22.8978 23.842 23.2794 23.5607 23.5607C23.2794 23.842 22.8978 24 22.5 24H13.5C13.1022 24 12.7206 23.842 12.4393 23.5607C12.158 23.2794 12 22.8978 12 22.5Z"
-                                    stroke="black" stroke-width="1.5" stroke-linejoin="round" />
-                                <path class="duration-500 ease-in-out group-hover:stroke-yellow"
-                                    d="M18 16.5C19.2426 16.5 20.25 15.4926 20.25 14.25C20.25 13.0074 19.2426 12 18 12C16.7574 12 15.75 13.0074 15.75 14.25C15.75 15.4926 16.7574 16.5 18 16.5Z"
-                                    stroke="black" stroke-width="1.5" />
-                            </svg>
-                        </a>
-                        <a href="#" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
-                                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
-                                    stroke-opacity="0.2" />
-                                <path class="duration-500 ease-in-out group-hover:fill-yellow" fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M17.9988 11.0625C17.5513 11.0625 17.122 11.2403 16.8056 11.5568C16.4891 11.8732 16.3113 12.3024 16.3113 12.75V12.945C16.7291 12.9375 17.1873 12.9375 17.6913 12.9375H18.3071C18.8096 12.9375 19.2686 12.9375 19.6871 12.945V12.75C19.6871 12.5283 19.6434 12.3088 19.5585 12.104C19.4737 11.8993 19.3493 11.7132 19.1925 11.5565C19.0358 11.3998 18.8496 11.2755 18.6448 11.1907C18.44 11.106 18.2205 11.0624 17.9988 11.0625ZM20.8113 12.996V12.75C20.8113 12.0041 20.515 11.2887 19.9875 10.7613C19.4601 10.2338 18.7447 9.9375 17.9988 9.9375C17.2529 9.9375 16.5375 10.2338 16.0101 10.7613C15.4826 11.2887 15.1863 12.0041 15.1863 12.75V12.996C15.0791 13.005 14.9763 13.0155 14.8758 13.0282C14.1183 13.122 13.4943 13.3185 12.9633 13.7587C12.4331 14.199 12.1248 14.7765 11.8931 15.504C11.6681 16.209 11.4986 17.1143 11.2856 18.2535L11.2698 18.336C10.9683 19.9432 10.7313 21.21 10.6871 22.2083C10.6421 23.232 10.7951 24.0795 11.3726 24.7748C11.9501 25.4708 12.7548 25.7768 13.7688 25.9215C14.7588 26.0625 16.0466 26.0625 17.6823 26.0625H18.3161C19.9511 26.0625 21.2396 26.0625 22.2288 25.9215C23.2428 25.7768 24.0483 25.4708 24.6258 24.7748C25.2033 24.0795 25.3548 23.232 25.3106 22.2083C25.2671 21.21 25.0293 19.9432 24.7278 18.336L24.7128 18.2535C24.4991 17.1143 24.3288 16.2083 24.1053 15.504C23.8728 14.7765 23.5653 14.199 23.0343 13.7587C22.5041 13.3185 21.8793 13.1212 21.1218 13.0282C21.0185 13.0156 20.915 13.0048 20.8113 12.996ZM15.0138 14.145C14.3726 14.2238 13.9848 14.373 13.6818 14.625C13.3796 14.8755 13.1613 15.2287 12.9648 15.8453C12.7646 16.4752 12.6063 17.3137 12.3843 18.498C12.0723 20.1607 11.8511 21.348 11.8113 22.2577C11.7723 23.1503 11.9163 23.6678 12.2381 24.057C12.5606 24.4447 13.0428 24.681 13.9278 24.807C14.8278 24.936 16.0368 24.9375 17.7281 24.9375H18.2696C19.9608 24.9375 21.1691 24.936 22.0698 24.8077C22.9548 24.681 23.4371 24.4447 23.7596 24.057C24.0821 23.6685 24.2253 23.151 24.1871 22.257C24.1466 21.3488 23.9253 20.1607 23.6133 18.498C23.3913 17.313 23.2338 16.476 23.0328 15.8453C22.8363 15.2287 22.6188 14.8755 22.3158 14.6242C22.0128 14.373 21.6258 14.2238 20.9838 14.1442C20.3268 14.0633 19.4741 14.0625 18.2688 14.0625H17.7288C16.5236 14.0625 15.6708 14.0633 15.0138 14.145Z"
-                                    fill="black" />
-                            </svg>
-                        </a>
-                    </div>
-                </ul>
-                <div class="flex items-center gap-[17px]">
-                    <div class=" hidden sm:flex gap-[9px] items-center">
-                        <a href="#" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
-                                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
-                                    stroke-opacity="0.2" />
-                                <g clip-path="url(#clip0_527_448)">
-                                    <path class=" group-hover:fill-yellow" fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M16.8745 10.5C15.8579 10.5001 14.8561 10.7433 13.9527 11.2093C13.0492 11.6753 12.2703 12.3506 11.6809 13.1788C11.0915 14.0071 10.7087 14.9643 10.5645 15.9705C10.4203 16.9768 10.5188 18.003 10.8518 18.9634C11.1848 19.9239 11.7427 20.7908 12.4789 21.4918C13.2151 22.1928 14.1082 22.7076 15.0838 22.9932C16.0594 23.2788 17.0892 23.327 18.0872 23.1337C19.0852 22.9404 20.0225 22.5112 20.821 21.882L23.56 24.621C23.7014 24.7576 23.8909 24.8332 24.0875 24.8315C24.2842 24.8298 24.4723 24.7509 24.6113 24.6119C24.7504 24.4728 24.8293 24.2847 24.831 24.0881C24.8327 23.8914 24.7571 23.702 24.6205 23.5605L21.8815 20.8215C22.6225 19.8815 23.0838 18.7518 23.2128 17.5618C23.3417 16.3718 23.1331 15.1695 22.6106 14.0926C22.0882 13.0156 21.2731 12.1075 20.2587 11.4722C19.2442 10.8368 18.0714 10.4999 16.8745 10.5ZM11.9995 16.875C11.9995 15.5821 12.5131 14.3421 13.4273 13.4279C14.3416 12.5136 15.5815 12 16.8745 12C18.1674 12 19.4074 12.5136 20.3216 13.4279C21.2358 14.3421 21.7495 15.5821 21.7495 16.875C21.7495 18.1679 21.2358 19.4079 20.3216 20.3221C19.4074 21.2364 18.1674 21.75 16.8745 21.75C15.5815 21.75 14.3416 21.2364 13.4273 20.3221C12.5131 19.4079 11.9995 18.1679 11.9995 16.875Z"
-                                        fill="black" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_527_448">
-                                        <rect width="18" height="18" fill="white" transform="translate(9 9)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                        <a href="#" class="duration-500 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
-                                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
-                                    stroke-opacity="0.2" />
-                                <path class="duration-500 ease-in-out group-hover:stroke-yellow"
-                                    d="M12 22.5C12 21.7044 12.3161 20.9413 12.8787 20.3787C13.4413 19.8161 14.2044 19.5 15 19.5H21C21.7956 19.5 22.5587 19.8161 23.1213 20.3787C23.6839 20.9413 24 21.7044 24 22.5C24 22.8978 23.842 23.2794 23.5607 23.5607C23.2794 23.842 22.8978 24 22.5 24H13.5C13.1022 24 12.7206 23.842 12.4393 23.5607C12.158 23.2794 12 22.8978 12 22.5Z"
-                                    stroke="black" stroke-width="1.5" stroke-linejoin="round" />
-                                <path class="duration-500 ease-in-out group-hover:stroke-yellow"
-                                    d="M18 16.5C19.2426 16.5 20.25 15.4926 20.25 14.25C20.25 13.0074 19.2426 12 18 12C16.7574 12 15.75 13.0074 15.75 14.25C15.75 15.4926 16.7574 16.5 18 16.5Z"
-                                    stroke="black" stroke-width="1.5" />
-                            </svg>
-                        </a>
-                        <a href="#" class="duration-300 ease-in-out group">
-                            <svg class="duration-500 ease-in-out group-hover:fill-black" width="36" height="36"
-                                viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="black"
-                                    stroke-opacity="0.2" />
-                                <path class="duration-500 ease-in-out group-hover:fill-yellow" fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M17.9988 11.0625C17.5513 11.0625 17.122 11.2403 16.8056 11.5568C16.4891 11.8732 16.3113 12.3024 16.3113 12.75V12.945C16.7291 12.9375 17.1873 12.9375 17.6913 12.9375H18.3071C18.8096 12.9375 19.2686 12.9375 19.6871 12.945V12.75C19.6871 12.5283 19.6434 12.3088 19.5585 12.104C19.4737 11.8993 19.3493 11.7132 19.1925 11.5565C19.0358 11.3998 18.8496 11.2755 18.6448 11.1907C18.44 11.106 18.2205 11.0624 17.9988 11.0625ZM20.8113 12.996V12.75C20.8113 12.0041 20.515 11.2887 19.9875 10.7613C19.4601 10.2338 18.7447 9.9375 17.9988 9.9375C17.2529 9.9375 16.5375 10.2338 16.0101 10.7613C15.4826 11.2887 15.1863 12.0041 15.1863 12.75V12.996C15.0791 13.005 14.9763 13.0155 14.8758 13.0282C14.1183 13.122 13.4943 13.3185 12.9633 13.7587C12.4331 14.199 12.1248 14.7765 11.8931 15.504C11.6681 16.209 11.4986 17.1143 11.2856 18.2535L11.2698 18.336C10.9683 19.9432 10.7313 21.21 10.6871 22.2083C10.6421 23.232 10.7951 24.0795 11.3726 24.7748C11.9501 25.4708 12.7548 25.7768 13.7688 25.9215C14.7588 26.0625 16.0466 26.0625 17.6823 26.0625H18.3161C19.9511 26.0625 21.2396 26.0625 22.2288 25.9215C23.2428 25.7768 24.0483 25.4708 24.6258 24.7748C25.2033 24.0795 25.3548 23.232 25.3106 22.2083C25.2671 21.21 25.0293 19.9432 24.7278 18.336L24.7128 18.2535C24.4991 17.1143 24.3288 16.2083 24.1053 15.504C23.8728 14.7765 23.5653 14.199 23.0343 13.7587C22.5041 13.3185 21.8793 13.1212 21.1218 13.0282C21.0185 13.0156 20.915 13.0048 20.8113 12.996ZM15.0138 14.145C14.3726 14.2238 13.9848 14.373 13.6818 14.625C13.3796 14.8755 13.1613 15.2287 12.9648 15.8453C12.7646 16.4752 12.6063 17.3137 12.3843 18.498C12.0723 20.1607 11.8511 21.348 11.8113 22.2577C11.7723 23.1503 11.9163 23.6678 12.2381 24.057C12.5606 24.4447 13.0428 24.681 13.9278 24.807C14.8278 24.936 16.0368 24.9375 17.7281 24.9375H18.2696C19.9608 24.9375 21.1691 24.936 22.0698 24.8077C22.9548 24.681 23.4371 24.4447 23.7596 24.057C24.0821 23.6685 24.2253 23.151 24.1871 22.257C24.1466 21.3488 23.9253 20.1607 23.6133 18.498C23.3913 17.313 23.2338 16.476 23.0328 15.8453C22.8363 15.2287 22.6188 14.8755 22.3158 14.6242C22.0128 14.373 21.6258 14.2238 20.9838 14.1442C20.3268 14.0633 19.4741 14.0625 18.2688 14.0625H17.7288C16.5236 14.0625 15.6708 14.0633 15.0138 14.145Z"
-                                    fill="black" />
-                            </svg>
-                        </a>
-                    </div>
-                    <button
-                        class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-[0px_68px_0px_0px_#ffffff_inset] border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2">
-                        Contact Us
-                    </button>
-                    <div onclick="openNav()" class="menu d-block d-lg-none z-[5]">
-                        <span class="duration-300 ease-in-out bg-black"></span>
-                        <span class="my-2 duration-300 ease-in-out bg-black"></span>
-                        <span class="duration-300 ease-in-out bg-black"></span>
-                    </div>
+         <nav
+          class="flex items-center py-[10.52px] justify-between max-w-[1165px] relative z-50 mx-auto px-3"
+        >
+          <a href="/">
+            <img
+              class="w-12 h-12"
+              src="./assets/images/common/png/logo.png"
+              alt="headerlogo"
+            />
+          </a>
+          <div class="flex items-center">
+            <ul
+              class="flex items-center gap-5 mr-[106px] mobile-view flex-col lg:flex-row absolute lg:relative max-custom_lg:h-screen max-custom_lg:w-full duration-300 ease-in-out lg:justify-start justify-center"
+              id="navbar"
+            >
+              <li>
+                <a
+                  href="./product.html"
+                  onclick="openNav()"
+                  class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out"
+                  >All Beers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about.html"
+                  onclick="openNav()"
+                  class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./glasses.html"
+                  onclick="openNav()"
+                  class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out"
+                  >Beer Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./beerpackagepage.html"
+                  onclick="openNav()"
+                  class="font-poppins font-normal text-xl sm:text-2xl lg:text-base leading-150 text-black relative after:absolute after:w-0 after:h-[1.5px] after:left-[50%] after:bottom-[-2px] after:bg-black hover:after:w-full hover:after:left-0 after:duration-300 after:ease-in-out"
+                  >Beer packages</a
+                >
+              </li>
+              <li>
+                <div class="flex flex-row gap-2 sm:hidden">
+                  <a href="#" class="duration-300 ease-in-out group">
+                    <svg
+                      class="duration-300 group-hover:fill-black"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="35"
+                        height="35"
+                        rx="17.5"
+                        stroke="black"
+                        stroke-opacity="0.2"
+                      />
+                      <g clip-path="url(#clip0_527_448)">
+                        <path
+                          class="group-hover:fill-yellow"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M16.8745 10.5C15.8579 10.5001 14.8561 10.7433 13.9527 11.2093C13.0492 11.6753 12.2703 12.3506 11.6809 13.1788C11.0915 14.0071 10.7087 14.9643 10.5645 15.9705C10.4203 16.9768 10.5188 18.003 10.8518 18.9634C11.1848 19.9239 11.7427 20.7908 12.4789 21.4918C13.2151 22.1928 14.1082 22.7076 15.0838 22.9932C16.0594 23.2788 17.0892 23.327 18.0872 23.1337C19.0852 22.9404 20.0225 22.5112 20.821 21.882L23.56 24.621C23.7014 24.7576 23.8909 24.8332 24.0875 24.8315C24.2842 24.8298 24.4723 24.7509 24.6113 24.6119C24.7504 24.4728 24.8293 24.2847 24.831 24.0881C24.8327 23.8914 24.7571 23.702 24.6205 23.5605L21.8815 20.8215C22.6225 19.8815 23.0838 18.7518 23.2128 17.5618C23.3417 16.3718 23.1331 15.1695 22.6106 14.0926C22.0882 13.0156 21.2731 12.1075 20.2587 11.4722C19.2442 10.8368 18.0714 10.4999 16.8745 10.5ZM11.9995 16.875C11.9995 15.5821 12.5131 14.3421 13.4273 13.4279C14.3416 12.5136 15.5815 12 16.8745 12C18.1674 12 19.4074 12.5136 20.3216 13.4279C21.2358 14.3421 21.7495 15.5821 21.7495 16.875C21.7495 18.1679 21.2358 19.4079 20.3216 20.3221C19.4074 21.2364 18.1674 21.75 16.8745 21.75C15.5815 21.75 14.3416 21.2364 13.4273 20.3221C12.5131 19.4079 11.9995 18.1679 11.9995 16.875Z"
+                          fill="black"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_527_448">
+                          <rect
+                            width="18"
+                            height="18"
+                            fill="white"
+                            transform="translate(9 9)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  <a href="#" class="duration-500 ease-in-out group">
+                    <svg
+                      class="duration-500 ease-in-out group-hover:fill-black"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="35"
+                        height="35"
+                        rx="17.5"
+                        stroke="black"
+                        stroke-opacity="0.2"
+                      />
+                      <path
+                        class="duration-500 ease-in-out group-hover:stroke-yellow"
+                        d="M12 22.5C12 21.7044 12.3161 20.9413 12.8787 20.3787C13.4413 19.8161 14.2044 19.5 15 19.5H21C21.7956 19.5 22.5587 19.8161 23.1213 20.3787C23.6839 20.9413 24 21.7044 24 22.5C24 22.8978 23.842 23.2794 23.5607 23.5607C23.2794 23.842 22.8978 24 22.5 24H13.5C13.1022 24 12.7206 23.842 12.4393 23.5607C12.158 23.2794 12 22.8978 12 22.5Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="duration-500 ease-in-out group-hover:stroke-yellow"
+                        d="M18 16.5C19.2426 16.5 20.25 15.4926 20.25 14.25C20.25 13.0074 19.2426 12 18 12C16.7574 12 15.75 13.0074 15.75 14.25C15.75 15.4926 16.7574 16.5 18 16.5Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="duration-300 ease-in-out group">
+                    <svg
+                      class="duration-300 group-hover:fill-black"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="35"
+                        height="35"
+                        rx="17.5"
+                        stroke="black"
+                        stroke-opacity="0.2"
+                      />
+                      <path
+                        class="duration-500 ease-in-out group-hover:fill-yellow"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.9988 11.0625C17.5513 11.0625 17.122 11.2403 16.8056 11.5568C16.4891 11.8732 16.3113 12.3024 16.3113 12.75V12.945C16.7291 12.9375 17.1873 12.9375 17.6913 12.9375H18.3071C18.8096 12.9375 19.2686 12.9375 19.6871 12.945V12.75C19.6871 12.5283 19.6434 12.3088 19.5585 12.104C19.4737 11.8993 19.3493 11.7132 19.1925 11.5565C19.0358 11.3998 18.8496 11.2755 18.6448 11.1907C18.44 11.106 18.2205 11.0624 17.9988 11.0625ZM20.8113 12.996V12.75C20.8113 12.0041 20.515 11.2887 19.9875 10.7613C19.4601 10.2338 18.7447 9.9375 17.9988 9.9375C17.2529 9.9375 16.5375 10.2338 16.0101 10.7613C15.4826 11.2887 15.1863 12.0041 15.1863 12.75V12.996C15.0791 13.005 14.9763 13.0155 14.8758 13.0282C14.1183 13.122 13.4943 13.3185 12.9633 13.7587C12.4331 14.199 12.1248 14.7765 11.8931 15.504C11.6681 16.209 11.4986 17.1143 11.2856 18.2535L11.2698 18.336C10.9683 19.9432 10.7313 21.21 10.6871 22.2083C10.6421 23.232 10.7951 24.0795 11.3726 24.7748C11.9501 25.4708 12.7548 25.7768 13.7688 25.9215C14.7588 26.0625 16.0466 26.0625 17.6823 26.0625H18.3161C19.9511 26.0625 21.2396 26.0625 22.2288 25.9215C23.2428 25.7768 24.0483 25.4708 24.6258 24.7748C25.2033 24.0795 25.3548 23.232 25.3106 22.2083C25.2671 21.21 25.0293 19.9432 24.7278 18.336L24.7128 18.2535C24.4991 17.1143 24.3288 16.2083 24.1053 15.504C23.8728 14.7765 23.5653 14.199 23.0343 13.7587C22.5041 13.3185 21.8793 13.1212 21.1218 13.0282C21.0185 13.0156 20.915 13.0048 20.8113 12.996ZM15.0138 14.145C14.3726 14.2238 13.9848 14.373 13.6818 14.625C13.3796 14.8755 13.1613 15.2287 12.9648 15.8453C12.7646 16.4752 12.6063 17.3137 12.3843 18.498C12.0723 20.1607 11.8511 21.348 11.8113 22.2577C11.7723 23.1503 11.9163 23.6678 12.2381 24.057C12.5606 24.4447 13.0428 24.681 13.9278 24.807C14.8278 24.936 16.0368 24.9375 17.7281 24.9375H18.2696C19.9608 24.9375 21.1691 24.936 22.0698 24.8077C22.9548 24.681 23.4371 24.4447 23.7596 24.057C24.0821 23.6685 24.2253 23.151 24.1871 22.257C24.1466 21.3488 23.9253 20.1607 23.6133 18.498C23.3913 17.313 23.2338 16.476 23.0328 15.8453C22.8363 15.2287 22.6188 14.8755 22.3158 14.6242C22.0128 14.373 21.6258 14.2238 20.9838 14.1442C20.3268 14.0633 19.4741 14.0625 18.2688 14.0625H17.7288C16.5236 14.0625 15.6708 14.0633 15.0138 14.145Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </a>
                 </div>
+              </li>
+            </ul>
+            <div class="flex items-center gap-[17px]">
+              <div class="hidden sm:flex gap-[9px] items-center">
+                <a href="#" class="duration-100 group">
+                  <svg
+                    class="duration-100 group-hover:fill-black"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="35"
+                      height="35"
+                      rx="17.5"
+                      stroke="black"
+                      stroke-opacity="0.2"
+                    />
+                    <g clip-path="url(#clip0_527_445)">
+                      <path
+                        class="group-hover:fill-yellow"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.8745 10.5C15.8579 10.5001 14.8561 10.7433 13.9527 11.2093C13.0492 11.6753 12.2703 12.3506 11.6809 13.1788C11.0915 14.0071 10.7087 14.9643 10.5645 15.9705C10.4203 16.9768 10.5188 18.003 10.8518 18.9634C11.1848 19.9239 11.7427 20.7908 12.4789 21.4918C13.2151 22.1928 14.1082 22.7076 15.0838 22.9932C16.0594 23.2788 17.0892 23.327 18.0872 23.1337C19.0852 22.9404 20.0225 22.5112 20.821 21.882L23.56 24.621C23.7014 24.7576 23.8909 24.8332 24.0875 24.8315C24.2842 24.8298 24.4723 24.7509 24.6113 24.6119C24.7504 24.4728 24.8293 24.2847 24.831 24.0881C24.8327 23.8914 24.7571 23.702 24.6205 23.5605L21.8815 20.8215C22.6225 19.8815 23.0838 18.7518 23.2128 17.5618C23.3417 16.3718 23.1331 15.1695 22.6106 14.0926C22.0882 13.0156 21.2731 12.1075 20.2587 11.4722C19.2442 10.8368 18.0714 10.4999 16.8745 10.5ZM11.9995 16.875C11.9995 15.5821 12.5131 14.3421 13.4273 13.4279C14.3416 12.5136 15.5815 12 16.8745 12C18.1674 12 19.4074 12.5136 20.3216 13.4279C21.2358 14.3421 21.7495 15.5821 21.7495 16.875C21.7495 18.1679 21.2358 19.4079 20.3216 20.3221C19.4074 21.2364 18.1674 21.75 16.8745 21.75C15.5815 21.75 14.3416 21.2364 13.4273 20.3221C12.5131 19.4079 11.9995 18.1679 11.9995 16.875Z"
+                        fill="black"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_527_445">
+                        <rect
+                          width="18"
+                          height="18"
+                          fill="white"
+                          transform="translate(9 9)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a href="#" class="duration-100 ease-in-out group">
+                  <svg
+                    class="duration-100 ease-in-out group-hover:fill-black"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="35"
+                      height="35"
+                      rx="17.5"
+                      stroke="black"
+                      stroke-opacity="0.2"
+                    />
+                    <path
+                      class="duration-500 ease-in-out group-hover:stroke-yellow"
+                      d="M12 22.5C12 21.7044 12.3161 20.9413 12.8787 20.3787C13.4413 19.8161 14.2044 19.5 15 19.5H21C21.7956 19.5 22.5587 19.8161 23.1213 20.3787C23.6839 20.9413 24 21.7044 24 22.5C24 22.8978 23.842 23.2794 23.5607 23.5607C23.2794 23.842 22.8978 24 22.5 24H13.5C13.1022 24 12.7206 23.842 12.4393 23.5607C12.158 23.2794 12 22.8978 12 22.5Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="duration-500 ease-in-out group-hover:stroke-yellow"
+                      d="M18 16.5C19.2426 16.5 20.25 15.4926 20.25 14.25C20.25 13.0074 19.2426 12 18 12C16.7574 12 15.75 13.0074 15.75 14.25C15.75 15.4926 16.7574 16.5 18 16.5Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="duration-100 ease-in-out group">
+                  <svg
+                    class="duration-100 ease-in-out group-hover:fill-black"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="35"
+                      height="35"
+                      rx="17.5"
+                      stroke="black"
+                      stroke-opacity="0.2"
+                    />
+                    <path
+                      class="duration-500 ease-in-out group-hover:fill-yellow"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17.9988 11.0625C17.5513 11.0625 17.122 11.2403 16.8056 11.5568C16.4891 11.8732 16.3113 12.3024 16.3113 12.75V12.945C16.7291 12.9375 17.1873 12.9375 17.6913 12.9375H18.3071C18.8096 12.9375 19.2686 12.9375 19.6871 12.945V12.75C19.6871 12.5283 19.6434 12.3088 19.5585 12.104C19.4737 11.8993 19.3493 11.7132 19.1925 11.5565C19.0358 11.3998 18.8496 11.2755 18.6448 11.1907C18.44 11.106 18.2205 11.0624 17.9988 11.0625ZM20.8113 12.996V12.75C20.8113 12.0041 20.515 11.2887 19.9875 10.7613C19.4601 10.2338 18.7447 9.9375 17.9988 9.9375C17.2529 9.9375 16.5375 10.2338 16.0101 10.7613C15.4826 11.2887 15.1863 12.0041 15.1863 12.75V12.996C15.0791 13.005 14.9763 13.0155 14.8758 13.0282C14.1183 13.122 13.4943 13.3185 12.9633 13.7587C12.4331 14.199 12.1248 14.7765 11.8931 15.504C11.6681 16.209 11.4986 17.1143 11.2856 18.2535L11.2698 18.336C10.9683 19.9432 10.7313 21.21 10.6871 22.2083C10.6421 23.232 10.7951 24.0795 11.3726 24.7748C11.9501 25.4708 12.7548 25.7768 13.7688 25.9215C14.7588 26.0625 16.0466 26.0625 17.6823 26.0625H18.3161C19.9511 26.0625 21.2396 26.0625 22.2288 25.9215C23.2428 25.7768 24.0483 25.4708 24.6258 24.7748C25.2033 24.0795 25.3548 23.232 25.3106 22.2083C25.2671 21.21 25.0293 19.9432 24.7278 18.336L24.7128 18.2535C24.4991 17.1143 24.3288 16.2083 24.1053 15.504C23.8728 14.7765 23.5653 14.199 23.0343 13.7587C22.5041 13.3185 21.8793 13.1212 21.1218 13.0282C21.0185 13.0156 20.915 13.0048 20.8113 12.996ZM15.0138 14.145C14.3726 14.2238 13.9848 14.373 13.6818 14.625C13.3796 14.8755 13.1613 15.2287 12.9648 15.8453C12.7646 16.4752 12.6063 17.3137 12.3843 18.498C12.0723 20.1607 11.8511 21.348 11.8113 22.2577C11.7723 23.1503 11.9163 23.6678 12.2381 24.057C12.5606 24.4447 13.0428 24.681 13.9278 24.807C14.8278 24.936 16.0368 24.9375 17.7281 24.9375H18.2696C19.9608 24.9375 21.1691 24.936 22.0698 24.8077C22.9548 24.681 23.4371 24.4447 23.7596 24.057C24.0821 23.6685 24.2253 23.151 24.1871 22.257C24.1466 21.3488 23.9253 20.1607 23.6133 18.498C23.3913 17.313 23.2338 16.476 23.0328 15.8453C22.8363 15.2287 22.6188 14.8755 22.3158 14.6242C22.0128 14.373 21.6258 14.2238 20.9838 14.1442C20.3268 14.0633 19.4741 14.0625 18.2688 14.0625H17.7288C16.5236 14.0625 15.6708 14.0633 15.0138 14.145Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <button
+                class="px-4 py-3 rounded-[5px] bg-yellow hover:shadow-nextbtn border border-transparent hover:border-black duration-500 ease-in-out font-poppins font-normal text-sm sm:text-base leading-150 text-black ms-2"
+              >
+                Contact Us
+              </button>
+              <div onclick="openNav()" class="menu d-block d-lg-none z-[5]">
+                <span class="duration-300 ease-in-out bg-black"></span>
+                <span
+                  class="my-1.5 sm:my-2 duration-300 ease-in-out bg-black"
+                ></span>
+                <span class="duration-300 ease-in-out bg-black"></span>
+              </div>
             </div>
-
+          </div>
         </nav>
-
         <div
-            class="bg-cover bg-bottom flex justify-center items-center flex-col pb-14 md:pt-[73px] md:pb-[108px] pt-[35px]  px-3 common_hero_bg">
+            class="bg-cover bg-bottom flex justify-center items-center flex-col pb-14 md:pt-[73px] md:pb-[108px] pt-[35px]  px-3 bg-hero_bg">
             <div class="max-w-[1165px] mx-auto px-3"></div>
             <h2
                 class="font-play font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-black leading-[115%] text-center">
                 My Carts</h2>
         </div>
-        <div class="bg-[#F0F0EA] undefined">
+        <div class="bg-light-white undefined">
             <div class="container max-w-[1165px] mx-auto px-3 py-[14.5px]">
                 <h3 class="font-poppins font-normal lg text-sm:xs:text-base text-sm text-black flex items-center gap-1">
                     <a class="opacity-70 hover:opacity-100 duration-200 font-poppins font-normal text-sm lg text-sm:xs:text-base"
@@ -302,7 +448,7 @@
             </div>
         </div>
     </header>
-    <!--------------------------------- silver series -----------------  -->
+    <!-- ======== SILVER SERIES ==========  -->
     <section class="relative">
         <img class="absolute end-0 top-[5%]" src="./assets/images/product/svg/semi-circle-vector.svg" alt="semi-vec">
         <div class="max-w-[1172px] mx-auto pt-12 sm:pt-16 p-4">
@@ -428,7 +574,7 @@
             </div>
         </div>
     </section>
-    <!-- ------------------------ tabs ----------------------- -->
+    <!-- ========== TABS ============= -->
     <section class="relative" id="cart-tabs">
         <div class="max-w-[1172px] relative z-50 pt-12 sm:pt-[75px] md:pb-20 sm:pb-16 pb-12 lg:pb-24 mb-1 px-4 mx-auto">
             <div
@@ -513,10 +659,7 @@
         <img class="absolute start-0 -z-10 top-[50%] hidden min-[1438px]:block translate-y-[-50%]"
             src="./assets/images/newcart/svg/4wave-vector.svg" alt="vector">
     </section>
-
-
-
-    <!-- -----------------  Rebel Selection ---------------- -->
+    <!-- ====== REBEL SELECTION ============ -->
     <section class=" mb-12 lg:mb-[109px] md:mb-20 sm:mb-12 relative max-w-[1920px] mx-auto">
         <img src="./assets/images/product/svg/semi-circle-vector.svg" alt="black-circle"
             class=" absolute right-0 bottom-[-5%] xl:block hidden pointer-events-none">
@@ -541,12 +684,12 @@
                     </button>
                 </div>
             </div>
-            <div class="lg:mt-[48px] md:mt-[40px] mt-[30px]">
+            <div class="lg:mt-12 md:mt-10 mt-[30px]">
                 <div class="swiper firstSwiper">
                     <div class="swiper-wrapper py-[10px]">
                         <div class="swiper-slide">
                             <div
-                                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-latestblogssidershadow transition-all ease-linear duration-300">
                                 <div class="relative">
                                     <img src="./assets/images/homepage/webp/rabelcard1.webp" alt="rabel-img"
                                         class="w-full">
@@ -557,7 +700,7 @@
                                             Save 10%</p>
                                     </div>
                                     <div
-                                        class="w-[24px] h-[24px] rounded-[40px] flex justify-center items-center bg-off-white absolute top-[8px] right-[8px] ">
+                                        class="w-6 h-6 rounded-[40px] flex justify-center items-center bg-off-white absolute top-2 right-2 ">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path class="duration-300 group-hover:fill-red group-hover:stroke-red"
@@ -584,7 +727,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div
-                                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-latestblogssidershadow transition-all ease-linear duration-300">
                                 <div class="relative">
                                     <img src="./assets/images/homepage/webp/rabelcard2.webp" alt="rabel-img"
                                         class="w-full">
@@ -622,7 +765,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div
-                                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-latestblogssidershadow transition-all ease-linear duration-300">
                                 <div class="relative">
                                     <img src="./assets/images/homepage/webp/rabelcard1.webp" alt="rabel-img"
                                         class="w-full">
@@ -660,7 +803,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div
-                                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-latestblogssidershadow transition-all ease-linear duration-300">
                                 <div class="relative">
                                     <img src="./assets/images/homepage/webp/rabelcard2.webp" alt="rabel-img"
                                         class="w-full">
@@ -698,7 +841,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div
-                                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-[0px_-6px_0px_0px_#000000] transition-all ease-linear duration-300">
+                                class="xl:h-[421px] p-[12px_15px_8px_14px] bg-white group hover:bg-yellow rounded-[5px] border border-solid border-black shadow-latestblogssidershadow transition-all ease-linear duration-300">
                                 <div class="relative">
                                     <img src="./assets/images/homepage/webp/rabelcard1.webp" alt="rabel-img"
                                         class="w-full">
@@ -738,6 +881,7 @@
                 </div>
             </div>
     </section>
+<<<<<<< HEAD
     <!-- ----------------------- footer --------------------- -->
     <footer class="common_footer_bg bg-center bg-cover bg-no-repeat pt-[69.66px]">
         <div class="container xl:max-w-[1178px] px-4 mx-auto pb-[69.66px] sm:pb-20 md:pb-[104.42px]">
@@ -846,28 +990,235 @@
                         </div>
                     </div>
                 </div>
+=======
+   <!-- ============= FOOTER =================== -->
+      <footer
+        class="bg-center bg-footer_bg bg-cover bg-no-repeat pt-12 md:pt-16 lg:pt-[69.66px]"
+      >
+        <div
+          class="container xl:max-w-[1178px] !px-4 mx-auto pb-8 md:pb-16 xl:pb-[104px]"
+        >
+          <div class="flex flex-row flex-wrap">
+            <div class="lg:w-3/12 xl:w-4/12">
+              <a href="/" aria-label="logo" class="me-auto">
+                <img
+                  src="./assets/images/myaccount/svg/footer_logo.svg"
+                  alt="footer_logo"
+                  class="-ms-4 w-[125px] sm:w-[152px]"
+                />
+              </a>
+              <div class="flex gap-2.5 sm:gap-[15px] pt-[25.58px]">
+                <a
+                  aria-label="instagram"
+                  class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                  href="https://www.instagram.com/
+                                    "
+                  target="blank "
+                >
+                  <svg
+                    class="max-sm:w-5 max-sm:h-5"
+                    width="25 "
+                    height="25 "
+                    viewBox="0 0 25 25 "
+                    fill="none "
+                  >
+                    <path
+                      class="transition-all duration-300 ease-linear group-hover:fill-white"
+                      d="M13.134 2.65846C13.8638 2.65566 14.5935 2.66299 15.323 2.68046L15.517 2.68746C15.741 2.69546 15.962 2.70546 16.229 2.71746C17.293 2.76746 18.019 2.93546 18.656 3.18246C19.316 3.43646 19.872 3.78046 20.428 4.33646C20.9364
+                                    4.83606 21.3299 5.4404 21.581 6.10746C21.828 6.74446 21.996 7.47146 22.046 8.53546C22.058 8.80146 22.068 9.02346 22.076 9.24746L22.082 9.44146C22.0998 10.1706 22.1075 10.9001 22.105 11.6295L22.106 12.3755V13.6855C22.1085
+                                    14.4152 22.1008 15.1449 22.083 15.8745L22.077 16.0685C22.069 16.2925 22.059 16.5135 22.047 16.7805C21.997 17.8445 21.827 18.5705 21.581 19.2075C21.3307 19.8752 20.9371 20.4801 20.428 20.9795C19.928 21.4878 19.3234 21.8812
+                                    18.656 22.1325C18.019 22.3795 17.293 22.5475 16.229 22.5975C15.962 22.6095 15.741 22.6195 15.517 22.6275L15.323 22.6335C14.5935 22.6512 13.8638 22.6589 13.134 22.6565L12.388 22.6575H11.079C10.3493 22.6599 9.61957 22.6523
+                                    8.89005 22.6345L8.69605 22.6285C8.45866 22.6199 8.22132 22.6099 7.98405 22.5985C6.92005 22.5485 6.19405 22.3785 5.55605 22.1325C4.88873 21.8818 4.28428 21.4883 3.78505 20.9795C3.27609 20.4797 2.88227 19.875 2.63105 19.2075C2.38405
+                                    18.5705 2.21605 17.8445 2.16605 16.7805C2.15491 16.5432 2.14491 16.3058 2.13605 16.0685L2.13105 15.8745C2.11261 15.1449 2.10428 14.4152 2.10605 13.6855V11.6295C2.10325 10.9001 2.11059 10.1707 2.12805 9.44146L2.13505 9.24746C2.14305
+                                    9.02346 2.15305 8.80146 2.16505 8.53546C2.21505 7.47046 2.38305 6.74546 2.63005 6.10746C2.88142 5.44008 3.27601 4.8359 3.78605 4.33746C4.28494 3.82821 4.88901 3.43403 5.55605 3.18246C6.19405 2.93546 6.91905 2.76746 7.98405
+                                    2.71746L8.69605 2.68746L8.89005 2.68246C9.61923 2.66403 10.3486 2.6557 11.078 2.65746L13.134 2.65846ZM12.106 7.65846C11.4436 7.64909 10.7858 7.77148 10.171 8.01852C9.55624 8.26557 8.99669 8.63234 8.52489 9.09751C8.05309
+                                    9.56269 7.67845 10.117 7.42273 10.7282C7.16702 11.3394 7.03534 11.9954 7.03534 12.658C7.03534 13.3205 7.16702 13.9765 7.42273 14.5877C7.67845 15.1989 8.05309 15.7532 8.52489 16.2184C8.99669 16.6836 9.55624 17.0503 10.171
+                                    17.2974C10.7858 17.5444 11.4436 17.6668 12.106 17.6575C13.4321 17.6575 14.7039 17.1307 15.6416 16.193C16.5793 15.2553 17.106 13.9835 17.106 12.6575C17.106 11.3314 16.5793 10.0596 15.6416 9.12192C14.7039 8.18424 13.4321
+                                    7.65846 12.106 7.65846ZM12.106 9.65846C12.5046 9.65111 12.9005 9.72325 13.2708 9.87066C13.6412 10.0181 13.9784 10.2378 14.2628 10.517C14.5473 10.7962 14.7732 11.1293 14.9275 11.4968C15.0818 11.8643 15.1612 12.2589 15.1613
+                                    12.6574C15.1614 13.056 15.082 13.4506 14.9279 13.8182C14.7737 14.1857 14.5479 14.5189 14.2635 14.7982C13.9792 15.0775 13.642 15.2973 13.2718 15.4449C12.9015 15.5924 12.5056 15.6647 12.107 15.6575C11.3114 15.6575 10.5483
+                                    15.3414 9.98573 14.7788C9.42312 14.2162 9.10705 13.4531 9.10705 12.6575C9.10705 11.8618 9.42312 11.0987 9.98573 10.5361C10.5483 9.97353 11.3114 9.65746 12.107 9.65746L12.106 9.65846ZM17.356 6.15846C17.0334 6.17137 16.7283
+                                    6.30861 16.5047 6.54143C16.281 6.77425 16.156 7.08459 16.156 7.40746C16.156 7.73032 16.281 8.04066 16.5047 8.27349C16.7283 8.50631 17.0334 8.64354 17.356 8.65646C17.6876 8.65646 18.0055 8.52476 18.2399 8.29034C18.4744 8.05592
+                                    18.606 7.73798 18.606 7.40646C18.606 7.07494 18.4744 6.75699 18.2399 6.52257C18.0055 6.28815 17.6876 6.15646 17.356 6.15646V6.15846Z "
+                      fill="#FFCC02 "
+                    />
+                  </svg>
+                </a>
+                <a
+                  aria-label="facebook"
+                  class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                  href="https://www.facebook.com/
+                                    "
+                  target="blank "
+                >
+                  <svg
+                    class="max-sm:w-5 max-sm:h-5"
+                    width="29 "
+                    height="29 "
+                    viewBox="0 0 29 29 "
+                    fill="none"
+                  >
+                    <path
+                      class="transition-all duration-300 ease-linear group-hover:fill-white"
+                      d="M17.0573 16.4069H19.974L21.1406 11.7402H17.0573V9.4069C17.0573 8.20523 17.0573 7.07357 19.3906 7.07357H21.1406V3.15357C20.7603 3.1034 19.3241 2.99023 17.8075 2.99023C14.64 2.99023 12.3906 4.9234 12.3906 8.47357V11.7402H8.89062V16.4069H12.3906V26.3236H17.0573V16.4069Z "
+                      fill="#FFCC02 "
+                    />
+                  </svg>
+                </a>
+                <a
+                  aria-label="telegram"
+                  class="border-[0.8px] border-solid border-yellow rounded-[3.19px] w-8 sm:w-[43.08px] h-8 sm:h-[43.08px] flex items-center justify-center hover:border-white transition-all ease-linear duration-300 group"
+                  href="https://web.telegram.org/a/
+                                    "
+                  target="blank"
+                >
+                  <svg
+                    class="max-sm:w-5 max-sm:h-5"
+                    width="26 "
+                    height="27 "
+                    viewBox="0 0 26 27 "
+                    fill="none"
+                  >
+                    <path
+                      class="transition-all duration-300 ease-linear group-hover:fill-white"
+                      fill-rule="evenodd "
+                      clip-rule="evenodd "
+                      d="M19.5659 21.637V21.6348L19.5846 21.5882L22.7086 5.2082V5.1562C22.7086 4.74779 22.5628 4.39137 22.2482 4.17795C21.9721 3.99054 21.6544 3.97754 21.4315 3.99487C21.224 4.01439 21.0193 4.05799 20.8211 4.12487C20.7366
+                                    4.1532 20.6532 4.18501 20.5711 4.2202L20.5575 4.22562L3.14088 11.3312L3.13567 11.3334C3.08272 11.3522 3.03089 11.3742 2.98046 11.3995C2.8566 11.4573 2.73775 11.5262 2.62525 11.6053C2.4013 11.7656 1.97525 12.1426 2.04713
+                                    12.7406C2.1065 13.2368 2.43463 13.551 2.6565 13.7145C2.78747 13.81 2.92827 13.8899 3.0763 13.9529L3.10963 13.968L3.12005 13.9713L3.12734 13.9745L6.17525 15.0416C6.16484 15.2399 6.18359 15.4425 6.23463 15.6429L7.76067 21.6651C7.84404
+                                    21.9934 8.02418 22.2863 8.2758 22.5026C8.52742 22.7189 8.83787 22.8479 9.16356 22.8713C9.48925 22.8947 9.81382 22.8115 10.0917 22.6332C10.3695 22.455 10.5867 22.1907 10.7128 21.8775L13.0961 19.2276L17.1888 22.4906L17.2471
+                                    22.5166C17.619 22.6856 17.9659 22.7387 18.2836 22.6943C18.6013 22.6488 18.8534 22.5101 19.043 22.353C19.2622 22.1681 19.437 21.9326 19.5534 21.6651L19.5617 21.6467L19.5648 21.6402L19.5659 21.637ZM7.74505 15.229C7.72815
+                                    15.1622 7.73216 15.0915 7.75651 15.0272C7.78086 14.963 7.82428 14.9084 7.88046 14.8715L18.2148 8.04654C18.2148 8.04654 18.8232 7.66195 18.8013 8.04654C18.8013 8.04654 18.9096 8.1137 18.5836 8.42895C18.2753 8.72904 11.218
+                                    15.8151 10.5034 16.5323C10.4636 16.5724 10.4358 16.6235 10.4232 16.6796L9.27109 21.2513L7.74505 15.228V15.229Z "
+                      fill="#FFCC02 "
+                    />
+                  </svg>
+                </a>
+              </div>
+>>>>>>> 0ceadc5e5f1181c6a3cb26705b50f3091a88efbe
             </div>
+            <div class="pt-8 lg:w-9/12 xl:w-8/12 lg:pt-0">
+              <div class="flex flex-row flex-wrap justify-between">
+                <div class="md:w-3/12 min-[520px]:w-6/12 w-full">
+                  <div class="flex flex-col gap-2 sm:gap-4">
+                    <p
+                      class="mb-1 text-lg font-bold text-white capitalize font-play leading-110"
+                    >
+                      Contact
+                    </p>
+                    <a
+                      aria-label="contact"
+                      class="capitalize font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >Rebelbeercans</a
+                    >
+                    <a
+                      aria-label="Achterberghstraat"
+                      class="capitalize font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >Achterberghstraat 23</a
+                    >
+                    <a
+                      aria-label="Boxtel"
+                      class="font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >5281 AB Boxtel</a
+                    >
+                    <a
+                      aria-label="Contac"
+                      class="font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href="https://mail.google.com/ "
+                      target="blank "
+                      >Contac @rebelbeercans.nl</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="md:w-4/12 min-[520px]:w-6/12 w-full min-[520px]:pt-0 pt-7"
+                >
+                  <div class="flex flex-col gap-2 sm:gap-4">
+                    <p
+                      class="mb-1 text-lg font-bold text-white capitalize font-play leading-110"
+                    >
+                      Information
+                    </p>
+                    <a
+                      aria-label="information"
+                      class="capitalize font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >Returns</a
+                    >
+                    <a
+                      aria-label="payment"
+                      class="font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >Payment options</a
+                    >
+                    <a
+                      aria-label="myaccount"
+                      class="capitalize font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >My Account</a
+                    >
+                    <a
+                      aria-label="acholo"
+                      class="font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >Responsible alcohol consumption</a
+                    >
+                  </div>
+                </div>
+                <div class="md:w-4/12 min-[520px]:w-6/12 w-full md:pt-0 pt-7">
+                  <div class="flex flex-col gap-2 sm:gap-4">
+                    <p
+                      class="mb-1 text-lg font-bold text-white font-play leading-110"
+                    >
+                      Conditions(nI)
+                    </p>
+                    <a
+                      aria-label="condition"
+                      class="font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >Remove cookies</a
+                    >
+                    <a
+                      aria-label="cookies"
+                      class="font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >Cookies statement rebelbeercans</a
+                    >
+                    <a
+                      aria-label="rebel"
+                      class="font-poppins font-normal text-sm text-white opacity-70 !leading-110 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >Disclaimer rebelbeercan</a
+                    >
+                    <a
+                      aria-label="terms"
+                      class="font-poppins font-normal text-sm text-white opacity-70 !leading-143 hover:opacity-100 transition-opacity ease-linear duration-300"
+                      href=" "
+                      >General terms and conditions rebelbeercans</a
+                    >
+                    <a
+                      aria-label="Privacy"
+                      class="text-sm font-normal text-white transition-opacity duration-300 ease-linear font-poppins opacity-70 leading-110 hover:opacity-100"
+                      href=" "
+                      >Privacy policy rebelbeercans</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="w-full border border-solid border-white opacity-20"></div>
+        <div class="w-full border border-white border-solid opacity-20"></div>
         <p
-            class="px-4 font-poppins font-normal text-sm text-white opacity-40 py-4 sm:py-[23.5px] md:leading-110 leading-normal text-center">
-            <span id="currentYear"></span> Rebelbeerscans.All rights reserved. / Ontwikkeld: Robin -Roeslofs.nl
+          class="px-4 font-poppins font-normal text-sm sm:text-sm text-white opacity-40 py-2 sm:py-3 md:py-4 lg:py-[23.5px] !leading-110 text-center"
+        >
+          <span id="currentYear"></span> Rebelbeerscans.All rights reserved. /
+          Ontwikkeld: Robin -Roeslofs.nl
         </p>
-        <script>  const currentYear = new Date().getFullYear(); document.getElementById('currentYear').textContent = currentYear;   </script>
-    </footer>
-    <!-- ===============================BACK TO TOP=============================== -->
-    <button id="backtotop" onclick="window.scroll(0,0)"
-        class="hidden fixed bottom-8 sm:bottom-2.5 right-2.5 border border-white bg-yellow rounded-full transition-all duration-300 bg-opacity-80 hover:bg-black ease-linear z-20">
-        <span class="flex items-center justify-center mb-0 cursor-pointer w-7 sm:w-10 h-7 sm:h-10">
-            <svg class="max-sm:max-w-4 max-sm:max-h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                fill="white" viewBox="0 0 16 16">
-                <path
-                    d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
-                <path
-                    d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
-            </svg>
-        </span>
-    </button>
+      </footer>
+
     <!-- ============================== SWIPER JS LINK ========================= -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11.0.7/swiper-bundle.min.js "></script>
     <script>
@@ -905,7 +1256,7 @@
             document.querySelector(".tab-button[data-tab='description']").classList.add("active-tab");
             document.getElementById("description-tab-content").classList.remove("hidden");
         });</script>
-    <!------------------swiper-slider------------------->
+    <!--======== SWIPER SLIDER ============-->
     <script>
         const swiper = new Swiper(".firstSwiper", {
             spaceBetween: 20,
@@ -951,7 +1302,7 @@
             }
         });
     </script>
-    <!-------------swiper-arrow-btn------------- -->
+    <!--==========SWIPER ARROW BUTTON =========-- -->
     <script>
         document.getElementById('prevBtn').addEventListener('click', function () {
             this.classList.add('bg-yellow');
@@ -964,6 +1315,7 @@
             document.getElementById('prevBtn').classList.remove('bg-yellow', 'border-transparent');
         });
     </script>
+<<<<<<< HEAD
     <!-- =============== NAVBAR JAVASCRIPT ============= -->
     <script>
         function openNav() {
@@ -980,6 +1332,13 @@
         const leftArrow = document.querySelector('.left-arrow');
         const rightArrow = document.querySelector('.right-arrow');
         let currentTabIndex = Array.from(tabs).findIndex(tab => tab.classList.contains('active'));
+=======
+    <!-- ================== SERIES TAB ================ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.series-tabs');
+            const mainImage = document.getElementById('mainImage');
+>>>>>>> 0ceadc5e5f1181c6a3cb26705b50f3091a88efbe
 
         function updateMainImage(index) {
             tabs.forEach(t => t.classList.remove('active'));
@@ -1026,19 +1385,9 @@
                 quantityElement.textContent = quantity;
             }
         });</script>
-    <!-- back to top -->
-    <script> function backtotop() {
-            window.scroll(0, 0);
-        }
-        window.addEventListener("scroll", function () {
-            let backtotop = document.getElementById("backtotop");
-            if (window.scrollY > 250) {
-                backtotop.style.display = "block";
-            } else {
-                backtotop.style.display = "none";
-            }
-        });</script>
     <!-- =============== JAVASCRIPT ============= -->
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/app.js"></script>
     <script src="./assets/js/myaccount.js"></script>
 </body>
 
